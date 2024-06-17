@@ -7,10 +7,10 @@ import Heading from '../heading';
 const FarmMechanization = () => {
     return (
         <>
-            <Heading value={"Farm Mechanization Services"} />
+
 
             <div>
-                <div className="h-full bg-cover bg-center" style={{ backgroundImage: `linear-gradient(180deg, #000000 0%, #78BD36 100%), url(${backgroundImage})` }}>
+                <div className="h-full bg-cover bg-center" style={{ backgroundImage: `linear-gradient(to bottom, rgba(76, 175, 80, 0.6), rgba(139, 195, 74, 0.6)), url(${backgroundImage})` }}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" style={{ transform: 'rotate(180deg)' }}>
                         <path className="elementor-shape-fill" d="M500.2,34.7L0,0v100h1000V0L500.2,34.7z" fill="#FFFFFF"></path>
                     </svg>

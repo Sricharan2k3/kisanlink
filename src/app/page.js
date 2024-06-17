@@ -4,7 +4,7 @@ import Carousel from "./components/home/carousel";
 import FourCards from "./components/home/fourcards";
 import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
-import FarmMechanization from "./about/page";
+import FarmMechanization from "./components/home/farmmechanization";
 
 
 
