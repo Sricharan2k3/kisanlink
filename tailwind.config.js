@@ -14,5 +14,40 @@ module.exports = {
       },
     },
   },
+  theme: {
+    extend: {
+      colors: {
+        gray: {
+          lightest: "#F3F4F6",
+        },
+        blue: {
+          100: "#1d4ed8",
+        },
+        brown: {
+          700: "#422006",
+        },
+        green: {
+          500: "#16a34a",
+          600: "#65a30d",
+
+          700: "#84cc16",
+        },
+      },
+      width: {
+        100: "34rem", // 400px for example
+        110: "27.5rem", // 440px
+      },
+      height: {
+        100: "30rem", // 400px
+        110: "27.5rem", // 440px
+      },
+      padding: {
+        16: "8rem",
+        12: "3rem",
+        4: "1rem",
+        10: "2rem",
+      },
+    },
+  },
   plugins: [],
 };
