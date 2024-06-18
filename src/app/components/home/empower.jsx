@@ -21,11 +21,11 @@ const Empower = () => {
             className="w-full h-auto"
           />
         </div>
-        
+
         {/* Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-justify">
           <p className="text-gray-700 text-sm lg:text-base leading-relaxed mb-10">
-            Discover the power of collaboration and progress with Kisanlink, your strategic partner in fostering growth for Farmer Producer Organisations (FPOs). We understand the vitality of FPOs in amplifying farmers' influence in the market and offer comprehensive support to strengthen their capabilities.
+            Discover the power of collaboration and progress with Kisanlink, your strategic partner in fostering growth for Farmer Producer Organisations (FPOs). We understand the vitality of FPOs in amplifying farmers influence in the market and offer comprehensive support to strengthen their capabilities.
           </p>
           <button className="px-10 py-2 bg-green-700 font-semibold text-white shadow-md hover:bg-green-600 focus:bg-green-600 focus:outline-none">
             Explore More ....
