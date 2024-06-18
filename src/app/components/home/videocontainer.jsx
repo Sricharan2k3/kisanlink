@@ -1,5 +1,5 @@
-import React from 'react';
-import Heading from '../heading';
+import React from "react";
+import Heading from "../heading";
 
 const VideoContainer = () => {
     return (

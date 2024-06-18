@@ -12,7 +12,7 @@ const StatsCarousel = () => {
     { id: 1, value: "100+", label: "Villages" },
     { id: 2, value: "150+", label: "Kisansathi (Village Level-Entrepreneurs)" },
     { id: 3, value: "7000+", label: "Farmers" },
-    { id: 4, value: "50+", label: "Local Partners (FPO's and Retailers)" },
+    { id: 4, value: "50+", label: "Local Partners (FPOs and Retailers)" },
     { id: 5, value: "30+", label: "Collaborators" },
     { id: 6, value: "50+", label: "Brands" },
     { id: 7, value: "800+", label: "Products" },
@@ -100,12 +100,11 @@ const StatsCarousel = () => {
             <li
               key={dotIndex}
               onClick={() => goToSlide(dotIndex)}
-              className={`w-2 h-2 rounded-full cursor-pointer ${
-                currentSlide >= dotIndex * (stats.length / numDots) &&
-                currentSlide < (dotIndex + 1) * (stats.length / numDots)
+              className={`w-2 h-2 rounded-full cursor-pointer ${currentSlide >= dotIndex * (stats.length / numDots) &&
+                  currentSlide < (dotIndex + 1) * (stats.length / numDots)
                   ? "bg-blue-100"
                   : "bg-gray-300"
-              }`}
+                }`}
             />
           ))}
         </ul>
