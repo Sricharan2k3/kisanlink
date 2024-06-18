@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from "../heading";
 
 const StatsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,12 +72,13 @@ const StatsCarousel = () => {
   };
 
   return (
-    <div className="relative py-8 bg-gray-lightest">
-      <div className="text-center mb-12">
+    <div className=" overflow-hidden relative py-8 bg-gray-lightest">
+      {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
         </h1>
-      </div>
+      </div> */}
+      <Heading value={"Our Success In Numbers"}></Heading>
       <Slider {...settings} ref={sliderRef}>
         {stats.map((stat) => (
           <div key={stat.id} className="px-4">
@@ -94,7 +96,7 @@ const StatsCarousel = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-4">
+      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
           {dots.map((dotIndex) => (
             <li

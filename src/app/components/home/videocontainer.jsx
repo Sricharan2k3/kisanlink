@@ -5,7 +5,7 @@ const VideoContainer = () => {
     return (
         <>
             <Heading value={"Testimonals"} />
-            <div className="container mx-[9%] p-4">
+            <div className=" overflow-hidden container mx-[9%] p-4">
                 <div className="flex flex-wrap justify-center ">
                     <div className="w-full md:w-1/2 px-4 ">
                         <div className="w-full h-full">

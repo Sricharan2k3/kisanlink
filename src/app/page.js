@@ -10,9 +10,7 @@ import FourCards from "./components/home/fourcards";
 import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
 import FarmMechanization from "./components/home/farmmechanization";
-
-
-
+import "../styles/global.css";
 
 const slides = [
   "https://www.kisanlink.in/wp-content/uploads/0707-new-web-banner.jpg",
@@ -23,23 +21,18 @@ const slides = [
 export default function Home() {
   return (
     <div>
-
-
       <Carousel autoSlide={true}>
         {[...slides.map((s) => <img src={s} key={s} />)]}
       </Carousel>
 
       <Empower></Empower>
+      <FarmMechanization />
       <StatsCarousel></StatsCarousel>
       <Screenshot></Screenshot>
 
-      <FarmMechanization />
       <FourCards />
       <Collaborators />
       <VideoContainer />
-
-
-
     </div>
   );
 }

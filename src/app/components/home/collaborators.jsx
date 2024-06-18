@@ -17,7 +17,7 @@ export default function Collaborators() {
 
 
 
-            <div className="w-full my-12">
+            <div className="w-full overflow-hidden my-12">
                 <Marquee
                     gradient={false}
                     speed={80}

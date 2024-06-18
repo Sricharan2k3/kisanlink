@@ -1,15 +1,17 @@
 "use client"
 import React from 'react';
+import Heading from '../heading';
 
 const Empower = () => {
   return (
-    <div className="w-full px-4 pt-16 py-4 bg-gray-lightest flex flex-col items-center">
+    <div className="w-full px-4 bg-gray-lightest flex flex-col items-center">
       {/* Heading Section */}
-      <div className="text-center mb-12">
+      {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Empowering Farmer Producer Organisations
         </h1>
-      </div>
+      </div> */}
+      <Heading value={"Empowering Farmer Producer Organisations"}></Heading>
 
       {/* Image and Content Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-8 max-w-10xl mx-auto px-4 pb-4 ">
