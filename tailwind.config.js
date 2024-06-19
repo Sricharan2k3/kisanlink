@@ -32,6 +32,9 @@ module.exports = {
 
           700: "#84cc16",
         },
+        orange: {
+          300: "#F8F4DE",
+        },
       },
       width: {
         100: "34rem", // 400px for example
