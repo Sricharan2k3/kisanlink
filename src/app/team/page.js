@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileCard from "../components/homeComp/ProfileCard"; // Assuming correct casing for component name
+import ProfileCard from "../components/homeComp/profilecard"; // Assuming correct casing for component name
 import Heading from "../components/heading";
 import Background from "@/utils/background";
 
