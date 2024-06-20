@@ -1,18 +1,31 @@
-const Background = (value) => {
+"use client";
+import Head from "next/head";
+import React from "react";
+import Heading from "../components/heading";
+
+import Background from "../../utils/background";
+
+const Career = () => {
   return (
-    <div
-      className="relative flex flex-col h-60"
-      style={{ background: "#F8F4DE" }}
-    >
-      <div className="absolute text-5xl -mt-24 font-bold text-brown-700 inset-0 flex justify-center items-center">
-        {value}
+    <>
+      <Background title={"Careers"}></Background>
+      <div className="-mt-10">
+        <Heading value={"Join Us"}></Heading>
       </div>
-      <img
-        className="absolute insert-0 pt-14 overflow-hidden"
-        src="https://www.kisanlink.in/wp-content/uploads/2022/07/footer-img-1.png"
-      />
-    </div>
+
+      <div>
+        <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+          Are you passionate about revolutionizing agriculture through
+          technology? Do you want to be part of a dynamic team dedicated to
+          empowering farmers and driving positive change in the agricultural
+          industry? If yes, join us in making a difference that matters.
+        </p>
+      </div>
+      <div>
+        <img src="https://www.kisanlink.in/wp-content/uploads/Hiring-cuate.svg" />
+      </div>
+    </>
   );
 };
 
-export default Background;
+export default Career;
