@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ProfileCard from "../components/homeComp/profilecard"; // Assuming correct casing for component name
 import Heading from "../components/heading";
