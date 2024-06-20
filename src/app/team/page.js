@@ -2,7 +2,7 @@
 import React from "react";
 import ProfileCard from "../components/homeComp/profilecard"; // Assuming correct casing for component name
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 
 const App = () => {
   // Array of user profiles
