@@ -131,7 +131,7 @@ const App = () => {
         "Tech enthusiast with 1 year of practical experience, specializing in Web development to deliver impactful solutions.",
         "Committed to leveraging technical skills to contribute to innovative solutions.",
       ],
-      linkedInUrl: "",
+      linkedInUrl: "https://www.linkedin.com/in/kalyan-bathula-675630229/",
     },
     // Add more profiles as needed
   ];
