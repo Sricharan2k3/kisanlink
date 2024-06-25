@@ -6,7 +6,7 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
     <div className="flex flex-row w-9/12 items-center con rounded-lg p-4">
       {isImageLeft && (
-        <div className=" flex flex-row w-72 h-72 rounded-lg overflow-hidden mr-4">
+        <div className=" flex flex-row w-72 h-72 rounded-lg  mr-4">
           <img
             src={image}
             alt="Card Image"
@@ -14,7 +14,7 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
           />
         </div>
       )}
-      <div className=" bg-green-700 w-16 h-16 rounded-full flex flex-row">
+      <div className="  bg-green-700 w-16 h-16 rounded-full flex flex-row">
         <p className=" align-middle text-white font-bold pl-6 text-center items-center justify-center content-center">
           {dancer}
         </p>
