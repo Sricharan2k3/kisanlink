@@ -9,7 +9,7 @@ const Academy = () => {
   return (
     <>
       {" "}
-      <Background title={"Collaborators"} />
+      <Background title={"Kisanlink Academy"} />
       <div className="flex flex-col items-center">
         <Heading
           value="Empowering Farmers/Kisansathis through Education"
