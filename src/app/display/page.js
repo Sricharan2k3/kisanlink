@@ -6,7 +6,7 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
     <div className="flex flex-row w-9/12 items-center con rounded-lg p-4">
       {isImageLeft && (
-        <div className=" flex flex-row w-72 h-72 rounded-lg  mr-4">
+        <div className=" flex flex-row w-90 h-72 rounded-lg pr-16 mr-4">
           <img
             src={image}
             alt="Card Image"
@@ -19,8 +19,8 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
           {dancer}
         </p>
       </div>
-      <div className="flex-1 text-left mt-4 md:mt-0 md:ml-4">
-        <h2 className="text-2xl font-semibold mb-2 text-brown-700">{title}</h2>
+      <div className="pl-8 flex-1 text-left mt-4 md:mt-0 md:ml-4">
+        <h2 className="text-3xl font-semibold mb-2 text-brown-700">{title}</h2>
         <ul className="list-disc list-inside text-gray-500">
           {description.map((desc, index) => (
             <li key={index}>{desc}</li>
@@ -28,7 +28,7 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
         </ul>
       </div>
       {!isImageLeft && (
-        <div className="w-72 h-72 rounded-lg overflow-hidden ml-4">
+        <div className="w-80 h-72 rounded-lg overflow-hidden ml-4">
           <img
             src={image}
             alt="Card Image"
