@@ -19,14 +19,14 @@ function Navbar({ className }) {
     >
       <Menu setActive={setActive}>
         
-        <MenuItem setActive={setActive} active={active} item="Home">
+        <a  href="/"><MenuItem setActive={setActive} active={active} item="Home">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about-us">About Us</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
             <HoveredLink href="/our-brands">Our Brands</HoveredLink>
             <HoveredLink href="/careers">Careers</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem></a>
         {/* <MenuItem setActive={setActive} active={active} item="Products">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
