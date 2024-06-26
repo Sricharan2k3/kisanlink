@@ -11,7 +11,7 @@ const MembershipCardBenefits = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen py-8">
+    <div className="bg-gray-100  ">
       <div className="container mx-auto px-4 md:px-8">
         <div className="bg-white shadow-md rounded-lg p-6 mb-6">
           <div className="accordion">
