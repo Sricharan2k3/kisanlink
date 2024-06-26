@@ -3,9 +3,9 @@ import Heading from '../components/heading';
 
 const LeftContent = () => {
     return (
-        <div className="pt-16 ">
-            <Heading value="Why Become a Kisansathi" />
-            <p className="mb-4">
+        <div className="pt-10 pr-10 mr-5 items-center content-center text-sm">
+            <Heading  classname="items=center" value="Why Become a Kisansathi" />
+            <p className="mb-4 text-sm">
                 Agriculture is ingrained in our history and culture. By working with us, you will get an opportunity to earn livelihood, work from your own hometown and impact the lives of farmers around you.
             </p>
         </div>
@@ -15,16 +15,25 @@ const LeftContent = () => {
 const RightImage = () => {
     return (
         <div className="pt-16">
-            <iframe width="550" height="310" src="https://www.youtube.com/embed/R4x78KHuGHc" title="Become a Kisansathi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe
+                width="400"
+                height="225"
+                src="https://www.youtube.com/embed/R4x78KHuGHc"
+                title="Become a Kisansathi"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+            ></iframe>
         </div>
     );
 };
 
 const CenteredVideo = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen">
-            <div className="w-3/4  rounded-lg flex">
-                <div className="w-1/2 ">
+        <div className="flex justify-center items-start min-h-screen">
+            <div className="ml-12 ml-5 w-3/4 rounded-lg flex">
+                <div className="w-1/2">
                     <LeftContent />
                 </div>
                 <div className="w-1/2">
