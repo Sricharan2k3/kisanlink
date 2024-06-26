@@ -7,7 +7,7 @@ const nextConfig = {
 
   // Define image domains to allow loading images from specific external sources
   images: {
-    domains: ["pbs.twimg.com", "www.kisanlink.in"],
+    domains: ["pbs.twimg.com", "www.kisanlink.in", "assets.aceternity.com"],
   },
 
   // Other configurations can go here

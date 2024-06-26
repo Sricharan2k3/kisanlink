@@ -63,9 +63,9 @@ const Brands = () => {
           </div>
 
           {/* Right Image Section */}
-          <div className="relative mt-36 flex-shrink-0 w-160 h-160 md:w-90 md:h-100 rounded-full overflow-hidden bg-white shadow-lg flex items-start">
+          <div className="relative mt-36 flex-shrink-0 w-160 h-160 md:w-90 md:h-100 rounded-full overflow-hidden  flex items-start">
             <img
-              src="https://www.kisanlink.in/wp-content/uploads/favicon-images.jpg" // Replace with your image path
+              src="https://www.kisanlink.in/wp-content/uploads/brands.png" // Replace with your image path
               alt="Brand Image"
               className="w-full h-full object-cover"
             />
