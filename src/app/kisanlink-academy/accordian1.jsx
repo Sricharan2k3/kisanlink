@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Heading from "../components/heading";
 import Background from "@/utils/background";
-const ConsultancyServicesPage = () => {
+const FPOTraining = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const handleCardClick = (cardId) => {
@@ -16,45 +16,36 @@ const ConsultancyServicesPage = () => {
   const cardsData = [
     {
       id: 1,
-      title: "Scheme Applications",
+      title: "Product and service knowledge",
       description:
-        "We offer robust technical support services to ensure smooth operations and effective utilization of our platform’s features. Our dedicated team is committed to assisting users with any technical queries or issues they encounter.",
-    },
-    {
+        "Training on the latest agricultural products and services available through Kisanlink, ensuring FPOs can effectively support their member farmers."     },
+            {
       id: 2,
-      title: "Financial Feasibility Analysis",
+      title: "Operational Efficiency",
       description:
-        "We provide a state-of-the-art tech platform for managing a comprehensive database of farmers affiliated with the Farmers Producer Organization (FPO). This facilitates improved communication and streamlined organizational processes.",
-    },
+        "Courses on best practices for managing FPO operations, including financial management, marketing, and supply chain logistics." },
     {
       id: 3,
-      title: "Financial Feasibility Analysis",
+      title: "Sustainability Practices",
       description:
-        "We issue and manage farmers’ physical membership cards through our technologically advanced platform. Each card is embedded with a unique QR code, granting access to substantial information. This QR code enables seamless tracking of the farmer’s complete profile, including transaction history and credit records.",
-    },
-    {
-      id: 4,
-      title: "Financial Assistance",
-      description:
-        "Utilizing cutting-edge technology solutions, we generate and manage detailed financial reports. This ensures transparent insights into financial matters, empowering strategic decision-making within the Farmers Producer Organization (FPO)",
-    },
+        "Education on sustainable farming techniques that help FPOs promote eco-friendly and profitable agricultural practices among their members."  },
+
   ];
 
   const leftImageUrl = "https://via.placeholder.com/150";
 
   return (
-    <div className="font-sans text-center p-5 pt-32 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-bold text-center p-5  pb-12 flex flex-col items-center max-w-1/2 justify-start ">
       
 
-     
-      <Heading value={"Strategic Consultancy Services"}></Heading>
+   
       <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
         {/* Image on the left */}
         <div className="flex-shrink-0  mb-5 pr-16 md:mb-0 md:mr-8">
           <img
             src="https://www.kisanlink.in/wp-content/uploads/startegy.svg"
             alt="Consultancy Services"
-            className="w-[300px] h-[300px] rounded-lg shadow-lg"
+            className="w-[300px] h-[300px] rounded-lg "
           />
         </div>
         {/* Accordion on the right */}
@@ -67,7 +58,7 @@ const ConsultancyServicesPage = () => {
               }`}
               onClick={() => handleCardClick(card.id)}
             >
-              <div className="flex text-brown-700 justify-between items-center font-bold text-lg">
+              <div className="flex text-brown-700 justify-between items-center font-bold text-2xl">
                 {card.title}
                 <span
                   className={`transform transition-transform ${
@@ -90,4 +81,4 @@ const ConsultancyServicesPage = () => {
   );
 };
 
-export default ConsultancyServicesPage;
+export default FPOTraining;
