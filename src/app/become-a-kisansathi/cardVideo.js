@@ -4,8 +4,8 @@ import Heading from '../components/heading';
 const LeftContent = () => {
     return (
         <div className="pt-10 pr-10 mr-5 items-center content-center text-sm">
-            <Heading  classname="items=center" value="Why Become a Kisansathi" />
-            <p className="mb-4 text-sm">
+            <Heading  classname="items=center style={{ color: 'rgb(245, 245, 245)' }}" value="Why Become a Kisansathi" />
+            <p className="text-sm style={{ color: 'rgb(245, 245, 245)' }}">
                 Agriculture is ingrained in our history and culture. By working with us, you will get an opportunity to earn livelihood, work from your own hometown and impact the lives of farmers around you.
             </p>
         </div>

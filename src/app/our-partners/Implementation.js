@@ -2,7 +2,7 @@ import React from 'react';
 
 const Implementation = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center px-4 lg:px-8 py-8 lg:py-16">
+    <div className=" bg-gray-100 flex justify-center items-center px-4  lg:py-12">
       <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-6 lg:p-10">
         <header className="bg-green-600 text-white py-4 text-center rounded-t-lg">
           <h1 className="text-3xl lg:text-4xl font-bold">Implementation Partners</h1>

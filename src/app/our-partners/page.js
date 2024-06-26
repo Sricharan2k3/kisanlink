@@ -7,17 +7,13 @@ import ChannelPartners from './Channel';
 
 const App = () => {
   return (
-    <>
-    <div className='items-center justify-center content-center'>
+    <div>
     <Background title={"Our Partners"}/>
-
     <EsteemedPartners/>
-  
     <OnboardingPartners/>
     <Implementation/>
     <ChannelPartners/>
     </div>
-    </>
   );
 };
 

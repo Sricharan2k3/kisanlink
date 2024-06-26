@@ -2,8 +2,8 @@ import React from 'react';
 
 const OnboardingPartners = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-start px-4 lg:px-8 py-8 lg:py-16 mt-0px">
-      <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-6 lg:p-10">
+    <div className="bg-gray-100 flex justify-center items-start px-4  mt-4 mb-2px">
+      <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-6">
         <header className="bg-green-600 text-white py-4 text-center rounded-t-lg">
           <h1 className="text-2xl lg:text-3xl">Onboarding Partners</h1>
         </header>

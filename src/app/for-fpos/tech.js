@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Heading from '../components/heading';
+import Heading from './Heading';
 
 const defaultImg = "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg"; // Default image URL
 
@@ -36,7 +36,7 @@ const Techsuppourt = () => {
   };
 
   return (
-    <div className="mt-10 px-8 font-serif text-center p-8 mt-25 mx-8 lg:mx-32 ">
+    <div className=" font-serif text-center p-4 lg:mx-32">
       <Heading value={"Tech Support"}></Heading>
       <div className="flex flex-col lg:flex-row items-start">
         <div className="flex flex-col mr-8 max-w-md">
@@ -48,8 +48,8 @@ const Techsuppourt = () => {
           >
             <div>Maintaining Farmers Database</div>
             {selectedCard === 1 && (
-              <div className="mt-2  p-4">
-                <p className="text-sm ">
+              <div className="mt-2 p-4">
+                <p className="text-sm">
                   We offer a robust tech platform to maintain a comprehensive database of farmers associated with the FPO. This aids in better communication and streamlined operations.
                 </p>
               </div>
@@ -64,8 +64,8 @@ const Techsuppourt = () => {
           >
             <div>Smart Membership Cards</div>
             {selectedCard === 2 && (
-              <div className="mt-2  p-4">
-                <p className="text-sm ">
+              <div className="mt-2 p-4">
+                <p className="text-sm">
                   We manage the issuance and tracking of farmers’ information through physical cards via our tech-enabled platform. Each card is equipped with a unique QR code, serving as a gateway to a wealth of information. This QR code enables comprehensive tracing of the farmer's complete profile, including transactions and credit history.
                 </p>
               </div>
@@ -81,18 +81,18 @@ const Techsuppourt = () => {
             <div>Financial Reportings</div>
             {selectedCard === 3 && (
               <div className="mt-2 p-4">
-                <p className="text-sm ">
+                <p className="text-sm">
                   We provide financial reporting services to FPOs to help them track their financial performance and make informed decisions. Our tech solutions ensure accurate and timely reporting, enhancing transparency and accountability.
                 </p>
               </div>
             )}
           </div>
         </div>
-        <div className="flex-1 min-w-0 text-center ml-auto">
+        <div className="flex-1 min-w-0 text-center ml-auto lg:ml-20"> {/* Adjusted ml-auto to lg:ml-20 */}
           <img
             src={imageSrc}
             alt={`Image ${selectedCard}`}
-            className="ml-40  w-80 h-auto rounded-md shadow-md"
+            className="w-80 h-auto rounded-md shadow-md ml-auto" // Added ml-auto to move image to the right
           />
         </div>
       </div>

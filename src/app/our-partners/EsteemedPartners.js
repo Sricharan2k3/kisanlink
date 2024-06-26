@@ -2,8 +2,8 @@ import React from 'react';
 
 const EsteemedPartners = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center px-8 lg:px-16 py-10 lg:py-20">
-      <div className="bg-white shadow-lg rounded-lg w-full max-w-5xl p-4 lg:p-8 m-6 lg:m-12">
+    <div className="bg-gray-100 flex justify-center items-start px-4 mt-24 mb-4">
+      <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-6">
         <header className="bg-green-600 text-white p-6 text-center w-full mb-6">
           <h1 className="text-2xl lg:text-3xl font-bold mb-4">Our Esteemed Partners</h1>
           <p className="text-xs lg:text-sm">
@@ -35,11 +35,6 @@ const EsteemedPartners = () => {
             </div>
           </div>
         </main>
-
-        <footer className="bg-green-600 text-white p-6 text-center mt-6 w-full rounded-lg">
-          <p>© 2024 Kisanlink. All rights reserved.</p>
-          <a href="#" className="underline hover:text-gray-300">Privacy Policy</a> | <a href="#" className="underline hover:text-gray-300">Terms of Service</a>
-        </footer>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div className="mt-6">
+        <div className="mt-8">
             <h1 className="text-xl font-bold text-center mb-4">Benefits of Becoming a Kisansathi</h1>
 
             <div className="flex justify-center gap-4">

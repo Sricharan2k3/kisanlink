@@ -3,10 +3,10 @@ import Heading from '../components/heading';
 
 const LeftContent = () => {
     return (
-        <div className="p-4 items-center">
-            <Heading value="About Kisansathi" />
-            <p className="mb-4 text-sm">
-                Agriculture is ingrained in our history and culture. By working with us, you will get an opportunity to earn livelihood, work from your own hometown and impact the lives of farmers around you.
+        <div className="-mt-24 mr-10 items-center content-center text-sm">
+            <Heading  classname="items=center" value="About Kisansathi" />
+            <p className="mb-4 text-sm light-gray-text">
+            We are an intermediary, working towards bringing together the Agri Companies and the farmers, by helping in generating a sale for both. We are skilful and tasked with educating and advising farmers on the right product, assisting them through the process of gaining the services, playing multiple roles .
             </p>
         </div>
     );
@@ -14,24 +14,24 @@ const LeftContent = () => {
 
 const RightImage = () => {
     return (
-        <div className="p-4">
+        <div className=" -mt-24 p-4">
             <img
                 src="https://www.kisanlink.in/wp-content/uploads/2022/03/farmer-standing-rice-field-with-tablet-scaled.jpg"
                 alt="Placeholder"
-                className="w-[550px] h-[300px]"
+                className="w-[550px] h-[350px]"
             />
         </div>
     );
 };
 
-const CenteredLayout = () => {
+const CenteredVideo = () => {
     return (
-        <div className="flex justify-center items-center mt-1"> {/* Adjusted mt-4 */}
-            <div className="w-3/4 rounded-lg flex">
+        <div className="-mt:8 flex justify-center items-start">
+            <div className="ml-12 ml-5 w-3/4 rounded-lg flex">
                 <div className="w-1/2">
                     <LeftContent />
                 </div>
-                <div className="w-1/2 pt-4"> {/* Adjusted pt-4 */}
+                <div className="w-1/2">
                     <RightImage />
                 </div>
             </div>
@@ -39,4 +39,4 @@ const CenteredLayout = () => {
     );
 };
 
-export default CenteredLayout;
+export default CenteredVideo;

@@ -10,7 +10,7 @@ const SolutionsForFPOs = () => {
   return (
     <>
     <div>
-      <Background title={"For Fpos"}/>
+      <Background title={"For FPOs"}/>
         <ContentComponent/>
         <Techsuppourt/>
         <ConsultancyServicesPage/>

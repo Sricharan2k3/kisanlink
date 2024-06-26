@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Heading from "../components/heading";
+import Heading from "./Heading";
 import Background from "@/utils/background";
 const ConsultancyServicesPage = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -43,11 +43,11 @@ const ConsultancyServicesPage = () => {
   const leftImageUrl = "https://via.placeholder.com/150";
 
   return (
-    <div className="font-sans text-center p-5 pt-32 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-sans text-center p-5 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
       
 
      
-      <Heading value={"Strategic Consultancy Services"}></Heading>
+      <Heading  value={"Strategic Consultancy Services"}></Heading>
       <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
         {/* Image on the left */}
         <div className="flex-shrink-0  mb-5 pr-16 md:mb-0 md:mr-8">

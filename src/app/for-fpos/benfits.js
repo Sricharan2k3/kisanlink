@@ -1,10 +1,10 @@
 import React from "react";
-import Heading from "../components/heading";
+import Heading from "./Heading";
 import Background from "@/utils/background";
 // Card Component
 const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
-    <div className="flex flex-row w-9/12 items-center con rounded-lg p-4">
+    <div className="flex flex-row w-9/12 items-center con rounded-lg p-2 -mt:24">
       {isImageLeft && (
         <div className=" flex flex-row w-72 h-72 rounded-lg overflow-hidden mr-4">
           <img
