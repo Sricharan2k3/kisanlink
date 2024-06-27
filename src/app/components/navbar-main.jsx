@@ -88,7 +88,7 @@ function Navbar({ className }) {
         <div className="cursor-pointer text-lg text-black hover:opacity-[0.9] dark:text-white"><a href="/membership-cards">Smart card</a></div>
         {/* <MenuItem setActive={setActive} active={active} item="Smart Card"></MenuItem> */}
         {/* <MenuItem setActive={setActive} active={active} item="Experience center"></MenuItem> */}
-        <div className="cursor-pointer text-lg text-black hover:opacity-[0.9] dark:text-white"><a href="/experience-center">Experience Center</a></div>
+        <div className="cursor-pointer text-lg text-black hover:opacity-[0.9] dark:text-white"><a href="/experience-center1">Experience Center</a></div>
         
       </Menu>
     </div>

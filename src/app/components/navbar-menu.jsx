@@ -68,7 +68,7 @@ export const Menu = ({
 </div>
       {children}
       <div className=" -mt-2 flex justify-center md:block">
-                        <button type="button" class=" flex items-center justify-center w-48 text-white bg-green-500 rounded-3xl h-10">
+                       <a href="https://play.google.com/store/apps/details?id=com.kisanlink"><button  type="button" class=" flex items-center justify-center w-48 text-white bg-green-500 rounded-3xl h-10">
                             <div class="mr-3">
                                 <svg viewBox="30 336.7 120.9 129.2" width="20">
                                     <path fill="#FFD400"
@@ -90,7 +90,7 @@ export const Menu = ({
                                     Download App
                                 </div>
                             </div>
-                        </button>
+                        </button></a> 
                     </div>
     </nav>
   );
