@@ -1,15 +1,28 @@
-"use client"
-import React, { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Import FontAwesome icons
+"use client";
+import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Import FontAwesome icons
+import Heading from "../components/heading";
 
 const TabComponent = () => {
-  const [activeTab, setActiveTab] = useState('Farm Mechanisation');
+  const [activeTab, setActiveTab] = useState("Farm Mechanisation");
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   const tabs = [
-    { name: 'Farm Mechanisation', content: farmMechanisationContent, image: 'https://www.kisanlink.in/wp-content/uploads/value.svg' },
-    { name: 'Market Linkage', content: marketLinkageContent, image: 'https://www.kisanlink.in/wp-content/uploads/market.svg' },
-    { name: 'Marketing', content: marketingContent, image: 'https://www.kisanlink.in/wp-content/uploads/ing.svg' }
+    {
+      name: "Farm Mechanisation",
+      content: farmMechanisationContent,
+      image: "https://www.kisanlink.in/wp-content/uploads/value.svg",
+    },
+    {
+      name: "Market Linkage",
+      content: marketLinkageContent,
+      image: "https://www.kisanlink.in/wp-content/uploads/market.svg",
+    },
+    {
+      name: "Marketing",
+      content: marketingContent,
+      image: "https://www.kisanlink.in/wp-content/uploads/ing.svg",
+    },
   ];
 
   const toggleAccordion = (index) => {
@@ -18,14 +31,18 @@ const TabComponent = () => {
 
   return (
     <div className="flex flex-col items-center bg-gray-100 p-8 min-h-screen">
-      <h2 className="text-3xl font-bold mb-8">Value Proposition</h2>
+      <Heading value={"Value Proposition"}></Heading>
       <div className="w-full max-w-5xl bg-white rounded-lg shadow-lg">
         {/* Tabs */}
         <div className="flex justify-around bg-gray-200 rounded-t-lg">
           {tabs.map((tab) => (
             <button
               key={tab.name}
-              className={`py-4 px-6 w-1/3 text-center ${activeTab === tab.name ? 'bg-green-500 text-white font-bold' : 'text-black'}`}
+              className={`py-4 px-6 w-1/3 text-center ${
+                activeTab === tab.name
+                  ? "bg-green-500 text-white font-bold"
+                  : "text-black"
+              }`}
               onClick={() => {
                 setActiveTab(tab.name);
                 setActiveAccordion(null); // Reset accordions when switching tabs
@@ -48,10 +65,16 @@ const TabComponent = () => {
                     onClick={() => toggleAccordion(index)}
                   >
                     {item.title}
-                    {activeAccordion === index ? <FaChevronUp /> : <FaChevronDown />}
+                    {activeAccordion === index ? (
+                      <FaChevronUp />
+                    ) : (
+                      <FaChevronDown />
+                    )}
                   </button>
                   <div
-                    className={`overflow-hidden transition-max-height duration-500 ease-in-out ${activeAccordion === index ? 'max-h-40' : 'max-h-0'}`}
+                    className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+                      activeAccordion === index ? "max-h-40" : "max-h-0"
+                    }`}
                   >
                     <p className="p-6 text-lg">{item.content}</p>
                   </div>
@@ -72,26 +95,78 @@ const TabComponent = () => {
 };
 
 const farmMechanisationContent = [
-  { title: 'Supply of Agricultural Machinery', content: 'Access essential agricultural machinery and equipment through our comprehensive supply network, enhancing productivity.' },
-  { title: 'High-Quality Products', content: 'Access top-tier agricultural equipment ensuring reliability and efficiency.' },
-  { title: 'Reasonable Pricing', content: 'Competitive rates ensure affordability without compromising quality.' },
-  { title: 'Logistics Management', content: 'Efficient management of supply chains for seamless operations.' },
-  { title: 'Maintenance and Repair Services', content: 'Reliable support for equipment upkeep and repairs.' },
-  { title: 'Training Sessions', content: 'Conduct training workshops empowering farmers with equipment usage and maintenance skills.' }
+  {
+    title: "Supply of Agricultural Machinery",
+    content:
+      "Access essential agricultural machinery and equipment through our comprehensive supply network, enhancing productivity.",
+  },
+  {
+    title: "High-Quality Products",
+    content:
+      "Access top-tier agricultural equipment ensuring reliability and efficiency.",
+  },
+  {
+    title: "Reasonable Pricing",
+    content:
+      "Competitive rates ensure affordability without compromising quality.",
+  },
+  {
+    title: "Logistics Management",
+    content: "Efficient management of supply chains for seamless operations.",
+  },
+  {
+    title: "Maintenance and Repair Services",
+    content: "Reliable support for equipment upkeep and repairs.",
+  },
+  {
+    title: "Training Sessions",
+    content:
+      "Conduct training workshops empowering farmers with equipment usage and maintenance skills.",
+  },
 ];
 
 const marketLinkageContent = [
-  { title: 'Market Connections', content: 'Facilitate connections to markets for FPO outputs, be it through direct buyer linkages or establishing food processing capabilities within the FPO itself.' },
-  { title: 'Efficient Food Processing Units', content: 'Develop SOPs for streamlined unit management.' },
-  { title: 'Training Programs', content: 'Train staff on operational and maintenance practices for efficiency.' },
-  { title: 'Introducing New Crop', content: 'Implement buy-back models and introduce new crops for diversification and profitability.' },
-  { title: 'Competitive Market Prices', content: 'Ensure competitive pricing for processed products in the market.' },
-  { title: 'Buyer Connections', content: 'Establish connections with bulk buyers, broadening market reach for FPO products.' }
+  {
+    title: "Market Connections",
+    content:
+      "Facilitate connections to markets for FPO outputs, be it through direct buyer linkages or establishing food processing capabilities within the FPO itself.",
+  },
+  {
+    title: "Efficient Food Processing Units",
+    content: "Develop SOPs for streamlined unit management.",
+  },
+  {
+    title: "Training Programs",
+    content:
+      "Train staff on operational and maintenance practices for efficiency.",
+  },
+  {
+    title: "Introducing New Crop",
+    content:
+      "Implement buy-back models and introduce new crops for diversification and profitability.",
+  },
+  {
+    title: "Competitive Market Prices",
+    content: "Ensure competitive pricing for processed products in the market.",
+  },
+  {
+    title: "Buyer Connections",
+    content:
+      "Establish connections with bulk buyers, broadening market reach for FPO products.",
+  },
 ];
 
 const marketingContent = [
-  { title: 'Promotional Material Design', content: 'Create eye-catching promotional materials to amplify brand visibility.' },
-  { title: 'Market Information Dissemination', content: 'Utilize modern social media platforms and communication channels to share updated market information with farmers.' }
+  {
+    title: "Promotional Material Design",
+    content:
+      "Create eye-catching promotional materials to amplify brand visibility.",
+  },
+  {
+    title: "Market Information Dissemination",
+    content:
+      "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
+  },
 ];
 
 export default TabComponent;
