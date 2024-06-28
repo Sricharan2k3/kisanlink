@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Apply to the container you want to hide the scrollbar */
+.sticky-scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.sticky-scroll-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

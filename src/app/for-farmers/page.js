@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import Heading from "../components/heading";
-import Benfits from "./benfits"
-import Services from "./services"
-
+import Benfits from "./benfits";
+import Services from "./services";
+import Component from "../products/page";
 import Background from "../../utils/background";
+import AgricultureComponent from "../benefits/page";
+import StickyScrollRevealDemo from "../hello/page";
 
 const Farmersol = () => {
   return (
@@ -35,11 +37,27 @@ const Farmersol = () => {
           and machinery; we, by collaborating with innovative and technically
           proven companies, enable farmers to access these leading to improved
           crop management practices. All these products can be ordered through
-          our mobile app – download now Kisanlink
+          our mobile app –
+          <a
+            className=" text-blue-400"
+            href="https://play.google.com/store/apps/details?id=com.kisanlink"
+          >
+            {" "}
+            download now Kisanlink
+          </a>
         </p>
       </div>
-      <Benfits/>
-      <Services/>
+      <Component></Component>
+      <div className="-mt-36">
+        <Heading value={"Benefits"}></Heading>
+      </div>
+      <AgricultureComponent></AgricultureComponent>
+      {/* <Benfits /> */}
+      <div className="-mt-10 ">
+        <Heading value={"Services"}></Heading>
+      </div>
+      {/* <Services /> */}
+      <StickyScrollRevealDemo></StickyScrollRevealDemo>
     </>
   );
 };
