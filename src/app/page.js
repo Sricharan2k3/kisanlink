@@ -9,9 +9,9 @@ import Screenshot from "./components/home/screenshot";
 import FourCards from "./components/home/fourcards";
 import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
-import FarmMechanization from "./components/home/farmmechanization";
-import "../styles/global.css";
 
+import "../styles/global.css";
+import FarmMechanizationSection from "./components/home/farmmechanization";
 const slides = [
   "https://www.kisanlink.in/wp-content/uploads/0707-new-web-banner.jpg",
   "https://www.kisanlink.in/wp-content/uploads/FPObanner.jpg",
@@ -26,7 +26,8 @@ export default function Home() {
       </Carousel>
 
       <Empower></Empower>
-      <FarmMechanization />
+      {/* <FarmMechanization /> */}
+      <FarmMechanizationSection/>
       <StatsCarousel></StatsCarousel>
       <Screenshot></Screenshot>
 
