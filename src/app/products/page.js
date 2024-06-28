@@ -15,46 +15,33 @@ export default function Component() {
   const products = [
     {
       id: 1,
-      image: "/placeholder.svg",
+      image: "https://www.kisanlink.in/wp-content/uploads/brush-cutter.jpg",
       name: "Stylish Sunglasses",
       description: "UV protection",
       price: 29.99,
     },
     {
       id: 2,
-      image: "/placeholder.svg",
+      image: "https://www.kisanlink.in/wp-content/uploads/ssm-1.jpg",
       name: "Leather Crossbody Bag",
       description: "Stylish and practical",
       price: 49.99,
     },
     {
       id: 3,
-      image: "/placeholder.svg",
+      image: "https://www.kisanlink.in/wp-content/uploads/tarpaulin-1.jpg",
       name: "Wireless Headphones",
       description: "High-quality sound",
       price: 79.99,
     },
     {
       id: 4,
-      image: "/placeholder.svg",
+      image: "https://www.kisanlink.in/wp-content/uploads/trap-1.jpg",
       name: "Classic Wristwatch",
       description: "Timeless design",
       price: 59.99,
     },
-    {
-      id: 5,
-      image: "/placeholder.svg",
-      name: "Cozy Sweater",
-      description: "Soft and warm",
-      price: 39.99,
-    },
-    {
-      id: 6,
-      image: "/placeholder.svg",
-      name: "Sleek Laptop Sleeve",
-      description: "Protective and stylish",
-      price: 24.99,
-    },
+
   ]
   const [searchTerm, setSearchTerm] = useState("")
   const [sortBy, setSortBy] = useState("featured")
