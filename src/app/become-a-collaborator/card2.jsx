@@ -30,7 +30,7 @@ const Card = ({ image, heading, points }) => (
     <h3 className="text-xl font-bold mt-4 mb-2">{heading}</h3>
     <ul className="list-disc list-inside">
       {points.map((point, index) => (
-       <p>{point}</p>
+       <p key={index}>{point}</p>
       ))}
     </ul>
   </div>
