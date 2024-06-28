@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const transition = {
   type: "spring",
@@ -21,12 +22,12 @@ export const MenuItem = ({
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p
+      <motion.div
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-lg text-black hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer flex flex-row text-lg text-black hover:opacity-[0.9] dark:text-white"
       >
-        {item}
-      </motion.p>
+       <div className="p-1"><RiArrowDropDownLine /></div> {item}
+      </motion.div>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
