@@ -63,7 +63,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative h-24 pt-10 boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-12 px-8 py-6 "
+      className="relative h-24 pt-10 boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-10 px-8 py-6 "
     ><div>
     <img className="h-24 w-24 -mt-8 " src="https://www.kisanlink.in/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg"></img>
 </div>
