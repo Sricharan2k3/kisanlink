@@ -96,9 +96,7 @@ export const Menu = ({
             <button type="button" class="flex items-center justify-center w-36 text-white bg-brown-700 rounded-3xl h-8">
                 
                 <div>
-                    <div class="-mt-1 font-poppins text-md font-semibold">
-                        DigiCrop
-                    </div>
+                    <img src="https://www.kisanlink.in/wp-content/uploads/digicrop-logo.png"></img>
                 </div>
             </button>
         </a>
