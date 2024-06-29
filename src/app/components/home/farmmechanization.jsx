@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import 'tailwindcss/tailwind.css';
+
 
 const FarmMechanizationSection = () => {
   const backgroundImage = 'drone.jpg'; // Replace with your image URL
