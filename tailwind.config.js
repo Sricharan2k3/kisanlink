@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      overflow: {
+        hidden: "hidden",
+        // Add any other custom overflow values here
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

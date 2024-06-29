@@ -1,98 +1,84 @@
-import React, { useState, useEffect } from 'react';
-import Heading from './Heading';
-
-const defaultImg = "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg"; // Default image URL
+"use client";
+import React, { useState } from "react";
+import Heading from "../components/heading";
+import Background from "@/utils/background";
 
 const Techsuppourt = () => {
   const [selectedCard, setSelectedCard] = useState(null);
-  const [imageSrc, setImageSrc] = useState(defaultImg); // Initialize with default image
-
-  useEffect(() => {
-    preloadImages();
-  }, []);
-
-  const preloadImages = () => {
-    const imageUrls = Object.values(cardImages);
-    imageUrls.forEach(url => {
-      const img = new Image();
-      img.src = url;
-    });
-  };
 
   const handleCardClick = (cardId) => {
     if (selectedCard === cardId) {
-      setSelectedCard(null);
-      setImageSrc(defaultImg); // Reset to default image
+      setSelectedCard(null); // Deselect if already selected
     } else {
-      setSelectedCard(cardId);
-      setImageSrc(cardImages[cardId]);
+      setSelectedCard(cardId); // Select the clicked card
     }
   };
 
-  const cardImages = {
-    1: 'https://www.kisanlink.in/wp-content/uploads/M.png',
-    2: 'https://www.kisanlink.in/wp-content/uploads/S.png',
-    3: 'https://www.kisanlink.in/wp-content/uploads/F.png',
-  };
+  const cardsData = [
+    {
+      id: 1,
+      title: "Scheme Applications",
+      description:
+        "We offer robust technical support services to ensure smooth operations and effective utilization of our platform’s features. Our dedicated team is committed to assisting users with any technical queries or issues they encounter.",
+      imageUrl: "https://www.kisanlink.in/wp-content/uploads/M.png"
+    },
+    {
+      id: 2,
+      title: "Financial Feasibility Analysis",
+      description:
+        "We provide a state-of-the-art tech platform for managing a comprehensive database of farmers affiliated with the Farmers Producer Organization (FPO). This facilitates improved communication and streamlined organizational processes.",
+      imageUrl: "https://www.kisanlink.in/wp-content/uploads/S.png"
+    },
+    {
+      id: 3,
+      title: "Financial Feasibility Analysis",
+      description:
+        "We issue and manage farmers’ physical membership cards through our technologically advanced platform. Each card is embedded with a unique QR code, granting access to substantial information. This QR code enables seamless tracking of the farmer’s complete profile, including transaction history and credit records.",
+      imageUrl: "https://www.kisanlink.in/wp-content/uploads/F.png"
+    }
+  ];
+
+  const defaultImageUrl = "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg";
+  const selectedImageUrl = selectedCard ? cardsData.find(card => card.id === selectedCard).imageUrl : defaultImageUrl;
 
   return (
-    <div className=" font-serif text-center p-4 lg:mx-32">
-      <Heading value={"Tech Support"}></Heading>
-      <div className="flex flex-col lg:flex-row items-start">
-        <div className="flex flex-col mr-8 max-w-md">
-          <div
-            className={`cursor-pointer mb-2 p-4 rounded-lg ${
-              selectedCard === 1 ? 'bg-white-100' : 'bg-gray-100'
-            }`}
-            onClick={() => handleCardClick(1)}
-          >
-            <div>Maintaining Farmers Database</div>
-            {selectedCard === 1 && (
-              <div className="mt-2 p-4">
-                <p className="text-sm">
-                  We offer a robust tech platform to maintain a comprehensive database of farmers associated with the FPO. This aids in better communication and streamlined operations.
-                </p>
+    <div className="font-sans text-center p-5 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+      <Heading value={"Tech Support"} />
+      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center pl-20"> {/* Increased left padding */}
+        {/* Accordion on the left */}
+        <div className="flex flex-col space-y-4 w-1/2">
+          {cardsData.map((card) => (
+            <div
+              key={card.id}
+              className={`cursor-pointer p-4 rounded-lg border-2 border-transparent w-full hover:border-green-600 transition-all ${
+                selectedCard === card.id ? "border-green-600" : ""
+              }`}
+              onClick={() => handleCardClick(card.id)}
+            >
+              <div className="flex text-brown-700 justify-between items-center font-bold text-lg">
+                {card.title}
+                <span
+                  className={`transform transition-transform ${
+                    selectedCard === card.id ? "rotate-180" : ""
+                  }`}
+                >
+                  ▼
+                </span>
               </div>
-            )}
-          </div>
-
-          <div
-            className={`cursor-pointer mb-2 p-4 rounded-lg ${
-              selectedCard === 2 ? 'bg-white-100' : 'bg-gray-100'
-            }`}
-            onClick={() => handleCardClick(2)}
-          >
-            <div>Smart Membership Cards</div>
-            {selectedCard === 2 && (
-              <div className="mt-2 p-4">
-                <p className="text-sm">
-                  We manage the issuance and tracking of farmers’ information through physical cards via our tech-enabled platform. Each card is equipped with a unique QR code, serving as a gateway to a wealth of information. This QR code enables comprehensive tracing of the farmer's complete profile, including transactions and credit history.
-                </p>
-              </div>
-            )}
-          </div>
-
-          <div
-            className={`cursor-pointer mb-2 p-4 rounded-lg ${
-              selectedCard === 3 ? 'bg-white-100' : 'bg-gray-100'
-            }`}
-            onClick={() => handleCardClick(3)}
-          >
-            <div>Financial Reportings</div>
-            {selectedCard === 3 && (
-              <div className="mt-2 p-4">
-                <p className="text-sm">
-                  We provide financial reporting services to FPOs to help them track their financial performance and make informed decisions. Our tech solutions ensure accurate and timely reporting, enhancing transparency and accountability.
-                </p>
-              </div>
-            )}
-          </div>
+              {selectedCard === card.id && (
+                <div className="mt-3 p-4 rounded-md text-left text-brown-700">
+                  <p className="text-sm leading-relaxed">{card.description}</p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-        <div className="flex-1 min-w-0 text-center ml-auto lg:ml-20"> {/* Adjusted ml-auto to lg:ml-20 */}
+        {/* Image on the right */}
+        <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:ml-8">
           <img
-            src={imageSrc}
-            alt={`Image ${selectedCard}`}
-            className="w-80 h-auto rounded-md shadow-md ml-auto" // Added ml-auto to move image to the right
+            src={selectedImageUrl}
+            alt="Consultancy Services"
+            className="w-[300px] h-[280px] rounded-lg shadow-lg object-fit ml-36"
           />
         </div>
       </div>

@@ -6,26 +6,26 @@ import { Button } from "@/components/ui/button";
 const sections = [
   {
     title: "Increased Choice among Product Manufacturers",
-    image: "/images/farm-management.jpg", // Replace with your agriculture image
+    image: "https://www.kisanlink.in/wp-content/uploads/wide-var.jpg", // Replace with your agriculture image
     points: ["Efficient crop rotation plans."],
   },
   {
     title: "Access to the Latest Promotions and Offers",
-    image: "/images/sustainable-agriculture.jpg", // Replace with your agriculture image
+    image: "https://www.kisanlink.in/wp-content/uploads/promo-and-offer.jpg", // Replace with your agriculture image
     points: [
       "Stay updated with the latest promotions and offers for your agricultural needs.",
     ],
   },
   {
     title: "Reasonable Prices",
-    image: "/images/livestock-care.jpg", // Replace with your agriculture image
+    image: "https://www.kisanlink.in/wp-content/uploads/price.jpg", // Replace with your agriculture image
     points: [
       "Get access to quality products at reasonable and competitive prices.",
     ],
   },
   {
     title: "Doorstep Delivery",
-    image: "/images/livestock-care.jpg", // Replace with your agriculture image
+    image: "https://www.kisanlink.in/wp-content/uploads/doorstep.jpg", // Replace with your agriculture image
     points: [
       "Convenience at your doorstep - have your orders delivered directly to you.",
     ],

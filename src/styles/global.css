@@ -1,0 +1,11 @@
+/* Prevent horizontal overflow */
+body, html {
+    overflow-x: hidden;
+  }
+  
+  /* Box-sizing for all elements */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }

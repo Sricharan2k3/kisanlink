@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Carousel from "./components/home/carousel";
-
+import "../styles/global.css";
 import Empower from "./components/home/empower";
 import StatsCarousel from "./components/home/stats";
 import Screenshot from "./components/home/screenshot";

@@ -36,8 +36,8 @@ const ast = () => {
       <div className="flex flex-row items-center justify-center content-center text-center">
         <div className="w-1/3">
           <img
-            className="justify-center items-center pl-52 contents-center h-16 -mb-16"
-            src="https://png.pngtree.com/png-vector/20220613/ourmid/pngtree-isolated-gray-star-icon-png-image_5064306.png"
+            className="justify-center items-center pl-28 contents-center h-36 -mb-16"
+            src="https://www.kisanlink.in/wp-content/uploads/skill_dev-removebg-preview.png"
           ></img>
           <Heading value={"Industry-Relevant Skills"}></Heading>
           <p>
@@ -47,8 +47,8 @@ const ast = () => {
         </div>
         <div className="w-1/3">
           <img
-            className=" pl-52 h-16 -mb-16"
-            src="https://png.pngtree.com/png-vector/20220613/ourmid/pngtree-isolated-gray-star-icon-png-image_5064306.png"
+            className=" pl-24 h-36 -mb-16"
+            src="https://www.kisanlink.in/wp-content/uploads/career_dev-removebg-preview.png"
           ></img>
           <Heading value={"Career Development"}></Heading>
           <p>
@@ -257,115 +257,133 @@ const ast = () => {
           Kisanlink Youtube Channel{" "}
         </a>
       </div>
-      <div className="bg-white">
-        <div className="mt-10 mx-40 pt-4">
-          <div className="-mt-12">
-            <Heading value={"Advantages Of Certification"}></Heading>
+      <div className="-mt-12">
+        <Heading value={"Advantages Of Certification"}></Heading>
+      </div>
+      <div className="bg-white flex">
+        {/* Left Section */}
+
+        <div className="flex-1 mt-10 mx-8">
+          <div className="pt-4">
+            <div className="flex flex-col gap-y-16">
+              <div className="gap-6">
+                {/* Box 1 */}
+                <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="white"
+                      className="w-16 h-16"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-brown-700 text-2xl font-bold">
+                      Become Eligible to sell course-specific products/services
+                      to farmers.
+                    </p>
+                  </div>
+                </div>
+                <br></br>
+                {/* Box 2 */}
+                <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="white"
+                      className="w-16 h-16"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-brown-700 text-2xl font-bold">
+                      Learn technical information about agri products/services
+                      offered by companies.
+                    </p>
+                  </div>
+                </div>
+                <br></br>
+                {/* Box 3 */}
+                <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="white"
+                      className="w-16 h-16"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-brown-700 text-2xl font-bold">
+                      Build career and get job opportunities from collaborative
+                      partners.
+                    </p>
+                  </div>
+                </div>
+                <br></br>
+                {/* Box 4 */}
+                <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="white"
+                      className="w-16 h-16"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-brown-700 text-2xl font-bold">
+                      Earn higher income on referrals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Box 1 */}
-            <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-16 h-16"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-brown-700 text-2xl text-bold">
-                  Become Eligible to sell course-specific products/services to
-                  farmers.
-                </p>
-              </div>
-            </div>
+        </div>
 
-            {/* Box 2 */}
-            <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-16 h-16"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-brown-700 text-2xl text-bold">
-                  Learn technical information about agri products/services
-                  offered by companies.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 3 */}
-            <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-16 h-16"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-brown-700 text-2xl text-bold ">
-                  Build career and get job opportunities from collaborative
-                  partners.
-                </p>
-              </div>
-            </div>
-
-            {/* Box 4 */}
-            <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="white"
-                  className="w-16 h-16"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-brown-700 text-2xl text-bold">
-                  Earn higher income on referrals.
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Right Section (Image) */}
+        <div className="flex-1">
+          <br></br>
+          <br></br>
+          <br></br>
+          <img
+            src="https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png"
+            className="w-full h-110"
+            alt="Certification Image"
+          />
         </div>
       </div>
 

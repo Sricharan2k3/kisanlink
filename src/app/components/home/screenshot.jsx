@@ -12,7 +12,7 @@ const imagesLeft = [
 
 const imagesRight = [
   {
-    src: "https://www.kisanlink.in/wp-content/uploads/Academy-App-Screenshots-resized.png",
+    src: "https://www.kisanlink.in/wp-content/uploads/kisanlink-academy-screenshots-collage.png",
     alt: "Academy App Image",
   },
 ];
