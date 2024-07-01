@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from "react";
 import { StickyScroll } from "../components/sticky-scroll-reveal";
 import { LuDot } from "react-icons/lu";
