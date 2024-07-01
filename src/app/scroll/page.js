@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+
 // Icons components
 function ContactIcon(props) {
   return (
@@ -143,7 +144,7 @@ export default function Component() {
       ],
       icon: HomeIcon,
       imgAlt: "Home Image",
-      imgSrc: "https://drive.google.com/file/d/1J3Q8yiv_8WfZY4iS4MWOKu67F0FbzRvu/view?usp=drive_link",
+      imgSrc: "https://www.kisanlink.in/wp-content/uploads/store-web.png",
     },
 
     {
@@ -192,7 +193,7 @@ export default function Component() {
       ],
       icon: PackageIcon,
       imgAlt: "Products Image",
-      imgSrc: "/placeholder.svg",
+      imgSrc: "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
     },
     {
       id: "services",
@@ -231,7 +232,7 @@ export default function Component() {
       ],
       icon: ServerIcon,
       imgAlt: "Services Image",
-      imgSrc: "/placeholder.svg",
+      imgSrc: "",
     },
 
     {
