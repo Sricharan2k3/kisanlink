@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ast = () => {
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Introductory");
 
 
   const handleCategoryClick = (category) => {
