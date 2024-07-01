@@ -1,11 +1,10 @@
-"use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StickyScroll } from "../components/sticky-scroll-reveal";
-import Image from "next/image";
 import { LuDot } from "react-icons/lu";
 
 const content = [
   {
+    id: "soil-testing-service",
     title: "Soil Testing Service",
     description: (
       <>
@@ -20,19 +19,16 @@ const content = [
             Soil sample collected by Kisansathi
           </li>
           <br />
-
-          <li className=" flex flex-row">
+          <li className="flex flex-row">
             <LuDot />
             Faster and digitized process
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Reliable soil testing report
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Reliable recommendations report
@@ -40,19 +36,10 @@ const content = [
         </ol>
       </>
     ),
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/soil-test.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/soil-test.png",
   },
   {
+    id: "farm-mechanization-service",
     title: "Farm Mechanization Service",
     description: (
       <>
@@ -67,13 +54,11 @@ const content = [
             Cost-effective compared to traditional methods
           </li>
           <br />
-
-          <li className=" flex flex-row">
+          <li className="flex flex-row">
             <LuDot />
             Time-saving and less labor-intensive
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Less harmful to health than traditional methods
@@ -81,19 +66,10 @@ const content = [
         </ol>
       </>
     ),
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/farm-mech.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/farm-mech.png",
   },
   {
+    id: "output-purchase-services",
     title: "Output Purchase Services",
     description: (
       <>
@@ -108,13 +84,11 @@ const content = [
             Realize better price for the produce
           </li>
           <br />
-
-          <li className=" flex flex-row">
+          <li className="flex flex-row">
             <LuDot />
             Encourages competition among buyers
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Easy process and clear payment terms
@@ -122,22 +96,10 @@ const content = [
         </ol>
       </>
     ),
-    content: (
-      //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-      //     Version control
-      //   </div>
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/output-purchase.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/output-purchase.png",
   },
   {
+    id: "government-subsidy-schemes",
     title: "Facilitation of Government Subsidy/Schemes",
     description: (
       <>
@@ -151,13 +113,11 @@ const content = [
             Information about latest schemes/subsidies
           </li>
           <br />
-
-          <li className=" flex flex-row">
+          <li className="flex flex-row">
             <LuDot />
             Hassle-free application process
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Faster approvals
@@ -165,22 +125,10 @@ const content = [
         </ol>
       </>
     ),
-    content: (
-      //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-      //     Running out of content
-      //   </div>
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/subscidies.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/subscidies.png",
   },
   {
+    id: "advisory-services",
     title: "Advisory Services",
     description: (
       <>
@@ -194,13 +142,11 @@ const content = [
             Quick resolution turnaround time
           </li>
           <br />
-
-          <li className=" flex flex-row">
+          <li className="flex flex-row">
             <LuDot />
             Encourages competition among buyers
           </li>
           <br />
-
           <li className="flex flex-row">
             <LuDot />
             Reliable solutions offered{" "}
@@ -208,26 +154,92 @@ const content = [
         </ol>
       </>
     ),
-    content: (
-      //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-      //     Running out of content
-      //   </div>
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/advisory.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/advisory.png",
   },
 ];
+
 const StickyScrollRevealDemo = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150; // Adjust scroll position as needed
+      const sections = document.querySelectorAll("section[data-id]");
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (scrollPosition >= top && scrollPosition < top + height) {
+          setActiveSection(section.getAttribute("data-id"));
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 100, // Adjust scroll offset as needed
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="p-10">
-      <StickyScroll content={content} />
+      <div className="flex">
+        <div className="w-1/4">
+          <div className="sticky top-20">
+          
+            <ul className="space-y-2">
+              {content.map((item) => (
+                <li key={item.id} className="cursor-pointer">
+                  <a
+                    className={
+                      activeSection === item.id
+                        ? "text-blue-600 font-bold text-lg"
+                        : "text-gray-600 hover:text-blue-600 text-lg"
+                    }
+                    onClick={() => scrollToSection(item.id)}
+                  >
+
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="w-3/4">
+          {content.map((item) => (
+            <section
+              key={item.id}
+              id={item.id}
+              data-id={item.id}
+              className="mb-10 flex"
+            >
+              <div className="w-2/3">
+                <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                  {item.title}
+                </h3>
+                <div className="text-gray-700 mb-4">{item.description}</div>
+              </div>
+              <div className="w-1/3">
+                <img
+                  src={item.imageSrc}
+                  alt={item.title}
+                  className="h-80 w-80 object-cover"
+                />
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

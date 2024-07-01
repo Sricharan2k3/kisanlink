@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef } from "react";
 
 const Services = () => {
   const services = [
@@ -54,40 +55,69 @@ const Services = () => {
     },
   ];
 
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const refs = services.reduce((acc, service) => {
+    acc[service.title] = useRef(null);
+    return acc;
+  }, {});
+
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-10">
       <div className="w-full max-w-4xl px-5">
         <div className="flex flex-wrap -mx-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className={`w-full sm:w-1/2 px-3 mb-6 ${
-                index === services.length - 1 ? "sm:mx-auto" : ""
-              }`}
-            >
-              <div
-                style={{
-                  background: ` linear-gradient(to bottom, #e0f3dc, #c2e6d0)`,
-                  boxShadow: ` 0 4px 6px rgba(0, 0, 0, 0.1)`,
-                }}
-                className="  rounded-lg shadow-md p-6 h-full flex flex-col justify-between transition-transform transform hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-blue-600">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-700 mb-4">{service.description}</p>
-                </div>
-                <ul className="text-gray-600 list-disc pl-5">
-                  {service.points.map((point, i) => (
-                    <li key={i} className="mb-2">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="hidden sm:block w-1/6">
+            <div className="sticky top-20">
+              <h2 className="font-semibold text-lg mb-4">Services</h2>
+              <ul className="space-y-2">
+                {services.map((service, index) => (
+                  <li key={index} className="cursor-pointer">
+                    <a
+                      className="text-blue-600 hover:text-blue-800"
+                      onClick={() => scrollToRef(refs[service.title])}
+                    >
+                      {service.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
+          </div>
+          <div className="w-full sm:w-5/6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                ref={refs[service.title]}
+                className={`w-full px-3 mb-6 ${
+                  index === services.length - 1 ? "sm:mx-auto" : ""
+                }`}
+              >
+                <div
+                  style={{
+                    background: `linear-gradient(to bottom, #e0f3dc, #c2e6d0)`,
+                    boxShadow: `0 4px 6px rgba(0, 0, 0, 0.1)`,
+                  }}
+                  className="rounded-lg shadow-md p-6 h-full flex flex-col justify-between transition-transform transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-700 mb-4">{service.description}</p>
+                  </div>
+                  <ul className="text-gray-600 list-disc pl-5">
+                    {service.points.map((point, i) => (
+                      <li key={i} className="mb-2">
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
