@@ -102,36 +102,57 @@ const ast = () => {
       <div className="bg-white ">
       <div className="w-full top-20 right-4 z-10">
   <div className="bg-white bg-opacity-70 backdrop-blur-lg rounded-md  p-4 flex items-center justify-center">
-    <p className="text-gray-600 text-sm mb-1 mr-2">Filter by category:</p>
+    <p className="text-gray-600 text-sm mb-1 mt-2 mr-2">Filter by category:</p>
     <button
-      onClick={() => handleCategoryClick("All")}
+      onClick={() => handleCategoryClick("Introductory")}
       className={`mr-2 px-4 py-2 rounded-md ${
         selectedCategory === "All"
           ? "bg-blue-500 text-white"
           : "bg-gray-200 text-gray-800"
       }`}
     >
-      All
+      Introductory
     </button>
     <button
-      onClick={() => handleCategoryClick("English")}
+      onClick={() => handleCategoryClick("Drone")}
       className={`mr-2 px-4 py-2 rounded-md ${
         selectedCategory === "English"
           ? "bg-blue-500 text-white"
           : "bg-gray-200 text-gray-800"
       }`}
     >
-      English
+      Drone
     </button>
+   
     <button
-      onClick={() => handleCategoryClick("Telugu")}
+      onClick={() => handleCategoryClick("Advisory")}
       className={`mr-2 px-4 py-2 rounded-md ${
         selectedCategory === "Telugu"
           ? "bg-blue-500 text-white"
           : "bg-gray-200 text-gray-800"
       }`}
     >
-      Telugu
+      Advisory
+    </button>
+    <button
+      onClick={() => handleCategoryClick("Mustard")}
+      className={`mr-2 px-4 py-2 rounded-md ${
+        selectedCategory === "Telugu"
+          ? "bg-blue-500 text-white"
+          : "bg-gray-200 text-gray-800"
+      }`}
+    >
+      Mustard
+    </button>
+    <button
+      onClick={() => handleCategoryClick("Safflower")}
+      className={`mr-2 px-4 py-2 rounded-md ${
+        selectedCategory === "Telugu"
+          ? "bg-blue-500 text-white"
+          : "bg-gray-200 text-gray-800"
+      }`}
+    >
+      Safflower
     </button>
     {/* Add more buttons for other categories */}
   </div>
@@ -330,85 +351,85 @@ export default ast;
 
 const YouTubeLinks = [
   {
-    category: "English",
+    category: "Introductory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPsZfEIuwprDf937Fe0f7T3S",
     alt: "Agriculture Image 1",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/introductory-english-thumbnail.jpg"
   },
   {
-    category: "Telugu",
+    category: "Introductory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture image 2",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/introductory-telugu-thumbnail.jpg"
   },
   {
-    category: "Hindi",
+    category: "Introductory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuJQuSTkqEd1qOdho6x_MPH",
     alt: "Agriculture Image 3",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/introductory-hindi-thumbnail.jpg"
   },
   {
-    category: "English",
+    category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuZ1bcWlPwrx37erWB77Mn0",
     alt: "Agriculture Image 4",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/eng.jpg"
   },
   {
-    category: "Telugu",
+    category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 5",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/tel.jpg"
   },
   {
-    category: "Hindi",
+    category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 6",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/hin.jpg"
   },
   {
-    category: "English",
+    category: "Advisory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPs9NBIGTN9mABTBpjsGFBJm",
     alt: "Agriculture Image 7",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/advisory-english-1.jpg"
   },
   {
-    category: "Telugu",
+    category: "Advisory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 8",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/introductory-telugu-thumbnail.jpg"
   },
   {
-    category: "Hindi",
+    category: "Advisory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 9",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/introductory-hindi-thumbnail.jpg"
   },
   {
-    category: "English",
+    category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 10",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/mustard-english-thumbnail.jpg"
   },
   {
-    category: "Telugu",
+    category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 11",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/mustard-telugu-1-thumbnail.jpg"
   },
   {
-    category: "Telugu",
+    category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 12",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/mustard-telugu-thumbnail.jpg"
   },
   {
-    category: "English",
+    category: "Safflower",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 13",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/safflower-course-english.jpg"
   },
   {
-    category: "Hindi",
+    category: "Safflower",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
     thumbnail: "https://www.kisanlink.in/wp-content/uploads/safflower-course-hin.jpg"
