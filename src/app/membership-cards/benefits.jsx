@@ -20,7 +20,7 @@ const MembershipCardBenefits = () => {
         "Real-time order tracking",
         "Minimizes errors and enhances coordination",
       ],
-      image: "https://via.placeholder.com/150", // Default placeholder image
+      image: "https://www.kisanlink.in/wp-content/uploads/mem-card-1.png", // Default placeholder image
     },
     {
       title: "Output Price Discovery and Market Intelligence",
@@ -30,7 +30,7 @@ const MembershipCardBenefits = () => {
         "Analyzes market trends for better planning",
         "Benchmarks performance over time",
       ],
-      image: "https://via.placeholder.com/150", // Default placeholder image
+      image: "https://www.kisanlink.in/wp-content/uploads/mem-card-2.png", // Default placeholder image
     },
     {
       title: "Dynamic Crop Data: Geo-location, Crop Stages, and Advisory",
@@ -42,7 +42,7 @@ const MembershipCardBenefits = () => {
         "Offers expert, tailored advice",
         "Manages risks like weather and pests",
       ],
-      image: "https://via.placeholder.com/150", // Default placeholder image
+      image: "https://www.kisanlink.in/wp-content/uploads/mem-card-3.png", // Default placeholder image
     },
     {
       title: "Discount and Credits",
@@ -52,7 +52,7 @@ const MembershipCardBenefits = () => {
         "Provides benefits through various partnerships",
         "Enhances support and resources for farmers",
       ],
-      image: "https://via.placeholder.com/150", // Default placeholder image
+      image: "https://www.kisanlink.in/wp-content/uploads/mem-card-4.png", // Default placeholder image
     },
   ];
 
