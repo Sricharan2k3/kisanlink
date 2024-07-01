@@ -18,33 +18,36 @@ const ConsultancyServicesPage = () => {
       id: 1,
       title: "Scheme Applications",
       description:
-        "We offer robust technical support services to ensure smooth operations and effective utilization of our platform’s features. Our dedicated team is committed to assisting users with any technical queries or issues they encounter.",
+        "We guide and support FPOs in identifying and applying for relevant schemes crucial for their growth.",
     },
     {
       id: 2,
-      title: "Financial Feasibility Analysis",
+      title: "Scheme Application Support",
       description:
-        "We provide a state-of-the-art tech platform for managing a comprehensive database of farmers affiliated with the Farmers Producer Organization (FPO). This facilitates improved communication and streamlined organizational processes.",
+        " Create Detailed Project Reports (DPRs) and assist in scheme applications, streamlining the process for FPOs.",
     },
     {
       id: 3,
       title: "Financial Feasibility Analysis",
       description:
-        "We issue and manage farmers’ physical membership cards through our technologically advanced platform. Each card is embedded with a unique QR code, granting access to substantial information. This QR code enables seamless tracking of the farmer’s complete profile, including transaction history and credit records.",
+        "Evaluate the financial feasibility of new projects, aiding in informed decision-making.",
     },
     {
       id: 4,
       title: "Financial Assistance",
       description:
-        "Utilizing cutting-edge technology solutions, we generate and manage detailed financial reports. This ensures transparent insights into financial matters, empowering strategic decision-making within the Farmers Producer Organization (FPO)",
+        "Aid in applying for loans, credits, and financial support necessary for FPO development.",
     },
   ];
 
   const leftImageUrl = "https://via.placeholder.com/150";
 
   return (
-    <div className="font-sans text-center p-5 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
-      <Heading value={"Strategic Consultancy Services"}></Heading>
+    <div className="font-sans text-center p-4 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+      
+
+     
+      <Heading  value={"Strategic Consultancy Services"}></Heading>
       <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
         {/* Image on the left */}
         <div className="flex-shrink-0  mb-5 pr-16 md:mb-0 md:mr-8">
