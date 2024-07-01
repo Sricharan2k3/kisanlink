@@ -19,7 +19,7 @@ export function ThreeDCardDemo() {
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-he center provides brand space for promoting agricultural products and services, distributes marketing materials like flyers and pamphlets, and showcases promotional videos on TVs and projectors at the center.
+The center provides brand space for promoting agricultural products and services, distributes marketing materials like flyers and pamphlets, and showcases promotional videos on TVs and projectors at the center.
         </CardItem>
         <CardItem
           translateZ="100"

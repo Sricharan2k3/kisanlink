@@ -64,12 +64,19 @@ const MembershipCardBenefits = () => {
             {accordionData.map((item, index) => (
               <div key={index} className="accordion-item mb-4">
                 <h3
-                  className={`bg-gray-200 text-gray-800 p-4 rounded cursor-pointer transition-colors duration-300 ${
+                  className={`bg-gray-200 text-gray-800 p-4 rounded cursor-pointer flex justify-between items-center transition-colors duration-300 ${
                     openItem === index ? "bg-gray-300" : "hover:bg-gray-300"
                   }`}
                   onClick={() => handleAccordionClick(index)}
                 >
                   {item.title}
+                  <span
+                    className={`transition-transform duration-300 ${
+                      openItem === index ? "rotate-180" : "rotate-0"
+                    }`}
+                  >
+                    ▼ {/* You can replace this with an icon from a library if needed */}
+                  </span>
                 </h3>
                 {openItem === index && (
                   <div className="accordion-content bg-gray-50 p-4 rounded border-t border-gray-200 flex">
