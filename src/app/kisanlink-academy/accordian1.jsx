@@ -48,7 +48,7 @@ const FPOTraining = () => {
         <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:mr-8">
           <img
             src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/acad-5.png"}
-            className="w-[400px] h-[250px] rounded-lg shadow-lg"
+            className="w-[300px] h-[300px] rounded-lg shadow-lg"
           />
         </div>
         {/* Accordion on the right */}
