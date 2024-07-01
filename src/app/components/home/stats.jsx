@@ -28,7 +28,7 @@ const StatsCarousel = () => {
     dots: false, // Disable default dots
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "21%",
@@ -40,21 +40,21 @@ const StatsCarousel = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 6,
           centerPadding: "15%",
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 6,
           centerPadding: "10%",
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 6,
           centerPadding: "5%",
         },
       },
@@ -83,14 +83,13 @@ const StatsCarousel = () => {
         {stats.map((stat) => (
           <div key={stat.id} className="px-4">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
-              <br></br>
-              <br></br>
-              <p className="text-xs lg:text-3xl text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-3xl pb-10 text-green-700">
+                            
+              <p className="text-xs lg:text-xl text-green-700">{stat.value}</p>
+              <p className="text-xs lg:text-xl pt-4 pb-2 text-green-700">
                 {stat.label}{" "}
               </p>
               {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
-                <div className="mb-9"></div>
+                <div className="mb-7"></div>
               )}
             </div>
           </div>
