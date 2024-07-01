@@ -52,7 +52,7 @@ const ConsultancyServicesPage = () => {
         <source
           src="https://www.kisanlink.in/wp-content/uploads/pitchdesk_3.mp4"
           type="video/mp4"
-        />
+        /> 
         Your browser does not support the video tag.
       </video>
       <Heading value={"Tech Support"} />

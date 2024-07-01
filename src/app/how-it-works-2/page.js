@@ -56,8 +56,7 @@ const BenefitsComponent = () => {
     },
     {
       dancer: 2,
-      image:
-        "https://www.kisanlink.in/wp-content/uploads/Checking-boxes-amico-1.png",
+      image: "https://www.kisanlink.in/wp-content/uploads/Marketing-amico.png",
       title: "Improved Communication",
       description: [
         "Product management on the Kisanlink mobile app involves adding and managing the various products offered by collaborators for sale to farmers.",
@@ -68,7 +67,8 @@ const BenefitsComponent = () => {
     },
     {
       dancer: 3,
-      image: "https://www.kisanlink.in/wp-content/uploads/Marketing-amico.png",
+      image:
+        "https://www.kisanlink.in/wp-content/uploads/Checking-boxes-amico-1.png",
       title: "Access to Technology",
       description: [
         "Kisanlink uses both digital and offline marketing to create awareness of the products and services offered by the collaborators.",
