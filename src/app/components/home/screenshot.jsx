@@ -5,7 +5,7 @@ import Heading from "../heading";
 
 const imagesLeft = [
   {
-    src: "https://www.kisanlink.in/wp-content/uploads/Group-419-1.png",
+    src: "https://www.kisanlink.in/wp-content/uploads/kisanlink-screenshots-collage.png",
     alt: "Kisanlink App Image",
   },
 ];

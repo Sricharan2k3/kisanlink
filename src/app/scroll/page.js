@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-
 // Icons components
 function ContactIcon(props) {
   return (
@@ -137,7 +136,7 @@ export default function Component() {
           subheadings: [
             {
               heading: "",
-              text: "At Kisanlink, our mission is to empower farmers, Farmer Producer Organizations (FPOs), and Kisansathis by providing them with innovative solutions and comprehensive support. Our esteemed partners play a crucial role in helping us deliver top-notch services and solutions to agricultural communities. Together, we are transforming the agricultural landscape and fostering sustainable growth"
+              text: "At Kisanlink, our mission is to empower farmers, Farmer Producer Organizations (FPOs), and Kisansathis by providing them with innovative solutions and comprehensive support. Our esteemed partners play a crucial role in helping us deliver top-notch services and solutions to agricultural communities. Together, we are transforming the agricultural landscape and fostering sustainable growth",
             },
           ],
         },
@@ -189,11 +188,12 @@ export default function Component() {
               text: "We provide ongoing support to farmers, ensuring they can make the most of our offerings to enhance their productivity and profitability.",
             },
           ],
-        }
+        },
       ],
       icon: PackageIcon,
       imgAlt: "Products Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
+      imgSrc:
+        "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
     },
     {
       id: "services",
@@ -255,32 +255,32 @@ export default function Component() {
               heading: "Repair and Servicing",
               text: "Our centers provide repair and servicing for agricultural equipment, ensuring farmers can maintain their tools and machinery in optimal condition.",
             },
-          ]
+          ],
         },
+        {
+          subtitle: "Our Key Partners",
+
+          subheadings: [
             {
-              subtitle: "Our Key Partners",
-    
-              subheadings: [
-                {
-                  heading: "Jk University",
-                  text: "Kisanlink is proud to announce its strategic partnership with JKU University, a leading institution in agricultural education and research. This partnership aims to empower agri students through cutting-edge training programs and workshops.",
-                },
-                {
-                  heading: "Training Programs",
-                  text: "JKU University and Kisanlink have collaborated to develop comprehensive training programs for farmers, focusing on sustainable farming practices, precision agriculture, and agribusiness management.",
-                },
-                {
-                  heading: "Certification",
-                  text: "Participants in these training programs receive certification, demonstrating their proficiency and readiness to apply their skills in real-world scenarios. This certification not only enhances their credibility but also opens up new opportunities for career advancement..",
-                },
-                {
-                  heading: "EVERGREEN ENERGY ENTERPRISES",
-                  text: "Kisanlink has partnered with Evergreen Energy Enterprises to provide sustainable energy solutions to farmers and rural communities. This partnership aims to reduce carbon footprint and promote eco-friendly agricultural practices.",
-                },
-                {
-                  heading: "RELIANCE FOUNDATION",
-                  text: "Kisanlink has partnered with Reliance Foundation to support rural development initiatives and promote sustainable agriculture practices. This partnership aims to empower farmers and rural communities through capacity building.",
-                },
+              heading: "Jk University",
+              text: "Kisanlink is proud to announce its strategic partnership with JKU University, a leading institution in agricultural education and research. This partnership aims to empower agri students through cutting-edge training programs and workshops.",
+            },
+            {
+              heading: "Training Programs",
+              text: "JKU University and Kisanlink have collaborated to develop comprehensive training programs for farmers, focusing on sustainable farming practices, precision agriculture, and agribusiness management.",
+            },
+            {
+              heading: "Certification",
+              text: "Participants in these training programs receive certification, demonstrating their proficiency and readiness to apply their skills in real-world scenarios. This certification not only enhances their credibility but also opens up new opportunities for career advancement..",
+            },
+            {
+              heading: "EVERGREEN ENERGY ENTERPRISES",
+              text: "Kisanlink has partnered with Evergreen Energy Enterprises to provide sustainable energy solutions to farmers and rural communities. This partnership aims to reduce carbon footprint and promote eco-friendly agricultural practices.",
+            },
+            {
+              heading: "RELIANCE FOUNDATION",
+              text: "Kisanlink has partnered with Reliance Foundation to support rural development initiatives and promote sustainable agriculture practices. This partnership aims to empower farmers and rural communities through capacity building.",
+            },
           ],
         },
       ],
@@ -310,79 +310,80 @@ export default function Component() {
 
   return (
     <div className="flex min-h-screen">
-    <nav className="fixed left-0 top-0 h-full w-64 border-r bg-background px-4 py-16">
-      <div className="flex flex-col items-start gap-4">
-        {sections.map((section) => (
-          <Link
-            key={section.id}
-            href={`#${section.id}`}
-            prefetch={false}
-            className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-          >
-            <section.icon className="h-5 w-5" />
-            {section.title}
-          </Link>
-        ))}
-      </div>
-    </nav>
-    <main className="ml-64 flex-1 overflow-y-auto">
-      {sections.map((section, index) => (
-        <section
-          key={section.id}
-          id={section.id}
-          className={`py-12 md:py-24 lg:py-32 ${index === 0 ? "mt-24" : "mt-48"}`}
-        >
-          <div className="container px-4 md:px-6">
-            <div
-              className={`grid items-center gap-6 ${
-                index % 2 === 0
-                  ? "lg:grid-cols-[1fr_500px] xl:grid-cols-[1fr_550px]"
-                  : "lg:grid-cols-[500px_1fr] xl:grid-cols-[550px_1fr]"
-              } lg:gap-12`}
+      <nav className="fixed left-0 top-0 h-full w-64 border-r bg-background px-4 py-16">
+        <div className="flex flex-col items-start gap-4">
+          {sections.map((section) => (
+            <Link
+              key={section.id}
+              href={`#${section.id}`}
+              prefetch={false}
+              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
             >
-              {index % 2 !== 0 && (
-                <img
-                  src={section.imgSrc}
-                  width="400"
-                  height="310"
-                  alt={section.imgAlt}
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                />
-              )}
-              <div className="space-y-6">
-                {section.subtitles.map((subtitle, subIndex) => (
-                  <div key={subIndex} className="space-y-2">
-                    <div className="inline-block rounded-lg bg-muted  py-1 text-4xl font-semibold">
-                      {subtitle.subtitle}
-                    </div>
-                    {subtitle.subheadings.map((subheading, shIndex) => (
-                      <div key={shIndex} className="space-y-2">
-                        <h2 className="text-2xl font-bold tracking-tight sm:text-2xl lg:text-2xl">
-                          {subheading.heading}
-                        </h2>
-                        <p className="max-w-[600px] text-lg md:text-lg lg:text-lg text-muted-foreground leading-relaxed">
-                          {subheading.text}
-                        </p>
+              <section.icon className="h-5 w-5" />
+              {section.title}
+            </Link>
+          ))}
+        </div>
+      </nav>
+      <main className="ml-64 flex-1 overflow-y-auto">
+        {sections.map((section, index) => (
+          <section
+            key={section.id}
+            id={section.id}
+            className={`py-12 md:py-24 lg:py-32 ${
+              index === 0 ? "mt-24" : "mt-48"
+            }`}
+          >
+            <div className="container px-4 md:px-6">
+              <div
+                className={`grid items-center gap-6 ${
+                  index % 2 === 0
+                    ? "lg:grid-cols-[1fr_500px] xl:grid-cols-[1fr_550px]"
+                    : "lg:grid-cols-[500px_1fr] xl:grid-cols-[550px_1fr]"
+                } lg:gap-12`}
+              >
+                {index % 2 !== 0 && (
+                  <img
+                    src={section.imgSrc}
+                    width="400"
+                    height="310"
+                    alt={section.imgAlt}
+                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                  />
+                )}
+                <div className="space-y-6">
+                  {section.subtitles.map((subtitle, subIndex) => (
+                    <div key={subIndex} className="space-y-2">
+                      <div className="inline-block rounded-lg bg-muted  py-1 text-4xl font-semibold">
+                        {subtitle.subtitle}
                       </div>
-                    ))}
-                  </div>
-                ))}
+                      {subtitle.subheadings.map((subheading, shIndex) => (
+                        <div key={shIndex} className="space-y-2">
+                          <h2 className="text-2xl font-bold tracking-tight sm:text-2xl lg:text-2xl">
+                            {subheading.heading}
+                          </h2>
+                          <p className="max-w-[600px] text-lg md:text-lg lg:text-lg text-muted-foreground leading-relaxed">
+                            {subheading.text}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+                {index % 2 === 0 && (
+                  <img
+                    src={section.imgSrc}
+                    width="550"
+                    height="310"
+                    alt={section.imgAlt}
+                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                  />
+                )}
               </div>
-              {index % 2 === 0 && (
-                <img
-                  src={section.imgSrc}
-                  width="550"
-                  height="310"
-                  alt={section.imgAlt}
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                />
-              )}
             </div>
-          </div>
-        </section>
-      ))}
-    </main>
-  </div>
-  
+          </section>
+        ))}
+      </main>
+    </div>
   );
 }
