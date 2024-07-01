@@ -159,9 +159,14 @@ const content = [
   },
 ];
 
-const StickyScrollRevealDemo = () => {
-  const [activeSection, setActiveSection] = useState(null);
 
+
+
+
+const StickyScrollRevealDemo = () => {
+  const [activeSection, setActiveSection] = useState("soil-testing-service");
+
+  // useEffect to handle scroll and update activeSection
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 150; // Adjust scroll position as needed
@@ -181,68 +186,65 @@ const StickyScrollRevealDemo = () => {
     };
   }, []);
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop - 100, // Adjust scroll offset as needed
-        behavior: "smooth",
-      });
-    }
+  // Function to handle click and show content without scrolling
+  const handleItemClick = (id) => {
+    setActiveSection(id);
   };
 
   return (
     <div className="p-10">
-      <div className="flex">
-        <div className="w-1/4">
-          <div className="sticky top-20">
-          
-            <ul className="space-y-2">
-              {content.map((item) => (
-                <li key={item.id} className="cursor-pointer">
-                  <a
-                    className={
-                      activeSection === item.id
-                        ? "text-blue-600 font-bold text-lg"
-                        : "text-gray-600 hover:text-blue-600 text-lg"
-                    }
-                    onClick={() => scrollToSection(item.id)}
-                  >
-
-                    {item.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="w-3/4">
+      {/* Navbar */}
+      <div className="sticky top-0 w-full z-50 ">
+        <ul className="flex justify-center space-x-6 py-4">
           {content.map((item) => (
-            <section
-              key={item.id}
-              id={item.id}
-              data-id={item.id}
-              className="mb-10 flex"
-            >
-              <div className="w-2/3">
-                <h3 className="text-xl font-semibold mb-2 text-blue-600">
-                  {item.title}
-                </h3>
-                <div className="text-gray-700 mb-4">{item.description}</div>
-              </div>
-              <div className="w-1/3">
-                <img
-                  src={item.imageSrc}
-                  alt={item.title}
-                  className="h-80 w-80 object-cover"
-                />
-              </div>
-            </section>
+            <li key={item.id} className="cursor-pointer">
+              <a
+                className={
+                  activeSection === item.id
+                    ? "text-blue-600 font-bold text-lg"
+                    : "text-gray-600 hover:text-blue-600 text-lg"
+                }
+                onClick={() => handleItemClick(item.id)}
+              >
+                {item.title}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
+      </div>
+
+      {/* Main Content */}
+      <div className="w-full mt-24 content-center justify -center">
+        {content.map((item) => (
+          <section
+            key={item.id}
+            id={item.id}
+            data-id={item.id}
+            className="mb-10 flex"
+            style={{ display: activeSection === item.id ? "flex" : "none" }}
+          >
+            <div className="object-center items-center justify-center flex flex-row ml-48">
+            <div className="w-2/3 ">
+              <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                {item.title}
+              </h3>
+              <div className="text-gray-700 mb-4">{item.description}</div>
+            </div>
+            <div className="w-1/3 ml-16">
+              <img
+                src={item.imageSrc}
+                alt={item.title}
+                className="h-80 w-80 object-cover"
+              />
+            </div>
+            </div>
+          </section>
+        ))}
       </div>
     </div>
   );
 };
 
 export default StickyScrollRevealDemo;
+
+
