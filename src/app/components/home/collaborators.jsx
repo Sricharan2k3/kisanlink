@@ -37,8 +37,8 @@ export default function Collaborators() {
                                         <Image
                                             src={collaboratorsImage(collaborator)}
                                             alt={collaborator}
-                                            width={500}
-                                            height={500}
+                                            width={64}
+                                            height={64}
 
                                         />
                                     </div>

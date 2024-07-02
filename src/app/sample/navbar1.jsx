@@ -59,39 +59,44 @@ const NavBarComponent = () => {
           </svg>
         </button>
         {isDropdownOpen('technology') && (
-          <div className="absolute bg-white mt-1 p-2 rounded-lg shadow-lg">
-            {/* Technology submenu content */}
-            <p>Technology submenu items go here...</p>
+            <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200">
+            {/* For organisations submenu content */}
+            <div className='flex flex-col py-2'>
+              <a href='/navbar' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+                <span className='text-gray-800 font-medium'>
+                  Saas Platform
+                </span>
+                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+              </a>
+              <a href="/membership-cards" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+                <span className='text-gray-800 font-medium'>
+                  Membership Card 
+                </span>
+                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+              </a>
+              <a href="technology-links" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+                <span className='text-gray-800 font-medium'>
+                  Ecommerce
+                </span>
+                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+              </a>
+            </div>
           </div>
+          
         )}
       </div>
 
       <div className="hidden min-[1100px]:block" data-headlessui-state="" ref={dropdownRefs.farmers}>
-        <button
+       <a href="/experience-center1"> <button
           className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
           type="button"
-          aria-expanded={isDropdownOpen('farmers')}
-          onClick={() => handleDropdownToggle('farmers')}
+         
           id="headlessui-popover-button-farmers"
         >
-          For farmers
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="3.5"
-            stroke="#163e33"
-            className={`transition-all duration-300 ease-in-out w-3.5 h-3.5 xl:w-4 xl:h-4 ${isDropdownOpen('farmers') ? 'transform rotate-180' : ''}`}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
-        {isDropdownOpen('farmers') && (
-          <div className="absolute bg-white mt-1 p-2 rounded-lg shadow-lg">
-            {/* For farmers submenu content */}
-            <p>For farmers submenu items go here...</p>
-          </div>
-        )}
+          Experience Center
+       
+        </button></a>
+        
       </div>
 
       <div className="hidden min-[1100px]:block" data-headlessui-state="" ref={dropdownRefs.organisations}>
@@ -102,8 +107,7 @@ const NavBarComponent = () => {
           onClick={() => handleDropdownToggle('organisations')}
           id="headlessui-popover-button-organisations"
         >
-          For organisations
-          <svg
+Skill Training          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -115,24 +119,24 @@ const NavBarComponent = () => {
           </svg>
         </button>
         {isDropdownOpen('organisations') && (
-         <div className="absolute bg-white mt-4  shadow-lg w-48">
-         {/* For organisations submenu content */}
-         <div className='flex flex-col'>
-           <span className='px-2 py-1'>
-             Content 1
-             <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+       <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200">
+       {/* For organisations submenu content */}
+       <div className='flex flex-col py-2'>
+         <a href='/courses-and-certificates' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+           <span className='text-gray-800 font-medium'>
+             Agriculture Skill Training
            </span>
-           <span className='px-2 py-1'>Content 2
            <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+         </a>
+         <a href='/kisanlink-academy' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+           <span className='text-gray-800 font-medium'>
+             Kisanlink Academy
            </span>
-           <span className='px-2 py-1'>Content 3
            <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-           </span>
-           <span className='px-2 py-1'>Content 4
-         
-           </span>
-         </div>
+         </a>
        </div>
+     </div>
+     
        
         )}
       </div>
@@ -145,7 +149,7 @@ const NavBarComponent = () => {
           onClick={() => handleDropdownToggle('sustainability')}
           id="headlessui-popover-button-sustainability"
         >
-          Sustainability
+          Stakeholders
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -158,10 +162,30 @@ const NavBarComponent = () => {
           </svg>
         </button>
         {isDropdownOpen('sustainability') && (
-          <div className="absolute bg-white mt-1 p-2 rounded-lg shadow-lg">
-            {/* Sustainability submenu content */}
-            <p>Sustainability submenu items go here...</p>
-          </div>
+         <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200">
+         {/* For organisations submenu content */}
+         <div className='flex flex-col py-2'>
+           <a href='/our-partners' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+             <span className='text-gray-800 font-medium'>
+               Partners
+             </span>
+             <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </a>
+           <a href="/become-a-collaborator" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+             <span className='text-gray-800 font-medium'>
+               Collaborators
+             </span>
+             <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </a>
+           <a href="become-a-kisansathi" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+             <span className='text-gray-800 font-medium'>
+               Kisansathi
+             </span>
+             <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </a>
+         </div>
+       </div>
+       
         )}
       </div>
 
@@ -172,8 +196,8 @@ const NavBarComponent = () => {
           aria-expanded={isDropdownOpen('about')}
           onClick={() => handleDropdownToggle('about')}
           id="headlessui-popover-button-about"
-        >
-          About us
+        ><a href='/about-us'>
+          About us</a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -186,14 +210,40 @@ const NavBarComponent = () => {
           </svg>
         </button>
         {isDropdownOpen('about') && (
-          <div className="absolute bg-white mt-1 p-2 rounded-lg shadow-lg">
-            {/* About us submenu content */}
-            <p>About us submenu items go here...</p>
-          </div>
+           <div className="absolute overflow-hidden bg-white mr-12 mt-4 shadow-lg w-48 rounded-xl border border-gray-200">
+           {/* For organisations submenu content */}
+           <div className='flex flex-col py-2'>
+             <a href='#' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+               <span className='text-gray-800 font-medium'>
+                 Solutions
+               </span>
+               <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+             </a>
+             <a href="/team" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+               <span className='text-gray-800 font-medium'>
+                 Team
+               </span>
+               <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+             </a>
+             <a href="/our-brands" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+               <span className='text-gray-800 font-medium'>
+                 Our Brands
+               </span>
+               <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+             </a>
+             <a href="/careers" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+               <span className='text-gray-800 font-medium'>
+                 Careers
+               </span>
+               <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+             </a>
+           </div>
+         </div>
+         
         )}
       </div>
 
-      <div className="flex gap-2 min-[1100px]:hidden">
+      <div className="flex min-[1100px]:hidden">
         <button
           aria-label="Menu"
           type="button"

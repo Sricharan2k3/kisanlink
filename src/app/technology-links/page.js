@@ -11,7 +11,6 @@ const Technology = () => {
       <Background title={"Technology Links"}></Background>
       <ConsultancyServicesPage></ConsultancyServicesPage>
       <KisanlinkDashboard></KisanlinkDashboard>
-      <Navigation></Navigation>
     </div>
   );
 };
