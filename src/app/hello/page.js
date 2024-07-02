@@ -196,8 +196,8 @@ const StickyScrollRevealDemo = () => {
               <a
                 className={`block px-4 py-2 rounded transition-colors duration-200 ${
                   activeSection === item.id
-                    ? "bg-gray-200 text-gray-600 font-bold border border-gray-400"
-                    : "text-gray-600 hover:bg-cream-100 border border-transparent"
+                    ? "bg-[#e5deb9] text-brown-600 font-bold border border-gray-400"
+                    : "text-brown-600 hover:bg-[#e5deb9] border border-transparent"
                 }`}
                 onClick={() => handleItemClick(item.id)}
               >

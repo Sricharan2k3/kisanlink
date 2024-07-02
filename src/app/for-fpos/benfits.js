@@ -66,7 +66,7 @@ const Benefits = () => {
     {
       dancer: 3,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Onboarding-pana.svg",
+        "https://www.kisanlink.in/wp-content/uploads/Access-to-Technology.png",
       title: "Access to Technology",
       description: [
         "Through Kisanlink, FPOs gain access to advanced agricultural technologies such as drone-based services for input spraying. This empowers FPOs to offer innovative solutions to their member farmers, enhancing productivity and agricultural outcomes.",
@@ -76,7 +76,7 @@ const Benefits = () => {
     {
       dancer: 4,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Course-app-pana.svg",
+        "https://www.kisanlink.in/wp-content/uploads/Data-Driven-Decision-Making.png",
       title: "Data-Driven Decision-Making",
       description: [
         "Kisanlink's financial reporting services provide FPOs with detailed insights into their financial performance, enabling data-driven decision-making. This helps FPOs identify areas for improvement, allocate resources effectively, and strategize for long-term sustainability.",

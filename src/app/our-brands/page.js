@@ -5,6 +5,7 @@ import React from "react";
 import Heading from "../components/heading";
 import { FaSquareShareNodes } from "react-icons/fa6";
 import Background from "../../utils/background";
+import Component from "./products";
 
 const Brands = () => {
   return (
@@ -72,6 +73,7 @@ const Brands = () => {
           </div>
         </main>
       </div>
+      <Component></Component>
     </>
   );
 };

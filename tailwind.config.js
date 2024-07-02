@@ -98,6 +98,9 @@ module.exports = {
         orange: {
           300: "#F8F4DE",
         },
+        cream: {
+          100: "#e5deb9", // Cream color for hover
+        },
       },
       width: {
         100: "34rem", // 400px for example

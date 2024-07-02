@@ -66,7 +66,7 @@ const SkeletonOne = () => {
     >
       
 
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-1.png" height={165} width={255}/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/Output-Commodity-Prices.png" height={165} width={255}/>
     </motion.div>
   );
 };
@@ -96,7 +96,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-2.png" height={165} width={265}/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/Output-Buyers.png" height={165} width={265}/>
     </motion.div>
   );
 };
@@ -128,7 +128,7 @@ const SkeletonThree = () => {
     >
       <motion.div className="h-full w-full rounded-lg">
 
-        <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-3.png" height={165} width={255}/>
+        <Image src="https://www.kisanlink.in/wp-content/uploads/Output-Purchase-Analytics.png" height={165} width={255}/>
       </motion.div>
     </motion.div>
   );
@@ -165,52 +165,36 @@ const SkeletonFour = () => {
         variants={first}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
-        <Image
-          src="https://www.kisanlink.in/wp-content/uploads/farm-t1-1.png"
+       <Image
+          src="https://www.kisanlink.in/wp-content/uploads/feedback.png.jpg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className=" h-full w-full"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
-        </p>
-        <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
-        </p>
+       
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="https://www.kisanlink.in/wp-content/uploads/quality-output.jpg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className=" h-full w-full"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
-        </p>
-        <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
-        </p>
+        
       </motion.div>
       <motion.div
         variants={second}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="https://www.kisanlink.in/wp-content/uploads/supply-output.jpg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className=" h-full w-full"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
-        </p>
-        <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
-        </p>
       </motion.div>
     </motion.div>
   );
@@ -247,7 +231,7 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-4.png" height={165} width={255}/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/Output-Purchase-Support.png" height={165} width={255}/>
     </motion.div>
   );
 };
@@ -290,18 +274,29 @@ and buyer preferences, to optimize output purchases.
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
-  {
-    title: "     ",
-    description: (
-      <span className="text-sm">
- {/* Integrate with various payment gateways to expand
-   payment options and reduce transaction fees */}
-      </span>
-    ),
-    header: <SkeletonFour />,
-    className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
+//   {
+//     title: "     ",
+//     description: (
+//       <span className="text-sm">
+//  {/* Integrate with various payment gateways to expand
+//    payment options and reduce transaction fees */}
+//       </span>
+//     ),
+//     header: <SkeletonFour />,
+//     className: "md:col-span-2",
+//     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+//   },
+{
+  title: "Empowering Farmers with Comprehensive Support",
+  description: (
+    <span className="text-sm">
+Offering farmers robust training, expert advisory services, and technical assistance to enhance productivity and ensure successful output purchase.
+    </span>
+  ),
+  header: <SkeletonFour />,
+  className: "md:col-span-2",
+  icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+},
 
   {
     title: " Output Purchase Support",

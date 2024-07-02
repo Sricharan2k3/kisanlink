@@ -32,7 +32,7 @@ const KisanAcademy = () => {
       title: "Flexible Learning",
       description:
         "Our user-friendly platform allows learners to progress at their own pace, accommodating different learning styles and schedules." 
-        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/flexible-education-web.png", },
+        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/Learning-languages-rafiki.jpg", },
 
   ];
 

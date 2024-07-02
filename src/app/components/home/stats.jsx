@@ -84,8 +84,8 @@ const StatsCarousel = () => {
           <div key={stat.id} className="px-4">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
                             
-              <p className="text-xs lg:text-xl text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-xl pt-4 pb-2 text-green-700">
+              <p className="text-xs lg:text-lg text-green-700">{stat.value}</p>
+              <p className="text-xs lg:text-lg pt-4 pb-2 text-green-700">
                 {stat.label}{" "}
               </p>
               {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

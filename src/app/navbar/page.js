@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect }from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import {  FarmsDemo } from "../components/farms";
+import { FarmsDemo } from "../components/farms";
 import { BentoGridFirst } from "../components/grid1";
 import SVGComponent from "./svg";
 import SVGComponent1 from "./svg1";
@@ -9,7 +9,7 @@ import Farmers from "./svg2";
 import Output from "./svg3";
 import Security from "./svg4";
 import Payment from "./svg5";
-import {ProductsDemo} from "../components/products"
+import { ProductsDemo } from "../components/products";
 import { BillingDemo } from "../components/billing";
 import { PaymentsDemo } from "../components/payments";
 import { FarmersDemo } from "../components/farmers";
@@ -186,7 +186,9 @@ const Navigation = () => {
                   href={item.href}
                   onClick={handleSmoothScroll}
                   className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                    activeSection === item.href.substring(1) ? "bg-blue-600" : ""
+                    activeSection === item.href.substring(1)
+                      ? "bg-blue-600"
+                      : ""
                   }`}
                 >
                   {item.icon}
@@ -252,16 +254,17 @@ const Navigation = () => {
           <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
             Inventory
           </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Gain control of your inventory and effortlessly manage all your items
+          <div className="text-2xl mb-2 text-brown-700 font-bold mt-4">
+            Gain control of your inventory and effortlessly manage all your
+            items
           </div>
         </div>
         {/* Add InventoryDemo or relevant component */}
-      <InventoryManagementComponent/>
+        <InventoryManagementComponent />
       </div>
 
       <div id="payments" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
+        <div className="text-center mt-16 pt-2">
           <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
             Payments
           </h1>

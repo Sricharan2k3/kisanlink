@@ -93,10 +93,10 @@ export const Menu = ({
     </div>
     <div class=" flex justify-center md:block">
         <a href="https://digicrop.ai">
-            <button type="button" class="flex items-center justify-center w-36 text-white bg-brown-700 rounded-3xl h-8">
+            <button type="button" class="flex items-center justify-center w-36 text-white rounded-3xl h-8">
                 
                 <div>
-                    <img src="https://www.kisanlink.in/wp-content/uploads/digicrop-logo.png"></img>
+                    <img src="https://www.kisanlink.in/wp-content/uploads/logo-horizontal-light.png"></img>
                 </div>
             </button>
         </a>
