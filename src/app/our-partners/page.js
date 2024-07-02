@@ -143,8 +143,7 @@ export default function Component() {
       ],
       icon: HomeIcon,
       imgAlt: "Home Image",
-      imgSrc:
-        "https://drive.google.com/file/d/1J3Q8yiv_8WfZY4iS4MWOKu67F0FbzRvu/view?usp=drive_link",
+      imgSrc: "https://www.kisanlink.in/wp-content/uploads/store-web-2.png",
     },
 
     {

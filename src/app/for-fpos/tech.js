@@ -18,32 +18,38 @@ const Techsuppourt = () => {
     {
       id: 1,
       title: "Maintaining Farmers Database",
-      description:"We offer robust tech platform to maintain a comprehensive database of farmers associated with the FPO. This aids in better communication and streamlined operations.",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/M.png"
+      description:
+        "We offer robust tech platform to maintain a comprehensive database of farmers associated with the FPO. This aids in better communication and streamlined operations.",
+      imageUrl: "https://www.kisanlink.in/wp-content/uploads/M.png",
     },
     {
       id: 2,
       title: "Smart Membership Cards",
       description:
         "We manage the issuance and tracking of farmers’ information physical cards through our tech-enabled platform. Each card is equipped with a unique QR code, serving as a gateway to a wealth of information. This QR code enables comprehensive tracing of the farmer's complete profile, including transactions and credit history..",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/S.png"
+      imageUrl: "https://kisanlink.vercel.app/3.jpg",
     },
     {
       id: 3,
       title: "Financial Reportings",
       description:
         "We manage and generate detailed financial reports by leveraging our advanced tech solutions. This ensures transparent financial insights for strategic decision making within the FPO..",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/F.png"
-    }
+      imageUrl: "https://www.kisanlink.in/wp-content/uploads/F.png",
+    },
   ];
 
-  const defaultImageUrl = "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg";
-  const selectedImageUrl = selectedCard ? cardsData.find(card => card.id === selectedCard).imageUrl : defaultImageUrl;
+  const defaultImageUrl =
+    "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg";
+  const selectedImageUrl = selectedCard
+    ? cardsData.find((card) => card.id === selectedCard).imageUrl
+    : defaultImageUrl;
 
   return (
     <div className="font-sans text-center p-5 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
       <Heading value={"Tech Support"} />
-      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center pl-20"> {/* Increased left padding */}
+      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center pl-20">
+        {" "}
+        {/* Increased left padding */}
         {/* Accordion on the left */}
         <div className="flex flex-col space-y-4 w-1/2">
           {cardsData.map((card) => (
