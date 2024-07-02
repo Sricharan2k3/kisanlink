@@ -15,6 +15,7 @@ import { PaymentsDemo } from "../components/payments";
 import { FarmersDemo } from "../components/farmers";
 import { OutputDemo } from "../components/output";
 import { SecurityDemo } from "../components/security";
+import InventoryManagementComponent from "../components/inventory";
 const BlogsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +257,7 @@ const Navigation = () => {
           </div>
         </div>
         {/* Add InventoryDemo or relevant component */}
-        <FarmersDemo/>
+      <InventoryManagementComponent/>
       </div>
 
       <div id="payments" className="content-section mt-5">
