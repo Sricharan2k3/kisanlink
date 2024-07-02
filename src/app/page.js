@@ -14,14 +14,14 @@ import FarmMechanizationSection from "./components/home/farmmechanization";
 const slides = [
   "https://www.kisanlink.in/wp-content/uploads/0707-new-web-banner.jpg",
   "https://www.kisanlink.in/wp-content/uploads/FPObanner.jpg",
-  "https://www.kisanlink.in/wp-content/uploads/banner.jpg",
+  "https://www.kisanlink.in/wp-content/uploads/AMRTI-NEW-web-banner-1240px550px.jpg",
 ];
 
 export default function Home() {
   return (
     <div>
       <Carousel autoSlide={true}>
-        {[...slides.map((s) => <img src={s} key={s} />)]}
+        {[...slides.map((s) => <img className="w-full" src={s} key={s} />)]}
       </Carousel>
 
       <Empower></Empower>

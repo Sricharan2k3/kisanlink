@@ -21,23 +21,19 @@ export default function Component() {
   const products = [
     {
       id: 1,
-      image: "",
-      name: "Brush Cutter",
+      image:
+        "https://www.kisanlink.in/wp-content/uploads/amrti-pouch-web-1.png",
+      name: "Moringa Powder",
     },
     {
       id: 2,
-      image: "",
-      name: "Manual Seed Drill Machine",
+      image: "https://www.kisanlink.in/wp-content/uploads/amrti-web-2.png",
+      name: "Kombucha",
     },
     {
       id: 3,
-      image: "",
-      name: "Tarpaulin",
-    },
-    {
-      id: 4,
-      image: "",
-      name: "Solar Trap",
+      image: "https://www.kisanlink.in/wp-content/uploads/amrti-web-3.png",
+      name: "Turmeric Powder",
     },
   ];
   const [searchTerm, setSearchTerm] = useState("");
@@ -143,7 +139,7 @@ export default function Component() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="object-cover w-full h-60"
+                  className="object-cover w-full h-80"
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold md:text-xl">

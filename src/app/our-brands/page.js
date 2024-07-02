@@ -73,7 +73,25 @@ const Brands = () => {
           </div>
         </main>
       </div>
+
       <Component></Component>
+      <div className="font-sans text-center p-5 pt-12 pb-12 max-h-1/2 flex flex-col items-center max-w-1/2 justify-start">
+        <video className="video" controls>
+          <source
+            src="https://www.kisanlink.in/wp-content/uploads/logo-1.1.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <style jsx>{`
+        .video {
+          max-height: 360px; /* Set to desired height */
+          width: 720px; /* Keep the aspect ratio */
+          height: auto; /* Keep the aspect ratio */
+        }
+      `}</style>
     </>
   );
 };
