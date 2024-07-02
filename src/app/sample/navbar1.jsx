@@ -37,7 +37,7 @@ const NavBarComponent = () => {
   };
 
   return (
-    <div className="min-[1100px]:border min-[1100px]:border-green max-w-fit ml-auto bg-white min-[1100px]:py-[0.75rem] min-[1100px]:px-7 flex-1 rounded-full flex-nowrap items-center min-[1100px]:gap-x-4 xl:gap-x-7 xl:py-3.5 justify-around min-[1100px]:flex 2xl:py-4">
+    <div className="min-[1100px]:border min-[1100px]:border-green max-w-fit ml-auto bg-white min-[1100px]:py-[0.75rem] min-[1100px]:px-7 flex-1 rounded-full flex-nowrap items-center min-[1100px]:gap-x-4 xl:gap-x-7 xl:py-3.5 justify-around min-[1100px]:flex 2xl:py-4 border-gray-800">
       <div className="hidden min-[1100px]:block" data-headlessui-state="" ref={dropdownRefs.technology}>
         <button
           className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
@@ -115,10 +115,25 @@ const NavBarComponent = () => {
           </svg>
         </button>
         {isDropdownOpen('organisations') && (
-          <div className="absolute bg-white mt-4  rounded-lg shadow-lg">
-            {/* For organisations submenu content */}
-            <p>For organisations submenu items go here...</p>
-          </div>
+         <div className="absolute bg-white mt-4  shadow-lg w-48">
+         {/* For organisations submenu content */}
+         <div className='flex flex-col'>
+           <span className='px-2 py-1'>
+             Content 1
+             <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </span>
+           <span className='px-2 py-1'>Content 2
+           <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </span>
+           <span className='px-2 py-1'>Content 3
+           <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
+           </span>
+           <span className='px-2 py-1'>Content 4
+         
+           </span>
+         </div>
+       </div>
+       
         )}
       </div>
 
