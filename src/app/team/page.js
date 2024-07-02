@@ -117,7 +117,7 @@ const App = () => {
       qualification: "B.E, CBIT Hyderabad",
       experience: [
         "Tech enthusiast with 1 year of practical experience, specializing in Web development to deliver impactful solutions.",
-        "Committed to leveraging technical skills to contribute to innovative solutions.",
+        "Committed to leveraging technical and creative skills to contribute to innovative solutions.",
       ],
       linkedInUrl: "https://www.linkedin.com/in/akash-pingali-b05537234/",
     },

@@ -153,6 +153,16 @@ const ast = () => {
             >
               Safflower
             </button>
+            <button
+              onClick={() => handleCategoryClick("Paddy")}
+              className={`mr-2 px-4 py-2 rounded-md ${
+                selectedCategory === "Telugu"
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-800 hover:bg-blue-400 hover:text-white"
+              }`}
+            >
+              Paddy
+            </button>
             {/* Add more buttons for other categories */}
           </div>
         </div>
@@ -437,5 +447,26 @@ const YouTubeLinks = [
     alt: "Agriculture Image 14",
     thumbnail:
       "https://www.kisanlink.in/wp-content/uploads/safflower-course-hin.jpg",
+  },
+  {
+    category: "Paddy",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    alt: "Agriculture Image 14",
+    thumbnail:
+      "https://www.kisanlink.in/wp-content/uploads/9510715-hindi.jpg",
+  },
+  {
+    category: "Paddy",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    alt: "Agriculture Image 14",
+    thumbnail:
+      "https://www.kisanlink.in/wp-content/uploads/9510715-telugu.jpg",
+  },
+  {
+    category: "Paddy",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    alt: "Agriculture Image 14",
+    thumbnail:
+      "https://www.kisanlink.in/wp-content/uploads/9510715.jpg",
   },
 ];

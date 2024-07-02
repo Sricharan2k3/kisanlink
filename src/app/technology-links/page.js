@@ -2,6 +2,8 @@
 import ConsultancyServicesPage from "./accordian";
 import KisanlinkDashboard from "./accordianNext";
 import Background from "@/utils/background";
+import Navigation from "../navbar/page";
+import Navigation1 from "../navbar/navigation";
 
 const Technology = () => {
   return (
@@ -9,6 +11,7 @@ const Technology = () => {
       <Background title={"Technology Links"}></Background>
       <ConsultancyServicesPage></ConsultancyServicesPage>
       <KisanlinkDashboard></KisanlinkDashboard>
+      <Navigation></Navigation>
     </div>
   );
 };
