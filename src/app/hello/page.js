@@ -1,6 +1,5 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
-import { StickyScroll } from "../components/sticky-scroll-reveal";
 import { LuDot } from "react-icons/lu";
 
 const content = [
@@ -159,10 +158,6 @@ const content = [
   },
 ];
 
-
-
-
-
 const StickyScrollRevealDemo = () => {
   const [activeSection, setActiveSection] = useState("soil-testing-service");
 
@@ -194,16 +189,16 @@ const StickyScrollRevealDemo = () => {
   return (
     <div className="p-10">
       {/* Navbar */}
-      <div className="sticky top-0 w-full z-50 ">
+      <div className="sticky top-0 w-full z-50 bg-white">
         <ul className="flex justify-center space-x-6 py-4">
           {content.map((item) => (
             <li key={item.id} className="cursor-pointer">
               <a
-                className={
+                className={`block px-4 py-2 rounded transition-colors duration-200 ${
                   activeSection === item.id
-                    ? "text-blue-600 font-bold text-lg"
-                    : "text-gray-600 hover:text-blue-600 text-lg"
-                }
+                    ? "bg-gray-200 text-gray-600 font-bold border border-gray-400"
+                    : "text-gray-600 hover:bg-cream-100 border border-transparent"
+                }`}
                 onClick={() => handleItemClick(item.id)}
               >
                 {item.title}
@@ -214,7 +209,7 @@ const StickyScrollRevealDemo = () => {
       </div>
 
       {/* Main Content */}
-      <div className="w-full mt-24 content-center justify -center">
+      <div className="w-full mt-24 content-center justify-center">
         {content.map((item) => (
           <section
             key={item.id}
@@ -224,19 +219,19 @@ const StickyScrollRevealDemo = () => {
             style={{ display: activeSection === item.id ? "flex" : "none" }}
           >
             <div className="object-center items-center justify-center flex flex-row ml-48">
-            <div className="w-2/3 ">
-              <h3 className="text-xl font-semibold mb-2 text-blue-600">
-                {item.title}
-              </h3>
-              <div className="text-gray-700 mb-4">{item.description}</div>
-            </div>
-            <div className="w-1/3 ml-16">
-              <img
-                src={item.imageSrc}
-                alt={item.title}
-                className="h-80 w-80 object-cover"
-              />
-            </div>
+              <div className="w-2/3">
+                <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                  {item.title}
+                </h3>
+                <div className="text-gray-700 mb-4">{item.description}</div>
+              </div>
+              <div className="w-1/3 ml-16">
+                <img
+                  src={item.imageSrc}
+                  alt={item.title}
+                  className="h-80 w-80 object-cover"
+                />
+              </div>
             </div>
           </section>
         ))}
@@ -246,5 +241,3 @@ const StickyScrollRevealDemo = () => {
 };
 
 export default StickyScrollRevealDemo;
-
-
