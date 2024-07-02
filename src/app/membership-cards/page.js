@@ -1,9 +1,10 @@
 "use client";
 import Background from "@/utils/background";
 import Heading from "../components/heading";
+// import { MembershipCardBenefits } from "./benefits";
+// import { TermsAndConditions } from "./membership";
 import MembershipCardBenefits from "./benefits";
 import TermsAndConditions from "./membership";
-
 const smartcard = () => {
   return (
     <>

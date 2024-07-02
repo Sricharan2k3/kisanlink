@@ -177,19 +177,18 @@ const Navigation = () => {
 
   return (
     <div className="navigation-container justify-center">
-      <div className="container flex flex-row justify-center mx-6">
-        <nav className="fixed flex justify-center  my-5 py-2 items-center ml-64 bg-gray-700 rounded-3xl">
-          <ul className="flex gap-3 py-1 px-5 ">
+      <div className="container flex flex-row justify-center ">
+        <nav className="fixed flex justify-center  my-5 py-2 items-center  bg-gray-700 rounded-3xl">
+          <ul className="flex gap-3 py-1  ">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   onClick={handleSmoothScroll}
-                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                    activeSection === item.href.substring(1)
-                      ? "bg-blue-600"
-                      : ""
-                  }`}
+                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1)
+                    ? "bg-blue-600"
+                    : ""
+                    }`}
                 >
                   {item.icon}
                   <span className="px-2 w-16">{item.name}</span>
