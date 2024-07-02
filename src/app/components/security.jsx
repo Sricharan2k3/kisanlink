@@ -253,11 +253,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Farm Segregation",
+    title: "Unique Login Credentials",
     description: (
       <span className="text-sm">
-       Segregate total acreage of farms in different stages - seedling,
-       vegetative, reproduction, ripening, and harvest.
+        Provide safe access to your data through unique login
+        credentials.
       </span>
     ),
     header: <SkeletonOne />,
@@ -265,11 +265,12 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Farm Details",
+    title: "High-Quality Support",
     description: (
       <span className="text-sm">
-     Access farmer details, farm geo-tag, and soil testing reports for
-     informed decision-making.
+      Offer high-quality support and training to ensure secure data
+management.
+
       </span>
     ),
     header: <SkeletonTwo />,
@@ -277,11 +278,12 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "    Farm Analytics",
+    title: "Regular Security Updates",
     description: (
       <span className="text-sm">
-    Analyze farm performance, including yield, productivity, and
-profitability, to optimize farm operations.
+    Regularly update security measures to ensure data integrity
+and availability.
+
 
       </span>
     ),
@@ -290,10 +292,11 @@ profitability, to optimize farm operations.
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Data Encryption",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+         Encrypt sensitive data, such as financial information and personal
+         details, to prevent unauthorized access.
       </span>
     ),
     header: <SkeletonFour />,
@@ -302,11 +305,11 @@ profitability, to optimize farm operations.
   },
 
   {
-    title: "Farm Support",
+    title: "Data Backup",
     description: (
       <span className="text-sm">
-    Provide support to farmers through training, advisory services, and
-    technical assistance.
+    Ensure regular data backups to prevent data loss in case of system
+    failures or cyber attacks
       </span>
     ),
     header: <SkeletonFive />,
