@@ -11,6 +11,8 @@ import Farmers from "./svg2";
 import Output from "./svg3";
 import Security from "./svg4";
 import Payment from "./svg5";
+import { ProductsDemo } from "../components/products";
+import { BillingDemo } from "../components/billing";
 const BlogsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +126,7 @@ const Navigation = () => {
         const targetElement = document.querySelector(event.target.hash);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop,
+            top: targetElement.offsetTop - 80,
             behavior: "smooth",
           });
           setActiveSection(event.target.hash.substring(1)); // Remove '#' to get section id
@@ -179,7 +181,10 @@ const Navigation = () => {
         <FarmsDemo />
       </div>
       <div id="products" className="content-section mt-5">
-        <BentoGridFirst />
+        <ProductsDemo />
+      </div>
+      <div id="billing" className="content-section mt-5">
+        <BillingDemo />
       </div>
       <div id="billing" className="content-section mt-5"></div>
       <div id="outputpurchase" className="content-section mt-5">
