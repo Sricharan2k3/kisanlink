@@ -1,8 +1,10 @@
 "use client";
-import React, { useEffect }from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import {  FarmsDemo } from "../components/farms";
+import { FarmsDemo } from "../components/farms";
 import { BentoGridFirst } from "../components/grid1";
+import { SecurityDemo } from "../components/security";
+import { OutputDemo } from "../components/output";
 import SVGComponent from "./svg";
 import SVGComponent1 from "./svg1";
 import Farmers from "./svg2";
@@ -159,7 +161,9 @@ const Navigation = () => {
                 <a
                   href={item.href}
                   className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                    activeSection === item.href.substring(1) ? "bg-blue-600" : ""
+                    activeSection === item.href.substring(1)
+                      ? "bg-blue-600"
+                      : ""
                   }`}
                 >
                   {item.icon}
@@ -178,14 +182,17 @@ const Navigation = () => {
         <BentoGridFirst />
       </div>
       <div id="billing" className="content-section mt-5"></div>
-      <div id="outputpurchase" className="content-section mt-5"></div>
+      <div id="outputpurchase" className="content-section mt-5">
+        <OutputDemo></OutputDemo>
+      </div>
       <div id="inventory" className="content-section mt-5"></div>
       <div id="payments" className="content-section mt-5"></div>
       <div id="farmers" className="content-section mt-5"></div>
-      <div id="datasecurity" className="content-section mt-5"></div>
+      <div id="datasecurity" className="content-section mt-5">
+        <SecurityDemo></SecurityDemo>
+      </div>
     </div>
   );
 };
 
-
-export default Navigation
+export default Navigation;
