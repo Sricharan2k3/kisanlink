@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect }from "react";
 import { useState } from "react";
-import { FarmsDemo } from "../components/farms";
+import {  FarmsDemo } from "../components/farms";
 import { BentoGridFirst } from "../components/grid1";
 import SVGComponent from "./svg";
 import SVGComponent1 from "./svg1";
@@ -9,7 +9,7 @@ import Farmers from "./svg2";
 import Output from "./svg3";
 import Security from "./svg4";
 import Payment from "./svg5";
-import { ProductsDemo } from "../components/products";
+import {ProductsDemo} from "../components/products"
 import { BillingDemo } from "../components/billing";
 import { PaymentsDemo } from "../components/payments";
 import { FarmersDemo } from "../components/farmers";
@@ -177,7 +177,7 @@ const Navigation = () => {
   return (
     <div className="navigation-container justify-center">
       <div className="container flex flex-row justify-center mx-6">
-        <nav className="fixed flex justify-center my-5 py-2 items-center ml-64 bg-gray-700 rounded-3xl">
+        <nav className="fixed flex justify-center  my-5 py-2 items-center ml-64 bg-gray-700 rounded-3xl">
           <ul className="flex gap-3 py-1 px-5 ">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -185,9 +185,7 @@ const Navigation = () => {
                   href={item.href}
                   onClick={handleSmoothScroll}
                   className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                    activeSection === item.href.substring(1)
-                      ? "bg-blue-600"
-                      : ""
+                    activeSection === item.href.substring(1) ? "bg-blue-600" : ""
                   }`}
                 >
                   {item.icon}
@@ -225,7 +223,76 @@ const Navigation = () => {
       </div>
 
       <div id="billing" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Billing
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Streamline your billing process
+          </div>
+        </div>
         <BillingDemo />
+      </div>
+
+      <div id="outputpurchase" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Output Purchase
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Avail Output purchase services
+          </div>
+        </div>
+        <OutputDemo />
+      </div>
+
+      <div id="inventory" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Inventory
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Gain control of your inventory and effortlessly manage all your items
+          </div>
+        </div>
+        {/* Add InventoryDemo or relevant component */}
+        <FarmersDemo/>
+      </div>
+
+      <div id="payments" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Payments
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Effortless Payment Management
+          </div>
+        </div>
+        <PaymentsDemo />
+      </div>
+
+      <div id="farmers" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Farmers
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Centralize all farmer details at one place
+          </div>
+        </div>
+        <FarmersDemo />
+      </div>
+
+      <div id="datasecurity" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Data Security
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Excellent data security features & support
+          </div>
+        </div>
+        <SecurityDemo />
       </div>
     </div>
   );
