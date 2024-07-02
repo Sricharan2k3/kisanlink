@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
-import { BentoGridThirdDemo } from "../components/grid3";
+import React, { useEffect }from "react";
+import { useState } from "react";
+import {  FarmsDemo } from "../components/farms";
 import { BentoGridFirst } from "../components/grid1";
 import SVGComponent from "./svg";
 import SVGComponent1 from "./svg1";
@@ -111,6 +112,8 @@ const SadIcon = () => (
 );
 
 const Navigation = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
   useEffect(() => {
     // Add smooth scrolling effect for anchor links
     const handleSmoothScroll = (event) => {
@@ -122,6 +125,7 @@ const Navigation = () => {
             top: targetElement.offsetTop,
             behavior: "smooth",
           });
+          setActiveSection(event.target.hash.substring(1)); // Remove '#' to get section id
         }
       }
     };
@@ -147,14 +151,16 @@ const Navigation = () => {
 
   return (
     <div className="navigation-container justify-center">
-      <div className="container flex flex-row justify-center">
-        <nav className="fixed flex justify-center my-5 py-2 items-center ml-64  bg-gray-700 rounded-3xl">
+      <div className="container flex flex-row justify-center mx-6">
+        <nav className="fixed flex justify-center  my-5 py-2 items-center ml-64 bg-gray-700 rounded-3xl">
           <ul className="flex gap-3 py-1 px-5 ">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
-                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer`}
+                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
+                    activeSection === item.href.substring(1) ? "bg-blue-600" : ""
+                  }`}
                 >
                   {item.icon}
                   <span className="px-2 w-16">{item.name}</span>
@@ -165,16 +171,21 @@ const Navigation = () => {
         </nav>
       </div>
       {/* Content Sections */}
-      <div id="home" className="content-section mt-5">
-        <BentoGridThirdDemo />
+      <div id="farms" className="content-section mt-5">
+        <FarmsDemo />
       </div>
-      <div id="blogs" className="content-section mt-5">
+      <div id="products" className="content-section mt-5">
         <BentoGridFirst />
       </div>
-      <div id="services" className="content-section mt-5"></div>
-      <div id="about" className="content-section mt-5"></div>
+      <div id="billing" className="content-section mt-5"></div>
+      <div id="outputpurchase" className="content-section mt-5"></div>
+      <div id="inventory" className="content-section mt-5"></div>
+      <div id="payments" className="content-section mt-5"></div>
+      <div id="farmers" className="content-section mt-5"></div>
+      <div id="datasecurity" className="content-section mt-5"></div>
     </div>
   );
 };
 
-export default Navigation;
+
+export default Navigation

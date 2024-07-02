@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BentoGridThirdDemo() {
+export function FarmsDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -64,27 +64,9 @@ const SkeletonOne = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
+      
+
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-1.png" height={165} width={255}/>
     </motion.div>
   );
 };
@@ -114,16 +96,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-2.png" height={165} width={265}/>
     </motion.div>
   );
 };
@@ -153,7 +126,10 @@ const SkeletonThree = () => {
         backgroundSize: "400% 400%",
       }}
     >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
+      <motion.div className="h-full w-full rounded-lg">
+
+        <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-3.png" height={165} width={255}/>
+      </motion.div>
     </motion.div>
   );
 };
@@ -190,7 +166,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="https://www.kisanlink.in/wp-content/uploads/farm-t1-1.png"
           alt="avatar"
           height="100"
           width="100"
@@ -271,38 +247,17 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-      >
-        <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
-        <p className="text-xs text-neutral-500">
-          There are a lot of cool framerworks out there like React, Angular,
-          Vue, Svelte that can make your life ....
-        </p>
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <p className="text-xs text-neutral-500">Use PHP.</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-4.png" height={165} width={255}/>
     </motion.div>
   );
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Farm Segregation",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+       Segregate total acreage of farms in different stages - seedling,
+       vegetative, reproduction, ripening, and harvest.
       </span>
     ),
     header: <SkeletonOne />,
@@ -310,10 +265,11 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Farm Details",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+     Access farmer details, farm geo-tag, and soil testing reports for
+     informed decision-making.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -321,10 +277,12 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "    Farm Analytics",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+    Analyze farm performance, including yield, productivity, and
+profitability, to optimize farm operations.
+
       </span>
     ),
     header: <SkeletonThree />,
@@ -344,10 +302,11 @@ const items = [
   },
 
   {
-    title: "Text Summarization",
+    title: "Farm Support",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+    Provide support to farmers through training, advisory services, and
+    technical assistance.
       </span>
     ),
     header: <SkeletonFive />,
