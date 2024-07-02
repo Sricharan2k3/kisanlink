@@ -11,6 +11,10 @@ import Security from "./svg4";
 import Payment from "./svg5";
 import {ProductsDemo} from "../components/products"
 import { BillingDemo } from "../components/billing";
+import { PaymentsDemo } from "../components/payments";
+import { FarmersDemo } from "../components/farmers";
+import { OutputDemo } from "../components/output";
+import { SecurityDemo } from "../components/security";
 const BlogsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -117,29 +121,48 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
-    // Add smooth scrolling effect for anchor links
-    const handleSmoothScroll = (event) => {
-      if (event.target.tagName === "A" && event.target.hash) {
-        event.preventDefault();
-        const targetElement = document.querySelector(event.target.hash);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop-80,
-            behavior: "smooth",
-          });
-          setActiveSection(event.target.hash.substring(1)); // Remove '#' to get section id
+    const handleScroll = () => {
+      // Get all content sections
+      const sections = document.querySelectorAll(".content-section");
+
+      // Calculate current scroll position
+      const scrollPosition = window.scrollY + 300;
+
+      // Find which content section is currently visible
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(section.id);
         }
-      }
+      });
     };
 
-    document.addEventListener("click", handleSmoothScroll);
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
+    // Clean up the scroll event listener
     return () => {
-      document.removeEventListener("click", handleSmoothScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // List of navigation items with their labels and icons
+  const handleSmoothScroll = (event) => {
+    event.preventDefault();
+    const targetElement = document.querySelector(event.target.hash);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 220,
+        behavior: "smooth",
+      });
+      setActiveSection(event.target.hash.substring(1));
+    }
+  };
+
   const navItems = [
     { name: "Farms", icon: <SVGComponent />, href: "#farms" },
     { name: "Products", icon: <BlogsIcon />, href: "#products" },
@@ -160,6 +183,7 @@ const Navigation = () => {
               <li key={item.name}>
                 <a
                   href={item.href}
+                  onClick={handleSmoothScroll}
                   className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
                     activeSection === item.href.substring(1) ? "bg-blue-600" : ""
                   }`}
@@ -172,24 +196,106 @@ const Navigation = () => {
           </ul>
         </nav>
       </div>
+
       {/* Content Sections */}
       <div id="farms" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Farms
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Efficient farm management
+          </div>
+        </div>
         <FarmsDemo />
       </div>
+
       <div id="products" className="content-section mt-5">
-        <ProductsDemo/>
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Products
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            All products in one place
+          </div>
+        </div>
+        <ProductsDemo />
       </div>
+
       <div id="billing" className="content-section mt-5">
-        <BillingDemo/>
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Billing
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Streamline your billing process
+          </div>
+        </div>
+        <BillingDemo />
       </div>
-      <div id="outputpurchase" className="content-section mt-5"></div>
-      <div id="inventory" className="content-section mt-5"></div>
-      <div id="payments" className="content-section mt-5"></div>
-      <div id="farmers" className="content-section mt-5"></div>
-      <div id="datasecurity" className="content-section mt-5"></div>
+
+      <div id="outputpurchase" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Output Purchase
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Avail Output purchase services
+          </div>
+        </div>
+        <OutputDemo />
+      </div>
+
+      <div id="inventory" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Inventory
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Gain control of your inventory and effortlessly manage all your items
+          </div>
+        </div>
+        {/* Add InventoryDemo or relevant component */}
+        <FarmersDemo/>
+      </div>
+
+      <div id="payments" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Payments
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Effortless Payment Management
+          </div>
+        </div>
+        <PaymentsDemo />
+      </div>
+
+      <div id="farmers" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Farmers
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Centralize all farmer details at one place
+          </div>
+        </div>
+        <FarmersDemo />
+      </div>
+
+      <div id="datasecurity" className="content-section mt-5">
+        <div className="text-center mt-24 pt-2">
+          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+            Data Security
+          </h1>
+          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
+            Excellent data security features & support
+          </div>
+        </div>
+        <SecurityDemo />
+      </div>
     </div>
   );
 };
 
-
-export default Navigation
+export default Navigation;

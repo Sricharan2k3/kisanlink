@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BillingDemo() {
+export function OutputDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -253,11 +253,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Billing Application",
+    title: "  Commodity Prices",
     description: (
       <span className="text-sm">
-   The billing application is user-friendly and requires no
-   technical expertise to set up or operate.
+Check commodity prices and find output buyers through
+Kisanlink's trading platform.
       </span>
     ),
     header: <SkeletonOne />,
@@ -265,11 +265,11 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: " Generate Immediate Invoices",
+    title: "Output Buyers",
     description: (
       <span className="text-sm">
-   Generate immediate invoices, resulting in faster
-check-out and improved cash flow.
+Facilitate transactions between farmers and buyers, ensuring clear
+payment terms and efficient delivery.
 
       </span>
     ),
@@ -278,11 +278,11 @@ check-out and improved cash flow.
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "    Billing Automation",
+    title: "    Output Purchase Analytics",
     description: (
       <span className="text-sm">
-  Automate the billing process to reduce manual errors and
-  increase efficiency.
+Analyze output purchase data, including prices, volumes,
+and buyer preferences, to optimize output purchases.
 
       </span>
     ),
@@ -291,11 +291,11 @@ check-out and improved cash flow.
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "  Customizable Billing Templates",
+    title: "     ",
     description: (
       <span className="text-sm">
-      Utilize customizable billing templates to fit
-       your specific needs.
+ {/* Integrate with various payment gateways to expand
+   payment options and reduce transaction fees */}
       </span>
     ),
     header: <SkeletonFour />,
@@ -304,12 +304,11 @@ check-out and improved cash flow.
   },
 
   {
-    title: "Payment Options",
+    title: " Output Purchase Support",
     description: (
       <span className="text-sm">
-  
-  Offer multiple payment options, including credit cards,
-  bank transfers, and online payment platforms.
+Provide support to farmers through training, advisory
+services, and technical assistance.
       </span>
     ),
     header: <SkeletonFive />,
@@ -317,6 +316,8 @@ check-out and improved cash flow.
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
+
+
 
 
 

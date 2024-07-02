@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BillingDemo() {
+export function SecurityDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -253,11 +253,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Billing Application",
+    title: " Unique Login Credentials",
     description: (
       <span className="text-sm">
-   The billing application is user-friendly and requires no
-   technical expertise to set up or operate.
+Provide safe access to your data through unique login
+credentials.
       </span>
     ),
     header: <SkeletonOne />,
@@ -265,11 +265,11 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: " Generate Immediate Invoices",
+    title: "High-Quality Support",
     description: (
       <span className="text-sm">
-   Generate immediate invoices, resulting in faster
-check-out and improved cash flow.
+Offer high-quality support and training to ensure secure data
+ management.
 
       </span>
     ),
@@ -278,11 +278,11 @@ check-out and improved cash flow.
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "    Billing Automation",
+    title: "    Regular Security Updates",
     description: (
       <span className="text-sm">
-  Automate the billing process to reduce manual errors and
-  increase efficiency.
+Regularly update security measures to ensure data integrity
+ and availability.
 
       </span>
     ),
@@ -291,11 +291,11 @@ check-out and improved cash flow.
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "  Customizable Billing Templates",
+    title: "    Data Backup  ",
     description: (
       <span className="text-sm">
-      Utilize customizable billing templates to fit
-       your specific needs.
+Ensure regular data backups to prevent data loss in case of system
+failures or cyber attacks.
       </span>
     ),
     header: <SkeletonFour />,
@@ -304,12 +304,11 @@ check-out and improved cash flow.
   },
 
   {
-    title: "Payment Options",
+    title: " Data Encryption",
     description: (
       <span className="text-sm">
-  
-  Offer multiple payment options, including credit cards,
-  bank transfers, and online payment platforms.
+Encrypt sensitive data, such as financial information and personal
+ details, to prevent unauthorized access.
       </span>
     ),
     header: <SkeletonFive />,
@@ -317,6 +316,8 @@ check-out and improved cash flow.
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
+
+
 
 
 

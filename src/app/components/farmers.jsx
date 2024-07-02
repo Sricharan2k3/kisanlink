@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BillingDemo() {
+export function FarmersDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -253,11 +253,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Billing Application",
+    title: "  Farmer Profiles",
     description: (
       <span className="text-sm">
-   The billing application is user-friendly and requires no
-   technical expertise to set up or operate.
+Access complete profiles, including farm details, crop name,
+ sowing date, harvest date, and expected yield.
       </span>
     ),
     header: <SkeletonOne />,
@@ -265,12 +265,11 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: " Generate Immediate Invoices",
+    title: "Farmer Transactions",
     description: (
       <span className="text-sm">
-   Generate immediate invoices, resulting in faster
-check-out and improved cash flow.
-
+View detailed information on farmer transactions,
+ including purchases, sales, and payments.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -278,11 +277,11 @@ check-out and improved cash flow.
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "    Billing Automation",
+    title: "    Farmer Credit History",
     description: (
       <span className="text-sm">
-  Automate the billing process to reduce manual errors and
-  increase efficiency.
+Maintain a record of farmer credit history, including
+payment history and credit limits.
 
       </span>
     ),
@@ -291,11 +290,10 @@ check-out and improved cash flow.
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "  Customizable Billing Templates",
+    title: "     Farmer Communication ",
     description: (
       <span className="text-sm">
-      Utilize customizable billing templates to fit
-       your specific needs.
+Facilitate communication between farmers and other stakeholders, such as suppliers and buyers.
       </span>
     ),
     header: <SkeletonFour />,
@@ -304,12 +302,11 @@ check-out and improved cash flow.
   },
 
   {
-    title: "Payment Options",
+    title: " Farmer Support",
     description: (
       <span className="text-sm">
-  
-  Offer multiple payment options, including credit cards,
-  bank transfers, and online payment platforms.
+Provide support to farmers through training, advisory
+services, and technical assistance
       </span>
     ),
     header: <SkeletonFive />,
@@ -317,6 +314,8 @@ check-out and improved cash flow.
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
+
+
 
 
 
