@@ -225,77 +225,7 @@ const Navigation = () => {
       </div>
 
       <div id="billing" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Billing
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Streamline your billing process
-          </div>
-        </div>
         <BillingDemo />
-      </div>
-
-      <div id="outputpurchase" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Output Purchase
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Avail Output purchase services
-          </div>
-        </div>
-        <OutputDemo />
-      </div>
-
-      <div id="inventory" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Inventory
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Gain control of your inventory and effortlessly manage all your
-            items
-          </div>
-        </div>
-        {/* Add InventoryDemo or relevant component */}
-        <FarmersDemo />
-      </div>
-
-      <div id="payments" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Payments
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Effortless Payment Management
-          </div>
-        </div>
-        <PaymentsDemo />
-      </div>
-
-      <div id="farmers" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Farmers
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Centralize all farmer details at one place
-          </div>
-        </div>
-        <FarmersDemo />
-      </div>
-
-      <div id="datasecurity" className="content-section mt-5">
-        <div className="text-center mt-24 pt-2">
-          <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-            Data Security
-          </h1>
-          <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
-            Excellent data security features & support
-          </div>
-        </div>
-        <SecurityDemo />
       </div>
     </div>
   );

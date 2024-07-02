@@ -12,7 +12,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function BillingDemo() {
+export function PaymentsDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -253,11 +253,11 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Billing Application",
+    title: "  Multiple Payment Methods",
     description: (
       <span className="text-sm">
-   The billing application is user-friendly and requires no
-   technical expertise to set up or operate.
+ Accept multiple payment methods seamlessly and
+  securely, including digital wallets and credit cards.
       </span>
     ),
     header: <SkeletonOne />,
@@ -265,11 +265,11 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: " Generate Immediate Invoices",
+    title: "Comprehensive Payment Reports",
     description: (
       <span className="text-sm">
-   Generate immediate invoices, resulting in faster
-check-out and improved cash flow.
+ Maintain comprehensive reports of all transactions
+for easy tracking and auditing.
 
       </span>
     ),
@@ -278,11 +278,11 @@ check-out and improved cash flow.
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "    Billing Automation",
+    title: "    Recurring Payments",
     description: (
       <span className="text-sm">
-  Automate the billing process to reduce manual errors and
-  increase efficiency.
+ Set up recurring payments for regular transactions, such as
+subscription services.
 
       </span>
     ),
@@ -291,11 +291,11 @@ check-out and improved cash flow.
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "  Customizable Billing Templates",
+    title: "     Payment Gateway Integration",
     description: (
       <span className="text-sm">
-      Utilize customizable billing templates to fit
-       your specific needs.
+ Integrate with various payment gateways to expand
+   payment options and reduce transaction fees
       </span>
     ),
     header: <SkeletonFour />,
@@ -304,12 +304,11 @@ check-out and improved cash flow.
   },
 
   {
-    title: "Payment Options",
+    title: " Payment Security",
     description: (
       <span className="text-sm">
-  
-  Offer multiple payment options, including credit cards,
-  bank transfers, and online payment platforms.
+ Ensure secure payment processing through encryption and other
+  security measures
       </span>
     ),
     header: <SkeletonFive />,
