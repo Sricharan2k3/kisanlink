@@ -11,7 +11,7 @@ import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
 
 import FarmMechanizationSection from "./components/home/farmmechanization";
-const slides = ["./banner.png", "", "./amriti.png"];
+const slides = ["./banner.png", "./store.png", "./amriti.png"];
 
 export default function Home() {
   return (
