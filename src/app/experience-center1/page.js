@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "./background";
 import { CardHoverEffectDemo } from "./cardhover";
 import { DirectionAwareHoverDemo } from "./directionaware";
 import { ThreeDCardDemo } from "./threedcard";

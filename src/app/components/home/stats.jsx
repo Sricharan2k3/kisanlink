@@ -11,13 +11,13 @@ const StatsCarousel = () => {
 
   const stats = [
     { id: 1, value: "100+", label: "Villages" },
-    { id: 2, value: "150+", label: "Kisansathi (Village Level-Entrepreneurs)" },
+    { id: 2, value: "150+", label: "Kisansathi (VLEs)" },
     { id: 3, value: "7000+", label: "Farmers" },
-    { id: 4, value: "50+", label: "Local Partners (FPO's and Retailers)" },
+    { id: 4, value: "50+", label: "Local Partners (FPO's)" },
     { id: 5, value: "30+", label: "Collaborators" },
     { id: 6, value: "50+", label: "Brands" },
     { id: 7, value: "800+", label: "Products" },
-    { id: 8, value: "1200+", label: "Farm Mechanization Services In Acres" },
+    { id: 8, value: "1200+", label: "FMS" },
     { id: 9, value: "100+", label: "Product Orders" },
     { id: 10, value: "40+", label: "Procurement In Tons" },
     { id: 11, value: "10+", label: "Other Services" },
@@ -84,13 +84,13 @@ const StatsCarousel = () => {
           <div key={stat.id} className="px-4">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
                             
-              <p className="text-xs lg:text-lg text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-lg pt-4 pb-2 text-green-700">
+              <p className="text-xs lg:text-lg mt-2 text-green-700">{stat.value}</p>
+              <p className="text-xs lg:text-lg pt-2 pb-2 text-green-700">
                 {stat.label}{" "}
               </p>
-              {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
+              {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
                 <div className="mb-7"></div>
-              )}
+              )} */}
             </div>
           </div>
         ))}
