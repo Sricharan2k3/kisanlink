@@ -11,14 +11,12 @@ import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
 
 import FarmMechanizationSection from "./components/home/farmmechanization";
-const slides = ["./banner.png", "./store.png", "./amriti.png"];
+const slides = ["./resizere.png", "./storere.png", "./amritire.png"];
 
 export default function Home() {
   return (
     <div>
       <Carousel autoSlide={true}>
-        {[...slides.map((s) => <img src={s} key={s} />)]}
-        {[...slides.map((s) => <img src={s} key={s} />)]}
         {[...slides.map((s) => <img src={s} key={s} />)]}
       </Carousel>
 

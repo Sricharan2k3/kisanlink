@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from "react-feather"
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 12000 }) => {
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 5000 }) => {
     const [curr, setCurr] = useState(0)
 
     const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
@@ -17,8 +17,8 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 120
 
 
     return (
-        <div className='max-w-full overflow-hidden relative'>
-            <div className='flex transition-transform max-w-full ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
+        <div className=' overflow-hidden w-screen relative'>
+            <div className='flex transition-transform w-screen ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
                 {slides}
             </div>
             <div className="absolute inset-0 flex items-center justify-between p-4">
