@@ -119,7 +119,7 @@ const SadIcon = () => (
 );
 
 const Navigation = () => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("farms");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -131,12 +131,11 @@ const Navigation = () => {
         const sectionHeight = section.clientHeight;
         const sectionId = section.getAttribute("id");
 
-        // if (
-        //   scrollPosition >= sectionTop &&
-        //   scrollPosition < sectionTop + sectionHeight
-        // ) {
+        if (
+          scrollPosition >= sectionTop 
+        ) {
           setActiveSection(sectionId);
-        
+        }
       });
     };
 
