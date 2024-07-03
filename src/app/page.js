@@ -11,11 +11,7 @@ import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
 
 import FarmMechanizationSection from "./components/home/farmmechanization";
-const slides = [
-  "https://www.kisanlink.in/wp-content/uploads/0707-new-web-banner.jpg",
-  "https://www.kisanlink.in/wp-content/uploads/FPObanner.jpg",
-  "./amriti.png",
-];
+const slides = ["./banner.png", "", "./amriti.png"];
 
 export default function Home() {
   return (

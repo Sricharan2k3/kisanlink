@@ -216,7 +216,7 @@ const NavBarComponent = () => {
           <div className="absolute overflow-hidden bg-white mr-12 mt-4 shadow-lg w-48 rounded-xl border border-gray-200 z-50">
             {/* For about submenu content */}
             <div className='flex flex-col py-2'>
-              <a href='#' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
+              <a href='/for-farmers' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
                 <span className='text-gray-800 font-medium'>
                   Solutions
                 </span>
