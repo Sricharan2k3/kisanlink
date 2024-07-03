@@ -1,254 +1,398 @@
-"use client"
-import React, { useState, useRef, useEffect } from 'react';
 
-const NavBarComponent = () => {
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const dropdownRefs = {
-    technology: useRef(null),
-    farmers: useRef(null),
-    organisations: useRef(null),
-    sustainability: useRef(null),
-    about: useRef(null),
-  };
+import Link from "next/link"
+import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu"
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 
-  // Close dropdown when clicking outside of any dropdown
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      for (const key in dropdownRefs) {
-        if (dropdownRefs[key].current && !dropdownRefs[key].current.contains(event.target)) {
-          setOpenDropdown((prev) => (prev === key ? null : prev));
-        }
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [dropdownRefs]);
-
-  const handleDropdownToggle = (id) => {
-    if (openDropdown === id) {
-      setOpenDropdown(null); // Close dropdown when clicking on the same dropdown button
-    } else {
-      setOpenDropdown(id); // Open dropdown when clicking on a dropdown button
-    }
-  };
-
-  const isDropdownOpen = (id) => {
-    return openDropdown === id;
-  };
-
-  console.log(openDropdown)
-
+export default function Component() {
   return (
-    <div className="min-[1100px]:border min-[1100px]:border-green max-w-fit ml-auto bg-white min-[1100px]:py-[0.75rem] min-[1100px]:px-7 flex-1 rounded-full flex-nowrap items-center min-[1100px]:gap-x-4 xl:gap-x-7 xl:py-3.5 justify-around min-[1100px]:flex 2xl:py-4 border-gray-800 relative">
-      <div className="hidden min-[1100px]:block relative" data-headlessui-state="" ref={dropdownRefs.technology}>
-        <button
-          className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
-          type="button"
-          aria-expanded={isDropdownOpen('technology')}
-          onClick={() => handleDropdownToggle('technology')}
-          id="headlessui-popover-button-technology"
-        >
-          Technology
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="3.5"
-            stroke="#163e33"
-            className={`transition-all duration-300 ease-in-out w-3.5 h-3.5 xl:w-4 xl:h-4 ${isDropdownOpen('technology') ? 'transform rotate-180' : ''}`}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
-      
-        {isDropdownOpen('technology') && (
-          <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200 z-50">
-            {/* For technology submenu content */}
-            <div className='flex flex-col py-2'>
-              <a href='/navbar' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  SaaS Platform
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="/membership-cards" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg '  onClick={() => setOpenDropdown('technology')}>
-                <span className='text-gray-800 font-medium'>
-                  Membership Card 
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="technology-links" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Ecommerce
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
+    <div className="bg-white ml-96 rounded-full">
 
-      <div className="hidden min-[1100px]:block relative" data-headlessui-state="" ref={dropdownRefs.farmers}>
-        <a href="/experience-center1"> 
-          <button
-            className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
-            type="button"
-            id="headlessui-popover-button-farmers"
-          >
-            Experience Center
-          </button>
-        </a>
-      </div>
-
-      <div className="hidden min-[1100px]:block relative" data-headlessui-state="" ref={dropdownRefs.organisations}>
-        <button
-          className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
-          type="button"
-          aria-expanded={isDropdownOpen('organisations')}
-          onClick={() => handleDropdownToggle('organisations')}
-          id="headlessui-popover-button-organisations"
-        >
-          Skill Training
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="3.5"
-            stroke="#163e33"
-            className={`transition-all duration-300 ease-in-out w-3.5 h-3.5 xl:w-4 xl:h-4 ${isDropdownOpen('organisations') ? 'transform rotate-180' : ''}`}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
-        {isDropdownOpen('organisations') && (
-          <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200 z-50">
-            {/* For organisations submenu content */}
-            <div className='flex flex-col py-2'>
-              <a href='/courses-and-certificates' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Agriculture Skill Training
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href='/kisanlink-academy' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Kisanlink Academy
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
-
-      <div className="hidden min-[1100px]:block relative" data-headlessui-state="" ref={dropdownRefs.sustainability}>
-        <button
-          className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
-          type="button"
-          aria-expanded={isDropdownOpen('sustainability')}
-          onClick={() => handleDropdownToggle('sustainability')}
-          id="headlessui-popover-button-sustainability"
-        >
-          Stakeholders
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="3.5"
-            stroke="#163e33"
-            className={`transition-all duration-300 ease-in-out w-3.5 h-3.5 xl:w-4 xl:h-4 ${isDropdownOpen('sustainability') ? 'transform rotate-180' : ''}`}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
-        {isDropdownOpen('sustainability') && (
-          <div className="absolute bg-white mt-4 shadow-lg w-48 rounded-xl border border-gray-200 z-50">
-            {/* For sustainability submenu content */}
-            <div className='flex flex-col py-2'>
-              <a href='/our-partners' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Partners
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="/become-a-collaborator" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Collaborators
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="become-a-kisansathi" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Kisansathi
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
-
-      <div className="hidden min-[1100px]:block relative" data-headlessui-state="" ref={dropdownRefs.about}>
-        <button
-          className="focus:outline-none text-base lg:text-[0.9rem] text-black flex flex-nowrap gap-1 items-center"
-          type="button"
-          aria-expanded={isDropdownOpen('about')}
-          onClick={() => handleDropdownToggle('about')}
-          id="headlessui-popover-button-about"
-        >
-          About us
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="3.5"
-            stroke="#163e33"
-            className={`transition-all duration-300 ease-in-out w-3.5 h-3.5 xl:w-4 xl:h-4 ${isDropdownOpen('about') ? 'transform rotate-180' : ''}`}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </button>
-        {isDropdownOpen('about') && (
-          <div className="absolute overflow-hidden bg-white mr-12 mt-4 shadow-lg w-48 rounded-xl border border-gray-200 z-50">
-            {/* For about submenu content */}
-            <div className='flex flex-col py-2'>
-              <a href='/for-farmers' className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Solutions
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="/team" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Team
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="/our-brands" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Our Brands
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-              <a href="/careers" className='flex flex-col px-4 py-2 hover:bg-gray-100 rounded-lg'>
-                <span className='text-gray-800 font-medium'>
-                  Careers
-                </span>
-                <hr className='border-t-2 border-gray-200 mt-1 mb-2' />
-              </a>
-            </div>
-          </div>
-        )}
-      </div>
-
-   
-    </div>
+  
+    <header className="sticky top-0 z-40 w-full bg-background rounded-b-lg">
+    <div className="container flex h-16 items-center justify-end px-4 md:px-6">
     
-  );
-};
+      <nav className="hidden items-center bg-white gap-6 text-sm font-medium md:flex">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="  bg-white grid w-[400px] p-2">
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/navbar"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Saas</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/membership-cards"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Membership Cards</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/technology-links"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Ecommerce</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+              <Link
+                        href="/experience-center1"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Experience Center</div>
+                        
+                      </Link>
+              
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Skill Training</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid  bg-white w-[400px] p-2">
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/courses-and-certificates"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Agriculture Skill Training</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/kisanlink-academy"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Kisanlink Academy</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Stakeholders</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid  bg-white w-[400px] p-2">
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/our-partners"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Partners</div>
+                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          View our pricing options and choose the best plan for you.
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/become-a-collaborator"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Collaborators</div>
+                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Learn about our custom enterprise pricing options.
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/become-a-kisansathi"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Kisansathi</div>
+                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Learn about our custom enterprise pricing options.
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid  bg-white w-[400px] p-2">
+                  <NavigationMenuLink asChild>
+                      <Link
+                        href="/about-us"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">About Us</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Learn more about our company and mission.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/for-farmers"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Solutions</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Discover our solutions for Fpos and farmers.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/team"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Our Team</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Meet the people behind the company.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/our-brands"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Our Brands</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Explore brands at our company.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/careers"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Careers</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Explore job opportunities at our company.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </nav>
+        <div className="flex items-center gap-2">
+        
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="md:hidden">
+                <MenuIcon className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px]">
+              <div className="flex flex-col gap-4 p-4">
+                <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
+                  <MountainIcon className="h-6 w-6" />
+                  <span className="sr-only">Acme Inc</span>
+                </Link>
+                <nav className="grid gap-2">
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                    prefetch={false}
+                  >
+                    <HomeIcon className="h-5 w-5" />
+                    Home
+                  </Link>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                    prefetch={false}
+                  >
+                    <PackageIcon className="h-5 w-5" />
+                    Products
+                  </Link>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                    prefetch={false}
+                  >
+                    <DollarSignIcon className="h-5 w-5" />
+                    Pricing
+                  </Link>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                    prefetch={false}
+                  >
+                    <InfoIcon className="h-5 w-5" />
+                    About
+                  </Link>
+                </nav>
+                <div className="flex flex-col gap-2">
+                  <Button variant="outline" size="sm">
+                    Sign In
+                  </Button>
+                  <Button>Sign Up</Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </div>
+    </header>
+    </div>
+  )
+}
 
-export default NavBarComponent;
+function DollarSignIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="12" x2="12" y1="2" y2="22" />
+      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+    </svg>
+  )
+}
+
+
+function HomeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  )
+}
+
+
+function InfoIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 16v-4" />
+      <path d="M12 8h.01" />
+    </svg>
+  )
+}
+
+
+function MenuIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  )
+}
+
+
+function MountainIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+    </svg>
+  )
+}
+
+
+function PackageIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m7.5 4.27 9 5.15" />
+      <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+      <path d="m3.3 7 8.7 5 8.7-5" />
+      <path d="M12 22V12" />
+    </svg>
+  )
+}
