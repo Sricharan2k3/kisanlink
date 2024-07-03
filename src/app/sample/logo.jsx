@@ -1,20 +1,23 @@
 import React from 'react';
+import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu"
+import Link from "next/link"
 
 const LogoComponent = () => {
   return (
-    <nav className="w-container-lg flex flex-nowrap top-0 left-0 right-0 bottom-0 items-center gap-x-10 z-100 py-3 2xl:py-4">
       <div className="max-w-md">
-       <a className="outline-lime-400 outline-offset-4" href="/">
+       <NavigationMenu><a
+                        href="/"
+                        prefetch={false}
+                      >
     <img 
         src="./logo.jpg" 
         width={60} 
         height={60} 
         alt="Link Image"
-    />
-</a>
+    /></a></NavigationMenu>
+
 
       </div>
-    </nav>
   );
 };
 
