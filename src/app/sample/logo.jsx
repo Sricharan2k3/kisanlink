@@ -10,9 +10,9 @@ const LogoComponent = () => {
                         prefetch={false}
                       >
     <img 
-        src="./logo.jpg" 
-        width={60} 
-        height={60} 
+        src="./newlogo.png" 
+        width={180} 
+        height={120} 
         alt="Link Image"
     /></a></NavigationMenu>
 

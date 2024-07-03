@@ -6,10 +6,10 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 
 export default function Component() {
   return (
-    <div className="bg-white ml-96 rounded-full">
+    <div className="bg-white ml-80 rounded-full">
 
   
-    <header className="sticky top-0 z-40 w-full bg-background rounded-b-lg">
+    <header className="  top-0 z-40 w-full bg-background rounded-b-lg">
     <div className="container flex h-16 items-center justify-end px-4 md:px-6">
     
       <nav className="hidden items-center bg-white gap-6 text-sm font-medium md:flex">
