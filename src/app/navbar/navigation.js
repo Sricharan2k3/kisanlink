@@ -3,7 +3,7 @@ import NavBar from "./smooth";
 import ContentSections from "./contentsection";
 
 const Navigation1 = () => {
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("farms");
 
   const handleSmoothScroll = (event) => {
     event.preventDefault();

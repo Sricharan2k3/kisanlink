@@ -1,6 +1,5 @@
-"use client";
-import React, { useEffect } from "react";
-import { useState } from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import { FarmsDemo } from "../components/farms";
 import { BentoGridFirst } from "../components/grid1";
 import SVGComponent from "./svg";
@@ -16,6 +15,7 @@ import { FarmersDemo } from "../components/farmers";
 import { OutputDemo } from "../components/output";
 import { SecurityDemo } from "../components/security";
 import InventoryManagementComponent from "../components/inventory";
+
 const BlogsIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -123,30 +123,25 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Get all content sections
       const sections = document.querySelectorAll(".content-section");
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-      // Calculate current scroll position
-      const scrollPosition = window.scrollY + 300;
-
-      // Find which content section is currently visible
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
+        const sectionId = section.getAttribute("id");
 
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          setActiveSection(section.id);
-        }
+        // if (
+        //   scrollPosition >= sectionTop &&
+        //   scrollPosition < sectionTop + sectionHeight
+        // ) {
+          setActiveSection(sectionId);
+        
       });
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the scroll event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -178,17 +173,18 @@ const Navigation = () => {
   return (
     <div className="navigation-container justify-center">
       <div className="container flex flex-row justify-center ">
-        <nav className="fixed flex justify-center  my-5 py-2 items-center  bg-gray-700 rounded-3xl">
-          <ul className="flex gap-3 py-1  ">
+        <nav className="fixed flex justify-center my-5 py-2 items-center bg-gray-700 rounded-3xl">
+          <ul className="flex gap-3 py-1">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
                   href={item.href}
                   onClick={handleSmoothScroll}
-                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1)
-                    ? "bg-blue-600"
-                    : ""
-                    }`}
+                  className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
+                    activeSection === item.href.substring(1)
+                      ? "bg-blue-600"
+                      : ""
+                  }`}
                 >
                   {item.icon}
                   <span className="px-2 w-16">{item.name}</span>
