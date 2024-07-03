@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <div>
       <Carousel autoSlide={true}>
+        {[...slides.map((s) => <img width={"100%"} src={s} key={s} />)]}
         {[...slides.map((s) => <img src={s} key={s} />)]}
       </Carousel>
 
