@@ -5,14 +5,14 @@ import Heading from "../heading";
 
 const imagesLeft = [
   {
-    src: "https://www.kisanlink.in/wp-content/uploads/kisanlink-screenshots-collage.png",
+    src:"./kisan.png",
     alt: "Kisanlink App Image",
   },
 ];
 
 const imagesRight = [
   {
-    src: "https://www.kisanlink.in/wp-content/uploads/kisanlink-academy-screenshots-collage.png",
+    src: "./academy.png",
     alt: "Academy App Image",
   },
 ];

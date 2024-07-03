@@ -17,12 +17,22 @@ const Header = () => {
         <LogoComponent />
         <NavBarComponent />
         <button
-          className="ml-16 px-4 py-2 rounded-full bg-green-500 text-white hover:bg-blue-600 focus:outline-none"
+          className="ml-6 mr-3 px-4 py-2 rounded-full bg-green-500 text-white hover:bg-blue-600 focus:outline-none"
           onClick={redirectToLogin}
         >
           FPO Login
         </button>
       </div>
+      <div class=" flex justify-center md:block">
+        <a href="https://digicrop.ai">
+            <button type="button" class="flex items-center justify-center w-36 text-white rounded-3xl h-8">
+                
+                <div>
+                    <img src="./digicrop.png"></img>
+                </div>
+            </button>
+        </a>
+    </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const Empower = () => {
         {/* Image */}
         <div className="relative lg:w-1/4 overflow-hidden shadow-lg mb-4">
           <img
-            src="https://www.kisanlink.in/wp-content/uploads/updated-store.jpg"
+            src="./abaya.jpg"
             alt="Abaya Krishi"
             className="w-full h-auto"
           />

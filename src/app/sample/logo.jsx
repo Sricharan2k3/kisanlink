@@ -6,7 +6,7 @@ const LogoComponent = () => {
       <div className="max-w-md">
        <a className="outline-lime-400 outline-offset-4" href="/">
     <img 
-        src="https://www.kisanlink.in/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg" 
+        src="./logo.jpg" 
         width={60} 
         height={60} 
         alt="Link Image"
@@ -19,3 +19,5 @@ const LogoComponent = () => {
 };
 
 export default LogoComponent;
+
+
