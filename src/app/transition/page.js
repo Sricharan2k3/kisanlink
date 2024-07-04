@@ -6,6 +6,7 @@ export default function Component() {
   const containerRef = useRef(null);
   const revealCircleRef = useRef(null);
   const circleSizeRef = useRef(0);
+  const scrollEnabledRef = useRef(false);
 
   const images = [
     "https://wallpapers.com/images/hd/winter-streets-full-screen-hd-desktop-1q0dygcf3sty40ef.jpg",
@@ -21,6 +22,8 @@ export default function Component() {
     );
 
     const handleWheel = (e) => {
+      if (scrollEnabledRef.current) return;
+
       e.preventDefault();
 
       if (e.deltaY > 0) {
@@ -35,9 +38,11 @@ export default function Component() {
       }
 
       if (circleSizeRef.current === maxSize) {
-        setImageIndex(1);
+        // setImageIndex(1);
+        scrollEnabledRef.current = true;
       } else if (circleSizeRef.current === 0) {
         setImageIndex(0);
+        scrollEnabledRef.current = true;
       }
     };
 
@@ -96,6 +101,9 @@ export default function Component() {
             ? "Scroll down to reveal the next image"
             : "Scroll up to return to the previous image"}
         </p>
+        {scrollEnabledRef.current && (
+          <p className="mt-2 text-sm">Normal scrolling is now enabled</p>
+        )}
       </div>
     </div>
   );
