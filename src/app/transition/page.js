@@ -22,7 +22,13 @@ export default function Component() {
     );
 
     const handleWheel = (e) => {
-      if (scrollEnabledRef.current) return;
+      if (scrollEnabledRef.current) {
+        if (e.deltaY < 0 && circleSizeRef.current === maxSize) {
+          scrollEnabledRef.current = false;
+        } else {
+          return;
+        }
+      }
 
       e.preventDefault();
 
