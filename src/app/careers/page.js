@@ -28,11 +28,11 @@ const Career = () => {
               src="https://www.kisanlink.in/wp-content/uploads/Hiring-cuate.svg"
               className="w-80 h-80 "
             />
-            <h1 className="text-lg lg:text-4xl ml-32 mt-32 font-bold text-white text-center mr-80 w-96 ">
+            <h1 className="text-lg lg:text-4xl ml-24 mt-24 font-bold text-white text-center mr-64 w-96 ">
               Open Positions
             </h1>
 
-            <div className="bg-white py-2 mt-32 border border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-gray-500 hover:text-white transition duration-300 mr-80 w-80 h-12 ">
+            <div className="bg-white py-2 mt-24 border border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-gray-500 hover:text-white transition duration-300 mr-24 w-80 h-12 ">
               Become a Kisansathi
             </div>
           </div>

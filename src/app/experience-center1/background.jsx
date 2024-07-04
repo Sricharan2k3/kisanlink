@@ -8,7 +8,7 @@ const Background = ({title}) => {
       >
         
         <img
-          className="absolute insert-0 h-110 w-full overflow-hidden"
+          className="absolute insert-0 h-100 w-full overflow-hidden"
           src="https://www.kisanlink.in/wp-content/uploads/KISANLINK-EXPERIENCE-CENTRE.png"
         />
       </div>

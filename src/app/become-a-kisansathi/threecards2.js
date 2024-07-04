@@ -4,7 +4,7 @@ import Heading from "../components/heading";
 const Card2 = (props) => {
   return (
     <div className="flex flex-col items-center justify-center -mt-16 min-h-screen ">
-      <div className="text-center mb-8">
+      <div className="text-center mt-6 mb-8">
         <Heading
           value={
             "Process of Becoming an PoSP Kisansathi and eligibility Criteria"

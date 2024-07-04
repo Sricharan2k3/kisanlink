@@ -19,7 +19,7 @@ const LeftContent = () => {
 
 const RightImage = () => {
   return (
-    <div className="ml-20 pt-16">
+    <div className="ml-20 pt-8">
       <iframe
         width="480"
         height="300"

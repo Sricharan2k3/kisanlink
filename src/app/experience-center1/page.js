@@ -11,7 +11,9 @@ const ExperienceCenter = () => {
     // Add the return statement
     <div className="bg-white">
       <Background title={"Experience Center"} />
-      <Heading value={"Kisanlink Experience Center"} />
+      <div className="mt-72">
+        <Heading value={"Kisanlink Experience Center"} />
+      </div>
       <CardHoverEffectDemo />
       <Heading value={"Services and Support"} />
 
@@ -19,7 +21,7 @@ const ExperienceCenter = () => {
       <Heading value={"   Marketing and Financial Support"} />
       <ThreeDCardDemo />
 
-      <div className="-mt-10">
+      <div>
         <Heading value={"Comprehensive Approach"}></Heading>
       </div>
 

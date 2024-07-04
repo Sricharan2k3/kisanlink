@@ -3,7 +3,7 @@ import Heading from "../components/heading";
 
 const LeftContent = () => {
   return (
-    <div className="-mt-16 mr-10 items-center content-center text-sm">
+    <div className="-mt-36 mr-10 items-center content-center text-sm">
       <Heading classname="items=center" value="About Kisansathi" />
       <p className="mb-4 text-center text-lg light-gray-text">
         We are an intermediary, working towards bringing together the Agri
@@ -18,7 +18,7 @@ const LeftContent = () => {
 
 const RightImage = () => {
   return (
-    <div className="ml-16 p-4">
+    <div className="ml-16 -mt-36 p-4">
       <img
         src="https://www.kisanlink.in/wp-content/uploads/2022/03/farmer-standing-rice-field-with-tablet-scaled.jpg"
         alt="Placeholder"

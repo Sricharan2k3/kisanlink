@@ -12,7 +12,7 @@ const Farmersol = () => {
   return (
     <>
       <Background title={"For Farmers"}></Background>
-      <div className="-mt-10">
+      <div>
         <Heading value={"Our Solutions To Farmers"}></Heading>
       </div>
 

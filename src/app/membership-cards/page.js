@@ -9,7 +9,7 @@ const smartcard = () => {
   return (
     <>
       <Background title={"Smart Cards"}></Background>
-      <div className="-mt-10">
+      <div>
         <Heading value={"Kisanlink Membership Card"}></Heading>
       </div>
 
@@ -29,17 +29,17 @@ const smartcard = () => {
         ></img>
       </div>
       <div>
-        <div className="-mt-10">
+        <div>
           <Heading value={"Membership Card Benefits"}></Heading>
         </div>
         <MembershipCardBenefits></MembershipCardBenefits>
         <div>
-          <div className="-mt-10">
+          <div>
             <Heading value={"Customer Support"}></Heading>
           </div>
 
           <div className="">
-            <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+            <p className="text-center -mt-4  ml-40 mr-40">
               24/7 customer support will be accessible to all farmers through a
               dedicated helpline number to address any doubts or queries.
             </p>

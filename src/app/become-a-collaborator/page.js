@@ -13,10 +13,10 @@ const CollaboratorsPage = () => {
       <div className="flex flex-col items-center">
         <Heading
           value="Introduction to Collaborative Approach"
-          className="text-3xl font-bold mb-4"
+          className="text-3xl font-bold "
         />
 
-        <div className="w-2/3 text-center mt-4 mb-8">
+        <div className="w-2/3 text-center  mb-8">
           Our Vision is farmer empowerment and we are looking to collaborate
           with the companies who share similar objectives. These collaborative
           companies can use our entity; Kisansathis, and our tech platform to
@@ -24,13 +24,13 @@ const CollaboratorsPage = () => {
           market space for the betterment of the farming community.
         </div>
 
-        <div className="text-2xl font-semibold -mb-16 text-green-600">
+        <div className="text-2xl font-semibold -mb-4 text-green-600">
           WHY JOIN HANDS WITH US?
         </div>
 
         <Heading
           value="Value Proposition to Businesses"
-          className="text-3xl -mt-24 font-bold  mb-4"
+          className="text-3xl  font-bold  mb-4"
         />
 
         <Card1 />

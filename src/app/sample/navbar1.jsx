@@ -29,16 +29,7 @@ export default function Component() {
                         
                       </Link>
                     </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        href="/membership-cards"
-                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                        prefetch={false}
-                      >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Membership Cards</div>
-                        
-                      </Link>
-                    </NavigationMenuLink>
+                   
                     <NavigationMenuLink asChild>
                       <Link
                         href="/technology-links"
@@ -46,6 +37,16 @@ export default function Component() {
                         prefetch={false}
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">Ecommerce</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/membership-cards"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Membership Cards</div>
                         
                       </Link>
                     </NavigationMenuLink>
@@ -102,9 +103,7 @@ export default function Component() {
                         prefetch={false}
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">Partners</div>
-                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          View our pricing options and choose the best plan for you.
-                        </div>
+                        
                       </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
@@ -114,9 +113,7 @@ export default function Component() {
                         prefetch={false}
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">Collaborators</div>
-                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          Learn about our custom enterprise pricing options.
-                        </div>
+                       
                       </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
@@ -126,9 +123,7 @@ export default function Component() {
                         prefetch={false}
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">Kisansathi</div>
-                        <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          Learn about our custom enterprise pricing options.
-                        </div>
+                        
                       </Link>
                     </NavigationMenuLink>
                   </div>

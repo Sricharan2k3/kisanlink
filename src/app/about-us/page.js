@@ -14,7 +14,7 @@ const about = () => {
   return (
     <>
       <Background title={"About Us"}></Background>
-      <div className="-mt-10">
+      <div>
         <Heading value={"What we do ?"}></Heading>
       </div>
 

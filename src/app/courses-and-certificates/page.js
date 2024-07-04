@@ -21,7 +21,7 @@ const ast = () => {
   return (
     <>
       <Background title={"Agriculture Skill Training"}></Background>
-      <div className="-mt-10">
+      <div>
         <Heading value={"Agriculture Skill Training"}></Heading>
       </div>
 
@@ -39,7 +39,7 @@ const ast = () => {
       </div>
 
       <div>
-        <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+        <p className="text-center -mt-4 mb-12 ml-40 mr-40">
           Kisanlink is committed to nurturing the next generation of
           agricultural professionals. We offer specialized agri skill training
           programs for university students, providing them with
@@ -48,7 +48,7 @@ const ast = () => {
       <div className="flex flex-row items-center justify-center content-center text-center">
         <div className="w-1/3">
           <img
-            className="justify-center items-center pl-28 contents-center h-36 -mb-16"
+            className="justify-center items-center pl-28 contents-center h-36 -mb-8"
             src="https://www.kisanlink.in/wp-content/uploads/skill_dev-removebg-preview.png"
           ></img>
           <Heading value={"Industry-Relevant Skills"}></Heading>
@@ -59,7 +59,7 @@ const ast = () => {
         </div>
         <div className="w-1/3">
           <img
-            className=" pl-24 h-36 -mb-16"
+            className=" pl-24 h-36 -mb-8"
             src="https://www.kisanlink.in/wp-content/uploads/career_dev-removebg-preview.png"
           ></img>
           <Heading value={"Career Development"}></Heading>
@@ -69,7 +69,7 @@ const ast = () => {
           </p>
         </div>
       </div>
-      <div className="-mt-10">
+      <div className="-mt-2">
         <Heading value={"FPO Training Modules"}></Heading>
       </div>
 
@@ -191,7 +191,7 @@ const ast = () => {
       </div>
 
       <div className="flex justify-center mt-20">
-        <div className="-mt-24 pr-8">
+        <div className="-mt-12 pr-8">
           <Heading value={"Agriculture Videos"}></Heading>
         </div>
         {/* YouTube Button */}
@@ -199,7 +199,7 @@ const ast = () => {
           href="https://www.youtube.com/@kisanlink" // Replace with actual video URL
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-brown-400 text-white w-240 h-10 text-sm flex items-center justify-center px-4 py-2  hover:bg-brown-700"
+          className="bg-brown-400 text-white w-240 h-10 text-sm flex items-center justify-center px-4 -mt-2  hover:bg-brown-700"
           style={{ backgroundColor: "#5C431C" }} // Custom brown color
         >
           <div className="pr-2 size-4 pt-0.4">
@@ -452,21 +452,18 @@ const YouTubeLinks = [
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/9510715-hindi.jpg",
+    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715-hindi.jpg",
   },
   {
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/9510715-telugu.jpg",
+    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715-telugu.jpg",
   },
   {
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/9510715.jpg",
+    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715.jpg",
   },
 ];

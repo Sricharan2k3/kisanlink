@@ -75,10 +75,10 @@ export default function Component() {
           </div>
         </div>
       </section> */}
-      <section className="py-12  md:py-24 lg:py-32">
+      <section className="py-4  md:py-24 lg:py-32">
         <div className=" items-center text-center justify-center align-middle container px-4 -mt-44 md:px-6">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 mb-8">
-            <div className=" ml-96 pl-48 items-center text-center">
+            <div className=" ml-96 mt-8 pl-48 items-center text-center">
               <Heading value={"Our Products"}></Heading>
               <p className="text-muted-foreground">
                 Browse our curated selection of products.

@@ -11,13 +11,7 @@ export default function Collaborators() {
     return (
         <>
             <Heading value={"Collaborators"} />
-
-
-
-
-
-
-            <div className="w-full overflow-hidden my-12">
+            <div className="w-full overflow-hidden my-2">
                 <Marquee
                     gradient={false}
                     speed={80}
