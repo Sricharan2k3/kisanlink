@@ -30,6 +30,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .filter-blur-none {
+    filter: none;
+
+}
+}
+
+.section.active .image {
+  @apply opacity-100 filter-blur-none;
 }
 
 /* Apply to the container you want to hide the scrollbar */
