@@ -53,11 +53,11 @@ export default function Component() {
       }
 
       if (circleSizeRef.current === maxSize) {
-        setImageIndex(1);
+        // setImageIndex(1);
         scrollEnabledRef.current = true;
         contentScrolledRef.current = false;
       } else if (circleSizeRef.current === 0) {
-        setImageIndex(0);
+        // setImageIndex(0);
         scrollEnabledRef.current = true;
         contentScrolledRef.current = false;
       }
@@ -99,8 +99,7 @@ export default function Component() {
     };
   }, [images]);
 
-  return (
-
+  return (<>
     <div className="relative h-screen overflow-hidden" ref={containerRef}>
       <div className="absolute inset-0 z-0">
         <img
@@ -127,6 +126,24 @@ export default function Component() {
       </div>
     
     </div>
-
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      </>
   );
 }
