@@ -20,7 +20,7 @@ const Empower = () => {
           <img
             src="./newstore.png"
             alt="Abaya Krishi"
-            className="w-120 h-64"
+            
           />
         </div>
         
