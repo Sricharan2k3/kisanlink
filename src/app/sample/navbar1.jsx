@@ -96,13 +96,33 @@ export default function Component() {
                 <NavigationMenuTrigger>Stakeholders</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid  bg-white w-[400px] p-2 ml-[440px] mt-2">
-                    <NavigationMenuLink asChild>
+                  <NavigationMenuLink asChild>
                       <Link
-                        href="/our-partners"
+                        href="/for-farmers"
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Partners</div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">Farmers</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/for-fpos"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Fpos</div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/become-a-kisansathi"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Kisansathi</div>
                         
                       </Link>
                     </NavigationMenuLink>
@@ -116,13 +136,14 @@ export default function Component() {
                        
                       </Link>
                     </NavigationMenuLink>
+                    
                     <NavigationMenuLink asChild>
                       <Link
-                        href="/become-a-kisansathi"
+                        href="/our-partners"
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Kisansathi</div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">Partners</div>
                         
                       </Link>
                     </NavigationMenuLink>

@@ -105,13 +105,14 @@ export default function Component() {
         </div>
         <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
         <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
+          
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-            <span className="initial-text transition-opacity duration-500 opacity-100">
+            <span className="initial-text text-white transition-opacity duration-500 opacity-100">
               Digital solutions for a sustainable tomorrow
             </span>
           
           </h1>
-          <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+          <p className="mt-4 text-lg sm:text-xl text-white md:text-2xl">
             <span className="initial-text transition-opacity duration-500 opacity-100">
               Scroll down to reveal more
             </span>
@@ -120,13 +121,12 @@ export default function Component() {
             </span>
           </p>
           
-          <h1 className="scroll-info mt-2 text-4xl transition-opacity duration-500 opacity-0">
-            Normal scrolling is now enabled
+          <h1 className="scroll-info -mt-64 text-white text-4xl transition-opacity duration-500 opacity-0">
+          Kisanlink digitizes the agri value chain and enhances market access for farmers and FPOs in farm mechanization and output selling.
           </h1>
         </div>
       </div>
       {/* Additional content */}
-      <div style={{ height: "1000px" }}></div>
     </>
   );
 }

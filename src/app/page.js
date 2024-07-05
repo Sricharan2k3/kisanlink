@@ -9,17 +9,17 @@ import Screenshot from "./components/home/screenshot";
 import FourCards from "./components/home/fourcards";
 import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
-
+import Component from "./transition/transit";
 import FarmMechanizationSection from "./components/home/farmmechanization";
-const slides = ["./resizere.png", "./storere.png", "./amritire.png"];
+// const slides = ["./resizere.png", "./storere.png", "./amritire.png"];
 
 export default function Home() {
   return (
     <div>
-      <Carousel autoSlide={true}>
+      {/* <Carousel autoSlide={true}>
         {[...slides.map((s) => <img src={s} key={s} />)]}
-      </Carousel>
-
+      </Carousel> */}
+      <Component></Component>
       <Empower></Empower>
       {/* <FarmMechanization /> */}
       <FarmMechanizationSection />
