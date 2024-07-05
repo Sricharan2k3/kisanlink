@@ -1,13 +1,13 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Component() {
-  const [imageIndex, setImageIndex] = useState(0);
   const containerRef = useRef(null);
   const revealCircleRef = useRef(null);
   const circleSizeRef = useRef(0);
   const scrollEnabledRef = useRef(false);
   const contentScrolledRef = useRef(false);
+  const textTransitionedRef = useRef(false);
 
   const images = ["./img1.jpg", "./img2.jpg"];
 
@@ -19,44 +19,41 @@ export default function Component() {
       Math.pow(container.offsetWidth, 2) + Math.pow(container.offsetHeight, 2)
     );
 
+    const initialTextElements = container.querySelectorAll('.initial-text');
+    const finalTextElements = container.querySelectorAll('.final-text');
+    const scrollInfoElement = container.querySelector('.scroll-info');
+
     const handleWheel = (e) => {
       if (scrollEnabledRef.current) {
-        if (e.deltaY < 0) {
-          if (!contentScrolledRef.current) {
-            contentScrolledRef.current = true;
-            return;
-          }
-          if (circleSizeRef.current === maxSize) {
-            scrollEnabledRef.current = false;
-          } else {
-            return;
-          }
-        } else {
+        if (e.deltaY < 0 && !contentScrolledRef.current) {
+          contentScrolledRef.current = true;
           return;
         }
+        return;
       }
 
       e.preventDefault();
 
       if (e.deltaY > 0) {
         circleSizeRef.current = Math.min(circleSizeRef.current + 50, maxSize);
-      } else {
-        circleSizeRef.current = Math.max(circleSizeRef.current - 50, 0);
-      }
 
-      if (revealCircleRef.current) {
-        revealCircleRef.current.style.width = `${circleSizeRef.current}px`;
-        revealCircleRef.current.style.height = `${circleSizeRef.current}px`;
-      }
+        if (revealCircleRef.current) {
+          revealCircleRef.current.style.width = `${circleSizeRef.current}px`;
+          revealCircleRef.current.style.height = `${circleSizeRef.current}px`;
+        }
 
-      if (circleSizeRef.current === maxSize) {
-        // setImageIndex(1);
-        scrollEnabledRef.current = true;
-        contentScrolledRef.current = false;
-      } else if (circleSizeRef.current === 0) {
-        // setImageIndex(0);
-        scrollEnabledRef.current = true;
-        contentScrolledRef.current = false;
+        if (circleSizeRef.current === maxSize) {
+          scrollEnabledRef.current = true;
+          contentScrolledRef.current = false;
+          
+          // Transition text
+          if (!textTransitionedRef.current) {
+            initialTextElements.forEach(el => el.style.opacity = '0');
+            finalTextElements.forEach(el => el.style.opacity = '1');
+            if (scrollInfoElement) scrollInfoElement.style.opacity = '1';
+            textTransitionedRef.current = true;
+          }
+        }
       }
     };
 
@@ -109,36 +106,27 @@ export default function Component() {
         <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
         <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-            Digital solutions for a sustainable tomorrow
+            <span className="initial-text transition-opacity duration-500 opacity-100">
+              Digital solutions for a sustainable tomorrow
+            </span>
+          
           </h1>
           <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-            {imageIndex === 0
-              ? "Scroll down to reveal more"
-              : "Scroll up to return to the previous image"}
+            <span className="initial-text transition-opacity duration-500 opacity-100">
+              Scroll down to reveal more
+            </span>
+            <span className="final-text transition-opacity duration-500 opacity-0 absolute top-0 left-0 right-0">
+              Image transition complete
+            </span>
           </p>
-          {scrollEnabledRef.current && (
-            <p className="mt-2 text-sm">Normal scrolling is now enabled</p>
-          )}
+          
+          <h1 className="scroll-info mt-2 text-4xl transition-opacity duration-500 opacity-0">
+            Normal scrolling is now enabled
+          </h1>
         </div>
       </div>
-      <br></br> <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br> <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br> <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      {/* Additional content */}
+      <div style={{ height: "1000px" }}></div>
     </>
   );
 }

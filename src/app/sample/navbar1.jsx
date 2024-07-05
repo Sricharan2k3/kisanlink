@@ -18,7 +18,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="  bg-white grid w-[400px] p-2">
+                  <div className="  bg-white grid w-[400px] p-2 ml-4">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/navbar"
@@ -67,7 +67,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Skill Training</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[300px] p-2 ml-48 -mt-4 mt-2">
+                  <div className="grid  bg-white w-[300px] p-2 ml-[300px] -mt-4 mt-2">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/courses-and-certificates"
@@ -95,7 +95,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Stakeholders</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[400px] p-2 ml-64 mt-2">
+                  <div className="grid  bg-white w-[400px] p-2 ml-[440px] mt-2">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/our-partners"
@@ -132,7 +132,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[400px] p-2 ml-80 mt-2">
+                  <div className="grid  bg-white w-[400px] p-2 ml-[580px] mt-2">
                   <NavigationMenuLink asChild>
                       <Link
                         href="/about-us"
