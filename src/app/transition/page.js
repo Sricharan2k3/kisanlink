@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 
 export default function Component() {
   const [imageIndex, setImageIndex] = useState(0);
+  const [val,setVal]=useState(0)
   const containerRef = useRef(null);
   const revealCircleRef = useRef(null);
   const circleSizeRef = useRef(0);
@@ -50,10 +51,12 @@ export default function Component() {
       }
 
       if (circleSizeRef.current === maxSize) {
+        setVal(1)
         // setImageIndex(1);
         scrollEnabledRef.current = true;
         contentScrolledRef.current = false;
       } else if (circleSizeRef.current === 0) {
+        setVal(0)
         // setImageIndex(0);
         scrollEnabledRef.current = true;
         contentScrolledRef.current = false;
@@ -109,7 +112,10 @@ export default function Component() {
         <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
         <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-            Digital solutions for a sustainable tomorrow
+          { !val
+              ? "  Digital solutions for a sustainable tomorrow"
+              : "Hi"}
+          
           </h1>
           <p className="mt-4 text-lg sm:text-xl md:text-2xl">
             {imageIndex === 0
