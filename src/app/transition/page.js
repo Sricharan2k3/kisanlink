@@ -9,10 +9,7 @@ export default function Component() {
   const scrollEnabledRef = useRef(false);
   const contentScrolledRef = useRef(false);
 
-  const images = [
-    "./img1.jpg",
-    "./img2.jpg"
-  ];
+  const images = ["./img1.jpg", "./img2.jpg"];
 
   useEffect(() => {
     const container = containerRef.current;
@@ -99,51 +96,49 @@ export default function Component() {
     };
   }, [images]);
 
-  return (<>
-    <div className="relative h-screen overflow-hidden" ref={containerRef}>
-      <div className="absolute inset-0 z-0">
-        <img
-          src={images[0]}
-          alt="First Image"
-          className="absolute h-full w-full object-cover"
-        />
+  return (
+    <>
+      <div className="relative h-screen overflow-hidden" ref={containerRef}>
+        <div className="absolute inset-0 z-0">
+          <img
+            src={images[0]}
+            alt="First Image"
+            className="absolute h-full w-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
+        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
+            Digital solutions for a sustainable tomorrow
+          </h1>
+          <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+            {imageIndex === 0
+              ? "Scroll down to reveal more"
+              : "Scroll up to return to the previous image"}
+          </p>
+          {scrollEnabledRef.current && (
+            <p className="mt-2 text-sm">Normal scrolling is now enabled</p>
+          )}
+        </div>
       </div>
-      <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
-      <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-          Immerse Yourself
-        </h1>
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-          {imageIndex === 0
-            ? "Scroll down to reveal the next image"
-            : "Scroll up to return to the previous image"}
-        </p>
-        {scrollEnabledRef.current && (
-          <p className="mt-2 text-sm">Normal scrolling is now enabled</p>
-        )}
-
-    
-      </div>
-    
-    </div>
-      <br></br>   <br></br>
+      <br></br> <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      <br></br>   <br></br>
+      <br></br> <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      <br></br>   <br></br>
+      <br></br> <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      </>
+    </>
   );
 }
