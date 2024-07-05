@@ -18,9 +18,9 @@ const Empower = () => {
         {/* Image */}
         <div className="relative lg:w-1/4 overflow-hidden shadow-lg mb-4">
           <img
-            src="./abaya.jpg"
+            src="./newstore.png"
             alt="Abaya Krishi"
-            className="w-full h-auto"
+            className="w-120 h-64"
           />
         </div>
         
