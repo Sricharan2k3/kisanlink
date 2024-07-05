@@ -7,6 +7,7 @@ export default function Component() {
   const revealCircleRef = useRef(null);
   const circleSizeRef = useRef(0);
   const scrollEnabledRef = useRef(false);
+  const contentScrolledRef = useRef(false);
 
   const images = [
     "https://wallpapers.com/images/hd/winter-streets-full-screen-hd-desktop-1q0dygcf3sty40ef.jpg",
@@ -23,8 +24,16 @@ export default function Component() {
 
     const handleWheel = (e) => {
       if (scrollEnabledRef.current) {
-        if (e.deltaY < 0 && circleSizeRef.current === maxSize) {
-          scrollEnabledRef.current = false;
+        if (e.deltaY < 0) {
+          if (!contentScrolledRef.current) {
+            contentScrolledRef.current = true;
+            return;
+          }
+          if (circleSizeRef.current === maxSize) {
+            scrollEnabledRef.current = false;
+          } else {
+            return;
+          }
         } else {
           return;
         }
@@ -46,9 +55,11 @@ export default function Component() {
       if (circleSizeRef.current === maxSize) {
         // setImageIndex(1);
         scrollEnabledRef.current = true;
+        contentScrolledRef.current = false;
       } else if (circleSizeRef.current === 0) {
-        setImageIndex(0);
+        // setImageIndex(0);
         scrollEnabledRef.current = true;
+        contentScrolledRef.current = false;
       }
     };
 
@@ -88,7 +99,7 @@ export default function Component() {
     };
   }, [images]);
 
-  return (
+  return (<>
     <div className="relative h-screen overflow-hidden" ref={containerRef}>
       <div className="absolute inset-0 z-0">
         <img
@@ -110,7 +121,29 @@ export default function Component() {
         {scrollEnabledRef.current && (
           <p className="mt-2 text-sm">Normal scrolling is now enabled</p>
         )}
+
+    
       </div>
+    
     </div>
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      </>
   );
 }
