@@ -9,7 +9,7 @@ export default function Component() {
     <div className="bg-white large:ml-80 medium:ml-36  rounded-full">
 
   
-    <header className="  top-0 z-40 w-full bg-background rounded-b-lg">
+    <header className="  top-0 z-40 w-full bg-background rounded-full border-2 border-black">
     <div className="container flex h-16 items-center justify-end px-4 md:px-6">
     
       <nav className="hidden items-center bg-white gap-6 text-sm font-medium md:flex">
