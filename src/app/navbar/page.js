@@ -15,6 +15,7 @@ import { FarmersDemo } from "../components/farmers";
 import { OutputDemo } from "../components/output";
 import { SecurityDemo } from "../components/security";
 import InventoryManagementComponent from "../components/inventory";
+import VideoContainer from "./video";
 
 const BlogsIcon = () => (
   <svg
@@ -50,88 +51,28 @@ const ServicesIcon = () => (
   </svg>
 );
 
-const AboutIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className="w-6 h-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 4.5v15m0 0l-4.5-4.5m4.5 4.5l4.5-4.5M6.75 9h10.5"
-    />
-  </svg>
-);
-
-const Home1Icon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className="w-6 h-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3.75 4.5h16.5M3.75 9.75h16.5M3.75 15h16.5M6 12l2.25-2.25M15.75 12l2.25-2.25M6 16.5l2.25-2.25M15.75 16.5l2.25-2.25"
-    />
-  </svg>
-);
-
-const HappyIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className="w-6 h-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 6v6m0 0v6m0-6h10M12 6H2m10 0l4 4m-4-4l-4 4"
-    />
-  </svg>
-);
-
-const SadIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className="w-6 h-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 4c1.667 1.333 4-2 4-2s-1 5-1 8c0 2.5 2 3 2 3v2H7v-2s2-.5 2-3c0-3-1-8-1-8s2.333 3.333 4 2z"
-    />
-  </svg>
-);
-
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("farms");
+  const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      const videoElement = document.querySelector(".video-container");
       const sections = document.querySelectorAll(".content-section");
       const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      // Check if the video component is out of view
+      if (videoElement) {
+        const videoBottom = videoElement.getBoundingClientRect().bottom + window.scrollY;
+        setShowNavbar(window.scrollY >= videoBottom);
+      }
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         const sectionId = section.getAttribute("id");
 
-        if (scrollPosition >= sectionTop) {
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           setActiveSection(sectionId);
         }
       });
@@ -168,60 +109,64 @@ const Navigation = () => {
   ];
 
   return (
-    <div className="flex flex-row">
-      <div className="flex flex-row">
-        <div className="flex flex-col">
-          <br />
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <img width={500} height={500} src="./output.png"></img>
-          <br></br>
-          <img width={500} height={500} src="./farm.png"></img>
-        </div>
-      </div>
-
-      <div className="navigation-container mt-24 flex flex-col ">
-        <div className="container flex flex-row ">
-          <nav className="fixed flex justify-center my-5 py-2 items-center bg-gray-700 rounded-3xl">
-            <ul className="flex gap-3 py-1">
-              {navItems.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    onClick={handleSmoothScroll}
-                    className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                      activeSection === item.href.substring(1)
-                        ? "bg-blue-600"
-                        : ""
-                    }`}
-                  >
-                    {item.icon}
-                    <span className="px-2 w-16">{item.name}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+    <div>
+      < div className="flex flex-col items-center">
+        <div className="w-full video-container">
+          <VideoContainer />
         </div>
 
-        {/* Content Sections */}
+        {showNavbar && (
+          <div className="w-full">
+            <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 py-1 items-center bg-gray-700 rounded-3xl mt-24">
+              <ul className="flex gap-3">
+                {navItems.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      onClick={handleSmoothScroll}
+                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1) ? "bg-blue-600" : ""}`}
+                    >
+                      {item.icon}
+                      <span className="px-2">{item.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        )}
 
-        <div id="farms" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
-            <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
-              Farms
-            </h1>
+
+
+
+        <div className="mt-4 flex flex-col items-center w-full">
+          <div className="text-center mt-36">
+            <h1 className="text-lg lg:text-4xl font-bold text-brown-700">Farms</h1>
             <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
               Efficient farm management
             </div>
           </div>
-          <FarmsDemo />
-        </div>
 
-        <div id="products" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./Farm1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="farms" className="content-section ml-1">
+                  <FarmsDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Products
             </h1>
@@ -229,11 +174,29 @@ const Navigation = () => {
               All products in one place
             </div>
           </div>
-          <ProductsDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./product1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./product2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="products" className="content-section ml-1">
+                  <ProductsDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="billing" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Billing
             </h1>
@@ -241,11 +204,36 @@ const Navigation = () => {
               Streamline your billing process
             </div>
           </div>
-          <BillingDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./billing1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./billing2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="billing" className="content-section ml-1">
+                  <BillingDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="outputpurchase" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+
+
+
+
+
+
+
+
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Output Purchase
             </h1>
@@ -253,11 +241,33 @@ const Navigation = () => {
               Avail Output purchase services
             </div>
           </div>
-          <OutputDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./Output1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./output2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="outputpurchase" className="content-section ml-1">
+                  <OutputDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="inventory" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+
+
+
+
+
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Inventory
             </h1>
@@ -266,12 +276,37 @@ const Navigation = () => {
               items
             </div>
           </div>
-          {/* Add InventoryDemo or relevant component */}
-          <InventoryManagementComponent />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-6">
+                <img width={600} src="./inventory.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="inventory" className="content-section ml-1">
+                  <InventoryManagementComponent />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="payments" className="content-section mt-5">
-          <div className="text-center mt-16 pt-2">
+
+
+
+
+
+
+
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Payments
             </h1>
@@ -279,11 +314,33 @@ const Navigation = () => {
               Effortless Payment Management
             </div>
           </div>
-          <PaymentsDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./payment1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./payment2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="payments" className="content-section ml-1">
+                  <PaymentsDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="farmers" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+
+
+
+
+
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farmers
             </h1>
@@ -291,11 +348,28 @@ const Navigation = () => {
               Centralize all farmer details at one place
             </div>
           </div>
-          <FarmersDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./farmer1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./farmer2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="farmers" className="content-section ml-1">
+                  <FarmersDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="datasecurity" className="content-section mt-5">
-          <div className="text-center mt-24 pt-2">
+        <div className="flex flex-col items-center w-full">
+          <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Data Security
             </h1>
@@ -303,10 +377,29 @@ const Navigation = () => {
               Excellent data security features & support
             </div>
           </div>
-          <SecurityDemo />
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex flex-row">
+              <div className="flex flex-col mt-[80px]">
+                <img width={600} src="./security1.png" alt="Farm 1" className="rounded-xl" />
+                <div className="mt-4"></div>
+                <img width={600} src="./security2.png" alt="Farm 2" className="rounded-xl" />
+              </div>
+
+              <div className="flex flex-col ml-4 ">
+                {/* Content Sections */}
+                <div id="datasecurity" className="content-section ml-1">
+                  <SecurityDemo />
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
+
+
       </div>
-    </div>
+    </div >
   );
 };
 
