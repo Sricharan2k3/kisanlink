@@ -67,7 +67,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Skill Training</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[300px] p-2 ml-[300px] -mt-4 mt-2">
+                  <div className="grid  bg-white w-[300px] p-2 ml-[300px]  mt-2">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/courses-and-certificates"

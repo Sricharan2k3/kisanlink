@@ -63,7 +63,8 @@ const Navigation = () => {
 
       // Check if the video component is out of view
       if (videoElement) {
-        const videoBottom = videoElement.getBoundingClientRect().bottom + window.scrollY;
+        const videoBottom =
+          videoElement.getBoundingClientRect().bottom + window.scrollY;
         setShowNavbar(window.scrollY >= videoBottom);
       }
 
@@ -72,7 +73,10 @@ const Navigation = () => {
         const sectionHeight = section.clientHeight;
         const sectionId = section.getAttribute("id");
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
           setActiveSection(sectionId);
         }
       });
@@ -110,7 +114,7 @@ const Navigation = () => {
 
   return (
     <div>
-      < div className="flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <div className="w-full video-container">
           <VideoContainer />
         </div>
@@ -124,7 +128,11 @@ const Navigation = () => {
                     <a
                       href={item.href}
                       onClick={handleSmoothScroll}
-                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1) ? "bg-blue-600" : ""}`}
+                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
+                        activeSection === item.href.substring(1)
+                          ? "bg-blue-600"
+                          : ""
+                      }`}
                     >
                       {item.icon}
                       <span className="px-2">{item.name}</span>
@@ -136,12 +144,11 @@ const Navigation = () => {
           </div>
         )}
 
-
-
-
         <div className="mt-4 flex flex-col items-center w-full">
           <div className="text-center mt-36">
-            <h1 className="text-lg lg:text-4xl font-bold text-brown-700">Farms</h1>
+            <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
+              Farms
+            </h1>
             <div className="text-2xl -mb-24 text-brown-700 font-bold mt-4">
               Efficient farm management
             </div>
@@ -150,9 +157,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./Farm1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./Farm1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./Farm2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -160,7 +177,6 @@ const Navigation = () => {
                 <div id="farms" className="content-section ml-1">
                   <FarmsDemo />
                 </div>
-
               </div>
             </div>
           </div>
@@ -178,9 +194,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./product1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./product1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./product2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./product2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -188,12 +214,10 @@ const Navigation = () => {
                 <div id="products" className="content-section ml-1">
                   <ProductsDemo />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
 
         <div className="flex flex-col items-center w-full">
           <div className="text-center  mt-4 pt-2">
@@ -208,9 +232,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./billing1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./billing1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./billing2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./billing2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -218,19 +252,10 @@ const Navigation = () => {
                 <div id="billing" className="content-section ml-1">
                   <BillingDemo />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
 
         <div className="flex flex-col items-center w-full">
           <div className="text-center  mt-4 pt-2">
@@ -245,9 +270,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./Output1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./output1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./output2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./output2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -255,16 +290,10 @@ const Navigation = () => {
                 <div id="outputpurchase" className="content-section ml-1">
                   <OutputDemo />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
 
         <div className="flex flex-col items-center w-full">
           <div className="text-center  mt-4 pt-2">
@@ -280,11 +309,26 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-6">
-                <img width={600} src="./inventory.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./Inventory.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./Farm2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./Farm2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./Farm2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -292,18 +336,10 @@ const Navigation = () => {
                 <div id="inventory" className="content-section ml-1">
                   <InventoryManagementComponent />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
 
         <div className="flex flex-col items-center w-full">
           <div className="text-center  mt-4 pt-2">
@@ -318,9 +354,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./payment1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./payment1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./payment2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./payment2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -328,16 +374,10 @@ const Navigation = () => {
                 <div id="payments" className="content-section ml-1">
                   <PaymentsDemo />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
 
         <div className="flex flex-col items-center w-full">
           <div className="text-center  mt-4 pt-2">
@@ -352,9 +392,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./farmer1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./farmer1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./farmer2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./farmer2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -362,7 +412,6 @@ const Navigation = () => {
                 <div id="farmers" className="content-section ml-1">
                   <FarmersDemo />
                 </div>
-
               </div>
             </div>
           </div>
@@ -381,9 +430,19 @@ const Navigation = () => {
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
               <div className="flex flex-col mt-[80px]">
-                <img width={600} src="./security1.png" alt="Farm 1" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./security1.png"
+                  alt="Farm 1"
+                  className="rounded-xl"
+                />
                 <div className="mt-4"></div>
-                <img width={600} src="./security2.png" alt="Farm 2" className="rounded-xl" />
+                <img
+                  width={600}
+                  src="./security2.png"
+                  alt="Farm 2"
+                  className="rounded-xl"
+                />
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -391,15 +450,12 @@ const Navigation = () => {
                 <div id="datasecurity" className="content-section ml-1">
                   <SecurityDemo />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
-    </div >
+    </div>
   );
 };
 
