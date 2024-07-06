@@ -6,7 +6,7 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 
 export default function Component() {
   return (
-    <div className="bg-white ml-80 rounded-full">
+    <div className="bg-white large:ml-80 medium:ml-36  rounded-full">
 
   
     <header className="  top-0 z-40 w-full bg-background rounded-b-lg">
@@ -18,7 +18,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="  bg-white grid w-[400px] p-2 ml-4">
+                  <div className="  bg-white grid w-[180px] p-2 -ml-2">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/navbar"
@@ -67,7 +67,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Skill Training</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[300px] p-2 ml-[300px]  mt-2">
+                  <div className="grid  bg-white w-[180px] p-2 ml-[285px]  mt-2">
                     <NavigationMenuLink asChild>
                       <Link
                         href="/courses-and-certificates"
@@ -95,7 +95,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Stakeholders</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[400px] p-2 ml-[440px] mt-2">
+                  <div className="grid  bg-white w-[180px] p-2 ml-[420px] mt-2">
                   <NavigationMenuLink asChild>
                       <Link
                         href="/for-farmers"
@@ -153,7 +153,7 @@ export default function Component() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[400px] p-2 ml-[580px] mt-2">
+                  <div className="grid  bg-white w-[180px] p-2 ml-[560px] mt-2">
                   <NavigationMenuLink asChild>
                       <Link
                         href="/about-us"

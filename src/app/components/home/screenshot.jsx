@@ -19,7 +19,7 @@ const imagesRight = [
 
 const Screenshot = () => {
   return (
-    <div className="bg-gray-100 overflow-hidden min-h-screen py-8 px-4 md:px-2">
+    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2">
       <Head>
         <title>Kisanlink & Academy Apps</title>
         <meta name="description" content="Kisanlink & Academy Apps" />

@@ -20,7 +20,7 @@ export default function Component() {
     );
 
     const initialTextElements = container.querySelectorAll('.initial-text');
-    const finalTextElements = container.querySelectorAll('.final-text');
+    // const finalTextElements = container.querySelectorAll('.final-text');
     const scrollInfoElement = container.querySelector('.scroll-info');
 
     const handleWheel = (e) => {
@@ -48,8 +48,8 @@ export default function Component() {
           
           // Transition text
           if (!textTransitionedRef.current) {
-            initialTextElements.forEach(el => el.style.opacity = '0');
-            finalTextElements.forEach(el => el.style.opacity = '1');
+            initialTextElements.forEach(el => el.remove() );
+            // finalTextElements.forEach(el => el.style.opacity = '1');
             if (scrollInfoElement) scrollInfoElement.style.opacity = '1';
             textTransitionedRef.current = true;
           }
@@ -103,17 +103,15 @@ export default function Component() {
             className="absolute h-full w-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 z-20 bg-gradient-to-b from-transparent to-background/80 pointer-events-none" />
-        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center text-primary-foreground">
-          {/* <img src="./kisan1.png" className="w-120 h-120"></img> */}
-          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
-
-            <span className="initial-text text-white transition-opacity duration-500 opacity-100">
-              Digital solutions for a sustainable tomorrow
-            </span>
+        <div className="absolute inset-0 z-20 bg-gradient-to-b items-center h-screen justify-center from-transparent to-background/80 pointer-events-none" />
+        <div className="absolute inset-0 z-30 flex flex-col items-center h-screen justify-center text-center text-primary-foreground">
           
-          </h1>
-          <p className="mt-4 text-lg sm:text-xl text-white md:text-2xl">
+
+            <div className="text-4xl mt-[690px]   grid  place-items-center h-screen sm:text-5xl md:text-6xl initial-text transform -translate-x-1/8 text-white transition-opacity duration-500 opacity-100">
+            <img src="./image.png" className="w-[214px] h-[234px]"></img>
+            <div className="font-bold">
+              Digital solutions for a sustainable tomorrow</div>
+              <p className="mt-4 text-lg sm:text-xl text-white md:text-2xl">
             <span className="initial-text transition-opacity duration-500 opacity-100">
               Scroll down to reveal more
             </span>
@@ -121,10 +119,18 @@ export default function Component() {
               Image transition complete
             </span> */}
           </p>
+            </div>
           
-          <h1 className="scroll-info -mt-64 text-white text-4xl transition-opacity duration-500 opacity-0">
+          
+          
+          
+         <div>
+         <h1 className="scroll-info -mt-[100px] grid place-items-center h-screen  scroll-info transform -translate-x-1/8  text-white text-4xl transition-opacity duration-500 opacity-0">
+          {/* <div className="text-3xl  grid place-items-center h-screen sm:text-5xl scroll-info transform -translate-x-1/8 text-white transition-opacity duration-500 opacity-0"> */}
+
           Kisanlink digitizes the agri value chain and enhances market access for farmers and FPOs in farm mechanization and output selling.
           </h1>
+         </div>
         </div>
       </div>
       {/* Additional content */}

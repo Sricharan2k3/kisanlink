@@ -4,6 +4,36 @@ import { LuDot } from "react-icons/lu";
 
 const content = [
   {
+    id: "farm-mechanization-service",
+    title: "Farm Mechanization Service",
+    description: (
+      <>
+        Farm mechanization services involve the utilization of innovative
+        technologies like drones, which offer farmers an efficient method for
+        applying agricultural products.
+        <br />
+        <br />
+        <ol>
+          <li className="flex flex-row">
+            <LuDot />
+            Cost-effective compared to traditional methods
+          </li>
+          <br />
+          <li className="flex flex-row">
+            <LuDot />
+            Time-saving and less labor-intensive
+          </li>
+          <br />
+          <li className="flex flex-row">
+            <LuDot />
+            Less harmful to health than traditional methods
+          </li>
+        </ol>
+      </>
+    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/farm-mech.png",
+  },
+  {
     id: "soil-testing-service",
     title: "Soil Testing Service",
     description: (
@@ -38,36 +68,7 @@ const content = [
     ),
     imageSrc: "https://www.kisanlink.in/wp-content/uploads/soil-test.png",
   },
-  {
-    id: "farm-mechanization-service",
-    title: "Farm Mechanization Service",
-    description: (
-      <>
-        Farm mechanization services involve the utilization of innovative
-        technologies like drones, which offer farmers an efficient method for
-        applying agricultural products.
-        <br />
-        <br />
-        <ol>
-          <li className="flex flex-row">
-            <LuDot />
-            Cost-effective compared to traditional methods
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Time-saving and less labor-intensive
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Less harmful to health than traditional methods
-          </li>
-        </ol>
-      </>
-    ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/farm-mech.png",
-  },
+
   {
     id: "output-purchase-services",
     title: "Output Purchase Services",
@@ -159,7 +160,9 @@ const content = [
 ];
 
 const StickyScrollRevealDemo = () => {
-  const [activeSection, setActiveSection] = useState("soil-testing-service");
+  const [activeSection, setActiveSection] = useState(
+    "farm-mechanization-service"
+  );
 
   // useEffect to handle scroll and update activeSection
   useEffect(() => {
@@ -187,12 +190,12 @@ const StickyScrollRevealDemo = () => {
   };
 
   return (
-    <div className="p-10">
+    <div id="services" className="p-10">
       {/* Navbar */}
       <div className="sticky top-0 w-full z-50 bg-white">
         <ul className="flex justify-center space-x-6 py-4">
           {content.map((item) => (
-            <li key={item.id} className="cursor-pointer">
+            <li id={item.id} key={item.id} className="cursor-pointer">
               <a
                 className={`block px-4 py-2 rounded transition-colors duration-200 ${
                   activeSection === item.id

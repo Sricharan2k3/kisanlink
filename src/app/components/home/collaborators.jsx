@@ -26,13 +26,13 @@ export default function Collaborators() {
                             key={id}>
                             <div className="h-full w-full rounded-lg shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
 
-                                <div className="flex flex-col items-center justify-center gap-3 p-6">
+                                <div className="flex flex-col -mt-4 -mb-4 items-center justify-center gap-3 p-6">
                                     <div >
                                         <Image
                                             src={collaboratorsImage(collaborator)}
                                             alt={collaborator}
-                                            width={64}
-                                            height={64}
+                                            width={80}
+                                            height={80}
 
                                         />
                                     </div>

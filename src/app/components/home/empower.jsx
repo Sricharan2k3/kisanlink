@@ -4,7 +4,7 @@ import Heading from '../heading';
 
 const Empower = () => {
   return (
-    <div className="w-full px-4 bg-gray-lightest flex flex-col items-center">
+    <div className="w-full px-4 flex flex-col items-center">
       {/* Heading Section */}
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">

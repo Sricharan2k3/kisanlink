@@ -78,6 +78,12 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        small: "500px", // Custom small breakpoint
+        medium: "800px", // Custom medium breakpoint
+        large: "1500px", // Custom large breakpoint
+        xlarge: "1600px", // Custom extra large breakpoint
+      },
       colors: {
         gray: {
           lightest: "#F3F4F6",

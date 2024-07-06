@@ -72,7 +72,7 @@ const StatsCarousel = () => {
   };
 
   return (
-    <div className=" overflow-hidden relative py-8 bg-gray-lightest">
+    <div className=" -mt-8 overflow-hidden relative py-8">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
