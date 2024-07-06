@@ -9,9 +9,11 @@ import { ThreeDCardDemo } from "./threedcard";
 const ExperienceCenter = () => {
   return (
     // Add the return statement
-    <div className="bg-white">
-      <Background title={"Experience Center"} />
-      <div className="mt-72">
+    <div className="">
+      <div>
+        <Background title={"Experience Center"} />
+      </div>
+      <div className="mt-[780px]">
         <Heading value={"Kisanlink Experience Center"} />
       </div>
       <CardHoverEffectDemo />

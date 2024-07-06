@@ -97,7 +97,7 @@ const content = [
         </ol>
       </>
     ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/output-purchase.png",
+    imageSrc: "./ops.png",
   },
   {
     id: "government-subsidy-schemes",
@@ -155,7 +155,7 @@ const content = [
         </ol>
       </>
     ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/advisory.png",
+    imageSrc: "./advc.png",
   },
 ];
 
@@ -212,13 +212,13 @@ const StickyScrollRevealDemo = () => {
       </div>
 
       {/* Main Content */}
-      <div className="w-full mt-24 content-center justify-center">
+      <div className="w-full mt-12 content-center justify-center">
         {content.map((item) => (
           <section
             key={item.id}
             id={item.id}
             data-id={item.id}
-            className="mb-10 flex"
+            className=" flex"
             style={{ display: activeSection === item.id ? "flex" : "none" }}
           >
             <div className="object-center items-center justify-center flex flex-row ml-48">
@@ -232,7 +232,7 @@ const StickyScrollRevealDemo = () => {
                 <img
                   src={item.imageSrc}
                   alt={item.title}
-                  className="h-80 w-80 object-cover"
+                  className="h-80 object-cover"
                 />
               </div>
             </div>

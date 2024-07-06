@@ -5,14 +5,15 @@ import Heading from "../components/heading";
 // import { TermsAndConditions } from "./membership";
 import MembershipCardBenefits from "./benefits";
 import TermsAndConditions from "./membership";
+import VideoContainer from "./video";
 const smartcard = () => {
   return (
     <>
-      <Background title={"Smart Cards"}></Background>
+      {/* <Background title={"Smart Cards"}></Background> */}
+      <VideoContainer></VideoContainer>{" "}
       <div>
         <Heading value={"Kisanlink Membership Card"}></Heading>
       </div>
-
       <div>
         <p className="text-center -mt-4 mb-20 ml-40 mr-40">
           Kisanlink issues and manages farmers' physical membership cards
@@ -22,9 +23,9 @@ const smartcard = () => {
           profile, including transaction history and credit records.
         </p>
       </div>
-      <div className="w-full items-center content-center justify-center align-middle pl-64">
+      <div className="w-full items-center content-center justify-center align-middle pl-96">
         <img
-          className="w-4/5 content-center items-center justify-center align-middle"
+          className="w-2/3 content-center items-center justify-center align-middle"
           src="https://www.kisanlink.in/wp-content/uploads/17A-scaled.jpg"
         ></img>
       </div>
