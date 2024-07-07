@@ -434,7 +434,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div className="content-section ml-1">
+                <div className=" ml-1">
                   <SecurityDemo />
                 </div>
               </div>
