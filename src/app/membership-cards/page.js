@@ -23,11 +23,21 @@ const smartcard = () => {
           profile, including transaction history and credit records.
         </p>
       </div>
-      <div className="w-full items-center content-center justify-center align-middle pl-96">
-        <img
-          className="w-2/3 content-center items-center justify-center align-middle"
-          src="https://www.kisanlink.in/wp-content/uploads/17A-scaled.jpg"
-        ></img>
+      <div className="flex flex-col md:flex-row items-stretch justify-center p-4 gap-2 md:gap-4 lg:gap-6">
+        <div className="flex-1 max-w-sm mx-auto md:max-w-md lg:max-w-lg">
+          <img
+            className="w-full h-auto object-cover rounded-lg"
+            src="https://www.kisanlink.in/wp-content/uploads/17A-scaled.jpg"
+            alt="First Image"
+          />
+        </div>
+        <div className="flex-1 max-w-sm mx-auto md:max-w-md lg:max-w-lg">
+          <img
+            className="w-full h-auto object-cover rounded-lg"
+            src="./front.jpg"
+            alt="Second Image"
+          />
+        </div>
       </div>
       <div>
         <div>
