@@ -156,19 +156,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./Farm1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./Farm2.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
@@ -193,19 +193,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./product1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./product2.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
@@ -231,19 +231,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./billing1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./billing2.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px] "
                 />
               </div>
 
@@ -269,19 +269,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./output1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
-                  src="./output2.png"
+                  src="./pic.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
@@ -308,14 +308,14 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-6">
+              <div className="flex flex-col mt-8">
                 <img
                   width={600}
                   src="./Inventory.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
-                <div className="mt-4"></div>
+                {/* <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./Farm2.png"
@@ -328,7 +328,7 @@ const Navigation = () => {
                   src="./Farm2.png"
                   alt="Farm 2"
                   className="rounded-xl"
-                />
+                /> */}
               </div>
 
               <div className="flex flex-col ml-4 ">
@@ -353,19 +353,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./payment1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./payment2.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
@@ -391,19 +391,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./farmer1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
                   src="./farmer2.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
@@ -429,19 +429,19 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-[80px]">
+              <div className="flex flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./security1.png"
                   alt="Farm 1"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
                 <div className="mt-4"></div>
                 <img
                   width={600}
-                  src="./security2.png"
+                  src="./sec.png"
                   alt="Farm 2"
-                  className="rounded-xl"
+                  className="rounded-xl h-[320px]"
                 />
               </div>
 
