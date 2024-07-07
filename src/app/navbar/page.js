@@ -89,18 +89,6 @@ const Navigation = () => {
     };
   }, []);
 
-  const handleSmoothScroll = (event) => {
-    event.preventDefault();
-    const targetElement = document.querySelector(event.target.hash);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 220,
-        behavior: "smooth",
-      });
-      setActiveSection(event.target.hash.substring(1));
-    }
-  };
-
   const navItems = [
     { name: "Farms", icon: <SVGComponent />, href: "#farms" },
     { name: "Products", icon: <BlogsIcon />, href: "#products" },
@@ -127,12 +115,10 @@ const Navigation = () => {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      onClick={handleSmoothScroll}
-                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                        activeSection === item.href.substring(1)
-                          ? "bg-blue-600"
-                          : ""
-                      }`}
+                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1)
+                        ? "bg-blue-600"
+                        : ""
+                        }`}
                     >
                       {item.icon}
                       <span className="px-2">{item.name}</span>
@@ -144,7 +130,8 @@ const Navigation = () => {
           </div>
         )}
 
-        <div className="mt-4 flex flex-col items-center w-full">
+
+        <div className="mt-4 flex flex-col items-center w-full" id="farms">
           <div className="text-center mt-36">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farms
@@ -174,14 +161,14 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="farms" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <FarmsDemo />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full " id="products">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Products
@@ -191,7 +178,7 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center mt-8">
+          <div className="flex flex-col items-center mt-8" >
             <div className="flex flex-row">
               <div className="flex flex-col mt-[96px]">
                 <img
@@ -211,7 +198,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="products" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <ProductsDemo />
                 </div>
               </div>
@@ -219,7 +206,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="billing">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Billing
@@ -249,7 +236,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="billing" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <BillingDemo />
                 </div>
               </div>
@@ -257,7 +244,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="outputpurchase">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Output Purchase
@@ -287,7 +274,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="outputpurchase" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <OutputDemo />
                 </div>
               </div>
@@ -295,7 +282,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="inventory">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Inventory
@@ -333,7 +320,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="inventory" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <InventoryManagementComponent />
                 </div>
               </div>
@@ -341,7 +328,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="payments">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Payments
@@ -371,7 +358,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="payments" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <PaymentsDemo />
                 </div>
               </div>
@@ -379,7 +366,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="farmers">
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farmers
@@ -409,7 +396,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="farmers" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <FarmersDemo />
                 </div>
               </div>
@@ -417,7 +404,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full" id="datasecurity" >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Data Security
@@ -447,7 +434,7 @@ const Navigation = () => {
 
               <div className="flex flex-col ml-4 ">
                 {/* Content Sections */}
-                <div id="datasecurity" className="content-section ml-1">
+                <div className="content-section ml-1">
                   <SecurityDemo />
                 </div>
               </div>
