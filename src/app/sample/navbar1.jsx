@@ -156,24 +156,39 @@ export default function Component() {
                 <NavigationMenuContent>
                   <div className="grid  bg-white w-[180px] p-2 ml-[560px] mt-2">
                   <NavigationMenuLink asChild>
-                      <Link
+                      {/* <Link
                         href="https://digicrop.vercel.app/"
                         className="group grid  items-center justify-start gap-1 rounded-md bg-background  text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
+                      > */}
+                        <Link
+                        href="/about-us"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
                       >
-                        {/* <div className="text-sm font-medium leading-none group-hover:underline">Digicrop<sup>TM</sup></div> */}
-                        <div className="-mt-12">< img height={10} src="./dig.png"></img></div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">Digicrop<sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">   TM</sup></div>
+                        {/* <div className="-mt-12">< img height={10} src="./dig.png"></img></div> */}
                         
                       </Link>
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
-                      <Link
+                      {/* <Link
                         href="https://amrti.com/"
                         className="group grid items-center justify-start gap-1 rounded-md bg-background text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
-                      >
-                        {/* <div className="text-sm font-medium leading-none group-hover:underline">Amriti<sup>TM</sup></div> */}
-                        <div className="-mt-12"><img height={10} src="./amt.png"></img></div>
+                      > */}
+                        <Link
+                        href="/about-us"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      ><div className="text-sm font-medium leading-none group-hover:underline">
+                      Amrti<sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">TM</sup>
+                    </div>
+                    
+                    
+                        
+     
+                        {/* <div className="-mt-12"><img height={10} src="./amt.png"></img></div> */}
                         
                       </Link>
                     </NavigationMenuLink>

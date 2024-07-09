@@ -78,6 +78,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontSize: {
+        "xs-small": "0.4em",
+      },
       screens: {
         small: "500px", // Custom small breakpoint
         medium: "800px", // Custom medium breakpoint

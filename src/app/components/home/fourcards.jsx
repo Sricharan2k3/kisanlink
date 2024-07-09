@@ -24,7 +24,7 @@ const FourCards = () => {
                             <br />
                             <br />
                             <br />
-                            <br/>
+                            
 
                             
                         </div>
@@ -35,18 +35,17 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
+                <div className="relative w-[390px] mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./farm.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Farm Mechanization Service</h2>
                             <br />
-                            <p className="text-white font-poppins">
+                            <p className="text-white  font-poppins">
                                 We facilitate farm
                                 mechanization services such
                                 as drone service etc.</p>
-                            <br />
                             <br />
                             <br />
                             <br />
@@ -66,10 +65,8 @@ const FourCards = () => {
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Output Purchase Service</h2>
                             <br />
-
                             <p className="text-white font-poppins">We assist farmers in realizing better value through
                                 our trading platform.</p>
-                            <br />
                             <br />
                             <br />
                             <br />
@@ -89,13 +86,12 @@ const FourCards = () => {
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Other Agri Related Services</h2>
                             <br />
-
                             <p className="text-white font-poppins">We also facilitate soil testing, advisory and government-
                                 based services to farmers.</p>
                             <br />
                             <br />
                             <br />
-                            <br />
+                    
 
                             
                         </div>
