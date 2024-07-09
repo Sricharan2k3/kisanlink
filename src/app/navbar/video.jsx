@@ -7,7 +7,7 @@ function VideoContainer() {
       <div className="relative w-full h-full">
         <iframe
           className="absolute  w-full h-full "
-          src="https://www.kisanlink.in/wp-content/uploads/admin-panel-video.mp4?mute=1"
+          src="https://www.kisanlink.in/wp-content/uploads/admin.mp4"
           title="Full Screen Video"
          
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

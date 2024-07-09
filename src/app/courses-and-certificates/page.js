@@ -3,10 +3,7 @@ import React, { useState } from "react";
 import Heading from "../components/heading";
 import Background from "../../utils/background";
 
-
 const ast = () => {
-
-
   return (
     <>
       <Background title={"Agriculture Skill Training"}></Background>
@@ -70,7 +67,19 @@ const ast = () => {
           practical learning.
         </p>
       </div>
-</>
-  )}
+      <div>
+        <div className="-mt-10">
+          <Heading value={"Certification"}></Heading>
+        </div>
+        <p className="text-center -mt-4 -mb-16  ml-40 mr-40">
+          Candidates will be certified after clearing the training assessment.
+        </p>
+        <div className="flex items-center -mb-12 justify-center h-screen">
+          <img className="w-[720px] h-[540px]" src="./certi.png"></img>
+        </div>
+      </div>
+    </>
+  );
+};
 
-  export default ast
+export default ast;

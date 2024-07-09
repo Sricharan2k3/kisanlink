@@ -8,7 +8,7 @@ import StickyScrollRevealDemo from "../hello/page";
 const Farmersol = () => {
   return (
     <>
-      <Background title={"Ecommerce"}></Background>
+      <Background title={"E-Commerce"}></Background>
 
       <div className="">
         <Heading value={"Products"}></Heading>
@@ -16,28 +16,28 @@ const Farmersol = () => {
 
       <div className="flex flex-row -mt-4 mb-12">
         <div className="flex flex-col">
-          <p className="text-justify ml-80 mt-8 w-96 mr-16  ">
+          <p className="text-justify ml-48 mt-8 mr-36  ">
             We provide Agri Inputs and the latest equipment and machinery to
             farmers at their doorstep, enabling them to improve their yield. For
             a better crop yield, farmers require agri inputs, advanced
             equipment, and machinery; we, by collaborating with innovative and
             technically proven companies, enable farmers to access these leading
             to improved crop management practices. All these products can be
-            ordered through our mobile app –
+            ordered through our mobile app –<br></br>
             <a
               className=" text-blue-400"
               href="https://play.google.com/store/apps/details?id=com.kisanlink"
             >
               {" "}
-              download now Kisanlink
+              Download Kisanlink Now
             </a>
           </p>
         </div>
-        <div className="flex flex-col mr-80">
+        <div className="flex flex-col mr-48">
           <iframe
-            width="480"
-            height="300"
-            src="https://www.kisanlink.in/wp-content/uploads/mobile-sc.mp4"
+            width="390"
+            height="220"
+            src="https://www.kisanlink.in/wp-content/uploads/prod.mp4"
             title="Become a Kisansathi"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

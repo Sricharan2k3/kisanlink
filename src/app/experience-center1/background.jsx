@@ -8,7 +8,7 @@ const Background = ({title}) => {
         
         <img
           className="absolute insert-0 h-screen w-full overflow-hidden"
-          src="./exp.jpg"
+          src="./expc.jpg"
         />
       </div>
     );

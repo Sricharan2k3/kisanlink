@@ -17,10 +17,13 @@ const ExperienceCenter = () => {
         <Heading value={"Kisanlink Experience Center"} />
       </div>
       <CardHoverEffectDemo />
-      <Heading value={"Services and Support"} />
-
+      <div className="-mt-10">
+        <Heading value={"Services and Support"} />
+      </div>
       <DirectionAwareHoverDemo />
-      <Heading value={"   Marketing and Financial Support"} />
+      <div className="-mt-16">
+        <Heading value={"   Marketing and Financial Support"} />
+      </div>
       <ThreeDCardDemo />
 
       <div>

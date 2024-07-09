@@ -12,7 +12,7 @@ const smartcard = () => {
       {/* <Background title={"Smart Cards"}></Background> */}
       <VideoContainer></VideoContainer>{" "}
       <div>
-        <Heading value={"Kisanlink Membership Card"}></Heading>
+        <Heading value={"Kisanlink Smart Membership Card"}></Heading>
       </div>
       <div>
         <p className="text-center -mt-4 mb-20 ml-40 mr-40">

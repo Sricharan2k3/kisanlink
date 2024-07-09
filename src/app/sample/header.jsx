@@ -22,9 +22,9 @@ const Header = () => {
             className="ml-1 mr-1 px-4 py-2 rounded-full bg-brown-700 text-white hover:bg-blue-600 focus:outline-none"
             onClick={redirectToLogin}
           >
-            FPO Login
+            FPO/Corporate Login
           </button>
-          <div class=" flex justify-center -ml-2 md:block">
+          {/* <div class=" flex justify-center -ml-2 md:block">
         <a href="https://digicrop.ai">
             <button type="button" class="flex items-center justify-center w-36 text-white rounded-3xl h-8">
                 
@@ -33,7 +33,7 @@ const Header = () => {
                 </div>
             </button>
         </a>
-    </div>
+    </div> */}
         </div>
         
       </div>

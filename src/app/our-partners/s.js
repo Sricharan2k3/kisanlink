@@ -286,7 +286,7 @@ export default function Component() {
       ],
       icon: FocusIcon,
       imgAlt: "Features Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/partners-customer-support.png",
+      imgSrc: "./train.png",
     },
     {
       id: "contact",
@@ -304,7 +304,8 @@ export default function Component() {
       ],
       icon: ContactIcon,
       imgAlt: "Contact Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/partners-customer-support.png",
+      imgSrc:
+        "https://www.kisanlink.in/wp-content/uploads/partners-customer-support.png",
     },
   ];
 
@@ -330,9 +331,7 @@ export default function Component() {
           <section
             key={section.id}
             id={section.id}
-            className={` ${
-              index === 0 ? "mt-24" : "mt-48"
-            }`}
+            className={` ${index === 0 ? "mt-24" : "mt-48"}`}
           >
             <div className="container px-4 md:px-6">
               <div
@@ -348,7 +347,7 @@ export default function Component() {
                     width="400"
                     height="310"
                     alt={section.imgAlt}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                    className="mx-auto aspect-video overflow-hidden rounded-xl h-[400px] object-cover object-center sm:w-full"
                   />
                 )}
                 <div className="space-y-6">

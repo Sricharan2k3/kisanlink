@@ -115,10 +115,11 @@ const Navigation = () => {
                   <li key={item.name}>
                     <a
                       href={item.href}
-                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${activeSection === item.href.substring(1)
-                        ? "bg-blue-600"
-                        : ""
-                        }`}
+                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
+                        activeSection === item.href.substring(1)
+                          ? "bg-blue-600"
+                          : ""
+                      }`}
                     >
                       {item.icon}
                       <span className="px-2">{item.name}</span>
@@ -130,8 +131,10 @@ const Navigation = () => {
           </div>
         )}
 
-
-        <div className="mt-4 flex flex-col items-center w-full content-section" id="farms">
+        <div
+          className="mt-4 flex flex-col items-center w-full content-section"
+          id="farms"
+        >
           <div className="text-center mt-36">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farms
@@ -168,7 +171,10 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-full content-section" id="products" >
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="products"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Products
@@ -206,7 +212,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="billing">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="billing"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Billing
@@ -244,7 +253,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="outputpurchase">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="outputpurchase"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Output Purchase
@@ -282,7 +294,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="inventory">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="inventory"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Inventory
@@ -328,7 +343,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="payments">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="payments"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Payments
@@ -366,7 +384,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="farmers">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="farmers"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farmers
@@ -404,7 +425,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-full content-section" id="datasecurity">
+        <div
+          className="flex flex-col items-center w-full content-section"
+          id="datasecurity"
+        >
           <div className="text-center  mt-4 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Data Security

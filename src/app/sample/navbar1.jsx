@@ -3,10 +3,11 @@ import Link from "next/link"
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
+import { Superscript } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="bg-white large:ml-80 medium:ml-36  rounded-full">
+    <div className="bg-white large:ml-60 medium:ml-12  rounded-full">
 
   
     <header className="  top-0 z-40 w-full bg-background rounded-full border-2 border-black">
@@ -36,7 +37,7 @@ export default function Component() {
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Ecommerce</div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">E-Commerce</div>
                         
                       </Link>
                     </NavigationMenuLink>
@@ -46,7 +47,7 @@ export default function Component() {
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Membership Cards</div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">Smart Membership Cards</div>
                         
                       </Link>
                     </NavigationMenuLink>
@@ -74,7 +75,7 @@ export default function Component() {
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
-                        <div className="text-sm font-medium leading-none group-hover:underline">Agriculture Skill Training</div>
+                        <div className="text-sm font-medium leading-none group-hover:underline">Skill Training</div>
                         
                       </Link>
                     </NavigationMenuLink>
@@ -151,9 +152,39 @@ export default function Component() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Our Brands</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid  bg-white w-[180px] p-2 ml-[560px] mt-2">
+                  <NavigationMenuLink asChild>
+                      <Link
+                        href="https://digicrop.vercel.app/"
+                        className="group grid  items-center justify-start gap-1 rounded-md bg-background  text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        {/* <div className="text-sm font-medium leading-none group-hover:underline">Digicrop<sup>TM</sup></div> */}
+                        <div className="-mt-12">< img height={10} src="./dig.png"></img></div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="https://amrti.com/"
+                        className="group grid items-center justify-start gap-1 rounded-md bg-background text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        {/* <div className="text-sm font-medium leading-none group-hover:underline">Amriti<sup>TM</sup></div> */}
+                        <div className="-mt-12"><img height={10} src="./amt.png"></img></div>
+                        
+                      </Link>
+                    </NavigationMenuLink>
+                    
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid  bg-white w-[180px] p-2 ml-[690px] mt-2">
                   <NavigationMenuLink asChild>
                       <Link
                         href="/about-us"
@@ -190,7 +221,7 @@ export default function Component() {
                         </div> */}
                       </Link>
                     </NavigationMenuLink>
-                    <NavigationMenuLink asChild>
+                    {/* <NavigationMenuLink asChild>
                       <Link
                         href="/our-brands"
                         className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
@@ -200,8 +231,8 @@ export default function Component() {
                         {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Explore brands at our company.
                         </div> */}
-                      </Link>
-                    </NavigationMenuLink>
+                      {/* </Link>
+                    </NavigationMenuLink>  */}
                     <NavigationMenuLink asChild>
                       <Link
                         href="/careers"

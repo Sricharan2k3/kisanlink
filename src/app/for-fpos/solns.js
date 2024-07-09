@@ -19,11 +19,7 @@ const ContentComponent = ({ imageUrl }) => {
             collective purchasing and selling strength in the market.
           </p>
         </div>
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/updated-store.jpg"
-          alt="FPO"
-          className="w-80 h-52"
-        />
+        <img src="./newstore.png" alt="FPO" className="w-80 h-52" />
       </div>
     </div>
   );
