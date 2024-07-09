@@ -32,7 +32,7 @@ const Career = () => {
               Open Positions
             </h1>
 
-            <div className="bg-white py-2 mt-24 border border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-gray-500 hover:text-white transition duration-300 mr-24 w-80 h-12 ">
+            <div className="bg-white py-2 mt-24 border pt-3 border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-gray-500 hover:text-white transition duration-300 mr-24 w-80 h-12 ">
               Become a Kisansathi
             </div>
           </div>
@@ -55,11 +55,11 @@ const Career = () => {
           />
         </div>
       </div>
-      <img
+      {/* <img
         src="https://www.kisanlink.in/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
         className="w-full h-48"
         alt=""
-      />
+      /> */}
 
       <Heading value={"Kisansathi"} />
       <CareersForm />

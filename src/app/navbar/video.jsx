@@ -3,7 +3,7 @@ import React from 'react';
 
 function VideoContainer() {
   return (
-    <div className=" pt-20 flex items-center bg-white justify-center h-screen m-0 overflow-hidden">
+    <div className=" pt-20 flex items-center bg-white justify-center h-screen -m-1.5 overflow-hidden">
       <div className="relative w-full h-full">
         <iframe
           className="absolute  w-full h-full "
