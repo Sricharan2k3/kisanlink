@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
 
-
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -18,37 +17,36 @@ const App = () => {
       role: "user",
       content: input
     };
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const targetUrl = 'http://localhost:3000/api/ChatBot'; 
-
-    // Add user message to the state
-    setMessages((prevMessages) => [...prevMessages, userMessage]);
-    setInput("");
 
     // Construct the payload for the backend API
+    const newMessages = [...messages, userMessage];
     const payload = {
-      messages: [...messages, userMessage],
+      messages: newMessages,
       useRag: true, 
       llm: "gpt-3.5-turbo",
       similarityMetric: "cosine"
     };
+
+    // Add user message to the state
+    setMessages(newMessages);
+    setInput("");
 
     // Call the backend API
     try {
       const response = await fetch('http://localhost:3000/api/Chat', {
         method: "POST",
         headers: {
-          "Content-Type": "text/plain"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(payload)
       });
-    
-      console.log(response)
-      const data = await response.text();
-     console.log(data)
-    
-      setMessages((prevMessages) => [...prevMessages, data]);
-      console.log(messages)
+
+      const data = await response.text(); // Assuming your backend returns JSON
+      const assistantMessage = {
+        role: "assistant",
+        content: data // Adjust according to the actual structure of the response
+      };
+      setMessages((prevMessages) => [...prevMessages, assistantMessage]);
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = {
@@ -84,7 +82,7 @@ const App = () => {
 
         {/* Chat close button */}
         {isChatOpen && (
-          <div className="relative w-96">
+          <div className="relative w-120 h-120"> {/* Increased size */}
             <button
               id="chat-close-button"
               className="p-2 bg-red-500 rounded-full absolute right-0"
@@ -94,15 +92,15 @@ const App = () => {
             </button>
 
             {/* Chat window */}
-            <div className="chat-window bg-white shadow-lg rounded-lg p-4 mt-4">
-              <div className="message-box mb-4 h-64 overflow-y-auto flex flex-col">
+            <div className="chat-window bg-white shadow-lg rounded-lg p-4 mt-4 h-full">
+              <div className="message-box mb-4 h-80 overflow-y-auto flex flex-col">
                 {messages.map((message, index) => (
                   <div
                     key={index}
                     className={`mb-2 p-2 rounded max-w-xs ${
                       message.role === "user"
-                        ? "bg-blue-100 self-end text-right"
-                        : "bg-gray-100 self-start text-left"
+                        ? "bg-blue-300 text-black self-end text-right" // Adjusted background and text color
+                        : "bg-gray-300 text-black self-start text-left" // Adjusted background and text color
                     }`}
                   >
                     {message.content}
