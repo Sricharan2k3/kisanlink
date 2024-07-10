@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 import KisanAcademy from "./accordian";
 import FPOTraining from "./accordian1";
 import React, { useState } from "react";
