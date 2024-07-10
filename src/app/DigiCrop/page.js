@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -16,10 +15,10 @@ const App = () => {
 
     const userMessage = {
       role: "user",
-      content: input
+      content: input,
     };
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const targetUrl = 'http://localhost:3000/api/ChatBot'; 
+    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    // const targetUrl = 'http://kisanlink/api/ChatBot';
 
     // Add user message to the state
     setMessages((prevMessages) => [...prevMessages, userMessage]);
@@ -28,32 +27,32 @@ const App = () => {
     // Construct the payload for the backend API
     const payload = {
       messages: [...messages, userMessage],
-      useRag: true, 
+      useRag: true,
       llm: "gpt-3.5-turbo",
-      similarityMetric: "cosine"
+      similarityMetric: "cosine",
     };
 
     // Call the backend API
     try {
-      const response = await fetch('http://localhost:3000/api/Chat', {
+      const response = await fetch("http://kisanlink.in/api/Chat", {
         method: "POST",
         headers: {
-          "Content-Type": "text/plain"
+          "Content-Type": "text/plain",
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
-    
-      console.log(response)
+
+      console.log(response);
       const data = await response.text();
-     console.log(data)
-    
+      console.log(data);
+
       setMessages((prevMessages) => [...prevMessages, data]);
-      console.log(messages)
+      console.log(messages);
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = {
         role: "assistant",
-        content: "There was an error getting a response from the server."
+        content: "There was an error getting a response from the server.",
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
     }
@@ -118,7 +117,7 @@ const App = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyPress={(e) => {
-                      if (e.key === 'Enter') {
+                      if (e.key === "Enter") {
                         handleSendMessage();
                       }
                     }}
