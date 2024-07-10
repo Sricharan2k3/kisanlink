@@ -17,12 +17,6 @@ const App = () => {
       role: "user",
       content: input,
     };
-    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    // const targetUrl = 'http://kisanlink/api/ChatBot';
-
-    // Add user message to the state
-    setMessages((prevMessages) => [...prevMessages, userMessage]);
-    setInput("");
 
     // Construct the payload for the backend API
     const newMessages = [...messages, userMessage];
@@ -39,10 +33,10 @@ const App = () => {
 
     // Call the backend API
     try {
-      const response = await fetch("https://localhost:3000/api/Chat", {
+      const response = await fetch("https://kisanlink.in/api/Chat", {
         method: "POST",
         headers: {
-          "Content-Type": "text/plain",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(payload),
       });
