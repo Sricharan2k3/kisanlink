@@ -34,7 +34,7 @@ const App = () => {
 
     // Call the backend API
     try {
-      const response = await fetch("http://kisanlink.in/api/Chat", {
+      const response = await fetch("https://kisanlink.in/api/Chat", {
         method: "POST",
         headers: {
           "Content-Type": "text/plain",
