@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/utils/cn"; // Ensure this is correctly imported or defined
+import { cn } from "../../utils/cn"; // Ensure this is correctly imported or defined
 
 export const DirectionAwareHover = ({
   imageUrl,

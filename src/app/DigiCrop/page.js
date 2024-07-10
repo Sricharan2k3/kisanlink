@@ -1,5 +1,9 @@
 "use client";
+<<<<<<< HEAD
 import React, { useState } from 'react';
+=======
+import React, { useState } from "react";
+>>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
 
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -15,16 +19,30 @@ const App = () => {
 
     const userMessage = {
       role: "user",
-      content: input
+      content: input,
     };
+<<<<<<< HEAD
+=======
+    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    // const targetUrl = 'http://kisanlink/api/ChatBot';
+
+    // Add user message to the state
+    setMessages((prevMessages) => [...prevMessages, userMessage]);
+    setInput("");
+>>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
 
     // Construct the payload for the backend API
     const newMessages = [...messages, userMessage];
     const payload = {
+<<<<<<< HEAD
       messages: newMessages,
       useRag: true, 
+=======
+      messages: [...messages, userMessage],
+      useRag: true,
+>>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
       llm: "gpt-3.5-turbo",
-      similarityMetric: "cosine"
+      similarityMetric: "cosine",
     };
 
     // Add user message to the state
@@ -33,25 +51,38 @@ const App = () => {
 
     // Call the backend API
     try {
-      const response = await fetch('http://localhost:3000/api/Chat', {
+      const response = await fetch("https://kisanlink.in/api/Chat", {
         method: "POST",
         headers: {
+<<<<<<< HEAD
           "Content-Type": "application/json"
+=======
+          "Content-Type": "text/plain",
+>>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
 
+<<<<<<< HEAD
       const data = await response.text(); // Assuming your backend returns JSON
       const assistantMessage = {
         role: "assistant",
         content: data // Adjust according to the actual structure of the response
       };
       setMessages((prevMessages) => [...prevMessages, assistantMessage]);
+=======
+      console.log(response);
+      const data = await response.text();
+      console.log(data);
+
+      setMessages((prevMessages) => [...prevMessages, data]);
+      console.log(messages);
+>>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = {
         role: "assistant",
-        content: "There was an error getting a response from the server."
+        content: "There was an error getting a response from the server.",
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
     }
@@ -116,7 +147,7 @@ const App = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyPress={(e) => {
-                      if (e.key === 'Enter') {
+                      if (e.key === "Enter") {
                         handleSendMessage();
                       }
                     }}

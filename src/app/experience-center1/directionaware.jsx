@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { cn } from "../../utils/cn";
 import { DirectionAwareHover } from "../components/direction-aware-hover";
 import Heading from "../components/heading";
 

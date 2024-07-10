@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 const FPOTraining = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 

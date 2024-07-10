@@ -1,7 +1,7 @@
 "use client";
 import ConsultancyServicesPage from "./accordian";
 import KisanlinkDashboard from "./accordianNext";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 import Navigation from "../navbar/page";
 import Navigation1 from "../navbar/navigation";
 

@@ -1,5 +1,5 @@
 "use client";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 import ContentComponent from "./solns";
 import Techsuppourt from "./tech";
 import ConsultancyServicesPage from "./consulting";
