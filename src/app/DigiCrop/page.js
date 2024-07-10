@@ -1,9 +1,5 @@
 "use client";
-<<<<<<< HEAD
-import React, { useState } from 'react';
-=======
 import React, { useState } from "react";
->>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
 
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -21,26 +17,18 @@ const App = () => {
       role: "user",
       content: input,
     };
-<<<<<<< HEAD
-=======
     // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     // const targetUrl = 'http://kisanlink/api/ChatBot';
 
     // Add user message to the state
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     setInput("");
->>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
 
     // Construct the payload for the backend API
     const newMessages = [...messages, userMessage];
     const payload = {
-<<<<<<< HEAD
       messages: newMessages,
-      useRag: true, 
-=======
-      messages: [...messages, userMessage],
       useRag: true,
->>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
       llm: "gpt-3.5-turbo",
       similarityMetric: "cosine",
     };
@@ -51,33 +39,20 @@ const App = () => {
 
     // Call the backend API
     try {
-      const response = await fetch("https://kisanlink.in/api/Chat", {
+      const response = await fetch("https://localhost:3000/api/Chat", {
         method: "POST",
         headers: {
-<<<<<<< HEAD
-          "Content-Type": "application/json"
-=======
           "Content-Type": "text/plain",
->>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
         },
         body: JSON.stringify(payload),
       });
 
-<<<<<<< HEAD
       const data = await response.text(); // Assuming your backend returns JSON
       const assistantMessage = {
         role: "assistant",
-        content: data // Adjust according to the actual structure of the response
+        content: data, // Adjust according to the actual structure of the response
       };
       setMessages((prevMessages) => [...prevMessages, assistantMessage]);
-=======
-      console.log(response);
-      const data = await response.text();
-      console.log(data);
-
-      setMessages((prevMessages) => [...prevMessages, data]);
-      console.log(messages);
->>>>>>> 33aa7be9127e77cfaddd0cb949625d94409f78d5
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = {
@@ -113,7 +88,9 @@ const App = () => {
 
         {/* Chat close button */}
         {isChatOpen && (
-          <div className="relative w-120 h-120"> {/* Increased size */}
+          <div className="relative w-120 h-120">
+            {" "}
+            {/* Increased size */}
             <button
               id="chat-close-button"
               className="p-2 bg-red-500 rounded-full absolute right-0"
@@ -121,7 +98,6 @@ const App = () => {
             >
               <span className="material-icons-outlined text-white">close</span>
             </button>
-
             {/* Chat window */}
             <div className="chat-window bg-white shadow-lg rounded-lg p-4 mt-4 h-full">
               <div className="message-box mb-4 h-80 overflow-y-auto flex flex-col">
