@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 // Card Component
 const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
