@@ -26,8 +26,6 @@
     "framer-motion": "^11.2.12",
     "lucide-react": "^0.399.0",
     "node": "^22.3.0",
-    "nodemailer": "^6.9.14",
-    "openai": "^4.14.2",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
@@ -42,7 +40,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/react": "18.3.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "next": "^14.2.4",

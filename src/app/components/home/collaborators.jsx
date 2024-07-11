@@ -1,7 +1,7 @@
 // @flow strict
 
-import { collaboratorsData } from "@/utils/data/collaborators";
-import { collaboratorsImage } from "@/utils/skill-image";
+import { collaboratorsData } from "../../../utils/data/collaborators";
+import { collaboratorsImage } from "../../../utils/skill-image"
 
 import Image from "next/image";
 import Marquee from "react-fast-marquee";

@@ -99,35 +99,7 @@ const content = [
     ),
     imageSrc: "./ops.png",
   },
-  {
-    id: "government-subsidy-schemes",
-    title: "Facilitation of Government Subsidy/Schemes",
-    description: (
-      <>
-        We educate farmers about the latest government schemes & subsidies and
-        help with the documentation process to avail these benefits.
-        <br />
-        <br />
-        <ol>
-          <li className="flex flex-row">
-            <LuDot />
-            Information about latest schemes/subsidies
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Hassle-free application process
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Faster approvals
-          </li>
-        </ol>
-      </>
-    ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/subscidies.png",
-  },
+
   {
     id: "advisory-services",
     title: "Advisory Services",
@@ -156,6 +128,35 @@ const content = [
       </>
     ),
     imageSrc: "./advc.png",
+  },
+  {
+    id: "government-subsidy-schemes",
+    title: "Facilitation of Government Subsidy/Schemes",
+    description: (
+      <>
+        We educate farmers about the latest government schemes & subsidies and
+        help with the documentation process to avail these benefits.
+        <br />
+        <br />
+        <ol>
+          <li className="flex flex-row">
+            <LuDot />
+            Information about latest schemes/subsidies
+          </li>
+          <br />
+          <li className="flex flex-row">
+            <LuDot />
+            Hassle-free application process
+          </li>
+          <br />
+          <li className="flex flex-row">
+            <LuDot />
+            Faster approvals
+          </li>
+        </ol>
+      </>
+    ),
+    imageSrc: "https://www.kisanlink.in/wp-content/uploads/subscidies.png",
   },
 ];
 

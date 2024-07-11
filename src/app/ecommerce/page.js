@@ -16,14 +16,14 @@ const Farmersol = () => {
 
       <div className="flex flex-row -mt-4 mb-12">
         <div className="flex flex-col">
-          <p className="text-justify ml-48 mt-8 mr-36  ">
+          <p className="text-justify ml-12 mt-8 mr-24  ">
             We provide Agri Inputs and the latest equipment and machinery to
             farmers at their doorstep, enabling them to improve their yield. For
             a better crop yield, farmers require agri inputs, advanced
             equipment, and machinery; we, by collaborating with innovative and
             technically proven companies, enable farmers to access these leading
             to improved crop management practices. All these products can be
-            ordered through our mobile app –<br></br>
+            ordered through our mobile app –
             <a
               className=" text-blue-400"
               href="https://play.google.com/store/apps/details?id=com.kisanlink"
@@ -33,7 +33,7 @@ const Farmersol = () => {
             </a>
           </p>
         </div>
-        <div className="flex flex-col mr-48">
+        <div className="flex flex-col mr-16">
           <iframe
             width="390"
             height="220"

@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 import Card1 from "./card1";
 import Card2 from "./card2";
 import Collaborators from "../components/home/collaborators";

@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../components/heading";
-import Background from "@/utils/background";
+import Background from "../../utils/background";
 import KisanAcademy from "./accordian";
 import FPOTraining from "./accordian1";
 import React, { useState } from "react";
@@ -147,13 +147,13 @@ const Academy = () => {
           </div>
 
           {/* Bottom Image */}
-          <div className="flex justify-center mt-12 pt-12">
+          {/* <div className="flex justify-center mt-12 pt-12">
             <img
               src="https://www.kisanlink.in/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
               alt="Bottom Image"
               className="w-full h-48"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-center mt-20">
@@ -316,7 +316,7 @@ const Academy = () => {
         />
       </div> */}
 
-        <div className="bg-shape bg-blue-700 h-96">
+        <div className="bg-shape bg-green-600 w-full h-96">
           <img
             src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/left-shape.png"
             alt="shape"
@@ -352,7 +352,10 @@ const Academy = () => {
         </div>
         <div className="mt-6 text-center">
           <div className="bg-white py-3 px-6 border border-green-500 rounded-full shadow-md inline-block">
-            <span className="text-green-500 font-bold">Kisanlink</span>
+            <a href="https://play.google.com/store/apps/details?id=com.meherprasadverdeneni.learners&pcampaignid=web_share">
+              {" "}
+              <span className="text-green-500 font-bold">Kisanlink</span>
+            </a>
           </div>
         </div>
 

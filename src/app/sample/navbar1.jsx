@@ -1,8 +1,9 @@
 
 import Link from "next/link"
-import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
+import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "../../components/ui/navigation-menu"
+
+import { Button } from "../../components/ui/button"
+import { Sheet, SheetTrigger, SheetContent } from "../../components/ui/sheet"
 import { Superscript } from "lucide-react"
 
 export default function Component() {
