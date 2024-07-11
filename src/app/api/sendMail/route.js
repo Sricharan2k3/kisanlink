@@ -10,15 +10,15 @@ export async function POST(req) {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "namasricharan@gmail.com", // Your email address
+        user: "info@kisanlink.in", // Your email address
         pass: process.env.PASSKEY, // Your email password or app-specific password
       },
     });
 
     // Define email options
     let mailOptions = {
-      from: "namasricharan@gmail.com",
-      to: "namasricharan@gmail.com", // The recipient's email address
+      from: "info@kisanlink.in",
+      to: "info@kisanlink.in", // The recipient's email address
       subject: "New Career Form Submission",
       text: `Name: ${name_1}\nContact Number: ${tel_1}\nState: ${state_1}\nDistrict: ${district_1}\nDescription: ${Description_1}`,
     };
