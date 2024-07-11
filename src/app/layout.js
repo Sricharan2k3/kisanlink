@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 // import Navbar from "./components/navbar";
 import { NavbarDemo } from "./components/navbar-main";
 import Header from "./sample/header";
+import App from "../app/DigiCrop/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-
-
-        {children} <Footer />
+        <App></App>
+        {children}
+        <Footer />
       </body>
     </html>
   );

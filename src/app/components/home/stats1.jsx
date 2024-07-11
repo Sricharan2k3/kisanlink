@@ -5,19 +5,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../heading";
 
-const StatsCarousel = () => {
+const StatsCarousel1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
-  const stats = [
+  const stats1 = [
+    { id: 1, value: "100+", label: "Villages" },
+    { id: 2, value: "150+", label: "Kisansathi (VLEs)" },
+    { id: 3, value: "7000+", label: "Farmers" },
+    { id: 4, value: "50+", label: "Local Partners (FPO's)" },
+    { id: 5, value: "30+", label: "Collaborators" },
+    { id: 6, value: "50+", label: "Brands" },
+    { id: 7, value: "800+", label: "Products" },
 
-    { id: 1, value: "2500+", label: "FMS" },
-    { id: 2, value: "200+", label: "Product Orders" },
-    { id: 3, value: "50+", label: "Procurement In Tons" },
-    { id: 4, value: "5+", label: "Other Services" },
-    { id: 5, value: "500+", label: "Soil Testing Reports" },
+    { id: 8, value: "2", label: "States" },
   ];
-
 
   const settings = {
     dots: false, // Disable default dots
@@ -56,28 +58,29 @@ const StatsCarousel = () => {
     ],
   };
 
-  // Adjust the number of dots
-  const numDots = 5;
-  const dots = Array.from({ length: numDots }, (_, i) => i);
+
+
+  const numDots1 = 8;
+  const dots1 = Array.from({ length: numDots1 }, (_, i) => i);
 
   // Dot click handler
-  const goToSlide = (index) => {
-    const slideToGo = Math.floor((index / numDots) * stats.length);
-    sliderRef.current.slickGoTo(slideToGo);
+  const goToSlide1 = (index) => {
+    const slideToGo1 = Math.floor((index / numDots1) * stats1.length);
+    sliderRef.current.slickGoTo(slideToGo1);
   };
-
 
   return (
     
+  
     <div className=" -mt-8 overflow-hidden relative py-8">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
         </h1>
       </div> */}
-      <Heading value={"Operational Numbers"}></Heading>
+      <Heading value={"Metrics that Matter"}></Heading>
       <Slider {...settings} ref={sliderRef}>
-        {stats.map((stat) => (
+        {stats1.map((stat) => (
           <div key={stat.id} className="px-4">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
                             
@@ -92,15 +95,15 @@ const StatsCarousel = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute bottom-25 pb-36 left-0 w-full flex justify-center mt-6">
+      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
-          {dots.map((dotIndex) => (
+          {dots1.map((dotIndex) => (
             <li
               key={dotIndex}
-              onClick={() => goToSlide(dotIndex)}
+              onClick={() => goToSlide1(dotIndex)}
               className={`w-2 h-2 rounded-full cursor-pointer ${
-                currentSlide >= dotIndex * (stats.length / numDots) &&
-                currentSlide < (dotIndex + 1) * (stats.length / numDots)
+                currentSlide >= dotIndex * (stats1.length / numDots1) &&
+                currentSlide < (dotIndex + 1) * (stats1.length / numDots1)
                   ? "bg-blue-100"
                   : "bg-gray-300"
               }`}
@@ -109,11 +112,10 @@ const StatsCarousel = () => {
         </ul>
       </div>
     </div>
-
   );
 };
 
-export default StatsCarousel;
+export default StatsCarousel1;
 
 
 

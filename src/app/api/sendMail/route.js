@@ -11,7 +11,7 @@ export async function POST(req) {
       service: "gmail",
       auth: {
         user: "namasricharan@gmail.com", // Your email address
-        pass: PASSKEY, // Your email password or app-specific password
+        pass: process.env.PASSKEY, // Your email password or app-specific password
       },
     });
 

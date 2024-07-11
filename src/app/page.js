@@ -5,7 +5,7 @@ import "../styles/global.css";
 import Empower from "./components/home/empower";
 import StatsCarousel from "./components/home/stats";
 import Screenshot from "./components/home/screenshot";
-
+import StatsCarousel1 from "./components/home/stats1";
 import FourCards from "./components/home/fourcards";
 import Collaborators from "./components/home/collaborators";
 import VideoContainer from "./components/home/videocontainer";
@@ -24,6 +24,8 @@ export default function Home() {
       {/* <FarmMechanization /> */}
       <FarmMechanizationSection />
       <StatsCarousel></StatsCarousel>
+
+      <StatsCarousel1></StatsCarousel1>
       <Screenshot></Screenshot>
 
       <FourCards />

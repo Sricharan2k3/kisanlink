@@ -58,25 +58,21 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center bg-gray-800 p-4 w-full">
-        <label className="text-white text-2xl font-bold">Maxeon</label>
-        <button id="icon" onClick={toggleChat} className="text-white md:hidden">
-          <span className="material-icons-outlined">menu</span>
-        </button>
-      </nav>
-
+    <div className="flex flex-col items-center justify-center  bg-gray-100">
       {/* Popup chat window */}
       <div className="fixed bottom-4 right-4">
         {/* Chat open button */}
         {!isChatOpen && (
           <button
             id="chat-open-button"
-            className="p-2 bg-blue-500 rounded-full"
+            className="p-2 bg-white rounded-full"
             onClick={toggleChat}
           >
-            <img src="assets/images/Sparrow Bird.png" alt="Sparrow Bird" />
+            <img
+              src="./digicrop.png"
+              className="h-[80px] w-[80px]"
+              alt="Sparrow Bird"
+            />
           </button>
         )}
 
@@ -98,10 +94,11 @@ const App = () => {
                 {messages.map((message, index) => (
                   <div
                     key={index}
-                    className={`mb-2 p-2 rounded max-w-xs ${message.role === "user"
+                    className={`mb-2 p-2 rounded max-w-xs ${
+                      message.role === "user"
                         ? "bg-blue-300 text-black self-end text-right" // Adjusted background and text color
                         : "bg-gray-300 text-black self-start text-left" // Adjusted background and text color
-                      }`}
+                    }`}
                   >
                     {message.content}
                   </div>
