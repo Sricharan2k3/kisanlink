@@ -3,15 +3,15 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
 
     if (req.method === 'POST') {
-        const { name_1, tel_1, state_1, district_1, Description_1 } = req.body;
-        console.log(req.body.name_1)
+        const { name_1, tel_1, state_1, district_1, Description_1 } = await req.json();
+        console.log(req.json())
 
         // Configure the transporter
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
                 user: 'namasricharan@gmail.com', // Your email address
-                pass: 'pzab dnnw tegy voiq', // Your email password or app-specific password
+                pass: PASSKEY, // Your email password or app-specific password
             },
         });
 
