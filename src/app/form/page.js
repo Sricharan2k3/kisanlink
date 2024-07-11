@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 
 const CareersForm = () => {
@@ -17,32 +17,40 @@ const CareersForm = () => {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        console.log(formData);
+    const handleSubmit = async (e) => {
+        console.log(formData),
+            e.preventDefault();
+        try {
+            const response = await fetch('api/sendMail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                console.log('Email sent successfully', result);
+            } else {
+                console.error('Error sending email', result);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
     };
 
     return (
-        <div className="flex items-left justify-center  ">
+        <div className="flex items-left justify-center">
             <form
-                action="/careers/#wpcf7-f3180-p2-o1"
-                method="post"
-                className="wpcf7-form init  p-8 rounded-lg  w-2/3"
+                onSubmit={handleSubmit}
+                className="wpcf7-form init p-8 rounded-lg w-2/3"
                 aria-label="Contact form"
                 noValidate
                 data-status="init"
-                onSubmit={handleSubmit}
             >
-                <div className="hidden">
-                    <input type="hidden" name="_wpcf7" value="3180" />
-                    <input type="hidden" name="_wpcf7_version" value="5.7.7" />
-                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f3180-p2-o1" />
-                    <input type="hidden" name="_wpcf7_container_post" value="2" />
-                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                </div>
-
                 <div className="faq-form faq-forms">
                     <div className="mb-4">
                         <p>
@@ -56,6 +64,7 @@ const CareersForm = () => {
                                     value={formData.name_1}
                                     type="text"
                                     name="name_1"
+                                    id="name_1"
                                     onChange={handleChange}
                                 />
                             </span>
@@ -64,7 +73,7 @@ const CareersForm = () => {
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         <div>
                             <p>
-                                <span className="wpcf7-form-control-wrap" data-name="tel-1">
+                                <span className="wpcf7-form-control-wrap" data-name="tel_1">
                                     <input
                                         size="80"
                                         className="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-input w-full px-4 py-2 border border-gray-300 rounded-full"
@@ -73,7 +82,7 @@ const CareersForm = () => {
                                         placeholder="Contact Number"
                                         value={formData.tel_1}
                                         type="tel"
-                                        name="tel-1"
+                                        name="tel_1"
                                         onChange={handleChange}
                                     />
                                 </span>
@@ -131,7 +140,7 @@ const CareersForm = () => {
                             </span>
                         </p>
                     </div>
-                    <div >
+                    <div>
                         <p>
                             <input
                                 className="wpcf7-form-control has-spinner wpcf7-submit px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600"
