@@ -8,13 +8,13 @@ import { Superscript } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="bg-white large:ml-60 medium:ml-12  rounded-full">
+    <div className="bg-white large:ml-60 medium:ml-12 z-50  rounded-full">
 
   
-    <header className="  top-0 z-40 w-full bg-background rounded-full border-2 border-black">
+    <header className="  top-0 z-50 w-full bg-background rounded-full border-2 border-black">
     <div className="container flex h-16 items-center justify-end px-4 md:px-6">
     
-      <nav className="hidden items-center bg-white gap-6 text-sm font-medium md:flex">
+      <nav className="hidden items-center z-50 bg-white gap-6 text-sm font-medium md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>

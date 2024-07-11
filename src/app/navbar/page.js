@@ -102,8 +102,8 @@ const Navigation = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center">
-        <div className="w-full video-container">
+      <div className="flex flex-col items-center bg-white">
+        <div className="w-full overflow-hidden h-screen video-container bg-white">
           <VideoContainer />
         </div>
 
@@ -175,7 +175,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="products"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Products
             </h1>
@@ -216,7 +216,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="billing"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Billing
             </h1>
@@ -257,7 +257,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="outputpurchase"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Output Purchase
             </h1>
@@ -298,7 +298,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="inventory"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Inventory
             </h1>
@@ -310,7 +310,7 @@ const Navigation = () => {
 
           <div className="flex flex-col items-center mt-8">
             <div className="flex flex-row">
-              <div className="flex flex-col mt-8">
+              <div className="flex flex-col mt-56">
                 <img
                   width={600}
                   src="./Inventory.png"
@@ -347,7 +347,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="payments"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Payments
             </h1>
@@ -388,7 +388,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="farmers"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Farmers
             </h1>
@@ -429,7 +429,7 @@ const Navigation = () => {
           className="flex flex-col items-center w-full content-section"
           id="datasecurity"
         >
-          <div className="text-center  mt-4 pt-2">
+          <div className="text-center  mt-16 pt-2">
             <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
               Data Security
             </h1>

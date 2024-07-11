@@ -95,7 +95,7 @@ export default function Component() {
 
   return (
     <>
-      <div className="relative h-screen overflow-hidden" ref={containerRef}>
+      <div className="relative z-40 h-screen overflow-hidden" ref={containerRef}>
         <div className="absolute inset-0 z-0">
           <img
             src={images[0]}

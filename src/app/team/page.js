@@ -59,6 +59,51 @@ const App = () => {
     },
     {
       photo:
+        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2022-07-22-at-1.35.06-PM-ps56uvsiwm4i5id1guki3fbpg9oozl5xhg9wek7330.jpeg",
+      name: "Shiva Reddy Gunthakanti",
+      position: "Strategic Advisor",
+      qualification: "B.Tech IIT Guwahati",
+      experience: [
+        "6 years of comprehensive experience in the Agri Output business, including strategic planning, operational management, and various leadership positions within Agritech and Edtech startups",
+      ],
+      linkedInUrl:
+        "https://www.linkedin.com/in/shiva-reddy-gunthakanti-4b027363/",
+    },
+    {
+      photo:
+        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/image-111-ps58pq3cwhmjr99r5qpfek3q6o8ccqis0acwyx38m4.png",
+      name: "Manohar Rao",
+      position: "Technical Advisor",
+      qualification: "Ph.D in Horticulture",
+      experience: [
+        "35 years of experience in teaching, pioneering research, and delivering valuable extension services",
+      ],
+      linkedInUrl: "https://www.linkedin.com",
+    },
+    {
+      photo:
+        "https://www.kisanlink.in/wp-content/uploads/2022/07/image-109-e1658501010849.jpg",
+      name: "Narsimha Rao",
+      position: "Strategy and Output Advisor ",
+      qualification: "Consultant - McKinsey",
+      experience: [
+        "25+ years experience in output supply chain and rural development in MNCs and Agritech Startups",
+      ],
+      linkedInUrl: "https://www.linkedin.com",
+    },
+    {
+      photo:
+        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/nihar-e1710250349135-ql3saa74hdpskdwgcr8c4b56011bf9lm60q494rtse.jpeg",
+      name: "Nihar R Pradhan",
+      position: "Technical and Management Advisor",
+      qualification: "Founder MAP Index Consulting",
+      experience: [
+        "30+ years of experience in technology management, management consultant, creative writing, design solutions",
+      ],
+      linkedInUrl: "https://www.linkedin.com/in/nihar-r-pradhan-b221a31/",
+    },
+    {
+      photo:
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/11/Bhuvana-Chandra.png",
       name: "Bhuvana Chandra",
       position: "Design Manager",

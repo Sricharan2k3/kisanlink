@@ -1,10 +1,75 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
+  // const [isChatOpen, setIsChatOpen] = useState(false);
+  // const [messages, setMessages] = useState([]);
+  // const [input, setInput] = useState("");
+
+  // const toggleChat = () => {
+  //   setIsChatOpen(!isChatOpen);
+  // };
+
+  // const handleSendMessage = async () => {
+  //   if (input.trim() === "") return;
+
+  //   const userMessage = {
+  //     role: "user",
+  //     content: input,
+  //   };
+
+  //   // Construct the payload for the backend API
+  //   const newMessages = [...messages, userMessage];
+  //   const payload = {
+  //     messages: newMessages,
+  //     useRag: true,
+  //     llm: "gpt-3.5-turbo",
+  //     similarityMetric: "cosine",
+  //   };
+
+  //   // Add user message to the state
+  //   setMessages(newMessages);
+  //   setInput("");
+
+  //   // Call the backend API
+  //   try {
+  //     const response = await fetch("api/Chat", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(payload),
+  //     });
+
+  //     const data = await response.text(); // Assuming your backend returns JSON
+  //     const assistantMessage = {
+  //       role: "assistant",
+  //       content: data, // Adjust according to the actual structure of the response
+  //     };
+  //     setMessages((prevMessages) => [...prevMessages, assistantMessage]);
+  //   } catch (error) {
+  //     console.error("Error fetching response:", error);
+  //     const errorMessage = {
+  //       role: "assistant",
+  //       content: "There was an error getting a response from the server.",
+  //     };
+  //     setMessages((prevMessages) => [...prevMessages, errorMessage]);
+  //   }
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [loadingMessage, setLoadingMessage] = useState(".");
+
+  useEffect(() => {
+    let interval;
+    if (isLoading) {
+      interval = setInterval(() => {
+        setLoadingMessage((prev) => (prev.length < 3 ? prev + "." : "."));
+      }, 500);
+    }
+    return () => clearInterval(interval);
+  }, [isLoading]);
 
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -27,9 +92,10 @@ const App = () => {
       similarityMetric: "cosine",
     };
 
-    // Add user message to the state
+    // Add user message to the state and set loading state
     setMessages(newMessages);
     setInput("");
+    setIsLoading(true);
 
     // Call the backend API
     try {
@@ -54,6 +120,8 @@ const App = () => {
         content: "There was an error getting a response from the server.",
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
+    } finally {
+      setIsLoading(false);
     }
   };
 
