@@ -33,7 +33,7 @@ const App = () => {
 
     // Call the backend API
     try {
-      const response = await fetch("https://kisanlink.in/api/Chat", {
+      const response = await fetch("api/Chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -98,11 +98,10 @@ const App = () => {
                 {messages.map((message, index) => (
                   <div
                     key={index}
-                    className={`mb-2 p-2 rounded max-w-xs ${
-                      message.role === "user"
+                    className={`mb-2 p-2 rounded max-w-xs ${message.role === "user"
                         ? "bg-blue-300 text-black self-end text-right" // Adjusted background and text color
                         : "bg-gray-300 text-black self-start text-left" // Adjusted background and text color
-                    }`}
+                      }`}
                   >
                     {message.content}
                   </div>
