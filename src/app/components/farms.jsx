@@ -66,7 +66,7 @@ const SkeletonOne = () => {
     >
       
 
-      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-1.png" height={165} width={255} className="small:h-[250px] small:w-[400px]"/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-1.png" height={165} width={255} className="small:h-[300px] small:w-[600px]"/>
     </motion.div>
   );
 };
@@ -96,7 +96,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-2.png" height={165} width={265} className="small:h-[250px] small:w-[400px]"/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-2.png" height={165} width={265} className="small:h-[300px] small:w-[600px]"/>
     </motion.div>
   );
 };
@@ -128,7 +128,7 @@ const SkeletonThree = () => {
     >
       <motion.div className="h-full w-full rounded-lg">
 
-        <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-3.png" height={165} width={255} className="small:h-[250px] small:w-[430px]"/>
+        <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-3.png" height={165} width={255} className="small:h-[300px] small:w-[600px]"/>
       </motion.div>
     </motion.div>
   );
@@ -231,7 +231,7 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-4.png" height={165} width={255} className="small:h-[250px] small:w-[400px]"/>
+      <Image src="https://www.kisanlink.in/wp-content/uploads/farm-t1-4.png" height={165} width={255} className="small:h-[250px] small:w-[600px]"/>
     </motion.div>
   );
 };

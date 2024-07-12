@@ -170,7 +170,7 @@ const Navigation = () => {
                   width={600}
                   src="./Farm1.png"
                   alt="Farm 1"
-                  className="rounded-xl lg:h-[320px] small:h-[300px] small:w-[480px]"
+                  className="rounded-xl lg:h-[320px] small:h-[300px] small:w-[600px]"
                 
                 />
                 <div className="lg:mt-4 small:mt-8"></div>
@@ -178,7 +178,7 @@ const Navigation = () => {
                   width={600}
                   src="./Farm2.png"
                   alt="Farm 2"
-                  className="rounded-xl lg:h-[320px] small:h-[300px] small:w-[480px]"
+                  className="rounded-xl lg:h-[320px] small:h-[300px] small:w-[600px]"
                 />
               </div>
 
