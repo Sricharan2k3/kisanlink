@@ -34,10 +34,16 @@ export default function Component() {
     if (isLoading) {
       interval = setInterval(() => {
         setLoadingDots((prev) => (prev.length < 3 ? prev + "." : "."));
+        setMessages((prevMessages) => [
+          ...prevMessages.slice(0, -1),
+          { role: "assistant", content: loadingDots },
+        ]);
       }, 500);
+    } else {
+      setLoadingDots(".");
     }
     return () => clearInterval(interval);
-  }, [isLoading]);
+  }, [isLoading, loadingDots]);
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
@@ -62,6 +68,12 @@ export default function Component() {
 
     setIsLoading(true);
 
+    // Add a loading indicator
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { role: "assistant", content: loadingDots },
+    ]);
+
     try {
       const response = await fetch("api/Chat", {
         method: "POST",
@@ -72,21 +84,25 @@ export default function Component() {
       });
 
       const data = await response.text();
-      // const formattedData = data.replace(/:/g, "\n");
       console.log(data);
       const assistantMessage = {
         role: "assistant",
         content: data,
       };
-      console.log(data);
-      setMessages((prevMessages) => [...prevMessages, assistantMessage]);
+      setMessages((prevMessages) => [
+        ...prevMessages.slice(0, -1), // Remove the loading indicator
+        assistantMessage,
+      ]);
     } catch (error) {
       console.error("Error fetching response:", error);
       const errorMessage = {
         role: "assistant",
         content: "There was an error getting a response from the server.",
       };
-      setMessages((prevMessages) => [...prevMessages, errorMessage]);
+      setMessages((prevMessages) => [
+        ...prevMessages.slice(0, -1), // Remove the loading indicator
+        errorMessage,
+      ]);
     } finally {
       setIsLoading(false);
     }
