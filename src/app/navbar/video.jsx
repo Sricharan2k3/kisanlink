@@ -3,10 +3,10 @@ import React from 'react';
 
 function VideoContainer() {
   return (
-    <div className=" pt-20 flex items-center bg-white justify-center h-screen -m-1.5 overflow-hidden">
-      <div className="relative overflow-hidden w-full h-full bg-white">
+    <div className=" pt-20 flex items-center bg-white justify-center lg:h-screen -m-1.5 overflow-hidden">
+      <div className="relative overflow-hidden lg:w-full lg:h-full small:w-[600px] small:h-[450px] bg-white">
         <iframe
-          className="absolute overflow-hidden  w-full h-full "
+          className="absolute overflow-hidden  lg:w-full lg:h-full small:w-[490px] small:h-[300px] "
           src="https://www.kisanlink.in/wp-content/uploads/pitchdesk_0.mp4"
           title="Full Screen Video"
          
