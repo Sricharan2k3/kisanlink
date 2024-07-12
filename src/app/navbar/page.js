@@ -130,7 +130,7 @@ const Navigation = () => {
       </ul>
     </nav>
 
-    <div className="lg:hidden fixed top-0 left-0 w-[450px] ml-4 rounded-full py-1 bg-gray-700 ">
+    <div className="lg:hidden fixed top-0  w-full ml-4 rounded-full py-1 bg-gray-700 ">
       <select 
         className="w-full bg-gray-700 text-white py-2 px-3 rounded-3xl"
         onChange={(e) => {
