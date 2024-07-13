@@ -45,14 +45,14 @@ const FPOTraining = () => {
    
       <div className="lg:flex lg:flex-row w-[1080px]  items-center justify-center">
         {/* Image on the left */}
-        <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[400px] small:ml-24 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
+        <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[350px] small:ml-24 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
           <img
             src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/acad-5.png"}
             className="w-[300px] h-[300px] rounded-lg shadow-lg"
           />
         </div>
         {/* Accordion on the right */}
-        <div className="lg:flex lg:flex-col small:-ml-4 small:w-[350px] space-y-4">
+        <div className="lg:flex lg:flex-col small:-ml-4 small:w-[200px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}
@@ -72,7 +72,7 @@ const FPOTraining = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-10 text-brown-700">
+                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-20 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}

@@ -111,7 +111,7 @@ const Academy = () => {
               </button>
               <button
                 onClick={() => handleCategoryClick("Paddy")}
-                className={`mr-2 px-4 py-2 rounded-md ${
+                className={`mr-2 px-4 small:mt-2 lg:mt-0 py-2 rounded-md ${
                   selectedCategory === "Telugu"
                     ? "bg-blue-500 text-white"
                     : "bg-gray-200 text-gray-800 hover:bg-blue-400 hover:text-white"
@@ -140,7 +140,7 @@ const Academy = () => {
                 <img
                   src={link.thumbnail}
                   alt={link.alt}
-                  className=" bg-white lg:w-full lg:h-auto rounded-xl"
+                  className=" bg-white small:mt-2 lg:w-full lg:h-auto rounded-xl"
                 />
               </a>
             ))}
