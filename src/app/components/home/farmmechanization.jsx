@@ -25,7 +25,7 @@ const FarmMechanizationSection = () => {
         ></div>
       )}
     >
-      <section className="relative py-12 lg:h-screen small:h-[400px] md:h-[40vh]"> {/* Reduced height */}
+      <section className="relative py-12 lg:h-[350px] small:h-[350px] md:h-[40vh]"> {/* Reduced height */}
         {/* SVG Shape Divider (Flipped) */}
         <div className="absolute top-0 w-full overflow-hidden leading-[0] transform rotate-180">
           <svg className="block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
