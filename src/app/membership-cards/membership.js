@@ -5,8 +5,8 @@ import Heading from "../components/heading";
 const TermsAndConditions = () => {
   return (
     <div className=" lg:flex items-center justify-center py-8 lg:w-full">
-      <div className="container lg:mx-auto px-4 md:px-8 small:w-[450px] lg:w-full">
-        <div className="bg-white shadow-md rounded-lg p-6 small:w-[450px] lg:w-full">
+      <div className="container lg:mx-auto px-4 md:px-8 small:w-[350px] lg:w-full">
+        <div className="bg-white shadow-md rounded-lg p-6 small:w-[350px] lg:w-full">
           <div className="-mt-10">
             <Heading value={"Terms And Conditions"}></Heading>
           </div>

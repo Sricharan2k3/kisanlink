@@ -59,7 +59,7 @@ const MembershipCardBenefits = () => {
   return (
     <div className="bg-gray-100 ">
       <div className="container lg:mx-auto small:m-4  lg:px-4 md:px-8">
-        <div className="bg-white shadow-md rounded-lg p-6 mb-6 small:w-[470px] lg:w-full">
+        <div className="bg-white shadow-md rounded-lg p-6 mb-6 small:w-[350px] lg:w-full">
           <div className="accordion ">
             {accordionData.map((item, index) => (
               <div key={index} className="accordion-item mb-4">
