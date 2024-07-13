@@ -171,7 +171,7 @@ const Academy = () => {
             <div className="pr-2 size-4 pt-0.4">
               <FaYoutube />
             </div>
-            Kisanlink Youtube Channel{" "}
+            Youtube{" "}
           </a>
         </div>
         <div className="-mt-12">

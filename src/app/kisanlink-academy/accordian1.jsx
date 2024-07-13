@@ -61,7 +61,7 @@ const FPOTraining = () => {
               }`}
               onClick={() => handleCardClick(card.id)}
             >
-              <div className="lg:flex text-brown-700 justify-between items-center font-bold text-2xl">
+              <div className="lg:flex text-brown-700 justify-between items-center font-bold lg:text-2xl small:text-xl">
                 {card.title}
                 <span
                   className={`transform transition-transform ${
@@ -72,7 +72,7 @@ const FPOTraining = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-20 text-brown-700">
+                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-16 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}

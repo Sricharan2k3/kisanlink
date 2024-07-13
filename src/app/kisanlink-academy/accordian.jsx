@@ -74,7 +74,7 @@ const KisanAcademy = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-24 text-brown-700">
+                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-20 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}
