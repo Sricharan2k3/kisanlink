@@ -346,14 +346,14 @@ export default function Component() {
         isOpen={openIndex === 0}
         onClick={() => handleNavItemClick(0)}
       />
-      <NavItem
-        href="/experience-center"
+      <a href="/experience-center1"><NavItem
+        
         icon={PackageIcon}
         label="Experience Center"
       
         isOpen={openIndex === 1}
         onClick={() => handleNavItemClick(1)}
-      />
+      /></a>
       <NavItem
         href="#"
         icon={DollarSignIcon}

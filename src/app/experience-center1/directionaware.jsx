@@ -12,7 +12,7 @@ export function DirectionAwareHoverDemo() {
   return (
     <div className="overflow-hidden">
     <div className="lg:h-[40rem] relative lg:gap-x-20 lg:-mt-32 lg:-mb-28 lg:flex items-center justify-center ">
-      <DirectionAwareHover imageUrl={"https://www.kisanlink.in/wp-content/uploads/drone-441.png"}>
+      <DirectionAwareHover imageUrl={"https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/drone-441.png"}>
         <p className="font-bold text-xl font-gray-600">Drone Spraying Services</p>
         <p className="font-normal text-sm">The center partners with certified drone companies to provide more efficient drone spraying services covering larger areas compared to traditional methods.</p>
       </DirectionAwareHover>

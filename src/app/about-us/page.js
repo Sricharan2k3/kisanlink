@@ -19,7 +19,7 @@ const about = () => {
       </div>
 
       <div>
-        <p className="text-center lg:-mt-4 lg:mb-20 lg:ml-40 lg:mr-40">
+        <p className="text-center lg:-mt-4 lg:mb-20 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           At Kisanlink, we are passionate about leveraging technology to empower
           farmers and revolutionize agriculture. With a deep understanding of
           the challenges faced by farmers and a commitment to innovation, we
@@ -32,7 +32,7 @@ const about = () => {
       </div>
 
       <div>
-        <p className="text-center lg:-mt-4 lg:mb-20 lg:ml-40 lg:mr-40">
+        <p className="text-center lg:-mt-4 lg:mb-20 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           Our mission is to connect farmers with the latest advancements in
           agritech, providing them with the tools and knowledge they need to
           thrive in today's ever-changing agricultural landscape.
@@ -43,7 +43,7 @@ const about = () => {
       </div>
 
       <div>
-        <p className="text-center lg:-mt-4 lg:mb-20 lg:ml-40 lg:mr-40">
+        <p className="text-center  lg:-mt-4 lg:mb-20 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           We envision a world where every farmer is empowered with cutting-edge
           agritech solutions for a sustainable and prosperous agricultural
           ecosystem.

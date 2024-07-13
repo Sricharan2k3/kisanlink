@@ -186,7 +186,7 @@ const App = () => {
       <Background title={"Team"}></Background>
       <Heading value={"Our Team"}></Heading>
       <div className="lg:flex lg:flex-wrap justify-center mb-4 ">
-        <p className="lg:pl-24 text-center ">
+        <p className="lg:pl-12 lg:pr-12 small:pl-2 small:pr-2 text-center ">
           Founded by a team of agriculture enthusiasts and tech experts,
           Kisanlink brings together a unique blend of industry knowledge,
           technical expertise, and a passion for making a difference. With
@@ -198,7 +198,10 @@ const App = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-items-center items-center  p-4">
         {userProfiles.map((profile, index) => (
-          <div key={index} className=" w-[600px] h-[330px] small:ml-24">
+          <div
+            key={index}
+            className=" w-[600px] lg:h-[330px] small:h-[525px] small:shadow-lg lg:shadow-none small:ml-24"
+          >
             <ProfileCard {...profile} />
           </div>
         ))}

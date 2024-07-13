@@ -38,7 +38,7 @@ const sections = [
 
 export default function AgricultureComponent() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 small:pl-3 small:pr-3">
       {sections.map((section, index) => (
         <div
           key={index}

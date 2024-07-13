@@ -10,14 +10,14 @@ import StickyScrollRevealDemo from "../hello/page";
 
 const Farmersol = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Background title={"For Farmers"}></Background>
       <div>
         <Heading value={"Our Solutions To Farmers"}></Heading>
       </div>
 
       <div>
-        <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+        <p className="text-center -mt-4 mb-2 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           We serve as the single point of contact for farmers seeking various
           agricultural services. Our streamlined approach with a unified
           platform that brings together collaborating companies and their
@@ -30,7 +30,7 @@ const Farmersol = () => {
       </div>
 
       <div>
-        <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+        <p className="text-center -mt-4 mb-20 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           We provide Agri Inputs and the latest equipment and machinery to
           farmers at their doorstep, enabling them to improve their yield. For a
           better crop yield, farmers require agri inputs, advanced equipment,
@@ -58,7 +58,7 @@ const Farmersol = () => {
       </div>
       {/* <Services /> */}
       <StickyScrollRevealDemo></StickyScrollRevealDemo>
-    </>
+    </div>
   );
 };
 

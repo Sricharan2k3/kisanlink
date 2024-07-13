@@ -147,7 +147,7 @@ export default function Component() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="object-cover lg:w-full lg:h-60 small:w-[340px]"
+                  className="object-cover lg:w-full  small:pr-6 lg:h-60 small:w-[340px]"
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold md:text-xl">
