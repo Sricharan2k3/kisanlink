@@ -25,7 +25,7 @@ const FarmMechanizationSection = () => {
         ></div>
       )}
     >
-      <section className="relative py-12 h-screen md:h-[40vh]"> {/* Reduced height */}
+      <section className="relative py-12 lg:h-[350px] small:h-[350px] md:h-[40vh]"> {/* Reduced height */}
         {/* SVG Shape Divider (Flipped) */}
         <div className="absolute top-0 w-full overflow-hidden leading-[0] transform rotate-180">
           <svg className="block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -35,7 +35,7 @@ const FarmMechanizationSection = () => {
 
         {/* Content */}
         <div className="relative container mx-auto px-4 flex flex-col items-center justify-center h-full">
-          <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 animate-fadeInLeft">Farm Mechanization Solutions</h2>
+          <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 animate-fadeInLeft small:text-lg">Farm Mechanization Solutions</h2>
           <h3 className="text-white text-sm md:text-base lg:text-lg text-center mb-6 animate-fadeInUp delay-400">
             Our farm mechanization solutions offer farmers and growers innovative tools to optimize operations, enhance crop productivity, and improve efficiency.
             Our solutions range from supplying drone products and accessories to providing our customers with the best after-sale services.

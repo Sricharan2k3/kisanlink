@@ -44,15 +44,15 @@ const StatsCarousel1 = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 6,
-          centerPadding: "10%",
+          slidesToShow: 2,
+          centerPadding: "3%",
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 200,
         settings: {
-          slidesToShow: 6,
-          centerPadding: "5%",
+          slidesToShow: 2,
+          centerPadding: "1%",
         },
       },
     ],
@@ -60,7 +60,7 @@ const StatsCarousel1 = () => {
 
 
 
-  const numDots1 = 8;
+  const numDots1 = 5;
   const dots1 = Array.from({ length: numDots1 }, (_, i) => i);
 
   // Dot click handler
@@ -72,7 +72,7 @@ const StatsCarousel1 = () => {
   return (
     
   
-    <div className=" -mt-8 overflow-hidden relative py-8">
+    <div className=" -mt-8 overflow-hidden relative py-8 bg-[#E5E8E9]">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
@@ -81,11 +81,13 @@ const StatsCarousel1 = () => {
       <Heading value={"Metrics that Matter"}></Heading>
       <Slider {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
-          <div key={stat.id} className="px-4">
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
+           <div key={stat.id} className="px-4">
+       <div className="bg-white shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+        small:h-16 small:p-8 lg:w-[290px] lg:h-36">
+
                             
-              <p className="text-xs lg:text-lg mt-2 text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-lg pt-2 pb-2 text-green-700">
+              <p className="text-xs lg:text-lg large:mt-2 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-700 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

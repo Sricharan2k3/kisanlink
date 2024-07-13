@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfileCard = ({ photo, name, position, experience, qualification, linkedInUrl }) => {
     return (
-        <div className="w-[600px] h-[330px] flex border rounded-lg  shadow-lg p-4">
+        <div className="lg:w-[600px] small:w-[500px]  h-[330px] flex border rounded-lg  shadow-lg p-4">
             <div className="flex flex-col items-center justify-center w-1/3 -mt-4 pt-3">
                 <img
                     src={photo}

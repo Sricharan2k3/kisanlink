@@ -43,7 +43,7 @@ const CareersForm = () => {
     };
 
     return (
-        <div className="flex items-left justify-center">
+        <div className="lg:flex items-left justify-center small:w-[750px] lg:w-full">
             <form
                 onSubmit={handleSubmit}
                 className="wpcf7-form init p-8 rounded-lg w-2/3"

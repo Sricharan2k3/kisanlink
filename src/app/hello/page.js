@@ -165,6 +165,25 @@ const StickyScrollRevealDemo = () => {
     "farm-mechanization-service"
   );
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust this breakpoint as needed
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+
   // useEffect to handle scroll and update activeSection
   useEffect(() => {
     const handleScroll = () => {
@@ -191,45 +210,79 @@ const StickyScrollRevealDemo = () => {
   };
 
   return (
+
     <div id="services" className="p-10">
       {/* Navbar */}
-      <div className="sticky top-0 w-full z-50 bg-white">
-        <ul className="flex justify-center space-x-6 py-4">
-          {content.map((item) => (
-            <li id={item.id} key={item.id} className="cursor-pointer">
-              <a
-                className={`block px-4 py-2 rounded transition-colors duration-200 ${
-                  activeSection === item.id
-                    ? "bg-[#e5deb9] text-brown-600 font-bold border border-gray-400"
-                    : "text-brown-600 hover:bg-[#e5deb9] border border-transparent"
-                }`}
-                onClick={() => handleItemClick(item.id)}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+
 
       {/* Main Content */}
+      <div className="sticky top-0 w-full z-50 bg-white">
+        {isMobile ? (
+          <div className="relative">
+            <button
+              onClick={toggleDropdown}
+              className="w-full px-4 py-2 text-left bg-[#e5deb9] text-brown-600 font-bold border border-gray-400 rounded"
+            >
+              {content.find(item => item.id === activeSection)?.title || 'Menu'}
+            </button>
+            {isDropdownOpen && (
+              <ul className="absolute w-full mt-1 bg-white border border-gray-400 rounded shadow-lg">
+                {content.map((item) => (
+                  <li key={item.id} className="cursor-pointer">
+
+                    <a className={`block px-4 py-2 ${activeSection === item.id
+                      ? "bg-[#e5deb9] text-brown-600 font-bold"
+                      : "text-brown-600 hover:bg-[#e5deb9]"
+                      }`}
+                      onClick={() => {
+                        handleItemClick(item.id);
+                        setIsDropdownOpen(false);
+                      }}
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ) : (
+          <ul className="flex justify-center space-x-6 py-4">
+            {content.map((item) => (
+              <li id={item.id} key={item.id} className="cursor-pointer">
+
+                <a className={`block px-4 py-2 rounded transition-colors duration-200 ${activeSection === item.id
+                  ? "bg-[#e5deb9] text-brown-600 font-bold border border-gray-400"
+                  : "text-brown-600 hover:bg-[#e5deb9] border border-transparent"
+                  }`}
+                  onClick={() => handleItemClick(item.id)}
+                >
+                  {item.title}
+
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+        }
+      </div >
       <div className="w-full mt-12 content-center justify-center">
         {content.map((item) => (
           <section
             key={item.id}
             id={item.id}
             data-id={item.id}
-            className=" flex"
+            className=" lg:flex"
             style={{ display: activeSection === item.id ? "flex" : "none" }}
           >
-            <div className="object-center items-center justify-center flex flex-row ml-48">
-              <div className="w-2/3">
+            <div className="object-center items-center justify-center lg:flex lg:flex-row lg:ml-48">
+              <div className="lg:w-2/3">
                 <h3 className="text-xl font-semibold mb-2 text-blue-600">
                   {item.title}
                 </h3>
                 <div className="text-gray-700 mb-4">{item.description}</div>
               </div>
-              <div className="w-1/3 ml-16">
+              <div className="lg:w-1/3 lg:ml-16">
                 <img
                   src={item.imageSrc}
                   alt={item.title}
@@ -239,8 +292,10 @@ const StickyScrollRevealDemo = () => {
             </div>
           </section>
         ))}
+
       </div>
     </div>
+
   );
 };
 

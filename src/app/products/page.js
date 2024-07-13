@@ -79,16 +79,16 @@ export default function Component() {
           </div>
         </div>
       </section> */}
-      <section className="py-12  md:py-24 lg:py-32">
+      <section className="small:py-32  md:py-24 lg:py-32">
         <div className=" items-center text-center justify-center align-middle container px-4 -mt-44 md:px-6">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 mb-8">
-            <div className=" ml-96 pl-48 items-center text-center">
+          <div className="lg:flex lg:flex-col md:flex-row items-start md:items-center lg:gap-4 md:gap-8 mb-8">
+            <div className=" lg:ml-8  lg:items-center lg:text-center">
               <Heading value={"Our Products"}></Heading>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground small:w-[340px] ">
                 Browse our curated selection of products.
               </p>
             </div>
-            <div className="flex items-center gap-4 ml-auto">
+            <div className="lg:flex lg:items-center lg:gap-4 lg:ml-auto small:mt-4 small:w-[340px]">
               <Input
                 type="search"
                 placeholder="Search products..."
@@ -129,7 +129,7 @@ export default function Component() {
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative overflow-hidden rounded-lg group"
+                className="relative overflow-hidden rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
               >
                 <Link
                   href="#"
@@ -143,7 +143,7 @@ export default function Component() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="object-cover w-full h-60"
+                  className="object-cover lg:w-full lg:h-60 small:w-[340px]"
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold md:text-xl">
