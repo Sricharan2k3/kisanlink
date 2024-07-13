@@ -52,7 +52,7 @@ const FPOTraining = () => {
           />
         </div>
         {/* Accordion on the right */}
-        <div className="lg:flex lg:flex-col small:-ml-4 small:w-[200px] space-y-4">
+        <div className="lg:flex lg:flex-col small:-ml-4 small:w-[200px] lg:w-[540px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}

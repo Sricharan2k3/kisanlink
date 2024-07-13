@@ -168,7 +168,7 @@ const Academy = () => {
             className="bg-brown-400 text-white w-240 h-10 text-sm flex items-center justify-center px-4 -mt-2  hover:bg-brown-700"
             style={{ backgroundColor: "#5C431C" }} // Custom brown color
           >
-            <div className="pr-2 size-4 pt-0.4">
+            <div className="pr-4 size-4 pt-0.4">
               <FaYoutube />
             </div>
             Youtube{" "}

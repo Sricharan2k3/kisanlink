@@ -41,7 +41,7 @@ const KisanAcademy = () => {
 
 
   return (
-    <div className="font-bold text-center lg:p-5  pb-12 flex flex-col items-center lg:max-w-1/2 justify-start ">
+    <div className="font-bold text-center  lg:p-5  pb-12 flex flex-col items-center lg:max-w-1/2 justify-start ">
       
 
    
@@ -54,7 +54,7 @@ const KisanAcademy = () => {
           />
         </div>
         {/* Accordion on the right */}
-        <div className="lg:flex lg:flex-col small:w-[200px] space-y-4">
+        <div className="lg:flex lg:flex-col small:w-[200px] lg:w-[540px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}

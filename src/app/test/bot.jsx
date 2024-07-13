@@ -120,7 +120,7 @@ export default function Component() {
         <span className="sr-only">Open chatbot</span>
       </Button>
       <Dialog open={isOpen} onOpenChange={setIsOpen} className="bg-white">
-        <DialogContent className=" w-[465px] rounded-lg shadow-2xl">
+        <DialogContent className=" lg:w-[465px] small:w-[350px] rounded-lg shadow-2xl">
           <div className="flex flex-col h-[600px]">
             <DialogHeader className="border-b px-4 py-3 bg-gray-100">
               <div className="flex items-center gap-3">
@@ -141,7 +141,7 @@ export default function Component() {
                 {messages.map((message, index) => (
                   <div
                     key={index}
-                    className={`flex w-max max-w-96 flex-col gap-2 rounded-lg px-3 py-2 text-sm break-words shadow-sm ${
+                    className={`flex w-max lg:max-w-96 small:max-w-64 flex-col gap-2 rounded-lg px-3 py-2 text-sm break-words shadow-sm ${
                       message.role === "user"
                         ? "ml-auto bg-blue-100 text-white"
                         : "bg-gray-200 text-gray-900"
