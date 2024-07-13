@@ -11,7 +11,7 @@ export const HoverEffect = ({ items, className }) => {
   const icons = [faSeedling, faBroadcastTower, faTools]; // Example icons corresponding to each item
 
   return (
-    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10", className)}>
+    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:py-10", className)}>
       {items.map((item, idx) => (
         <Link
           href="/"
