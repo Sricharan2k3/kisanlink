@@ -7,7 +7,7 @@ import StickyScrollRevealDemo from "../hello/page";
 
 const Farmersol = () => {
   return (
-    <>
+    <div className="small:overflow-hidden">
       <Background title={"E-Commerce"}></Background>
 
       <div className="">
@@ -42,7 +42,7 @@ const Farmersol = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="small:w-[450px] small:m-4"
+            className="small:w-[350px] small:ml-3 "
           ></iframe>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Farmersol = () => {
       </div>
       {/* <Services /> */}
       <StickyScrollRevealDemo></StickyScrollRevealDemo>
-    </>
+    </div>
   );
 };
 

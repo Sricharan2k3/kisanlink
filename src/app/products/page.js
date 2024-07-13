@@ -84,11 +84,11 @@ export default function Component() {
           <div className="lg:flex lg:flex-col md:flex-row items-start md:items-center lg:gap-4 md:gap-8 mb-8">
             <div className=" lg:ml-8  lg:items-center lg:text-center">
               <Heading value={"Our Products"}></Heading>
-              <p className="text-muted-foreground small:w-[450px] ">
+              <p className="text-muted-foreground small:w-[340px] ">
                 Browse our curated selection of products.
               </p>
             </div>
-            <div className="lg:flex lg:items-center lg:gap-4 lg:ml-auto small:mt-4 small:w-[450px]">
+            <div className="lg:flex lg:items-center lg:gap-4 lg:ml-auto small:mt-4 small:w-[340px]">
               <Input
                 type="search"
                 placeholder="Search products..."
@@ -129,7 +129,7 @@ export default function Component() {
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative overflow-hidden rounded-lg group small:w-[450px] lg:w-full"
+                className="relative overflow-hidden rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
               >
                 <Link
                   href="#"
@@ -143,7 +143,7 @@ export default function Component() {
                   alt={product.name}
                   width={400}
                   height={300}
-                  className="object-cover lg:w-full lg:h-60 small:w-[450px]"
+                  className="object-cover lg:w-full lg:h-60 small:w-[340px]"
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold md:text-xl">

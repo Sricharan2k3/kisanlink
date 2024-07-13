@@ -282,7 +282,7 @@ const StickyScrollRevealDemo = () => {
                 </h3>
                 <div className="text-gray-700 mb-4">{item.description}</div>
               </div>
-              <div className="lg:w-1/3 ml-16">
+              <div className="lg:w-1/3 lg:ml-16">
                 <img
                   src={item.imageSrc}
                   alt={item.title}
