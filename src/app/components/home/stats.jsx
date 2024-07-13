@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 "use client";
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
@@ -5,11 +12,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../heading";
 
-const StatsCarousel = () => {
+const StatsCarousel1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
-  const stats = [
+  const stats1 = [
 
     { id: 1, value: "2500+", label: "FMS" },
     { id: 2, value: "200+", label: "Product Orders" },
@@ -42,34 +49,35 @@ const StatsCarousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 6,
-          centerPadding: "10%",
+          slidesToShow: 2,
+          centerPadding: "3%",
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 200,
         settings: {
-          slidesToShow: 6,
-          centerPadding: "5%",
+          slidesToShow: 2,
+          centerPadding: "1%",
         },
       },
     ],
   };
 
-  // Adjust the number of dots
-  const numDots = 5;
-  const dots = Array.from({ length: numDots }, (_, i) => i);
+
+
+  const numDots1 = 5;
+  const dots1 = Array.from({ length: numDots1 }, (_, i) => i);
 
   // Dot click handler
-  const goToSlide = (index) => {
-    const slideToGo = Math.floor((index / numDots) * stats.length);
-    sliderRef.current.slickGoTo(slideToGo);
+  const goToSlide1 = (index) => {
+    const slideToGo1 = Math.floor((index / numDots1) * stats1.length);
+    sliderRef.current.slickGoTo(slideToGo1);
   };
-
 
   return (
     
-    <div className=" -mt-8 overflow-hidden relative py-8">
+  
+    <div className=" -mt-8 overflow-hidden relative py-8 bg-[#E5E8E9]">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
@@ -77,12 +85,14 @@ const StatsCarousel = () => {
       </div> */}
       <Heading value={"Operational Numbers"}></Heading>
       <Slider {...settings} ref={sliderRef}>
-        {stats.map((stat) => (
-          <div key={stat.id} className="px-4">
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
+        {stats1.map((stat) => (
+           <div key={stat.id} className="px-4">
+       <div className="bg-white shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+        small:h-16 small:p-8 lg:w-[290px] lg:h-36">
+
                             
-              <p className="text-xs lg:text-lg mt-2 text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-lg pt-2 pb-2 text-green-700">
+              <p className="text-xs lg:text-lg large:mt-2 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-700 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
@@ -92,15 +102,15 @@ const StatsCarousel = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute bottom-25 pb-36 left-0 w-full flex justify-center mt-6">
+      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
-          {dots.map((dotIndex) => (
+          {dots1.map((dotIndex) => (
             <li
               key={dotIndex}
-              onClick={() => goToSlide(dotIndex)}
+              onClick={() => goToSlide1(dotIndex)}
               className={`w-2 h-2 rounded-full cursor-pointer ${
-                currentSlide >= dotIndex * (stats.length / numDots) &&
-                currentSlide < (dotIndex + 1) * (stats.length / numDots)
+                currentSlide >= dotIndex * (stats1.length / numDots1) &&
+                currentSlide < (dotIndex + 1) * (stats1.length / numDots1)
                   ? "bg-blue-100"
                   : "bg-gray-300"
               }`}
@@ -109,11 +119,10 @@ const StatsCarousel = () => {
         </ul>
       </div>
     </div>
-
   );
 };
 
-export default StatsCarousel;
+export default StatsCarousel1;
 
 
 

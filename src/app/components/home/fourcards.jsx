@@ -3,11 +3,11 @@ import Heading from '../heading';
 
 const FourCards = () => {
     return (
-        <>
+        <div className='bg-[#E5E8E9]'>
             <Heading value={"Our Solutions To Farmers"} />
 
-            <div className="flex justify-between mt-12">
-                <div className="relative h-1/3 w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
+            <div className="large:flex justify-between mt-12 small:grid-cols-4">
+                <div className="relative large: h-1/3 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden"style={{ backgroundColor: '#24A033' }} >
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         
@@ -35,7 +35,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative w-[390px] mx-2" style={{ backgroundColor: '#24A033' }}>
+                <div className="relative large:w-[390px] mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./farm.png" alt="Card 1" className="w-40 h-40 p-4" />
@@ -58,7 +58,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
+                <div className="relative large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./output.png" alt="Card 1" className="w-40 h-40 p-4" />
@@ -79,7 +79,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative w-1/4 mx-2 " style={{ backgroundColor: '#24A033' }}>
+                <div className="relative large:w-1/4 mx-2 " style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./other.png" alt="Card 1" className="w-40 h-40 p-4" />
@@ -103,7 +103,7 @@ const FourCards = () => {
                             </a>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

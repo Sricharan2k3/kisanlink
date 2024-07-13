@@ -19,7 +19,7 @@ const imagesRight = [
 
 const Screenshot = () => {
   return (
-    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2">
+    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2 bg-[#E5E8E9]">
       <Head>
         <title>Kisanlink & Academy Apps</title>
         <meta name="description" content="Kisanlink & Academy Apps" />
@@ -34,7 +34,7 @@ const Screenshot = () => {
               Kisanlink App
             </h1> */}
             <Heading value={"Kisanlink App"}></Heading>
-            <div className="border-b-2 border-brown-700 w-100 mx-0 mb-4"></div>
+            <div className="border-b-2 border-brown-700 large:w-100 small:w-96 mx-0 mb-4"></div>
           </div>
           <div className="flex justify-center items-center">
             <img
@@ -43,14 +43,17 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-          <div className="mt-6 flex space-x-4">
+          <div className="large:mt-6  large:flex large:space-x-4 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url="https://apps.apple.com/in/app/kisanlink/id1642947613"
+             
+              
             />
             <DownloadButton
               platform="Google Play"
               url="https://play.google.com/store/apps/details?id=com.kisanlink"
+               
             />
           </div>
         </div>
@@ -62,7 +65,7 @@ const Screenshot = () => {
               Academy App
             </h1> */}
             <Heading value={"Academy App"}></Heading>
-            <div className="border-b-2 border-brown-700 w-100 mx-auto mb-4"></div>
+                <div className="border-b-2 border-brown-700 large:w-100 small:w-96 mx-0 mb-4"></div>
           </div>
           <div className="flex justify-center items-center">
             <img
@@ -71,7 +74,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-          <div className="mt-6 flex space-x-4">
+                    <div className="large:mt-6  large:flex large:space-x-4 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url=""
