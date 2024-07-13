@@ -15,7 +15,7 @@ const smartcard = () => {
         <Heading value={"Kisanlink Smart Membership Card"}></Heading>
       </div>
       <div>
-        <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+        <p className="text-center lg:-mt-4 lg:mb-20 lg:ml-40 lg:mr-40">
           Kisanlink issues and manages farmers' physical membership cards
           through a technologically advanced platform. Each card is embedded
           with a unique QR code, granting access to substantial information.
@@ -50,7 +50,7 @@ const smartcard = () => {
           </div>
 
           <div className="">
-            <p className="text-center -mt-4  ml-40 mr-40">
+            <p className="text-center lg:-mt-4  lg:ml-40 lg:mr-40">
               24/7 customer support will be accessible to all farmers through a
               dedicated helpline number to address any doubts or queries.
             </p>

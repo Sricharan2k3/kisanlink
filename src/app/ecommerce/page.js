@@ -14,8 +14,8 @@ const Farmersol = () => {
         <Heading value={"Products"}></Heading>
       </div>
 
-      <div className="flex flex-row -mt-4 mb-12">
-        <div className="flex flex-col">
+      <div className="lg:flex lg:flex-row -mt-4 mb-12">
+        <div className="lg:flex lg:flex-col">
           <p className="text-justify ml-12 mt-8 mr-24  ">
             We provide Agri Inputs and the latest equipment and machinery to
             farmers at their doorstep, enabling them to improve their yield. For
@@ -33,7 +33,7 @@ const Farmersol = () => {
             </a>
           </p>
         </div>
-        <div className="flex flex-col mr-16">
+        <div className="lg:flex lg:flex-col lg:mr-16 ">
           <iframe
             width="390"
             height="220"
@@ -42,6 +42,7 @@ const Farmersol = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="small:w-[450px] small:m-4"
           ></iframe>
         </div>
       </div>

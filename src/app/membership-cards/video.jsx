@@ -1,13 +1,17 @@
+
+
+
+
 import React from 'react';
 
 
 function VideoContainer() {
   return (
-    <div className=" pt-20 bg-white flex items-center justify-center h-screen -m-1.5 overflow-hidden">
-      <div className="relative w-full h-full">
+    <div className=" pt-20 flex items-center bg-white justify-center lg:h-screen lg:-m-1.5 overflow-hidden small:w-full">
+      <div className="relative overflow-hidden lg:w-full lg:h-full small:w-full small:h-[280px] bg-white">
         <iframe
-          className="absolute  w-full h-full "
-          src="https://www.kisanlink.in/wp-content/uploads/final-membership-card-video.mp4"
+          className="absolute overflow-hidden  lg:w-full lg:h-full small:w-full small:h-[280px] "
+   src="https://www.kisanlink.in/wp-content/uploads/final-membership-card-video.mp4"
           title="Full Screen Video"
          
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

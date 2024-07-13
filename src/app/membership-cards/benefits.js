@@ -57,30 +57,28 @@ const MembershipCardBenefits = () => {
   ];
 
   return (
-    <div className="bg-gray-100">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="bg-white shadow-md rounded-lg p-6 mb-6">
-          <div className="accordion">
+    <div className="bg-gray-100 ">
+      <div className="container lg:mx-auto small:m-4  lg:px-4 md:px-8">
+        <div className="bg-white shadow-md rounded-lg p-6 mb-6 small:w-[470px] lg:w-full">
+          <div className="accordion ">
             {accordionData.map((item, index) => (
               <div key={index} className="accordion-item mb-4">
                 <h3
-                  className={`bg-gray-200 text-gray-800 p-4 rounded cursor-pointer flex justify-between items-center transition-colors duration-300 ${
-                    openItem === index ? "bg-gray-300" : "hover:bg-gray-300"
-                  }`}
+                  className={`bg-gray-200 text-gray-800 p-4 rounded cursor-pointer flex justify-between items-center transition-colors duration-300 ${openItem === index ? "bg-gray-300" : "hover:bg-gray-300"
+                    }`}
                   onClick={() => handleAccordionClick(index)}
                 >
                   {item.title}
                   <span
-                    className={`transition-transform duration-300 ${
-                      openItem === index ? "rotate-180" : "rotate-0"
-                    }`}
+                    className={`transition-transform duration-300 ${openItem === index ? "rotate-180" : "rotate-0"
+                      }`}
                   >
                     ▼ {/* You can replace this with an icon from a library if needed */}
                   </span>
                 </h3>
                 {openItem === index && (
-                  <div className="accordion-content bg-gray-50 p-4 rounded border-t border-gray-200 flex">
-                    <div className="w-3/4">
+                  <div className="accordion-content bg-gray-50 p-4 rounded border-t border-gray-200 lg:flex">
+                    <div className="lg:w-3/4">
                       <ul className="list-none pl-0">
                         {item.content.map((contentItem, idx) => (
                           <li
@@ -95,7 +93,7 @@ const MembershipCardBenefits = () => {
                         ))}
                       </ul>
                     </div>
-                    <div className="w-1/4 p-4">
+                    <div className="lg:w-1/4 p-4">
                       <img
                         src={item.image}
                         alt={item.title}

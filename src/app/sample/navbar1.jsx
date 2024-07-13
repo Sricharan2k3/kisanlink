@@ -1,17 +1,71 @@
-
+"use client"
 import Link from "next/link"
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "../../components/ui/navigation-menu"
 
 import { Button } from "../../components/ui/button"
 import { Sheet, SheetTrigger, SheetContent } from "../../components/ui/sheet"
 import { Superscript } from "lucide-react"
+import { useState,useRef,useEffect } from "react"
+
+
+const NavItem = ({ href,  label, subItems, isOpen, onClick }) => {
+  const subItemsRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen && subItemsRef.current) {
+      subItemsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [isOpen]);
+
+  return (
+    <div className="relative ">
+      <div
+        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer"
+        onClick={onClick}
+      >
+        {/* <Icon className="h-5 w-5" /> */}
+        {label}
+        {subItems &&
+        <span className={`ml-auto transform transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
+          ▼
+        </span>
+}
+      </div>
+      {isOpen && subItems && (
+        <div ref={subItemsRef} className="m-4 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+          <div className="py-1">
+            {subItems.map((subItem, index) => (
+              <Link key={index} href={subItem.href} prefetch={false}>
+                <div className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  {subItem.label}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+
 
 export default function Component() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+  const handleNavItemClick = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+    const redirectToLogin = () => {
+    const loginUrl = 'https://admin.kisanlink.in/#/account/login';
+    window.open(loginUrl, '_blank');
+  };
   return (
-    <div className="bg-white large:ml-60 medium:ml-12 z-50  rounded-full">
+    <div className="lg:bg-white large:ml-60 medium:ml-12 z-50  lg:rounded-full">
 
   
-    <header className="  top-0 z-50 w-full bg-background rounded-full border-2 border-black">
+    <header className="  top-0 z-50 w-full lg:bg-background lg:rounded-full lg:border-2 lg:border-black small:rounded-3xl">
     <div className="container flex h-16 items-center justify-end px-4 md:px-6">
     
       <nav className="hidden items-center z-50 bg-white gap-6 text-sm font-medium md:flex">
@@ -267,60 +321,111 @@ export default function Component() {
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 bg-white">
         
-          <Sheet>
+          <Sheet className="bg-white">
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
                 <MenuIcon className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px]">
-              <div className="flex flex-col gap-4 p-4">
-                <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
-                  <MountainIcon className="h-6 w-6" />
-                  <span className="sr-only">Acme Inc</span>
-                </Link>
-                <nav className="grid gap-2">
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                    prefetch={false}
-                  >
-                    <HomeIcon className="h-5 w-5" />
-                    Home
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                    prefetch={false}
-                  >
-                    <PackageIcon className="h-5 w-5" />
-                    Products
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                    prefetch={false}
-                  >
-                    <DollarSignIcon className="h-5 w-5" />
-                    Pricing
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                    prefetch={false}
-                  >
-                    <InfoIcon className="h-5 w-5" />
-                    About
-                  </Link>
-                </nav>
+            <SheetContent side="right" className="w-[300px] bg-white">
+              <div className="flex flex-col gap-4 p-4 bg-white">
+              
+    <nav className="grid gap-2">
+      <NavItem
+        href="#"
+        // icon={HomeIcon}
+        label="Technology"
+        subItems={[
+          { href: '/navbar', label: 'SaaS Platform' },
+          { href: '/ecommerce', label: 'E-Commerce' },
+           { href: '/membership-cards', label: 'Smart Membership Cards' },
+        ]}
+        isOpen={openIndex === 0}
+        onClick={() => handleNavItemClick(0)}
+      />
+      <NavItem
+        href="/experience-center"
+        icon={PackageIcon}
+        label="Experience Center"
+      
+        isOpen={openIndex === 1}
+        onClick={() => handleNavItemClick(1)}
+      />
+      <NavItem
+        href="#"
+        icon={DollarSignIcon}
+        label="Skill Training"
+        subItems={[
+          { href: '/courses-and-certificates', label: 'Skill Training' },
+          { href: '/kisanlink-academy', label: ' Kisanlink Academy' },
+        ]}
+        isOpen={openIndex === 2}
+        onClick={() => handleNavItemClick(2)}
+      />
+      <NavItem
+        href="#"
+        icon={InfoIcon}
+        label="Stakeholders"
+        subItems={[
+          { href: '/for-farmers', label: 'Farmers' },
+          { href: '/for-fpos', label: 'FPOs' },
+           { href: '/become-a-kisansathi', label: 'Kisansathi' },
+            { href: '/become-a-collaborator', label: 'Collaborators' },
+             { href: '/our-partners', label: 'Partners' },
+        ]}
+        isOpen={openIndex === 3}
+        onClick={() => handleNavItemClick(3)}
+      />
+        <NavItem
+        href="#"
+        icon={InfoIcon}
+        label="Our Brands"
+        subItems={[
+          { href: '#', label: (
+    <>
+      Digicrop
+      <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
+        TM
+      </sup>
+    </>
+  )},
+          { href: '#', label: (
+    <>
+      Amrti
+      <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
+        TM
+      </sup>
+    </>
+  ) },
+        ]}
+        isOpen={openIndex === 4}
+        onClick={() => handleNavItemClick(4)}
+      />
+        <NavItem
+        href="#"
+        icon={InfoIcon}
+        label="About Us"
+        subItems={[
+          { href: '/about-us', label: 'About Us' },
+          { href: '/team', label: 'Our Team' },
+          { href: '/careers', label: 'Careers' },
+        ]}
+        isOpen={openIndex === 5}
+        onClick={() => handleNavItemClick(5)}
+      />
+    </nav>
+
                 <div className="flex flex-col gap-2">
-                  <Button variant="outline" size="sm">
-                    Sign In
-                  </Button>
-                  <Button>Sign Up</Button>
+                 <button
+            className="  ml-1 mr-1 px-4 py-2 rounded-full bg-brown-700 text-white hover:bg-blue-600 focus:outline-none"
+            onClick={redirectToLogin}
+          >
+            FPO/Corporate Login
+          </button>
+                  
                 </div>
               </div>
             </SheetContent>
