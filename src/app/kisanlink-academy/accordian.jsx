@@ -54,7 +54,7 @@ const KisanAcademy = () => {
           />
         </div>
         {/* Accordion on the right */}
-        <div className="lg:flex lg:flex-col small:w-[450px] space-y-4">
+        <div className="lg:flex lg:flex-col small:w-[350px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}
@@ -74,7 +74,7 @@ const KisanAcademy = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 small:w-[450px] rounded-md lg:text-left small:text-center small:ml-10 text-brown-700">
+                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-10 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}

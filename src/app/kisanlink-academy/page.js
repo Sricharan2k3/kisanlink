@@ -263,7 +263,7 @@ const Academy = () => {
                   </div>
                   <br></br>
                   {/* Box 4 */}
-                  <div className="flex small:w-[450px]   lg:w-full items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div className="flex   lg:w-full items-center bg-gray-100 p-4 rounded-lg shadow-md">
                     <div className="bg-blue-500 lg:w-16 lg:h-16 small:w-8 small:h-8 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
