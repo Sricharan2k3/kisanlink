@@ -39,20 +39,20 @@ const FPOTraining = () => {
   const selectedCardData = cardsData.find(card => card.id === selectedCard);
 
   return (
-    <div className="font-bold text-center p-5  pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-bold text-center small:ml-[600px] lg:ml-4 p-5  pb-12 lg:flex lg:flex-col items-center lg:max-w-1/2 lg:justify-start ">
       
 
    
-      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
+      <div className="lg:flex lg:flex-row w-[1080px]  items-center justify-center">
         {/* Image on the left */}
-        <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:mr-8">
+        <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[400px] small:ml-24 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
           <img
             src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/acad-5.png"}
             className="w-[300px] h-[300px] rounded-lg shadow-lg"
           />
         </div>
         {/* Accordion on the right */}
-        <div className="flex flex-col space-y-4">
+        <div className="lg:flex lg:flex-col small:-ml-4 small:w-[450px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}
@@ -61,7 +61,7 @@ const FPOTraining = () => {
               }`}
               onClick={() => handleCardClick(card.id)}
             >
-              <div className="flex text-brown-700 justify-between items-center font-bold text-2xl">
+              <div className="lg:flex text-brown-700 justify-between items-center font-bold text-2xl">
                 {card.title}
                 <span
                   className={`transform transition-transform ${
@@ -72,7 +72,7 @@ const FPOTraining = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 rounded-md text-left text-brown-700">
+                <div className="mt-3 p-4 small:w-[450px] rounded-md lg:text-left small:text-center small:ml-10 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}

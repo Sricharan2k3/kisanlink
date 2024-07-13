@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 // Icons components
-function ContactIcon(props) {
+/*function ContactIcon(props) {
   return (
     <svg
       {...props}
@@ -25,7 +25,7 @@ function ContactIcon(props) {
       <line x1="16" x2="16" y1="2" y2="4" />
     </svg>
   );
-}
+}*/
 
 function FocusIcon(props) {
   return (
@@ -70,7 +70,7 @@ function HomeIcon(props) {
   );
 }
 
-function PackageIcon(props) {
+/*function PackageIcon(props) {
   return (
     <svg
       {...props}
@@ -90,7 +90,7 @@ function PackageIcon(props) {
       <path d="M12 22V12" />
     </svg>
   );
-}
+} */
 
 function ServerIcon(props) {
   return (
@@ -147,122 +147,30 @@ export default function Component() {
     },
 
     {
-      id: "products",
-      title: "Onboarding Partners",
-      subtitles: [
-        {
-          subtitle: "FPOs (Farmer Producer Organizations)",
-          subheadings: [
-            {
-              heading: "Streamlined Onboarding",
-              text: "Our partners assist in the seamless onboarding of FPOs, ensuring they have access to our comprehensive tech platform and resources.",
-            },
-            {
-              heading: "Training and Support",
-              text: "We provide training modules and workshops to FPOs, helping them understand and utilize our platform effectively for better communication and streamlined operations.",
-            },
-          ],
-        },
-        {
-          subtitle: "Kisansathis",
-          subheadings: [
-            {
-              heading: "Empowering Rural Entrepreneurs",
-              text: "Our partners help identify and recruit motivated individuals from rural communities to become Kisansathis, who act as intermediaries between Kisanlink and local farmers",
-            },
-            {
-              heading: "Comprehensive Training",
-              text: "Kisansathis undergo extensive training to familiarize themselves with Kisanlink’s platform, products, and services, ensuring they can effectively support farmers.",
-            },
-          ],
-        },
-        {
-          subtitle: "Farmers",
-          subheadings: [
-            {
-              heading: "Direct Engagement",
-              text: "Our partners facilitate direct engagement with farmers, helping them onboard onto our platform and access a wide range of agricultural products and services.",
-            },
-            {
-              heading: "Continuous Support",
-              text: "We provide ongoing support to farmers, ensuring they can make the most of our offerings to enhance their productivity and profitability.",
-            },
-          ],
-        },
-      ],
-      icon: PackageIcon,
-      imgAlt: "Products Image",
-      imgSrc:
-        "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
-    },
-    {
-      id: "services",
-      title: "Implementation Partners",
-      subtitles: [
-        {
-          subtitle: "Order Management",
-          subheadings: [
-            {
-              heading: "Efficient Order Processing",
-              text: "Our partners play a crucial role in managing the order lifecycle, from placement to delivery, ensuring timely and accurate fulfillment of orders..",
-            },
-          ],
-          subheadings: [
-            {
-              heading: "Logistics and Delivery",
-              text: "We collaborate with our partners to cover delivery charges and ensure that products reach farmers efficiently through our dedicated logistics services.",
-            },
-          ],
-        },
-        {
-          subtitle: "Training and Development",
-          subheadings: [
-            {
-              heading: "Skill Development",
-              text: "Our partners help create and deliver training modules, both online and offline, covering various agricultural topics and modern farming techniques.",
-            },
-          ],
-          subheadings: [
-            {
-              heading: "Workshops and Certifications",
-              text: "We organize workshops and certification programs to enhance the skills of farmers, FPOs, and Kisansathis, ensuring they stay updated with the latest developments in agriculture.",
-            },
-          ],
-        },
-      ],
-      icon: ServerIcon,
-      imgAlt: "Services Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/partners-centre.png",
-    },
-
-    {
       id: "features",
       title: "Channel Partners",
+
       subtitles: [
         {
-          subtitle: "Experience Centers",
+          subtitle: "",
 
           subheadings: [
             {
-              heading: "Comprehensive Agri Solutions",
-              text: "Our experience centers offer a wide range of agricultural products and services, including seeds, fertilizers, machinery, and IoT devices, ensuring farmers have access to everything they need under one roof.",
-            },
-            {
-              heading: "Field Demonstrations",
-              text: "We conduct field demonstrations to showcase the effectiveness of our products and services, helping farmers make informed decisions.",
-            },
-            {
-              heading: "Repair and Servicing",
-              text: "Our centers provide repair and servicing for agricultural equipment, ensuring farmers can maintain their tools and machinery in optimal condition.",
+              heading: "",
+              //text: "Our experience centers offer a wide range of agricultural products and services, including seeds, fertilizers, machinery, and IoT devices, ensuring farmers have access to everything they need under one roof.",
+              text: "Our channel partners are essential in extending our reach and impact by managing experience centers that serve as hubs for selling products and services to farmers. These centers are strategically located to maximize accessibility and convenience for the farming community.",
             },
           ],
         },
+      ],
+
+      subtitles: [
         {
-          subtitle: "Our Key Partners",
+          subtitle: "JK University",
 
           subheadings: [
             {
-              heading: "Jk University",
+              heading: "Strategic Partnership",
               text: "Kisanlink is proud to announce its strategic partnership with JKU University, a leading institution in agricultural education and research. This partnership aims to empower agri students through cutting-edge training programs and workshops.",
             },
             {
@@ -284,26 +192,30 @@ export default function Component() {
           ],
         },
       ],
+
       icon: FocusIcon,
-      imgAlt: "Features Image",
-      imgSrc: "./train.png",
+      imgAlt: "channelPartners",
+      imgSrc:
+        "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
     },
+
     {
-      id: "contact",
-      title: "Contact",
+      id: "services",
+      title: "Contact us",
       subtitles: [
         {
-          subtitle: "Get in Touch",
+          subtitle: "Join Us in Transforming Agriculture",
           subheadings: [
             {
-              heading: "Let's Discuss Your Needs",
-              text: "Whether you have a specific question or are interested in learning more about our solutions, our team is here to help. Don't hesitate to reach out, and we'll be happy to assist you.",
+              heading: "",
+              //text: "Our partners play a crucial role in managing the order lifecycle, from placement to delivery, ensuring timely and accurate fulfillment of orders..",
+              text: "We are always looking to expand our network of partners who share our vision of empowering the agricultural community. If you are interested in partnering with us, please reach out to us at info@kisanlink.in or visit our website at our www.kisanlink.in Together, we can make a significant impact on the agricultural sector, driving growth, sustainability, and prosperity for farmers and rural communities.​​",
             },
           ],
         },
       ],
-      icon: ContactIcon,
-      imgAlt: "Contact Image",
+      icon: ServerIcon,
+      imgAlt: "Services Image",
       imgSrc:
         "https://www.kisanlink.in/wp-content/uploads/partners-customer-support.png",
     },
@@ -326,12 +238,13 @@ export default function Component() {
           ))}
         </div>
       </nav>
-      <main className="ml-64 flex-1 overflow-y-auto">
+      <main className="ml-64 flex-1 -mt-12  overflow-y-auto">
         {sections.map((section, index) => (
           <section
             key={section.id}
             id={section.id}
-            className={` ${index === 0 ? "mt-24" : "mt-48"}`}
+            className={`py-12 md:py-24 lg:py-24"
+            }`}
           >
             <div className="container px-4 md:px-6">
               <div
@@ -344,13 +257,13 @@ export default function Component() {
                 {index % 2 !== 0 && (
                   <img
                     src={section.imgSrc}
-                    width="400"
+                    width="500"
                     height="310"
                     alt={section.imgAlt}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl h-[400px] object-cover object-center sm:w-full"
+                    className="mx-auto aspect-video h-[400px] rounded-xl object-cover object-center sm:w-full"
                   />
                 )}
-                <div className="space-y-6">
+                <div className="-mt-24 space-y-6">
                   {section.subtitles.map((subtitle, subIndex) => (
                     <div key={subIndex} className="space-y-2">
                       <div className="inline-block rounded-lg bg-muted  py-1 text-4xl font-semibold">

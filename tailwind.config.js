@@ -82,7 +82,7 @@ module.exports = {
         "xs-small": "0.4em",
       },
       screens: {
-        small: "500px", // Custom small breakpoint
+        small: "300px", // Custom small breakpoint
         medium: "800px", // Custom medium breakpoint
         large: "1500px", // Custom large breakpoint
         xlarge: "1600px", // Custom extra large breakpoint
@@ -91,6 +91,7 @@ module.exports = {
         gray: {
           lightest: "#F3F4F6",
         },
+        customGray: "#e1e5e5",
         blue: {
           100: "#1d4ed8",
         },
