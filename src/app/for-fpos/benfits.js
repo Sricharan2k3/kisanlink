@@ -46,7 +46,7 @@ const Benefits = () => {
     {
       dancer: 1,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Onboarding-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Onboarding-pana.svg",
       title: "Enhanced Efficiency",
       description: [
         "By leveraging Kisanlink's tech platform, FPOs experience streamlined operations and enhanced efficiency in managing farmer databases, membership cards, and financial reporting. This translates to reduced administrative burden and optimized resource utilization.",
@@ -56,7 +56,7 @@ const Benefits = () => {
     {
       dancer: 2,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Course-app-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Course-app-pana.svg",
       title: "Improved Communication",
       description: [
         "Kisanlink facilitates better communication channels between FPOs and their member farmers through its comprehensive database management system. This ensures timely dissemination of information, updates, and announcements.",
@@ -66,7 +66,7 @@ const Benefits = () => {
     {
       dancer: 3,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/Access-to-Technology.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Access-to-Technology.png",
       title: "Access to Technology",
       description: [
         "Through Kisanlink, FPOs gain access to advanced agricultural technologies such as drone-based services for input spraying. This empowers FPOs to offer innovative solutions to their member farmers, enhancing productivity and agricultural outcomes.",
@@ -76,7 +76,7 @@ const Benefits = () => {
     {
       dancer: 4,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/Data-Driven-Decision-Making.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Data-Driven-Decision-Making.png",
       title: "Data-Driven Decision-Making",
       description: [
         "Kisanlink's financial reporting services provide FPOs with detailed insights into their financial performance, enabling data-driven decision-making. This helps FPOs identify areas for improvement, allocate resources effectively, and strategize for long-term sustainability.",
@@ -88,7 +88,7 @@ const Benefits = () => {
     {
       dancer: 1,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Onboarding-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Onboarding-pana.svg",
       title: "Onboarding",
       description: [
         "Onboarding rural entrepreneurs, also known as Kisansathis, is a key aspect of Kisanlink's strategy to expand its reach and impact in rural areas.",
@@ -101,7 +101,7 @@ const Benefits = () => {
     {
       dancer: 2,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Course-app-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Course-app-pana.svg",
       title: "Courses",
       description: [
         "Kisanlink collaborates with industry experts, agricultural organizations, and educational institutions to develop and publish courses on relevant topics through its Academy App and social media channels.",
@@ -114,7 +114,7 @@ const Benefits = () => {
     {
       dancer: 3,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Certification-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Certification-pana.svg",
       title: "Certification",
       description: [
         "To ensure quality and professionalism, Kisansathis are required to complete the relevant courses offered through Kisanlink's Academy App and obtain certification.",
@@ -126,7 +126,7 @@ const Benefits = () => {
     {
       dancer: 4,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Ecommerce-campaign.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Ecommerce-campaign.svg",
       title: "Sales",
       description: [
         "Equipped with the skills and knowledge gained from the training modules, certified Kisansathis serve as valuable resources for farmers in choosing the right products and services to meet their needs.",
@@ -137,7 +137,7 @@ const Benefits = () => {
     {
       dancer: 5,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Money-income-amico.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Money-income-amico.svg",
       title: "Incentive",
       description: [
         "As an incentive for their efforts, Kisansathis receive a predetermined margin or commission for each product or service they provide to farmers.",

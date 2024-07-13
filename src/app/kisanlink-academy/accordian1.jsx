@@ -19,19 +19,19 @@ const FPOTraining = () => {
       title: "Product and service knowledge",
       description:
         "Training on the latest agricultural products and services available through Kisanlink, ensuring FPOs can effectively support their member farmers."  
-        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/acad-5.png",   },
+        ,imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/acad-5.png",   },
             {
       id: 2,
       title: "Operational Efficiency",
       description:
         "Courses on best practices for managing FPO operations, including financial management, marketing, and supply chain logistics."
-        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/acad-4.png", },
+        ,imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/acad-4.png", },
     {
       id: 3,
       title: "Sustainability Practices",
       description:
         "Education on sustainable farming techniques that help FPOs promote eco-friendly and profitable agricultural practices among their members."
-        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/acad-6.png",  },
+        ,imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/acad-6.png",  },
 
   ];
 
@@ -47,7 +47,7 @@ const FPOTraining = () => {
         {/* Image on the left */}
         <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[350px] small:ml-24 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
           <img
-            src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/acad-5.png"}
+            src={selectedCardData ? selectedCardData.imageUrl : "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/acad-5.png"}
             className="w-[300px] h-[300px] rounded-lg shadow-lg"
           />
         </div>

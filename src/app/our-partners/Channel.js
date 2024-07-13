@@ -122,10 +122,10 @@ const ChannelPartners = () => {
             </a>{" "}
             or visit our website at{" "}
             <a
-              href="http://www.kisanlink.in"
+              href="http://d33hqsk72xx8w2.cloudfront.net"
               className="text-blue-500 underline"
             >
-              www.kisanlink.in
+              d33hqsk72xx8w2.cloudfront.net
             </a>
             .
           </p>

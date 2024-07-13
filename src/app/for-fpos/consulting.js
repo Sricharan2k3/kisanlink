@@ -19,7 +19,8 @@ const ConsultancyServicesPage = () => {
       title: "Scheme Applications",
       description:
         "We guide and support FPOs in identifying and applying for relevant schemes crucial for their growth.",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/startegy.svg",
+      imageUrl:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg",
     },
     {
       id: 2,
@@ -27,7 +28,7 @@ const ConsultancyServicesPage = () => {
       description:
         " Create Detailed Project Reports (DPRs) and assist in scheme applications, streamlining the process for FPOs.",
       imageUrl:
-        "https://www.kisanlink.in/wp-content/uploads/financial-support-web.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/financial-support-web.png",
     },
     {
       id: 3,
@@ -35,7 +36,7 @@ const ConsultancyServicesPage = () => {
       description:
         "Evaluate the financial feasibility of new projects, aiding in informed decision-making.",
       imageUrl:
-        "https://www.kisanlink.in/wp-content/uploads/financial-analysis-web.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/financial-analysis-web.png",
     },
     {
       id: 4,
@@ -43,7 +44,7 @@ const ConsultancyServicesPage = () => {
       description:
         "Aid in applying for loans, credits, and financial support necessary for FPO development.",
       imageUrl:
-        "https://www.kisanlink.in/wp-content/uploads/financial-assistance-web.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/financial-assistance-web.png",
     },
   ];
 
@@ -60,7 +61,7 @@ const ConsultancyServicesPage = () => {
             src={
               selectedCardData
                 ? selectedCardData.imageUrl
-                : "https://www.kisanlink.in/wp-content/uploads/startegy.svg"
+                : "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg"
             }
             className="w-[300px] h-[300px] rounded-lg shadow-lg"
           />

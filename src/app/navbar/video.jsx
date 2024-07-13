@@ -15,7 +15,7 @@ function VideoContainer() {
       <div className="relative overflow-hidden lg:w-full lg:h-full small:w-full small:h-[280px] bg-white">
         <iframe
           className="absolute overflow-hidden  lg:w-full lg:h-full small:w-full small:h-[280px] "
-   src="https://www.kisanlink.in/wp-content/uploads/pitchdesk_0.mp4"
+   src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/pitchdesk_0.mp4"
           title="Full Screen Video"
          
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

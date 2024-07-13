@@ -11,7 +11,7 @@ const Background = ({title}) => {
         </div>
         <img
           className="absolute insert-0 pt-4 mt-32 overflow-hidden"
-          src="https://www.kisanlink.in/wp-content/uploads/2022/07/footer-img-1.png"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/07/footer-img-1.png"
         />
       </div>
     );

@@ -48,13 +48,13 @@ const DownloadAppBox = () => {
         </div>
 
         <img
-          src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/ellipse.png"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/ellipse.png"
           alt="bg"
         />
       </div>
       <div className="scroll-circle">
         <img
-          src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/circle13.png"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/circle13.png"
           alt="circle"
           style={{
             transform:

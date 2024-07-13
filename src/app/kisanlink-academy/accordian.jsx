@@ -19,20 +19,20 @@ const KisanAcademy = () => {
       title: "Collaborative Course",
       description:
         "Developed in collaboration with industry experts and agricultural organizations, our courses cover essential topics such as sustainable farming practices, precision agriculture, organic farming, and agribusiness management."
-        , imageUrl: "https://www.kisanlink.in/wp-content/uploads/startegy.svg",  
+        , imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg",  
       },
             {
       id: 2,
       title: "Certification",
       description:
         "Learners who complete our courses receive certification, demonstrating their proficiency and readiness to apply their skills in real-world scenarios." ,
-        imageUrl: "https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png",},
+        imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/kisanlink-certificate.png",},
     {
       id: 3,
       title: "Flexible Learning",
       description:
         "Our user-friendly platform allows learners to progress at their own pace, accommodating different learning styles and schedules." 
-        ,imageUrl: "https://www.kisanlink.in/wp-content/uploads/Learning-languages-rafiki.jpg", },
+        ,imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Learning-languages-rafiki.jpg", },
 
   ];
 
@@ -49,7 +49,7 @@ const KisanAcademy = () => {
         {/* Image on the left */}
         <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[350px] small:ml-20 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
           <img
-            src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/startegy.svg"}
+            src={selectedCardData ? selectedCardData.imageUrl : "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg"}
             className="w-[400px] h-[250px] rounded-lg shadow-lg"
           />
         </div>

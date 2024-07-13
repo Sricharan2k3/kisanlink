@@ -66,7 +66,7 @@ const SkeletonOne = () => {
     >
       
 
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-1.png" height={165} width={255}/>
+      <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/products-t1-1.png" height={165} width={255}/>
     </motion.div>
   );
 };
@@ -96,7 +96,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-2.png" height={165} width={265}/>
+      <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/products-t1-2.png" height={165} width={265}/>
     </motion.div>
   );
 };
@@ -128,7 +128,7 @@ const SkeletonThree = () => {
     >
       <motion.div className="h-full w-full rounded-lg">
 
-        <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-3.png" height={165} width={255}/>
+        <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/products-t1-3.png" height={165} width={255}/>
       </motion.div>
     </motion.div>
   );
@@ -166,7 +166,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://www.kisanlink.in/wp-content/uploads/tarpaulin-2.jpg"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/tarpaulin-2.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -176,7 +176,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src="https://www.kisanlink.in/wp-content/uploads/trap-type-2.jpg"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/trap-type-2.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -189,7 +189,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src="https://www.kisanlink.in/wp-content/uploads/brush-cutter-1.jpg"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/brush-cutter-1.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -232,7 +232,7 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Image src="https://www.kisanlink.in/wp-content/uploads/products-t1-4.png" height={165} width={255}/>
+      <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/products-t1-4.png" height={165} width={255}/>
     </motion.div>
   );
 };

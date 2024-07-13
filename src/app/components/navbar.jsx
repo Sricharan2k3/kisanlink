@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <a href="#">
-                        <img className="w-auto h-14" src="https://www.kisanlink.in/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg" alt="" />
+                        <img className="w-auto h-14" src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg" alt="" />
                     </a>
 
                     {/* Mobile menu button */}

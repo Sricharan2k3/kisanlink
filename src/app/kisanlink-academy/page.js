@@ -149,7 +149,7 @@ const Academy = () => {
           {/* Bottom Image */}
           {/* <div className="flex justify-center mt-12 pt-12">
             <img
-              src="https://www.kisanlink.in/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
               alt="Bottom Image"
               className="w-full h-48"
             />
@@ -294,7 +294,7 @@ const Academy = () => {
           {/* Right Section (Image) */}
           <div className="flex-1 order-last lg:order-none  lg:mt-16">
             <img
-              src="https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png"
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/kisanlink-certificate.png"
               className="w-full h-110 "
               alt="Certification Image"
             />
@@ -307,7 +307,7 @@ const Academy = () => {
         {/* Bottom Image */}
         <div className="flex justify-center mb-4 -mt-8">
           <img
-            src="https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/kisanlink-certificate.png"
             alt="Bottom Image"
             className="small:w-64 small:h-36 lg:w-0 lg:h-0"
           />
@@ -315,7 +315,7 @@ const Academy = () => {
 
         <div className="bg-shape bg-green-600 w-full h-96">
           <img
-            src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/left-shape.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/left-shape.png"
             alt="shape"
             className="shape-left"
             style={{
@@ -328,7 +328,7 @@ const Academy = () => {
           />
 
           {/* <img
-            src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/right_shape.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/right_shape.png"
             alt="shape"
             className="shape-right"
             style={{
@@ -393,113 +393,119 @@ const YouTubeLinks = [
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPsZfEIuwprDf937Fe0f7T3S",
     alt: "Agriculture Image 1",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/introductory-english-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-english-thumbnail.jpg",
   },
   {
     category: "Introductory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture image 2",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/introductory-telugu-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-telugu-thumbnail.jpg",
   },
   {
     category: "Introductory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuJQuSTkqEd1qOdho6x_MPH",
     alt: "Agriculture Image 3",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/introductory-hindi-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-hindi-thumbnail.jpg",
   },
   {
     category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuZ1bcWlPwrx37erWB77Mn0",
     alt: "Agriculture Image 4",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/eng.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/eng.jpg",
   },
   {
     category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 5",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/tel.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/tel.jpg",
   },
   {
     category: "Drone",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 6",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/hin.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/hin.jpg",
   },
   {
     category: "Advisory",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPs9NBIGTN9mABTBpjsGFBJm",
     alt: "Agriculture Image 7",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/advisory-english-1.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/advisory-english-1.jpg",
   },
   // {
   //   category: "Advisory",
   //   href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
   //   alt: "Agriculture Image 8",
   //   thumbnail:
-  //     "https://www.kisanlink.in/wp-content/uploads/introductory-telugu-thumbnail.jpg",
+  //     "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-telugu-thumbnail.jpg",
   // },
   // {
   //   category: "Advisory",
   //   href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
   //   alt: "Agriculture Image 9",
   //   thumbnail:
-  //     "https://www.kisanlink.in/wp-content/uploads/introductory-hindi-thumbnail.jpg",
+  //     "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-hindi-thumbnail.jpg",
   // },
   {
     category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 10",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/mustard-english-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-english-thumbnail.jpg",
   },
   {
     category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 11",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/mustard-telugu-1-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-telugu-1-thumbnail.jpg",
   },
   {
     category: "Mustard",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 12",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/mustard-telugu-thumbnail.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-telugu-thumbnail.jpg",
   },
   {
     category: "Safflower",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 13",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/safflower-course-english.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/safflower-course-english.jpg",
   },
   {
     category: "Safflower",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
     thumbnail:
-      "https://www.kisanlink.in/wp-content/uploads/safflower-course-hin.jpg",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/safflower-course-hin.jpg",
   },
   {
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715-hindi.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715-hindi.jpg",
   },
   {
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715-telugu.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715-telugu.jpg",
   },
   {
     category: "Paddy",
     href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
     alt: "Agriculture Image 14",
-    thumbnail: "https://www.kisanlink.in/wp-content/uploads/9510715.jpg",
+    thumbnail:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715.jpg",
   },
   {
     category: "Heliot",

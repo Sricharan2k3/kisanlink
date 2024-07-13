@@ -1,21 +1,21 @@
 import React from "react";
 const cardContent = [
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/form1.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/form1.png',
     heading: 'Step 1',
     points: [
 'Apply for collaboration by filling the form',
     ],
   },
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/product-service-1.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/product-service-1.png',
     heading: 'Step 2',
     points: [
   'Upload the content of your products/services on the web application',
     ],
   },
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/network-1.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/network-1.png',
     heading: 'Step 3',
     points: [
 'Keep track of the number of Kisansathis completing your course and get direct sales through them.',

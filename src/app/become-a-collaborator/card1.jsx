@@ -2,7 +2,7 @@ import React from 'react';
 
 const cardContent = [
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/features.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/features.png',
     heading: 'Features',
     points: [
       'Digital training modules for products and services.',
@@ -12,7 +12,7 @@ const cardContent = [
     ],
   },
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/Experience.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Experience.png',
     heading: 'Experiences',
     points: [
       'Access to web app to keep up with dashboard of key indicators.',
@@ -21,7 +21,7 @@ const cardContent = [
     ],
   },
   {
-    image: 'https://www.kisanlink.in/wp-content/uploads/2022/03/Benefits.png',
+    image: 'https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Benefits.png',
     heading: 'Benefits',
     points: [
       'Effective knowledge transfer about products/services.',

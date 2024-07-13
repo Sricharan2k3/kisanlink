@@ -11,17 +11,19 @@ const TabComponent = () => {
     {
       name: "Farm Mechanisation",
       content: farmMechanisationContent,
-      image: "https://www.kisanlink.in/wp-content/uploads/value.svg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/value.svg",
     },
     {
       name: "Market Linkage",
       content: marketLinkageContent,
-      image: "https://www.kisanlink.in/wp-content/uploads/market.svg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/market.svg",
     },
     {
       name: "Marketing",
       content: marketingContent,
-      image: "https://www.kisanlink.in/wp-content/uploads/ing.svg",
+      image: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
     },
   ];
 

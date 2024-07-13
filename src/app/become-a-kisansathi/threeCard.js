@@ -12,7 +12,7 @@ const Card = (props) => {
           style={{ width: "calc(30% - 1rem)" }}
         >
           <img
-            src="https://www.kisanlink.in/wp-content/uploads/2022/03/Felxible-time.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Felxible-time.png"
             alt="Card 1"
             className="w-24 h-24 object-cover mx-auto mt-4"
           />
@@ -30,7 +30,7 @@ const Card = (props) => {
           style={{ width: "calc(30% - 1rem)" }}
         >
           <img
-            src="https://www.kisanlink.in/wp-content/uploads/2022/03/unlimites-income.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/unlimites-income.png"
             alt="Card 2"
             className="w-24 h-24 object-cover mx-auto mt-4"
           />
@@ -48,7 +48,7 @@ const Card = (props) => {
           style={{ width: "calc(30% - 1rem)" }}
         >
           <img
-            src="https://www.kisanlink.in/wp-content/uploads/2022/03/certifications.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/certifications.png"
             alt="Card 3"
             className="w-24 h-24 object-cover mx-auto mt-4"
           />

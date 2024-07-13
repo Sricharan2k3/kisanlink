@@ -12,11 +12,11 @@ export function DirectionAwareHoverDemo() {
   return (
     <>
     <div className="h-[40rem] relative gap-x-20 -mt-32 -mb-28 flex items-center justify-center">
-      <DirectionAwareHover imageUrl={"https://www.kisanlink.in/wp-content/uploads/drone-441.png"}>
+      <DirectionAwareHover imageUrl={"https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/drone-441.png"}>
         <p className="font-bold text-xl font-gray-600">Drone Spraying Services</p>
         <p className="font-normal text-sm">The center partners with certified drone companies to provide more efficient drone spraying services covering larger areas compared to traditional methods.</p>
       </DirectionAwareHover>
-      <DirectionAwareHover imageUrl={"https://www.kisanlink.in/wp-content/uploads/rental-441.png"}>
+      <DirectionAwareHover imageUrl={"https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/rental-441.png"}>
         <p className="font-bold text-xl font-gray-600">Rental Tools</p>
         <p className="font-normal text-sm">Farmers can rent various agricultural tools, making advanced equipment accessible without large capital investments.</p>
       </DirectionAwareHover>
@@ -26,12 +26,12 @@ export function DirectionAwareHoverDemo() {
     <div className="h-[40rem] relative gap-x-20 -mt-32 -mb-28 flex items-center justify-center">
           
      
-     <DirectionAwareHover imageUrl={"https://www.kisanlink.in/wp-content/uploads/skill-training.png"}>
+     <DirectionAwareHover imageUrl={"https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/skill-training.png"}>
        <p className="font-bold text-xl font-gray-600">Skill Training</p>
        <p className="font-normal text-sm">The center offers training for stakeholders on the use of innovative products and technologies and skill development along with workshops for SHGs, collaborators, organic farming, and FPO training.
        </p>
      </DirectionAwareHover>
-     <DirectionAwareHover imageUrl={"https://www.kisanlink.in/wp-content/uploads/field-demonstration.png"}>
+     <DirectionAwareHover imageUrl={"https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/field-demonstration.png"}>
        <p className="font-bold text-xl font-gray-600">Field Demonstrations</p>
        <p className="font-normal text-sm">These practical demonstrations help farmers understand the application and benefits of new technologies and products in real-world scenarios.</p>
      </DirectionAwareHover>

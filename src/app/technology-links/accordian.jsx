@@ -19,7 +19,7 @@ const ConsultancyServicesPage = () => {
       title: "Scheme Applications",
       description:
         "We offer robust technical support services to ensure smooth operations and effective utilization of our platform’s features. Our dedicated team is committed to assisting users with any technical queries or issues they encounter.",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/startegy.svg"
+      imageUrl: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg"
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ const ConsultancyServicesPage = () => {
     <div className="font-sans text-center p-5 pt-32 pb-12 flex flex-col items-center max-w-1/2 justify-start">
       <video width="1080" height="1080" controls>
         <source
-          src="https://www.kisanlink.in/wp-content/uploads/pitchdesk_3.mp4"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/pitchdesk_3.mp4"
           type="video/mp4"
         /> 
         Your browser does not support the video tag.
@@ -60,7 +60,7 @@ const ConsultancyServicesPage = () => {
         {/* Image on the left */}
         <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:mr-8">
           <img
-            src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/startegy.svg"}
+            src={selectedCardData ? selectedCardData.imageUrl : "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg"}
             alt={selectedCardData ? selectedCardData.title : "Consultancy Services"}
             className="w-[400px] h-[400px] rounded-lg shadow-lg"
           />

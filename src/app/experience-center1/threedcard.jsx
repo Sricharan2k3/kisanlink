@@ -28,7 +28,7 @@ The center provides brand space for promoting agricultural products and services
           className="w-full mt-4"
         >
           <Image
-            src="https://www.kisanlink.in/wp-content/uploads/experience-centre-1.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/experience-centre-1.png"
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

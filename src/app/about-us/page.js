@@ -5,10 +5,10 @@ import Heading from "../components/heading";
 import Background from "../../utils/background";
 import ImageCarousel from "./carousel";
 const images = [
-  "https://www.kisanlink.in/wp-content/uploads/Innovation-150x150.png",
-  "https://www.kisanlink.in/wp-content/uploads/Inclusion-150x150.png",
-  "https://www.kisanlink.in/wp-content/uploads/impact-150x150.png",
-  "https://www.kisanlink.in/wp-content/uploads/Integrity-150x150.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Innovation-150x150.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Inclusion-150x150.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/impact-150x150.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Integrity-150x150.png",
 ];
 const about = () => {
   return (
@@ -59,7 +59,7 @@ const about = () => {
         </p>
       </div>
       <div className=" items-center lg:w-4/5 lg:pl-96 lg:mb-2 small:m-8">
-        <ImageCarousel images={images} ></ImageCarousel>
+        <ImageCarousel images={images}></ImageCarousel>
       </div>
     </>
   );

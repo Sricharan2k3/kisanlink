@@ -11,7 +11,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://www.kisanlink.in/wp-content/uploads/updated-store.jpg"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/updated-store.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -27,7 +27,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://www.kisanlink.in/wp-content/uploads/updated-store.jpg"
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/updated-store.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"

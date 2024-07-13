@@ -65,7 +65,7 @@ export const Menu = ({
       onMouseLeave={() => setActive(null)} // resets the state
       className="relative h-24 pt-10 boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-10 px-8 py-6 "
     ><div>
-    <img className="h-24 w-24 -mt-8 " src="https://www.kisanlink.in/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg"></img>
+    <img className="h-24 w-24 -mt-8 " src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg"></img>
 </div>
       {children}
       <div class="flex justify-center gap-1">
@@ -96,7 +96,7 @@ export const Menu = ({
             <button type="button" class="flex items-center justify-center w-36 text-white rounded-3xl h-8">
                 
                 <div>
-                    <img src="https://www.kisanlink.in/wp-content/uploads/logo-horizontal-light.png"></img>
+                    <img src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/logo-horizontal-light.png"></img>
                 </div>
             </button>
         </a>

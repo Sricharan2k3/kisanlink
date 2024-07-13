@@ -46,7 +46,7 @@ const BenefitsComponent = () => {
     {
       dancer: 1,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Onboarding-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Onboarding-pana.svg",
       title: "Onboarding",
       description: [
         "Onboarding involves the process of integrating new companies or organizations as collaborators with Kisanlink. This process typically includes establishing agreements, setting up accounts, and providing necessary resources for effective collaboration.",
@@ -56,7 +56,8 @@ const BenefitsComponent = () => {
     },
     {
       dancer: 2,
-      image: "https://www.kisanlink.in/wp-content/uploads/Marketing-amico.png",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Marketing-amico.png",
       title: "Improved Communication",
       description: [
         "Product management on the Kisanlink mobile app involves adding and managing the various products offered by collaborators for sale to farmers.",
@@ -68,7 +69,7 @@ const BenefitsComponent = () => {
     {
       dancer: 3,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/Checking-boxes-amico-1.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Checking-boxes-amico-1.png",
       title: "Access to Technology",
       description: [
         "Kisanlink uses both digital and offline marketing to create awareness of the products and services offered by the collaborators.",
@@ -79,7 +80,7 @@ const BenefitsComponent = () => {
     {
       dancer: 4,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/At-the-office-amico-1.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/At-the-office-amico-1.png",
       title: "Data-Driven Decision-Making",
       description: [
         "When a farmer places an order through the Kisanlink mobile app or website, a purchase order is generated and sent to the relevant collaborator.",
@@ -93,7 +94,7 @@ const BenefitsComponent = () => {
     {
       dancer: 1,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Onboarding-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Onboarding-pana.svg",
       title: "Onboarding",
       description: [
         "Onboarding rural entrepreneurs, also known as Kisansathis, is a key aspect of Kisanlink's strategy to expand its reach and impact in rural areas.",
@@ -106,7 +107,7 @@ const BenefitsComponent = () => {
     {
       dancer: 2,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Course-app-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Course-app-pana.svg",
       title: "Courses",
       description: [
         "Kisanlink collaborates with industry experts, agricultural organizations, and educational institutions to develop and publish courses on relevant topics through its Academy App and social media channels.",
@@ -119,7 +120,7 @@ const BenefitsComponent = () => {
     {
       dancer: 3,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Certification-pana.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Certification-pana.svg",
       title: "Certification",
       description: [
         "To ensure quality and professionalism, Kisansathis are required to complete the relevant courses offered through Kisanlink's Academy App and obtain certification.",
@@ -131,7 +132,7 @@ const BenefitsComponent = () => {
     {
       dancer: 4,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Ecommerce-campaign.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Ecommerce-campaign.svg",
       title: "Sales",
       description: [
         "Equipped with the skills and knowledge gained from the training modules, certified Kisansathis serve as valuable resources for farmers in choosing the right products and services to meet their needs.",
@@ -142,7 +143,7 @@ const BenefitsComponent = () => {
     {
       dancer: 5,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/2022/03/Money-income-amico.svg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Money-income-amico.svg",
       title: "Incentive",
       description: [
         "As an incentive for their efforts, Kisansathis receive a predetermined margin or commission for each product or service they provide to farmers.",

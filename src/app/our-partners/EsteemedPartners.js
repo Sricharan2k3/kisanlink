@@ -23,7 +23,7 @@ const EsteemedPartners = () => {
           <div id="map-container" className="relative mt-5 w-full">
             <div className="flex justify-start w-full">
               <img
-                src="https://www.kisanlink.in/wp-content/uploads/india-map.jpg"
+                src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/india-map.jpg"
                 alt="India Map"
                 id="india-map"
                 className="max-w-xl w-full h-auto rounded-lg"

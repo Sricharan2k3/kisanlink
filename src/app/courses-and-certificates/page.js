@@ -35,7 +35,7 @@ const ast = () => {
         <div className="lg:w-1/3  ">
           <img
             className="lg:justify-center lg:items-center lg:pl-20 small:pl-12 lg:ml-8 lg:contents-center h-36 -mb-8"
-            src="https://www.kisanlink.in/wp-content/uploads/skill_dev-removebg-preview.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/skill_dev-removebg-preview.png"
           ></img>
           <Heading value={"Industry-Relevant Skills"}></Heading>
           <p className="small:pl-2 small:pr-2">
@@ -46,7 +46,7 @@ const ast = () => {
         <div className="lg:w-1/3">
           <img
             className=" lg:pl-24 small:pl-12 h-36 -mb-8"
-            src="https://www.kisanlink.in/wp-content/uploads/career_dev-removebg-preview.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/career_dev-removebg-preview.png"
           ></img>
           <Heading value={"Career Development"}></Heading>
           <p className="small:pl-2 small:pr-2">

@@ -143,7 +143,8 @@ export default function Component() {
       ],
       icon: HomeIcon,
       imgAlt: "Home Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/store-web.png",
+      imgSrc:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/store-web.png",
     },
 
     {
@@ -196,7 +197,7 @@ export default function Component() {
       icon: FocusIcon,
       imgAlt: "channelPartners",
       imgSrc:
-        "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
     },
 
     {
@@ -209,7 +210,7 @@ export default function Component() {
             {
               heading: "",
               //text: "Our partners play a crucial role in managing the order lifecycle, from placement to delivery, ensuring timely and accurate fulfillment of orders..",
-              text: "We are always looking to expand our network of partners who share our vision of empowering the agricultural community. If you are interested in partnering with us, please reach out to us at info@kisanlink.in or visit our website at our www.kisanlink.in Together, we can make a significant impact on the agricultural sector, driving growth, sustainability, and prosperity for farmers and rural communities.​​",
+              text: "We are always looking to expand our network of partners who share our vision of empowering the agricultural community. If you are interested in partnering with us, please reach out to us at info@kisanlink.in or visit our website at our d33hqsk72xx8w2.cloudfront.net Together, we can make a significant impact on the agricultural sector, driving growth, sustainability, and prosperity for farmers and rural communities.​​",
             },
           ],
         },
@@ -217,7 +218,7 @@ export default function Component() {
       icon: ServerIcon,
       imgAlt: "Services Image",
       imgSrc:
-        "https://www.kisanlink.in/wp-content/uploads/partners-customer-support.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/partners-customer-support.png",
     },
   ];
 

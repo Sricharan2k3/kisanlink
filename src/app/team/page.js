@@ -59,7 +59,7 @@ const App = () => {
     },
     {
       photo:
-        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2022-07-22-at-1.35.06-PM-ps56uvsiwm4i5id1guki3fbpg9oozl5xhg9wek7330.jpeg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2022-07-22-at-1.35.06-PM-ps56uvsiwm4i5id1guki3fbpg9oozl5xhg9wek7330.jpeg",
       name: "Shiva Reddy Gunthakanti",
       position: "Strategic Advisor",
       qualification: "B.Tech IIT Guwahati",
@@ -71,7 +71,7 @@ const App = () => {
     },
     {
       photo:
-        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/image-111-ps58pq3cwhmjr99r5qpfek3q6o8ccqis0acwyx38m4.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/image-111-ps58pq3cwhmjr99r5qpfek3q6o8ccqis0acwyx38m4.png",
       name: "Manohar Rao",
       position: "Technical Advisor",
       qualification: "Ph.D in Horticulture",
@@ -82,7 +82,7 @@ const App = () => {
     },
     {
       photo:
-        "https://www.kisanlink.in/wp-content/uploads/2022/07/image-109-e1658501010849.jpg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/07/image-109-e1658501010849.jpg",
       name: "Narsimha Rao",
       position: "Strategy and Output Advisor ",
       qualification: "Consultant - McKinsey",
@@ -93,7 +93,7 @@ const App = () => {
     },
     {
       photo:
-        "https://www.kisanlink.in/wp-content/uploads/elementor/thumbs/nihar-e1710250349135-ql3saa74hdpskdwgcr8c4b56011bf9lm60q494rtse.jpeg",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/nihar-e1710250349135-ql3saa74hdpskdwgcr8c4b56011bf9lm60q494rtse.jpeg",
       name: "Nihar R Pradhan",
       position: "Technical and Management Advisor",
       qualification: "Founder MAP Index Consulting",

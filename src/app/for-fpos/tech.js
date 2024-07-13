@@ -20,7 +20,8 @@ const Techsuppourt = () => {
       title: "Maintaining Farmers Database",
       description:
         "We offer robust tech platform to maintain a comprehensive database of farmers associated with the FPO. This aids in better communication and streamlined operations.",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/M.png",
+      imageUrl:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/M.png",
     },
     {
       id: 2,
@@ -34,12 +35,13 @@ const Techsuppourt = () => {
       title: "Financial Reportings",
       description:
         "We manage and generate detailed financial reports by leveraging our advanced tech solutions. This ensures transparent financial insights for strategic decision making within the FPO..",
-      imageUrl: "https://www.kisanlink.in/wp-content/uploads/F.png",
+      imageUrl:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/F.png",
     },
   ];
 
   const defaultImageUrl =
-    "https://www.kisanlink.in/wp-content/uploads/Websit-AI-1-scaled.jpg";
+    "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Websit-AI-1-scaled.jpg";
   const selectedImageUrl = selectedCard
     ? cardsData.find((card) => card.id === selectedCard).imageUrl
     : defaultImageUrl;

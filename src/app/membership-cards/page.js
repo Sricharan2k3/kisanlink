@@ -27,7 +27,7 @@ const smartcard = () => {
         <div className="flex-1 max-w-sm mx-auto md:max-w-md lg:max-w-lg">
           <img
             className="w-full h-auto object-cover rounded-lg"
-            src="https://www.kisanlink.in/wp-content/uploads/17A-scaled.jpg"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/17A-scaled.jpg"
             alt="First Image"
           />
         </div>

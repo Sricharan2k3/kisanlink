@@ -31,7 +31,8 @@ const content = [
         </ol>
       </>
     ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/farm-mech.png",
+    imageSrc:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/farm-mech.png",
   },
   {
     id: "soil-testing-service",
@@ -66,7 +67,8 @@ const content = [
         </ol>
       </>
     ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/soil-test.png",
+    imageSrc:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/soil-test.png",
   },
 
   {
@@ -156,7 +158,8 @@ const content = [
         </ol>
       </>
     ),
-    imageSrc: "https://www.kisanlink.in/wp-content/uploads/subscidies.png",
+    imageSrc:
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/subscidies.png",
   },
 ];
 
@@ -174,15 +177,14 @@ const StickyScrollRevealDemo = () => {
     };
 
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    window.addEventListener("resize", checkScreenSize);
 
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
 
   // useEffect to handle scroll and update activeSection
   useEffect(() => {
@@ -210,10 +212,8 @@ const StickyScrollRevealDemo = () => {
   };
 
   return (
-
     <div id="services" className="p-10">
       {/* Navbar */}
-
 
       {/* Main Content */}
       <div className="sticky top-0 w-full z-50 bg-white">
@@ -223,16 +223,18 @@ const StickyScrollRevealDemo = () => {
               onClick={toggleDropdown}
               className="w-full px-4 py-2 text-left bg-[#e5deb9] text-brown-600 font-bold border border-gray-400 rounded"
             >
-              {content.find(item => item.id === activeSection)?.title || 'Menu'}
+              {content.find((item) => item.id === activeSection)?.title ||
+                "Menu"}
             </button>
             {isDropdownOpen && (
               <ul className="absolute w-full mt-1 bg-white border border-gray-400 rounded shadow-lg">
                 {content.map((item) => (
                   <li key={item.id} className="cursor-pointer">
-
-                    <a className={`block px-4 py-2 ${activeSection === item.id
-                      ? "bg-[#e5deb9] text-brown-600 font-bold"
-                      : "text-brown-600 hover:bg-[#e5deb9]"
+                    <a
+                      className={`block px-4 py-2 ${
+                        activeSection === item.id
+                          ? "bg-[#e5deb9] text-brown-600 font-bold"
+                          : "text-brown-600 hover:bg-[#e5deb9]"
                       }`}
                       onClick={() => {
                         handleItemClick(item.id);
@@ -250,22 +252,21 @@ const StickyScrollRevealDemo = () => {
           <ul className="flex justify-center space-x-6 py-4">
             {content.map((item) => (
               <li id={item.id} key={item.id} className="cursor-pointer">
-
-                <a className={`block px-4 py-2 rounded transition-colors duration-200 ${activeSection === item.id
-                  ? "bg-[#e5deb9] text-brown-600 font-bold border border-gray-400"
-                  : "text-brown-600 hover:bg-[#e5deb9] border border-transparent"
+                <a
+                  className={`block px-4 py-2 rounded transition-colors duration-200 ${
+                    activeSection === item.id
+                      ? "bg-[#e5deb9] text-brown-600 font-bold border border-gray-400"
+                      : "text-brown-600 hover:bg-[#e5deb9] border border-transparent"
                   }`}
                   onClick={() => handleItemClick(item.id)}
                 >
                   {item.title}
-
                 </a>
               </li>
             ))}
           </ul>
-        )
-        }
-      </div >
+        )}
+      </div>
       <div className="w-full mt-12 content-center justify-center">
         {content.map((item) => (
           <section
@@ -292,10 +293,8 @@ const StickyScrollRevealDemo = () => {
             </div>
           </section>
         ))}
-
       </div>
     </div>
-
   );
 };
 

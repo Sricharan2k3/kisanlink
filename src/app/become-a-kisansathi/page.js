@@ -20,11 +20,11 @@ const h5 = "Get an opportunity to earn unlimited income";
 const h6 = "Get Industry level certifications and develop your career";
 
 const img1 =
-  "https://www.kisanlink.in/wp-content/uploads/2022/03/Age-requriement.png";
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/Age-requriement.png";
 const img2 =
-  "https://www.kisanlink.in/wp-content/uploads/2022/03/educational-qualification.png";
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/educational-qualification.png";
 const img3 =
-  "https://www.kisanlink.in/wp-content/uploads/2022/03/motorcycle.png";
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/motorcycle.png";
 
 import CenteredLayout from "./cardContent";
 import Card from "./threeCard";

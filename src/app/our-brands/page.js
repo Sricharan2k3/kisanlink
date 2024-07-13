@@ -66,7 +66,7 @@ const Brands = () => {
           {/* Right Image Section */}
           <div className="relative mt-36 flex-shrink-0 w-160 h-160 md:w-90 md:h-100 rounded-full overflow-hidden  flex items-start">
             <img
-              src="https://www.kisanlink.in/wp-content/uploads/brands.png" // Replace with your image path
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/brands.png" // Replace with your image path
               alt="Brand Image"
               className="w-full h-full object-cover"
             />
@@ -78,7 +78,7 @@ const Brands = () => {
       <div className="font-sans text-center p-5 pt-12 pb-12 max-h-1/2 flex flex-col items-center max-w-1/2 justify-start">
         <video className="video" controls>
           <source
-            src="https://www.kisanlink.in/wp-content/uploads/logo-1.1.mp4"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/logo-1.1.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

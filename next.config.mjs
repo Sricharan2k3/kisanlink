@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     domains: [
       "pbs.twimg.com",
-      "www.kisanlink.in",
+      "d33hqsk72xx8w2.cloudfront.net",
       "assets.aceternity.com",
       "images.unsplash.com",
     ],

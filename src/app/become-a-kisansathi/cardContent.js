@@ -20,7 +20,7 @@ const RightImage = () => {
   return (
     <div className="ml-16 -mt-36 p-4">
       <img
-        src="https://www.kisanlink.in/wp-content/uploads/2022/03/farmer-standing-rice-field-with-tablet-scaled.jpg"
+        src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/farmer-standing-rice-field-with-tablet-scaled.jpg"
         alt="Placeholder"
         className="w-[600px] h-[300px]"
       />

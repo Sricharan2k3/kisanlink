@@ -9,7 +9,7 @@ const FourCards = () => {
             <div className="large:flex justify-between mt-12 small:grid-cols-4">
                 <div className="relative large: h-1/3 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden"style={{ backgroundColor: '#24A033' }} >
-                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
+                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         
                         <img src="./product.png" alt="Card 1" className="w-40 h-40 p-4" />
                         
@@ -37,7 +37,7 @@ const FourCards = () => {
                 </div>
                 <div className="relative large:w-[390px] mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
-                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
+                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./farm.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Farm Mechanization Service</h2>
@@ -60,7 +60,7 @@ const FourCards = () => {
                 </div>
                 <div className="relative large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
-                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
+                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./output.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Output Purchase Service</h2>
@@ -81,7 +81,7 @@ const FourCards = () => {
                 </div>
                 <div className="relative large:w-1/4 mx-2 " style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
-                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://www.kisanlink.in/wp-content/uploads/agrisetu.com_.png)' }}></div>
+                        <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./other.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Other Agri Related Services</h2>

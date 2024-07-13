@@ -25,7 +25,7 @@ const Career = () => {
         <div className="overlay-bg lg:max-width-full ">
           <div className="text-center lg:mt-96 flex small:mt-64 small:ml-48  lg:max-width-full content-end">
             <img
-              src="https://www.kisanlink.in/wp-content/uploads/Hiring-cuate.svg"
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Hiring-cuate.svg"
               className="lg:w-80 lg:h-80 small:w-64 small:h-64 "
             />
             <h1 className="small:text-lg lg:text-4xl lg:ml-24 mt-24 font-bold text-white text-center lg:mr-64 lg:w-96 small:w-60 ">
@@ -38,13 +38,13 @@ const Career = () => {
           </div>
 
           <img
-            src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/ellipse.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/ellipse.png"
             alt="bg"
           />
         </div>
         <div className="scroll-circle">
           <img
-            src="https://www.kisanlink.in/wp-content/plugins/saaspik-addons/elementor/widgets/images/circle13.png"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/circle13.png"
             alt="circle"
             style={{
               transform:
@@ -56,7 +56,7 @@ const Career = () => {
         </div>
       </div>
       {/* <img
-        src="https://www.kisanlink.in/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
+        src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png"
         className="w-full h-48"
         alt=""
       /> */}

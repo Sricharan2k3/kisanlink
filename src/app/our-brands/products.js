@@ -22,17 +22,19 @@ export default function Component() {
     {
       id: 1,
       image:
-        "https://www.kisanlink.in/wp-content/uploads/amrti-pouch-web-1.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/amrti-pouch-web-1.png",
       name: "Moringa Powder",
     },
     {
       id: 2,
-      image: "https://www.kisanlink.in/wp-content/uploads/amrti-web-2.png",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/amrti-web-2.png",
       name: "Kombucha",
     },
     {
       id: 3,
-      image: "https://www.kisanlink.in/wp-content/uploads/amrti-web-3.png",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/amrti-web-3.png",
       name: "Turmeric Powder",
     },
   ];

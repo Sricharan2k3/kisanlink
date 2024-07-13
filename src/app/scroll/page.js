@@ -143,7 +143,8 @@ export default function Component() {
       ],
       icon: HomeIcon,
       imgAlt: "Home Image",
-      imgSrc: "https://www.kisanlink.in/wp-content/uploads/store-web.png",
+      imgSrc:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/store-web.png",
     },
 
     {
@@ -193,7 +194,7 @@ export default function Component() {
       icon: PackageIcon,
       imgAlt: "Products Image",
       imgSrc:
-        "https://www.kisanlink.in/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Copy-of-kisanlink-certificate-1.png",
     },
     {
       id: "services",

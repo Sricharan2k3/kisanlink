@@ -21,22 +21,26 @@ export default function Component() {
   const products = [
     {
       id: 1,
-      image: "https://www.kisanlink.in/wp-content/uploads/brush-cutter.jpg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/brush-cutter.jpg",
       name: "Brush Cutter",
     },
     {
       id: 2,
-      image: "https://www.kisanlink.in/wp-content/uploads/ssm-1.jpg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ssm-1.jpg",
       name: "Manual Seed Drill Machine",
     },
     {
       id: 3,
-      image: "https://www.kisanlink.in/wp-content/uploads/tarpaulin-1.jpg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/tarpaulin-1.jpg",
       name: "Tarpaulin",
     },
     {
       id: 4,
-      image: "https://www.kisanlink.in/wp-content/uploads/trap-1.jpg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/trap-1.jpg",
       name: "Solar Trap",
     },
   ];
