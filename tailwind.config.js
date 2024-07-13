@@ -91,6 +91,7 @@ module.exports = {
         gray: {
           lightest: "#F3F4F6",
         },
+        customGray: "#e1e5e5",
         blue: {
           100: "#1d4ed8",
         },

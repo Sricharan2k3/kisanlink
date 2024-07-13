@@ -41,29 +41,29 @@ const KisanAcademy = () => {
 
 
   return (
-    <div className="font-bold text-center p-5  pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-bold text-center  lg:p-5  pb-12 flex flex-col items-center lg:max-w-1/2 justify-start ">
       
 
    
-      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
+      <div className="lg:flex  lg:w-[1080px] lg:flex-row items-center justify-center">
         {/* Image on the left */}
-        <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:mr-8">
+        <div className="lg:flex-shrink-0 lg:w-[540px] lg:-ml-24 small:w-[350px] small:ml-20 small:mr-20 mb-5 lg:pr-16  lg:mr-8">
           <img
             src={selectedCardData ? selectedCardData.imageUrl : "https://www.kisanlink.in/wp-content/uploads/startegy.svg"}
             className="w-[400px] h-[250px] rounded-lg shadow-lg"
           />
         </div>
         {/* Accordion on the right */}
-        <div className="flex flex-col space-y-4">
+        <div className="lg:flex lg:flex-col small:w-[200px] lg:w-[540px] space-y-4">
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent w-100 hover:border-green-600 transition-all ${
+              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent small:w-100 lg:w-100 hover:border-green-600 transition-all ${
                 selectedCard === card.id ? "border-green-600" : ""
               }`}
               onClick={() => handleCardClick(card.id)}
             >
-              <div className="flex text-brown-700 justify-between items-center font-bold text-2xl">
+              <div className="lg:flex text-brown-700 justify-between items-center font-bold text-2xl">
                 {card.title}
                 <span
                   className={`transform transition-transform ${
@@ -74,7 +74,7 @@ const KisanAcademy = () => {
                 </span>
               </div>
               {selectedCard === card.id && (
-                <div className="mt-3 p-4 rounded-md text-left text-brown-700">
+                <div className="mt-3 p-4 small:w-[350px] rounded-md lg:text-left small:text-center small:ml-20 text-brown-700">
                   <p className="text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}

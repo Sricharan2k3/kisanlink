@@ -21,16 +21,16 @@ const Academy = () => {
       ? YouTubeLinks
       : YouTubeLinks.filter((link) => link.category === selectedCategory);
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       {" "}
       <Background title={"Kisanlink Academy"} />
       <div className="flex flex-col items-center">
         <Heading
           value="Empowering Farmers/Kisansathis through Education"
-          className="text-3xl font-bold mb-4"
+          className="text-3xl font-bold lg:mb-4"
         />
 
-        <div className="w-2/3 text-center mt-4 mb-8 text-lg">
+        <div className="lg:w-2/3 text-center small:pl-2 small:pr-2 small:-mt-8 lg:mt-4 mb-8 text-lg">
           Welcome to Kisanlink Academy, where we offer a wide range of
           agricultural courses designed to empower farmers with the knowledge
           and skills they need to thrive. Accessible anytime, anywhere, our app
@@ -41,20 +41,20 @@ const Academy = () => {
         <div className="-mt-10">
           <Heading value={"Courses"}></Heading>
         </div>
-        <div className="-mt-10">
+        <div className="lg:-mt-10 small:-mt-16">
           <Heading value={"Why do we offer courses?"}></Heading>
         </div>
 
         <div>
-          <p className="text-center -mt-4 mb-20 ml-40 mr-40">
+          <p className="text-center -mt-4 mb-20 lg:ml-40 small:pl-2 small:pr-2 lg:mr-40">
             To enable Kisansathis to communicate well about the products and
             services offered by our collaborators and train them to become
             experts in fields of their interest to further their careers.
           </p>
         </div>
         <div className="bg-white ">
-          <div className="w-full top-20 right-4 z-10">
-            <div className="bg-white bg-opacity-70 backdrop-blur-lg rounded-md  p-4 flex items-center justify-center">
+          <div className="lg:w-full top-20 right-4 z-10">
+            <div className="bg-white bg-opacity-70 backdrop-blur-lg rounded-md  p-4 lg:flex items-center justify-center">
               <p className="text-gray-600 text-sm mb-1 mt-2 mr-2">
                 Filter by category:
               </p>
@@ -111,7 +111,7 @@ const Academy = () => {
               </button>
               <button
                 onClick={() => handleCategoryClick("Paddy")}
-                className={`mr-2 px-4 py-2 rounded-md ${
+                className={`mr-2 px-4 small:mt-2 lg:mt-0 py-2 rounded-md ${
                   selectedCategory === "Telugu"
                     ? "bg-blue-500 text-white"
                     : "bg-gray-200 text-gray-800 hover:bg-blue-400 hover:text-white"
@@ -122,7 +122,7 @@ const Academy = () => {
               {/* Add more buttons for other categories */}
               <button
                 onClick={() => handleCategoryClick("Heliot")}
-                className={`mr-2 px-4 py-2 rounded-md ${
+                className={`mr-2 px-4 small:mt-2 lg:mt-0 py-2 rounded-md ${
                   selectedCategory === "Telugu"
                     ? "bg-blue-500 text-white"
                     : "bg-gray-200 text-gray-800 hover:bg-blue-400 hover:text-white"
@@ -134,13 +134,13 @@ const Academy = () => {
           </div>
 
           {/* Render YouTube Links */}
-          <div className=" bg-white grid grid-cols-2 gap-4 mt-10 mx-40">
+          <div className=" bg-white lg:grid lg:grid-cols-2 gap-4 lg:mt-10 lg:mx-40">
             {filteredLinks.map((link, index) => (
               <a key={index} href={link.href} target="_blank">
                 <img
                   src={link.thumbnail}
                   alt={link.alt}
-                  className=" bg-white w-full h-auto rounded-xl"
+                  className=" bg-white small:mt-2 lg:w-full lg:h-auto rounded-xl"
                 />
               </a>
             ))}
@@ -168,10 +168,10 @@ const Academy = () => {
             className="bg-brown-400 text-white w-240 h-10 text-sm flex items-center justify-center px-4 -mt-2  hover:bg-brown-700"
             style={{ backgroundColor: "#5C431C" }} // Custom brown color
           >
-            <div className="pr-2 size-4 pt-0.4">
+            <div className="pr-4 size-4 pt-0.4">
               <FaYoutube />
             </div>
-            Kisanlink Youtube Channel{" "}
+            Youtube{" "}
           </a>
         </div>
         <div className="-mt-12">
@@ -180,13 +180,13 @@ const Academy = () => {
         <div className="bg-white flex -mt-12">
           {/* Left Section */}
 
-          <div className="flex-1 mt-10 mx-8">
+          <div className="lg:flex-1 mt-10 mx-8">
             <div className="pt-4">
-              <div className="flex flex-col gap-y-16">
+              <div className=" flex small:flex-col lg:flex-row gap-y-16">
                 <div className="gap-6">
                   {/* Box 1 */}
                   <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <div className="bg-blue-500 lg:w-16 lg:h-16 small:w-8 small:h-8 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -203,7 +203,7 @@ const Academy = () => {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <p className="text-brown-700 text-2xl font-bold">
+                      <p className="text-brown-700 lg:text-2xl font-bold">
                         Become Eligible to sell course-specific
                         products/services to farmers.
                       </p>
@@ -212,7 +212,7 @@ const Academy = () => {
                   <br></br>
                   {/* Box 2 */}
                   <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <div className="bg-blue-500 lg:w-16 lg:h-16 small:w-8 small:h-8 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -229,7 +229,7 @@ const Academy = () => {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <p className="text-brown-700 text-2xl font-bold">
+                      <p className="text-brown-700 lg:text-2xl font-bold">
                         Learn technical information about agri products/services
                         offered by companies.
                       </p>
@@ -238,7 +238,7 @@ const Academy = () => {
                   <br></br>
                   {/* Box 3 */}
                   <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                    <div className="bg-blue-500 lg:w-16 lg:h-16 small:w-8 small:h-8 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -255,7 +255,7 @@ const Academy = () => {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <p className="text-brown-700 text-2xl font-bold">
+                      <p className="text-brown-700 lg:text-2xl font-bold">
                         Build career and get job opportunities from
                         collaborative partners.
                       </p>
@@ -263,8 +263,8 @@ const Academy = () => {
                   </div>
                   <br></br>
                   {/* Box 4 */}
-                  <div className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
-                    <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center">
+                  <div className="flex   lg:w-full items-center bg-gray-100 p-4 rounded-lg shadow-md">
+                    <div className="bg-blue-500 lg:w-16 lg:h-16 small:w-8 small:h-8 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -281,7 +281,7 @@ const Academy = () => {
                       </svg>
                     </div>
                     <div className="ml-4">
-                      <p className="text-brown-700 text-2xl font-bold">
+                      <p className="text-brown-700 lg:text-2xl font-bold">
                         Earn higher income on referrals.
                       </p>
                     </div>
@@ -292,13 +292,10 @@ const Academy = () => {
           </div>
 
           {/* Right Section (Image) */}
-          <div className="flex-1">
-            <br></br>
-            <br></br>
-            <br></br>
+          <div className="flex-1 order-last lg:order-none  lg:mt-16">
             <img
               src="https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png"
-              className="w-full h-110"
+              className="w-full h-110 "
               alt="Certification Image"
             />
           </div>
@@ -308,13 +305,13 @@ const Academy = () => {
         <br></br>
 
         {/* Bottom Image */}
-        {/* <div className="flex justify-center mt-12 pt-12">
-        <img
-          src="https://www.kisanlink.in/wp-content/uploads/2022/07/agriculture-ge5750e9ae_1280-removebg-e1657976152581.png" // Replace with the actual URL of the bottom image
-          alt="Bottom Image"
-          className="w-full h-48 "
-        />
-      </div> */}
+        <div className="flex justify-center mb-4 -mt-8">
+          <img
+            src="https://www.kisanlink.in/wp-content/uploads/kisanlink-certificate.png"
+            alt="Bottom Image"
+            className="small:w-64 small:h-36 lg:w-0 lg:h-0"
+          />
+        </div>
 
         <div className="bg-shape bg-green-600 w-full h-96">
           <img
@@ -344,7 +341,7 @@ const Academy = () => {
           /> */}
         </div>
         <div className="-mt-64 mb-8 text-white text-center">
-          <h2 className="text-4xl font-bold leading-tight font-serif">
+          <h2 className="lg:text-4xl small:text-2xl font-bold leading-tight font-serif">
             Download our Kisanlink academy app
             <br />
             to start your learning journey today!
@@ -370,7 +367,7 @@ Continuous Training for FPOs"
           className="text-3xl font-bold mb-4"
         />
 
-        <div className="w-2/3 text-center mt-4 mb-8 text-lg">
+        <div className="lg:w-2/3 text-center small:pl-2 small:pr-2 mt-4 mb-8 text-lg">
           We understand the critical role that Farmers Producer Organizations
           (FPOs) play in supporting farmers and promoting sustainable
           agriculture. We provide continuous training programs to all FPOs
@@ -378,7 +375,7 @@ Continuous Training for FPOs"
         </div>
 
         <FPOTraining />
-        <div className="w-2/3 text-center mt-4 mb-8 text-lg">
+        <div className="lg:w-2/3 text-center small:pl-2 small:pr-2 mt-4 mb-8 text-lg">
           Our continuous training programs are designed to keep FPOs up-to-date
           with industry advancements and enhance their capacity to serve their
           communities effectively.
