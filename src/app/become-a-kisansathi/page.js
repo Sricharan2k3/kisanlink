@@ -35,7 +35,7 @@ import DownloadAppBox from "./Download";
 import Background from "../../utils/background";
 const Kisansathi = () => {
   return (
-    <div>
+    <div className="small:overflow-hidden">
       <Background title={"Become a Kisansathi"}></Background>
       <CenteredVideo />
       <CenteredLayout />

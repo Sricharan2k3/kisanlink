@@ -3,7 +3,7 @@ import Heading from "../components/heading";
 
 const LeftContent = () => {
   return (
-    <div className="pt-10 pr-10 mr-5 items-center content-center text-lg">
+    <div className="lg:pt-10 lg:pr-10 lg:mr-5 items-center content-center text-lg small:ml-6">
       <Heading
         classname="items=center style={{ color: 'rgb(245, 245, 245)' }}"
         value="Why Become a Kisansathi"
@@ -19,7 +19,7 @@ const LeftContent = () => {
 
 const RightImage = () => {
   return (
-    <div className="ml-20 pt-8">
+    <div className="lg:ml-20 pt-8">
       <iframe
         width="480"
         height="300"
@@ -28,6 +28,7 @@ const RightImage = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
+        className="lg:w-[480px] lg:h-[300px] small:w-[300px] small:h-[250px]"
       ></iframe>
     </div>
   );
@@ -35,12 +36,12 @@ const RightImage = () => {
 
 const CenteredVideo = () => {
   return (
-    <div className="flex justify-center items-start min-h-screen">
-      <div className="ml-12 w-3/4 rounded-lg flex">
-        <div className="w-1/2">
+    <div className="lg:flex justify-center items-start lg:min-h-screen">
+      <div className="lg:ml-12 small:ml-6 w-3/4 rounded-lg lg:flex">
+        <div className="lg:w-1/2">
           <LeftContent />
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <RightImage />
         </div>
       </div>

@@ -5,18 +5,21 @@ const DownloadAppBox = () => {
     "https://play.google.com/store/apps/details?id=com.kisanlink"; // Replace with your actual download link
 
   return (
-    <div className="max-width-full h-80 bg-green-600 flex items-center justify-center">
+    <div className="lg:max-width-full h-80 bg-green-600 lg:flex items-center justify-center small:overflow-hidden">
+
       <div className="overlay-bg ">
-        <div className="text-center mt-80 flex flex-row">
-          <h1 className="text-4xl ml-36 w-2/3 font-bold text-white text-center mr-16 ">
+        <div className="text-center lg:mt-80 small:m-24  lg:m-0 lg:flex lg:flex-row">
+          <h1 className="text-4xl lg:ml-36 lg:w-2/3 font-bold text-white text-center lg:mr-16 ">
             Download Our App
           </h1>
-          <div className="bg-white ml-80 py-2 px-4 border w-64 border-green-500  rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-white transition duration-300 ">
+          <br />
+          <div className="bg-white lg:ml-80 px-4 lg:h-10 border lg:w-80 small:w-44  small:-mt-2 border-green-500  rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-white transition duration-300 ">
             <a href="https://play.google.com/store/apps/details?id=com.kisanlink">
               <button
                 type="button"
-                class="flex items-center justify-center w-16 text-white rounded-3xl h-8"
+                class="lg:flex lg:items-center lg:justify-center lg:w-16 text-white rounded-3xl lg:h-8 small:-ml-20 lg:ml-0 "
               >
+
                 <div class="flex flex-row mr-3">
                   <div className="flex flex-row ml-24 ">
                     <svg viewBox="30 336.7 120.9 129.2" width="20">
@@ -38,7 +41,7 @@ const DownloadAppBox = () => {
                       ></path>
                     </svg>
                   </div>
-                  <div className="flex flex-row">
+                  <div className="lg:flex lg:flex-row">
                     <h1 className="text-black w-36">Google Play</h1>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import Heading from "../components/heading";
 
 const Card2 = (props) => {
   return (
-    <div className="flex flex-col items-center justify-center -mt-16 min-h-screen ">
+    <div className="lg:flex lg:flex-col items-center justify-center lg:-mt-16 min-h-screen ">
       <div className="text-center mt-6 mb-8">
         <Heading
           value={
@@ -16,7 +16,7 @@ const Card2 = (props) => {
           community of PoSP Kisansathi.
         </p>
       </div>
-      <div className="flex justify-center gap-8">
+      <div className="lg:flex justify-center gap-8 small:ml-8">
         {/* Card 1 */}
         <div className="bg-white rounded-lg overflow-hidden w-72 shadow-md">
           <div className="p-4">
@@ -31,7 +31,7 @@ const Card2 = (props) => {
             <p>You should be at least 18 years old</p>
           </div>
         </div>
-
+        <br />
         {/* Card 2 */}
         <div className="bg-white rounded-lg overflow-hidden w-72 shadow-md">
           <div className="p-4">
@@ -49,7 +49,7 @@ const Card2 = (props) => {
             </p>
           </div>
         </div>
-
+        <br />
         {/* Card 3 */}
         <div className="bg-white rounded-lg overflow-hidden w-72 shadow-md">
           <div className="p-4">
@@ -70,14 +70,14 @@ const Card2 = (props) => {
       <div className="flex justify-center items-center p-4 mt-1">
         {" "}
         {/* Adjusted mt-1 for a minimal gap */}
-        <div className="rounded-lg p-6 w-3/4">
+        <div className="rounded-lg lg:p-6 lg:w-3/4">
           <p className="mb-4 text-md text-center">
             Anyone who fulfills these basic criteria can enroll to become a
             Kisansathi as a PoSP. Thus, the company can provide jobs for
             freshers, jobs for fresh graduates, part-time jobs for graduates,
             jobs for college students, even retired individuals.
           </p>
-          <h3 className="text-xl font-bold mb-2">Enrollment Steps:</h3>
+          <h3 className="text-xl font-bold mb-4">Enrollment Steps:</h3>
           <ol className="list-none pl-0 mb-4">
             <li className="flex items-start mb-2">
               <svg

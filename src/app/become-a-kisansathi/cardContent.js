@@ -3,7 +3,7 @@ import Heading from "../components/heading";
 
 const LeftContent = () => {
   return (
-    <div className="-mt-36 mr-10 items-center content-center text-sm">
+    <div className="lg:-mt-36 lg:mr-10 small:mt-60 items-center content-center text-sm">
       <Heading classname="items=center" value="About Kisansathi" />
       <p className="mb-4 text-center text-lg light-gray-text">
         We are an intermediary, working towards bringing together the Agri
@@ -18,7 +18,7 @@ const LeftContent = () => {
 
 const RightImage = () => {
   return (
-    <div className="ml-16 -mt-36 p-4">
+    <div className="lg:ml-16 lg:-mt-36 p-4 ">
       <img
         src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2022/03/farmer-standing-rice-field-with-tablet-scaled.jpg"
         alt="Placeholder"
@@ -30,12 +30,12 @@ const RightImage = () => {
 
 const CenteredVideo = () => {
   return (
-    <div className="-mt-56 flex justify-center items-start">
-      <div className="ml-12 w-3/4 rounded-lg flex">
-        <div className="w-1/2">
+    <div className="-mt-56 lg:flex justify-center items-start">
+      <div className="ml-12 w-3/4 rounded-lg lg:flex">
+        <div className="lg:w-1/2">
           <LeftContent />
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <RightImage />
         </div>
       </div>

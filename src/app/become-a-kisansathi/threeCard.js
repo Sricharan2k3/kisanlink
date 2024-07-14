@@ -5,10 +5,10 @@ const Card = (props) => {
     <div className="mt-12">
       <Heading value={"Benefits of Becoming a Kisansathi"}></Heading>
 
-      <div className="flex justify-center gap-4">
+      <div className="lg:flex justify-center gap-4 small:w-[980px] small:m-10 lg:w-full lg:ml-0">
         {/* Card 1 */}
         <div
-          className="bg-white rounded-lg overflow-hidden shadow-md"
+          className="bg-white rounded-lg overflow-hidden shadow-md "
           style={{ width: "calc(30% - 1rem)" }}
         >
           <img
@@ -23,6 +23,7 @@ const Card = (props) => {
             <p>{props.content1}</p>
           </div>
         </div>
+        <br />
 
         {/* Card 2 */}
         <div
@@ -41,6 +42,7 @@ const Card = (props) => {
             <p>{props.content2}</p>
           </div>
         </div>
+        <br />
 
         {/* Card 3 */}
         <div

@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../components/heading";
 function OfferComponent() {
   return (
-    <div className="-mt-16 w-3/4 mx-auto px-8 py-12 text-center">
+    <div className="lg:-mt-16 lg:w-3/4 mx-auto lg:px-8 lg:py-12  small:ml-2 small:mr-2 lg:ml-48 text-center">
       <Heading value={"What do we offer?"}></Heading>
 
       <p className="mb-8 text-lg">
