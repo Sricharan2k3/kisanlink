@@ -6,8 +6,8 @@ const FourCards = () => {
         <div className='bg-[#E5E8E9]'>
             <Heading value={"Our Solutions To Farmers"} />
 
-            <div className="large:flex justify-between mt-12 small:grid-cols-4">
-                <div className="relative large: h-1/3 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
+            <div className="large:flex medium:flex justify-between mt-12 small:grid-cols-4">
+                <div className="relative large: h-1/3 medium:w-1/4 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden"style={{ backgroundColor: '#24A033' }} >
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         
@@ -16,7 +16,7 @@ const FourCards = () => {
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Products</h2>
                             <br />
-                            <p className="text-white font-poppins">
+                            <p className="text-white font-poppins medium:mt-8 large:mt-0">
 
                                 We provide Agri Inputs and the latest equipment and machinery to farmers at their
                                 doorstep, enabling them to
@@ -35,7 +35,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative large:w-[390px] mx-2" style={{ backgroundColor: '#24A033' }}>
+                <div className="relative large:w-[390px] medium:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./farm.png" alt="Card 1" className="w-40 h-40 p-4" />
@@ -58,7 +58,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
+                <div className="relative medium:w-1/4 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./output.png" alt="Card 1" className="w-40 h-40 p-4" />
@@ -79,7 +79,7 @@ const FourCards = () => {
                                 </svg>
                             </a>
                 </div>
-                <div className="relative large:w-1/4 mx-2 " style={{ backgroundColor: '#24A033' }}>
+                <div className="relative medium:w-1/4 large:w-1/4 mx-2 " style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden" style={{ backgroundColor: '#24A033' }}>
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./other.png" alt="Card 1" className="w-40 h-40 p-4" />

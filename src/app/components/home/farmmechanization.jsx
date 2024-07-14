@@ -37,8 +37,7 @@ const FarmMechanizationSection = () => {
         <div className="relative container mx-auto px-4 flex flex-col items-center justify-center h-full">
           <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 animate-fadeInLeft small:text-lg">Farm Mechanization Solutions</h2>
           <h3 className="text-white text-sm md:text-base lg:text-lg text-center mb-6 animate-fadeInUp delay-400">
-            Our farm mechanization solutions offer farmers and growers innovative tools to optimize operations, enhance crop productivity, and improve efficiency.
-            Our solutions range from supplying drone products and accessories to providing our customers with the best after-sale services.
+          Our Farm Mechanization solutions offer farmers innovative tools and technologies to optimize operations, enhance crop productivity, and improve efficiency. Our solutions include drone services, farm equipment, solar products, and IOT devices.
           </h3>
           <a href="/ecommerce/#services" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-transparent border-2 border-white text-white font-semibold py-2 px-6 rounded hover:bg-white hover:text-black transition-all animate-fadeInUp delay-600">
             Explore

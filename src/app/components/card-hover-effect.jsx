@@ -36,7 +36,9 @@ export const HoverEffect = ({ items, className }) => {
               <FontAwesomeIcon icon={icons[(idx % icons.length)]} className="text-green-500 mr-2 h-8 ml-2" />
               <CardTitle>{item.title}</CardTitle>
             </div>
+            <div className="lg:h-16 small:h-24">
             <CardDescription>{item.description}</CardDescription>
+            </div>
           </Card>
         </Link>
       ))}

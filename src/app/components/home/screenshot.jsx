@@ -43,7 +43,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-          <div className="large:mt-6  large:flex large:space-x-4 small:grid-rows-none">
+          <div className="large:mt-6 large:flex large:space-x-4 medium:mt-6 medium:flex medium:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url="https://apps.apple.com/in/app/kisanlink/id1642947613"
@@ -74,7 +74,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-                    <div className="large:mt-6  large:flex large:space-x-4 small:grid-rows-none">
+                    <div className="large:mt-6 medium:mt-6 medium:flex medium:space-x-4 large:flex large:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url=""

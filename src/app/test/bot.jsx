@@ -113,10 +113,11 @@ export default function Component() {
       <Button
         variant="outline"
         size="icon"
-        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-16  shadow-lg hover:bg-black "
+        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-16  shadow-lg "
         onClick={() => setIsOpen(true)}
       >
-        <MessageCircleIcon className="h-10 w-10 text-black hover:text-white" />
+        {/* <MessageCircleIcon className="h-10 w-10 text-black hover:text-white" /> */}
+        <img src="./bot.png"></img>
         <span className="sr-only">Open chatbot</span>
       </Button>
       <Dialog open={isOpen} onOpenChange={setIsOpen} className="bg-white">
@@ -131,7 +132,7 @@ export default function Component() {
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="font-medium text-gray-900">Digicrop</p>
+                  <p className="font-medium text-gray-900">Digicrop - AI Crop Assistant</p>
                   <p className="text-sm text-gray-600">Online</p>
                 </div>
               </div>

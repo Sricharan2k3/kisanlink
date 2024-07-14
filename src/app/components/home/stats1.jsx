@@ -25,10 +25,10 @@ const StatsCarousel1 = () => {
     dots: false, // Disable default dots
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "21%",
+    centerPadding: "26%",
     autoplay: true, // Enable auto-scrolling
     autoplaySpeed: 3000, // Auto-scroll interval in milliseconds (3 seconds)
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
@@ -83,10 +83,10 @@ const StatsCarousel1 = () => {
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
        <div className="bg-white shadow-lg rounded-lg lg:p-6 text-center  small:w-36
-        small:h-16 small:p-8 lg:w-[290px] lg:h-36">
+        small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             
-              <p className="text-xs lg:text-lg large:mt-2 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg large:mt-2 medium:mt-4 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
               <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-700 small:text-xs ">
                 {stat.label}{" "}
               </p>

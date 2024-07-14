@@ -65,8 +65,8 @@ const Navigation = () => {
       if (videoElement) {
         const videoBottom =
           videoElement.getBoundingClientRect().bottom + window.scrollY;
-          console.log(videoBottom)
-        setShowNavbar(window.scrollY >= videoBottom-100);
+        console.log(videoBottom);
+        setShowNavbar(window.scrollY >= videoBottom - 100);
       }
 
       sections.forEach((section) => {
@@ -109,46 +109,47 @@ const Navigation = () => {
         </div>
 
         {showNavbar && (
-  <div className="w-full">
-  
-    <nav className="hidden lg:block fixed top-0 left-1/2 transform -translate-x-1/2 py-1 items-center bg-gray-700 rounded-3xl mt-24">
-      <ul className="flex gap-3">
-        {navItems.map((item) => (
-          <li key={item.name}>
-            
-             <a href={item.href}
-              className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
-                activeSection === item.href.substring(1)
-                  ? "bg-blue-600"
-                  : ""}`}
-            >
-              {item.icon}
-              <span className="px-2">{item.name}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+          <div className="w-full">
+            <nav className="hidden lg:block fixed top-0 left-1/2 transform -translate-x-1/2 py-1 items-center bg-gray-700 rounded-3xl mt-24">
+              <ul className="flex gap-3">
+                {navItems.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href}
+                      className={`gap-2 items-center text-white flex transition-all ease-in-out py-3 px-3 rounded-3xl hover:bg-blue-600 cursor-pointer ${
+                        activeSection === item.href.substring(1)
+                          ? "bg-blue-600"
+                          : ""
+                      }`}
+                    >
+                      {item.icon}
+                      <span className="px-2">{item.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-    <div className="lg:hidden fixed top-0  w-full ml-4 rounded-full py-1 bg-gray-700 ">
-      <select 
-        className="w-full bg-gray-700 text-white py-2 px-3 rounded-3xl"
-        onChange={(e) => {
-         
-          window.location.href = e.target.value;
-        }}
-        value={activeSection ? `#${activeSection}` : ''}
-      >
-        <option value="" disabled >Select a section</option>
-        {navItems.map((item) => (
-          <option key={item.name} value={item.href}>
-            {item.name}
-          </option>
-        ))}
-      </select>
-    </div>
-  </div>
-)}
+            <div className="lg:hidden fixed top-20  w-full ml-4 rounded-full pr-8 py-1  ">
+              <select
+                className="w-full bg-gray-700 text-white py-2 px-3 rounded-3xl"
+                onChange={(e) => {
+                  window.location.href = e.target.value;
+                }}
+                value={activeSection ? `#${activeSection}` : ""}
+              >
+                <option value="" disabled>
+                  Select a section
+                </option>
+                {navItems.map((item) => (
+                  <option key={item.name} value={item.href}>
+                    {item.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+        )}
 
         <div
           className="lg:mt-4 lg:flex lg:flex-col items-center lg:w-full content-section"
@@ -165,13 +166,12 @@ const Navigation = () => {
 
           <div className="lg:flex lg:flex-col items-center mt-8">
             <div className="lg:flex lg:flex-row">
-              <div className="flex flex-col mt-[96px]">
+              <div className="flex small:pl-2 large:pr-0 small:pr-2 flex-col mt-[96px]">
                 <img
                   width={600}
                   src="./Farm1.png"
                   alt="Farm 1"
                   className="rounded-xl lg:h-[320px] small:h-[300px] small:w-full"
-                
                 />
                 <div className="lg:mt-4 small:mt-8"></div>
                 <img

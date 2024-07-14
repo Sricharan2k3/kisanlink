@@ -128,7 +128,7 @@ const SkeletonThree = () => {
     >
       <motion.div className="h-full w-full rounded-lg">
 
-        <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/farm-t1-3.png" height={165} width={255} className="small:h-[300px] small:w-[350px]"/>
+        <Image src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/farm-t1-3.png" height={165} width={255} className="small:h-[170px] small:w-[350px]"/>
       </motion.div>
     </motion.div>
   );
