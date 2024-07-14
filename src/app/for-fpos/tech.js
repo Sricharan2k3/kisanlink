@@ -47,27 +47,26 @@ const Techsuppourt = () => {
     : defaultImageUrl;
 
   return (
-    <div className="font-sans text-center p-5 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-sans text-center p-4 pt-30 pb-12 lg:flex lg:flex-col items-center lg:max-w-1/2 lg:justify-start ">
+
       <Heading value={"Tech Support"} />
-      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center pl-20">
+      <div className="lg:flex flex-col lg:w-[1080px] small:w-[350px] md:flex-row items-center justify-center">
         {" "}
         {/* Increased left padding */}
         {/* Accordion on the left */}
-        <div className="flex flex-col space-y-4 w-1/2">
+        <div className="flex flex-col space-y-4 lg:w-1/2">
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className={`cursor-pointer p-4 rounded-lg border-2 border-transparent w-full hover:border-green-600 transition-all ${
-                selectedCard === card.id ? "border-green-600" : ""
-              }`}
+              className={`cursor-pointer p-4 rounded-lg border-2 border-transparent lg:w-full small:w-80 hover:border-green-600 transition-all ${selectedCard === card.id ? "border-green-600" : ""
+                }`}
               onClick={() => handleCardClick(card.id)}
             >
-              <div className="flex text-brown-700 justify-between items-center font-bold text-lg">
+              <div className="flex text-brown-700 justify-between items-center font-bold text-lg lg:ml-20">
                 {card.title}
                 <span
-                  className={`transform transition-transform ${
-                    selectedCard === card.id ? "rotate-180" : ""
-                  }`}
+                  className={`transform transition-transform ${selectedCard === card.id ? "rotate-180" : ""
+                    }`}
                 >
                   ▼
                 </span>
@@ -85,7 +84,7 @@ const Techsuppourt = () => {
           <img
             src={selectedImageUrl}
             alt="Consultancy Services"
-            className="w-[300px] h-[280px] rounded-lg shadow-lg object-fit ml-36"
+            className="w-[300px] lg:h-[280px] small:h-[180px] small:ml-12 small:mt-2 rounded-lg shadow-lg object-fit lg:ml-36"
           />
         </div>
       </div>

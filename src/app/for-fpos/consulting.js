@@ -52,9 +52,9 @@ const ConsultancyServicesPage = () => {
   const selectedCardData = cardsData.find((card) => card.id === selectedCard);
 
   return (
-    <div className="font-sans text-center p-4 pt-30 pb-12 flex flex-col items-center max-w-1/2 justify-start ">
+    <div className="font-sans text-center p-4 pt-30 pb-12 lg:flex lg:flex-col items-center lg:max-w-1/2 lg:justify-start ">
       <Heading value={"Strategic Consultancy Services"}></Heading>
-      <div className="flex flex-col w-[1080px] md:flex-row items-center justify-center">
+      <div className="lg:flex flex-col lg:w-[1080px] small:w-[350px] md:flex-row items-center justify-center">
         {/* Image on the left */}
         <div className="flex-shrink-0 mb-5 pr-16 md:mb-0 md:mr-8">
           <img
@@ -63,7 +63,7 @@ const ConsultancyServicesPage = () => {
                 ? selectedCardData.imageUrl
                 : "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/startegy.svg"
             }
-            className="w-[300px] h-[300px] rounded-lg shadow-lg"
+            className="w-[300px] h-[300px] rounded-lg shadow-lg small:ml-12"
           />
         </div>
         {/* Accordion on the right */}
@@ -71,17 +71,15 @@ const ConsultancyServicesPage = () => {
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent w-100 hover:border-green-600 transition-all ${
-                selectedCard === card.id ? "border-green-600" : ""
-              }`}
+              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent lg:w-100 small:w-80 hover:border-green-600 transition-all ${selectedCard === card.id ? "border-green-600" : ""
+                }`}
               onClick={() => handleCardClick(card.id)}
             >
               <div className="flex text-brown-700 justify-between items-center font-bold text-lg">
                 {card.title}
                 <span
-                  className={`transform transition-transform ${
-                    selectedCard === card.id ? "rotate-180" : ""
-                  }`}
+                  className={`transform transition-transform ${selectedCard === card.id ? "rotate-180" : ""
+                    }`}
                 >
                   ▼
                 </span>

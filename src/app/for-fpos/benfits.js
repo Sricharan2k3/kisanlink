@@ -4,38 +4,42 @@ import Background from "../../utils/background";
 // Card Component
 const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
-    <div className="flex flex-row w-9/12 items-center con rounded-lg p-2 -mt-16">
-      {isImageLeft && (
-        <div className=" flex flex-row  w-72 h-72 rounded-lg overflow-hidden mr-4">
-          <img
-            src={image}
-            alt="Card Image"
-            className="w-full h-full object-cover"
-          />
+    <div className="small:overflow-hidden">
+
+      <div className="lg:flex flex-row lg:w-9/12 lg:items-center lg:ml-48 con rounded-lg p-2 -mt-16 ">
+        {isImageLeft && (
+          <div className=" flex flex-row  w-72 h-72 rounded-lg overflow-hidden mr-4">
+            <img
+              src={image}
+              alt="Card Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+        <div className=" bg-green-700 w-16 h-16 rounded-full flex flex-row small:mt-16">
+          <p className=" align-middle text-white font-bold pl-6 text-center items-center justify-center content-center">
+            {dancer}
+          </p>
         </div>
-      )}
-      <div className=" bg-green-700 w-16 h-16 rounded-full flex flex-row">
-        <p className=" align-middle text-white font-bold pl-6 text-center items-center justify-center content-center">
-          {dancer}
-        </p>
-      </div>
-      <div className="flex-1 text-left mt-4 md:mt-0 md:ml-4">
-        <h2 className="text-2xl font-semibold mb-2 text-brown-700">{title}</h2>
-        <ul className="list-disc list-inside text-gray-500">
-          {description.map((desc, index) => (
-            <li key={index}>{desc}</li>
-          ))}
-        </ul>
-      </div>
-      {!isImageLeft && (
-        <div className="w-72 h-72 rounded-lg overflow-hidden ml-4">
-          <img
-            src={image}
-            alt="Card Image"
-            className="w-full h-full object-cover"
-          />
+        <div className="flex-1 text-left mt-4 md:mt-0 md:ml-4">
+          <h2 className="text-2xl font-semibold mb-2 text-brown-700">{title}</h2>
+          <ul className="list-disc list-inside text-gray-500">
+            {description.map((desc, index) => (
+              <li key={index} >{desc}</li>
+            ))}
+          </ul>
         </div>
-      )}
+        {!isImageLeft && (
+          <div className="w-72 h-72 rounded-lg overflow-hidden ml-4 ">
+            <img
+              src={image}
+              alt="Card Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+      </div>
+
     </div>
   );
 };

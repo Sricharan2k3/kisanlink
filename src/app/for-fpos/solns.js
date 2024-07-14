@@ -3,7 +3,7 @@ import Heading from "../components/heading";
 
 const ContentComponent = ({ imageUrl }) => {
   return (
-    <div className="p-8 mt-25 mx-8 lg:mx-32">
+    <div className="lg:p-8 lg:mt-25  lg:mx-32 small:ml-2 small:mr-2">
       <Heading value={"Our Solutions to FPOs"} />
       <p className="text-center text-lg mb-16">
         At Kisanlink, we stand as a trusted consultant and ally to FPOs,
@@ -19,7 +19,7 @@ const ContentComponent = ({ imageUrl }) => {
             collective purchasing and selling strength in the market.
           </p>
         </div>
-        <img src="./newstore.png" alt="FPO" className="w-80 h-52" />
+        <img src="./newstore.png" alt="FPO" className="w-80 h-52 small:ml-2" />
       </div>
     </div>
   );

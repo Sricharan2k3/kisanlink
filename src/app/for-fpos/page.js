@@ -9,7 +9,7 @@ import TabComponent from "../some/page";
 
 const SolutionsForFPOs = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <div>
         <Background title={"For FPOs"} />
         <ContentComponent />
@@ -18,7 +18,7 @@ const SolutionsForFPOs = () => {
         <TabComponent></TabComponent>
         <BenfitsComponent />
       </div>
-    </>
+    </div>
   );
 };
 
