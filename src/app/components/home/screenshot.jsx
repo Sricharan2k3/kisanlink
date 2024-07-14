@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 import React from "react";
-import Heading from "../heading";
+import Heading from "./heading";
 
 const imagesLeft = [
   {
@@ -19,7 +19,7 @@ const imagesRight = [
 
 const Screenshot = () => {
   return (
-    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2 bg-[#E5E8E9]">
+    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2 bg-[#E5E8E9] ">
       <Head>
         <title>Kisanlink & Academy Apps</title>
         <meta name="description" content="Kisanlink & Academy Apps" />
@@ -29,21 +29,21 @@ const Screenshot = () => {
       <main className="max-w-8xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 md:space-x-2">
         {/* Kisanlink App Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center">
-          <div className="text-center mb-8">
+          <div className="text-center  ">
             {/* <h1 className="text-lg lg:text-4xl font-bold text-brown-700 mb-4">
               Kisanlink App
             </h1> */}
-            <Heading value={"Kisanlink App"}></Heading>
-            <div className="border-b-2 border-brown-700 large:w-100 small:w-96 mx-0 mb-4"></div>
+            <Heading value={"Kisanlink App"} ></Heading>
+            <div className="border-b-2 border-brown-700 large:w-100 small:w-96 mx-0 "></div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-4">
             <img
               src={imagesLeft[0].src}
               alt={imagesLeft[0].alt}
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-          <div className="large:mt-6 large:flex large:space-x-4 medium:mt-6 l medium:flex medium:space-x-4 small:ml-16 small:grid-rows-none">
+          <div className="large:mt-2 large:flex large:space-x-4 medium:mt-6 medium:flex medium:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url="https://apps.apple.com/in/app/kisanlink/id1642947613"
@@ -60,7 +60,7 @@ const Screenshot = () => {
 
         {/* Academy App Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center">
-          <div className="text-center mb-8">
+          <div className="text-center ">
             {/* <h1 className="text-lg lg:text-4xl font-bold text-brown-700 mb-4">
               Academy App
             </h1> */}
@@ -74,7 +74,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-                    <div className="large:mt-6 medium:mt-6 medium:flex medium:space-x-4 large:flex lg:-ml-0 medium:ml-0 large:space-x-4 small:ml-16 small:grid-rows-none">
+                    <div className="large:mt-2 medium:mt-6 medium:flex medium:space-x-4 large:flex large:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url=""

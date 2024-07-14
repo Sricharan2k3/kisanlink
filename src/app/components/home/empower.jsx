@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import Heading from '../heading';
+import Heading from './heading';
 
 const Empower = () => {
   return (

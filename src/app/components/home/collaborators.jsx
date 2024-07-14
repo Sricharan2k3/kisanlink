@@ -5,13 +5,13 @@ import { collaboratorsImage } from "../../../utils/skill-image"
 
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import Heading from "../heading";
+import Heading from "./heading";
 
 export default function Collaborators() {
     return (
-        <>
+        <div className="bg-[#E5E8E9] ">
             <Heading value={"Collaborators"} />
-            <div className="w-full overflow-hidden my-2">
+            <div className="w-full overflow-hidden ">
                 <Marquee
                     gradient={false}
                     speed={80}
@@ -45,7 +45,7 @@ export default function Collaborators() {
                     ))}
                 </Marquee>
             </div>
-        </>
+        </div>
 
     );
 };
