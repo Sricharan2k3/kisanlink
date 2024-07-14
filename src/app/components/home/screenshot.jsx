@@ -19,14 +19,14 @@ const imagesRight = [
 
 const Screenshot = () => {
   return (
-    <div className="overflow-hidden min-h-screen py-8 -mt-8 -mb-8 px-4 md:px-2 bg-[#E5E8E9] ">
+    <div className="overflow-hidden min-h-screen py-8 -mt-8  px-4 md:px-2 bg-[#E5E8E9] ">
       <Head>
         <title>Kisanlink & Academy Apps</title>
         <meta name="description" content="Kisanlink & Academy Apps" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="max-w-8xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 md:space-x-2">
+      <main className="max-w-8xl mx-auto mb-16 flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 md:space-x-2">
         {/* Kisanlink App Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center">
           <div className="text-center  ">
@@ -43,7 +43,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-          <div className="large:mt-2 large:flex large:space-x-4 medium:mt-6 medium:flex medium:space-x-4 small:ml-16 small:grid-rows-none">
+          <div className="large:mt-2 large:flex large:space-x-4 medium:mt-6 medium:flex lg:ml-0 medium:ml-0  medium:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url="https://apps.apple.com/in/app/kisanlink/id1642947613"
@@ -74,7 +74,7 @@ const Screenshot = () => {
               className="w-100 h-100 object-contain" // Larger image size
             />
           </div>
-                    <div className="large:mt-2 medium:mt-6 medium:flex medium:space-x-4 large:flex large:space-x-4 small:ml-16 small:grid-rows-none">
+                    <div className="large:mt-2 medium:mt-6 medium:flex lg:ml-0 medium:ml-0 medium:space-x-4 large:flex large:space-x-4 small:ml-16 small:grid-rows-none">
             <DownloadButton
               platform="App Store"
               url=""

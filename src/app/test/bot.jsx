@@ -113,11 +113,11 @@ export default function Component() {
       <Button
         variant="outline"
         size="icon"
-        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-16  shadow-lg "
+        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-44 hover:bg-green-700  shadow-lg "
         onClick={() => setIsOpen(true)}
-      >
+      >Chat With Us
         {/* <MessageCircleIcon className="h-10 w-10 text-black hover:text-white" /> */}
-        <img src="./bot.png"></img>
+        <img className="h-16 w-16" src="./bot.png"></img>
         <span className="sr-only">Open chatbot</span>
       </Button>
       <Dialog open={isOpen} onOpenChange={setIsOpen} className="bg-white">

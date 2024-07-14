@@ -89,7 +89,7 @@ const App = () => {
       photo:
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/IMG_6219-1-scaled-qox9f17ez4p4ha2ahbxux8abzr4mf9738ohgdc3qog.jpg",
       name: "Jyothirmayi Kimidi",
-      position: "Marketing Intern",
+      position: "Marketing Team",
       qualification: "Bsc Agriculture, CUTM Odisha",
       experience: [
         "1 year experience in social media management and content creation.",
@@ -124,7 +124,7 @@ const App = () => {
     },
 
     {
-      photo: "https://via.placeholder.com/150",
+      photo: "./kalyan.jpg",
       name: "Kalyan Battula",
       position: "Tech intern",
       qualification: "B.E, CBIT Hyderabad",
@@ -151,8 +151,7 @@ const App = () => {
         "https://www.linkedin.com/in/shiva-reddy-gunthakanti-4b027363/",
     },
     {
-      photo:
-        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/image-111-ps58pq3cwhmjr99r5qpfek3q6o8ccqis0acwyx38m4.png",
+      photo: "./advisor.jpg",
       name: "Manohar Rao",
       position: "Technical Advisor",
       qualification: "Ph.D in Horticulture",
