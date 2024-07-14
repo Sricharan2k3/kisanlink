@@ -397,7 +397,7 @@ export default function Component() {
         icon={InfoIcon}
         label="Our Brands"
         subItems={[
-          { href: 'https://digicrop.vercel.app/', label: (
+          { href: 'https://www.digicrop.ai/', label: (
     <>
       Digicrop
       <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
