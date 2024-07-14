@@ -32,7 +32,10 @@ import Card2 from "./threecards2";
 import CenteredVideo from "./cardVideo";
 import OfferComponent from "./offer";
 import DownloadAppBox from "./Download";
-import Background from "../../utils/background";
+import Background from "./background";
+
+
+
 const Kisansathi = () => {
   return (
     <div className="small:overflow-hidden">

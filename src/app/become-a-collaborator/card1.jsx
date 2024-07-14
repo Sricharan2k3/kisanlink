@@ -33,19 +33,20 @@ const cardContent = [
 ];
 
 const Card = ({ image, heading, points }) => (
-  <div className=" rounded-lg  m-6 w-96">
+  <div className=" rounded-lg  m-6 lg:w-96">
     <img src={image} alt={heading} className="w-24 h-24 object-cover rounded-t-lg" />
     <h3 className="text-xl font-bold mt-4 mb-2">{heading}</h3>
     <ul className="list-disc list-inside">
       {points.map((point, index) => (
         <li key={index} className="break-words">{point}</li>
+        
       ))}
     </ul>
   </div>
 );
 
 const CardRow = () => (
-  <div className="flex flex-wrap justify-around">
+  <div className="lg:flex lg:flex-wrap justify-around">
     {cardContent.map((content, index) => (
       <Card key={index} {...content} />
     ))}
@@ -53,7 +54,7 @@ const CardRow = () => (
 );
 
 const Card1 = () => (
-  <div className="  flex items-center justify-center">
+  <div className="  lg:flex items-center justify-center">
     <CardRow />
   </div>
 );

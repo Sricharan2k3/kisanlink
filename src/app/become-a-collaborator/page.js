@@ -8,7 +8,7 @@ import Collaborators from "../components/home/collaborators";
 
 const CollaboratorsPage = () => {
   return (
-    <>
+    <div className="small:overflow-hidden">
       <Background title={"Collaborators"} />
       <div className="flex flex-col items-center">
         <Heading
@@ -16,7 +16,7 @@ const CollaboratorsPage = () => {
           className="text-3xl font-bold "
         />
 
-        <div className="w-2/3 text-center  mb-8">
+        <div className="lg:w-2/3 text-center small:pr-2 small:pl-2 lg:p-0 mb-8">
           Our Vision is farmer empowerment and we are looking to collaborate
           with the companies who share similar objectives. These collaborative
           companies can use our entity; Kisansathis, and our tech platform to
@@ -47,13 +47,13 @@ const CollaboratorsPage = () => {
         <Card2 />
 
         <Collaborators />
-        <div className="max-width-full h-80 bg-green-600 flex items-center justify-center">
+        <div className="lg:max-width-full h-80 bg-green-600 lg:flex items-center justify-center">
           <div className="overlay-bg ">
-            <div className="text-center mt-80 flex flex-row">
-              <h1 className="text-4xl ml-36 w-2/3 font-bold text-white text-center mr-16 ">
+            <div className="text-center lg:mt-80 lg:flex lg:flex-row">
+              <h1 className="lg:text-4xl small:text-2xl small:mt-24 lg:mt-0 lg:ml-36 lg:w-2/3 font-bold text-white text-center mr-16 ">
                 Become a collaborator
               </h1>
-              <div className="bg-white py-2 px-4 border w-64 border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-white transition duration-300 mr-80">
+              <div className="bg-white py-2 px-4 border lg:w-64 small:w-48 small:mt-2 small:ml-48 border-green-500 rounded-2xl shadow-md text-green-500 font-semibold cursor-pointer hover:bg-green-500 hover:text-white transition duration-300 mr-80">
                 Reach out to us
               </div>
             </div>
@@ -77,7 +77,7 @@ const CollaboratorsPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
