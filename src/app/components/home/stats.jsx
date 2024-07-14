@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Heading from "../heading";
+import Heading from "./heading";
 
 const StatsCarousel1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -77,7 +77,7 @@ const StatsCarousel1 = () => {
   return (
     
   
-    <div className=" -mt-8 overflow-hidden relative py-8 bg-[#E5E8E9]">
+    <div className=" -mt-8 overflow-hidden relative  bg-[#E5E8E9]">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers

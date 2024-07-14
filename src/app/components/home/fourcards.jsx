@@ -1,12 +1,12 @@
 import React from 'react';
-import Heading from '../heading';
+import Heading from './heading';
 
 const FourCards = () => {
     return (
-        <div className='bg-[#E5E8E9]'>
+        <div className='bg-[#E5E8E9] lg:-mt-24'>
             <Heading value={"Our Solutions To Farmers"} />
 
-            <div className="large:flex medium:flex justify-between mt-12 small:grid-cols-4">
+            <div className="large:flex medium:flex justify-between mt-8 small:grid-cols-4">
                 <div className="relative large: h-1/3 medium:w-1/4 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden"style={{ backgroundColor: '#24A033' }} >
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
