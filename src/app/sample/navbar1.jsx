@@ -267,6 +267,7 @@ export default function Component() {
                         </div> */}
                       </Link>
                     </NavigationMenuLink>
+                    
                     {/* <NavigationMenuLink asChild>
                       <Link
                         href="/for-farmers"
@@ -312,6 +313,18 @@ export default function Component() {
                         <div className="text-sm font-medium leading-none group-hover:underline">Careers</div>
                         {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Explore job opportunities at our company.
+                        </div> */}
+                      </Link>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/contact-us"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      >
+                        <div className="text-sm font-medium leading-none group-hover:underline">Contact Us</div>
+                        {/* <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Learn more about our company and mission.
                         </div> */}
                       </Link>
                     </NavigationMenuLink>
@@ -412,6 +425,7 @@ export default function Component() {
           { href: '/about-us', label: 'About Us' },
           { href: '/team', label: 'Our Team' },
           { href: '/careers', label: 'Careers' },
+          { href: '/contact-us', label: 'Contact Us' },
         ]}
         isOpen={openIndex === 5}
         onClick={() => handleNavItemClick(5)}
