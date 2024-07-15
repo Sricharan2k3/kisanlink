@@ -8,7 +8,7 @@ import { Superscript } from "lucide-react"
 import { useState,useRef,useEffect } from "react"
 
 
-const NavItem = ({ href,  label, subItems, isOpen, onClick }) => {
+const NavItem = ({ href, label, subItems, isOpen, onClick, onLinkClick }) => {
   const subItemsRef = useRef(null);
 
   useEffect(() => {
@@ -18,26 +18,26 @@ const NavItem = ({ href,  label, subItems, isOpen, onClick }) => {
   }, [isOpen]);
 
   return (
-    <div className="relative ">
+    <div className="relative">
       <div
         className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer"
         onClick={onClick}
       >
-        {/* <Icon className="h-5 w-5" /> */}
         {label}
-        {subItems &&
-        <span className={`ml-auto transform transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
-          ▼
-        </span>
-}
+        {subItems && (
+          <span className={`ml-auto transform transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
+            ▼
+          </span>
+        )}
       </div>
       {isOpen && subItems && (
         <div ref={subItemsRef} className="m-4 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1">
             {subItems.map((subItem, index) => (
               <Link key={index} href={subItem.href} prefetch={false}>
-                <div className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                <div className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={onLinkClick}>
                   {subItem.label}
+                 
                 </div>
               </Link>
             ))}
@@ -50,8 +50,10 @@ const NavItem = ({ href,  label, subItems, isOpen, onClick }) => {
 
 
 
+
 export default function Component() {
     const [openIndex, setOpenIndex] = useState(null);
+    const [isSheetOpen, setIsSheetOpen] = useState(true);
 
   const handleNavItemClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -61,6 +63,23 @@ export default function Component() {
     const loginUrl = 'https://admin.kisanlink.in/#/account/login';
     window.open(loginUrl, '_blank');
   };
+
+  useEffect(() => {
+    console.log('isSheetOpen:', isSheetOpen);
+    setIsSheetOpen(true)
+  }, [isSheetOpen]);
+
+
+  const handleLinkClick = (e) => {
+   
+    
+console.log('hi')
+console.log(isSheetOpen)
+    setIsSheetOpen(false);
+    console.log(isSheetOpen)
+  };
+
+  
   return (
     <div className="lg:bg-white large:ml-60 medium:ml-12 z-50  lg:rounded-full">
 
@@ -334,117 +353,126 @@ export default function Component() {
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
-        <div className="flex items-center gap-2 bg-white">
         
-          <Sheet className="bg-white">
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-white">
-              <div className="flex flex-col gap-4 p-4 bg-white">
-              
-    <nav className="grid gap-2">
-      <NavItem
-        href="#"
-        // icon={HomeIcon}
-        label="Technology"
-        subItems={[
-          { href: '/navbar', label: 'SaaS Platform' },
-          { href: '/ecommerce', label: 'E-Commerce' },
-           { href: '/membership-cards', label: 'Smart Membership Cards' },
-        ]}
-        isOpen={openIndex === 0}
-        onClick={() => handleNavItemClick(0)}
-      />
-      <a href="/experience-center1"><NavItem
-        
-        icon={PackageIcon}
-        label="Experience Center"
-      
-        isOpen={openIndex === 1}
-        onClick={() => handleNavItemClick(1)}
-      /></a>
-      <NavItem
-        href="#"
-        icon={DollarSignIcon}
-        label="Skill Training"
-        subItems={[
-          { href: '/courses-and-certificates', label: 'Skill Training' },
-          { href: '/kisanlink-academy', label: ' Kisanlink Academy' },
-        ]}
-        isOpen={openIndex === 2}
-        onClick={() => handleNavItemClick(2)}
-      />
-      <NavItem
-        href="#"
-        icon={InfoIcon}
-        label="Stakeholders"
-        subItems={[
-          { href: '/for-farmers', label: 'Farmers' },
-          { href: '/for-fpos', label: 'FPOs' },
-           { href: '/become-a-kisansathi', label: 'Kisansathi' },
-            { href: '/become-a-collaborator', label: 'Collaborators' },
-             { href: '/our-partners', label: 'Partners' },
-        ]}
-        isOpen={openIndex === 3}
-        onClick={() => handleNavItemClick(3)}
-      />
-        <NavItem
-        href="#"
-        icon={InfoIcon}
-        label="Our Brands"
-        subItems={[
-          { href: 'https://www.digicrop.ai/', label: (
-    <>
-      Digicrop
-      <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
-        TM
-      </sup>
-    </>
-  )},
-          { href: 'https://amrti.com/', label: (
-    <>
-      Amrti
-      <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
-        TM
-      </sup>
-    </>
-  ) },
-        ]}
-        isOpen={openIndex === 4}
-        onClick={() => handleNavItemClick(4)}
-      />
-        <NavItem
-        href="#"
-        icon={InfoIcon}
-        label="About Us"
-        subItems={[
-          { href: '/about-us', label: 'About Us' },
-          { href: '/team', label: 'Our Team' },
-          { href: '/careers', label: 'Careers' },
-          { href: '/contact-us', label: 'Contact Us' },
-        ]}
-        isOpen={openIndex === 5}
-        onClick={() => handleNavItemClick(5)}
-      />
-    </nav>
+       {isSheetOpen &&  <div className="flex items-center gap-2 bg-white">
+      <Sheet isOpen={isSheetOpen} onOpenChange={setIsSheetOpen}  className="bg-white">
+        <SheetTrigger asChild>
+          <Button variant="outline" size="icon" className="md:hidden">
+            <MenuIcon className="h-6 w-6" />
+            <span className="sr-only">Toggle navigation menu</span>
+          </Button>
+        </SheetTrigger>
+        <SheetContent side="right" className="w-[300px] bg-white">
+          <div className="flex flex-col gap-4 p-4 bg-white">
+            <nav className="grid gap-2">
+              <NavItem
+                href="#"
+                label="Technology"
+                subItems={[
+                  { href: '/navbar', label: 'SaaS Platform' },
+                  { href: '/ecommerce', label: 'E-Commerce' },
+                  { href: '/membership-cards', label: 'Smart Membership Cards' },
+                ]}
+                isOpen={openIndex === 0}
+                onClick={() => handleNavItemClick(0)}
+                onLinkClick={handleLinkClick}
+              />
+              <a href="/experience-center1" onClick={handleLinkClick}>
+                <NavItem
+                  icon={PackageIcon}
+                  label="Experience Center"
+                  isOpen={openIndex === 1}
+                  onClick={() => handleNavItemClick(1)}
+                />
+              </a>
+              <NavItem
+                href="#"
+                icon={DollarSignIcon}
+                label="Skill Training"
+                subItems={[
+                  { href: '/courses-and-certificates', label: 'Skill Training' },
+                  { href: '/kisanlink-academy', label: 'Kisanlink Academy' },
+                ]}
+                isOpen={openIndex === 2}
+                onClick={() => handleNavItemClick(2)}
+                onLinkClick={handleLinkClick}
+              />
+              <NavItem
+                href="#"
+                icon={InfoIcon}
+                label="Stakeholders"
+                subItems={[
+                  { href: '/for-farmers', label: 'Farmers' },
+                  { href: '/for-fpos', label: 'FPOs' },
+                  { href: '/become-a-kisansathi', label: 'Kisansathi' },
+                  { href: '/become-a-collaborator', label: 'Collaborators' },
+                  { href: '/our-partners', label: 'Partners' },
+                ]}
+                isOpen={openIndex === 3}
+                onClick={() => handleNavItemClick(3)}
+                onLinkClick={handleLinkClick}
+              />
+              <NavItem
+                href="#"
+                icon={InfoIcon}
+                label="Our Brands"
+                subItems={[
+                  {
+                    href: 'https://www.digicrop.ai/',
+                    label: (
+                      <>
+                        Digicrop
+                        <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
+                          TM
+                        </sup>
+                      </>
+                    ),
+                  },
+                  {
+                    href: 'https://amrti.com/',
+                    label: (
+                      <>
+                        Amrti
+                        <sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">
+                          TM
+                        </sup>
+                      </>
+                    ),
+                  },
+                ]}
+                isOpen={openIndex === 4}
+                onClick={() => handleNavItemClick(4)}
+                onLinkClick={handleLinkClick}
+              />
+              <NavItem
+                href="#"
+                icon={InfoIcon}
+                label="About Us"
+                subItems={[
+                  { href: '/about-us', label: 'About Us' },
+                  { href: '/team', label: 'Our Team' },
+                  { href: '/careers', label: 'Careers' },
+                  { href: '/contact-us', label: 'Contact Us' },
+                ]}
+                isOpen={openIndex === 5}
+                onClick={() => handleNavItemClick(5)}
+                onLinkClick={handleLinkClick}
+              />
+            </nav>
 
-                <div className="flex flex-col gap-2">
-                 <button
-            className="  ml-1 mr-1 px-4 py-2 rounded-full bg-brown-700 text-white hover:bg-blue-600 focus:outline-none"
-            onClick={redirectToLogin}
-          >
-            FPO/Corporate Login
-          </button>
-                  
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+            <div className="flex flex-col gap-2">
+              <button
+                className="ml-1 mr-1 px-4 py-2 rounded-full bg-brown-700 text-white hover:bg-blue-600 focus:outline-none"
+                onClick={redirectToLogin}
+              >
+                FPO/Corporate Login
+              </button>
+            </div>
+          </div>
+        </SheetContent>
+      </Sheet>
+    </div>
+}
       </div>
     </header>
     </div>
