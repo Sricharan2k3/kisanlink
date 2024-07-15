@@ -14,9 +14,9 @@ const Empower = () => {
       <Heading value={"Empowering Farmer Producer Organisations"}></Heading>
 
       {/* Image and Content Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-8 max-w-10xl mx-auto px-4 pb-4 ">
+      <div className="flex flex-col lg:flex-row items-center justify-center mt-4 lg:space-x-8  mx-auto px-4 pb-4 ">
         {/* Image */}
-        <div className="relative lg:w-1/4 overflow-hidden shadow-lg mb-4">
+        <div className="relative lg:w-1/3 overflow-hidden  mb-4">
           <img
             src="./newstore.png"
             alt="Abaya Krishi"

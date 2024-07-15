@@ -34,42 +34,42 @@ const content = [
     imageSrc:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/drone-2.png",
   },
-  {
-    id: "soil-testing-service",
-    title: "Soil Testing Service",
-    description: (
-      <>
-        Understanding soil health is essential for a healthy yield. We make
-        reliable soil testing services easily accessible by connecting farmers
-        with nearby testing laboratories.
-        <br />
-        <br />
-        <ol>
-          <li className="flex flex-row">
-            <LuDot />
-            Soil sample collected by Kisansathi
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Faster and digitized process
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Reliable soil testing report
-          </li>
-          <br />
-          <li className="flex flex-row">
-            <LuDot />
-            Reliable recommendations report
-          </li>
-        </ol>
-      </>
-    ),
-    imageSrc:
-      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/soil.png",
-  },
+  // {
+  //   id: "soil-testing-service",
+  //   title: "Soil Testing Service",
+  //   description: (
+  //     <>
+  //       Understanding soil health is essential for a healthy yield. We make
+  //       reliable soil testing services easily accessible by connecting farmers
+  //       with nearby testing laboratories.
+  //       <br />
+  //       <br />
+  //       <ol>
+  //         <li className="flex flex-row">
+  //           <LuDot />
+  //           Soil sample collected by Kisansathi
+  //         </li>
+  //         <br />
+  //         <li className="flex flex-row">
+  //           <LuDot />
+  //           Faster and digitized process
+  //         </li>
+  //         <br />
+  //         <li className="flex flex-row">
+  //           <LuDot />
+  //           Reliable soil testing report
+  //         </li>
+  //         <br />
+  //         <li className="flex flex-row">
+  //           <LuDot />
+  //           Reliable recommendations report
+  //         </li>
+  //       </ol>
+  //     </>
+  //   ),
+  //   imageSrc:
+  //     "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/soil.png",
+  // },
 
   {
     id: "output-purchase-services",
@@ -278,7 +278,7 @@ const StickyScrollRevealDemo = () => {
           >
             <div className="object-center items-center justify-center lg:flex lg:flex-row lg:ml-48">
               <div className="lg:w-2/3">
-                <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                <h3 className="text-xl font-semibold mb-2 text-brown-700">
                   {item.title}
                 </h3>
                 <div className="text-gray-700 mb-4">{item.description}</div>

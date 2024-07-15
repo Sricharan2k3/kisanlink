@@ -16,7 +16,7 @@ const Farmersol = () => {
 
       <div className="lg:flex lg:flex-row -mt-4 mb-12">
         <div className="lg:flex lg:flex-col">
-          <p className="text-justify ml-12 mt-8 mr-24  ">
+          <p className="text-justify ml-36 mt-8 mr-24  ">
             We provide Agri Inputs and the latest equipment and machinery to
             farmers at their doorstep, enabling them to improve their yield. For
             a better crop yield, farmers require agri inputs, advanced
@@ -33,16 +33,16 @@ const Farmersol = () => {
             </a>
           </p>
         </div>
-        <div className="lg:flex lg:flex-col lg:mr-16 ">
+        <div className="lg:flex lg:flex-col lg:mr-36 ">
           <iframe
-            width="390"
-            height="220"
+            width="500"
+            height="300"
             src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/MOBILE-SCREEN-RECORDING.mp4"
             title="Become a Kisansathi"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="small:w-[350px] small:ml-3 "
+            className="small:w-[120px] lg:w-[170px] h-250 small:ml-3 "
           ></iframe>
         </div>
       </div>

@@ -13,7 +13,7 @@ const StatsCarousel1 = () => {
     { id: 1, value: "100+", label: "Villages" },
     { id: 2, value: "150+", label: "Kisansathi (VLEs)" },
     { id: 3, value: "7000+", label: "Farmers" },
-    { id: 4, value: "50+", label: "Local Partners (FPO's)" },
+    { id: 4, value: "50+", label: "Local Partners (FPOs)" },
     { id: 5, value: "30+", label: "Collaborators" },
     { id: 6, value: "50+", label: "Brands" },
     { id: 7, value: "800+", label: "Products" },
@@ -82,12 +82,12 @@ const StatsCarousel1 = () => {
       <Slider {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-white shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+       <div className="bg-[#faca9a] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             
-              <p className="text-xs lg:text-lg large:mt-2 medium:mt-4 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
-              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-700 small:text-xs ">
+              <p className="text-xs lg:text-lg large:mt-2 medium:mt-4 text-green-600 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-600 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

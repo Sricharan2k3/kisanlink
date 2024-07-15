@@ -135,13 +135,13 @@ export default function Component() {
                 key={product.id}
                 className="relative overflow-hidden rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
               >
-                <Link
-                  href="#"
+                {/* <Link
+                  href=""
                   className="absolute inset-0 z-10"
                   prefetch={false}
                 >
                   <span className="sr-only">View</span>
-                </Link>
+                </Link> */}
                 <img
                   src={product.image}
                   alt={product.name}

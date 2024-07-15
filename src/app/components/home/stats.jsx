@@ -11,24 +11,26 @@ const StatsCarousel1 = () => {
   const sliderRef = useRef(null);
 
   const stats1 = [
+    { id: 5, value: "2500+", label: "Acres of Farm Mechanization Services" },
+   
+    { id: 1, value: "200+", label: "Product Orders" },
     { id: 2, value: "50+", label: "Procurement In Tons" },
     { id: 4, value: "500+", label: "Soil Testing Reports" },
     // { id: 3, value: "5+", label: "Other Services" },
-    { id: 5, value: "2500+", label: "FMS in Acres" },
-    { id: 1, value: "200+", label: "Product Orders" },
+    
+    
   ];
 
 
   const settings = {
     dots: false, // Disable default dots
     infinite: true,
-    speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 0,
     centerMode: true,
     centerPadding: "26%",
-    autoplay: true, // Enable auto-scrolling
-    autoplaySpeed: 3000, // Auto-scroll interval in milliseconds (3 seconds)
+    autoplay: false, // Enable auto-scrolling
+    autoplaySpeed: 0, // Auto-scroll interval in milliseconds (3 seconds)
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
     arrows: false, // Disable the navigation arrows
     responsive: [
@@ -84,10 +86,10 @@ const StatsCarousel1 = () => {
         </h1>
       </div> */}
       <Heading value={"Operational Numbers"}></Heading>
-      <Slider {...settings} ref={sliderRef}>
+      <div className="flex space-x-12 ml-10" {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-white shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+       <div className="bg-[#ffd6af] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             
@@ -101,7 +103,7 @@ const StatsCarousel1 = () => {
             </div>
           </div>
         ))}
-      </Slider>
+      </div>
       <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
           {dots1.map((dotIndex) => (
