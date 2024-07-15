@@ -9,7 +9,7 @@ import Heading from "./heading";
 
 export default function Collaborators() {
     return (
-        <div className="bg-[#E5E8E9] ">
+        <div className="bg-[#E5E8E9] pt-8 -mt-10 ">
             <Heading value={"Collaborators"} />
             <div className="w-full overflow-hidden ">
                 <Marquee

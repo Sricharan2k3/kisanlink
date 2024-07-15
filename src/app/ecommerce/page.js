@@ -37,7 +37,7 @@ const Farmersol = () => {
           <iframe
             width="390"
             height="220"
-            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/prod.mp4"
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/MOBILE-SCREEN-RECORDING.mp4"
             title="Become a Kisansathi"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

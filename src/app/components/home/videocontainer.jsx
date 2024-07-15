@@ -3,8 +3,10 @@ import Heading from './heading';
 
 const VideoContainer = () => {
     return (
-        <div className='bg-[#E5E6E7] -mt-8'>
+        <div className='bg-[#E5E6E7] -mt-12 pt-8'>
             <Heading value={"Testimonials"} />
+        <div className=' '>
+            
             <div className=" lg:overflow-hidden container lg:mx-[9%]  p-4">
                 <div className=" lg:flex lg:flex-wrap lg:justify-center   ">
                     <div className="lg:w-1/2 px-4 small:w-1/2">
@@ -21,7 +23,7 @@ const VideoContainer = () => {
                 </div>
             </div>
         </div>
-
+        </div>
     );
 };
 

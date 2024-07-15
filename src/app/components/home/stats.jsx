@@ -13,8 +13,8 @@ const StatsCarousel1 = () => {
   const stats1 = [
     { id: 2, value: "50+", label: "Procurement In Tons" },
     { id: 4, value: "500+", label: "Soil Testing Reports" },
-    { id: 3, value: "5+", label: "Other Services" },
-    { id: 5, value: "2500+", label: "FMS" },
+    // { id: 3, value: "5+", label: "Other Services" },
+    { id: 5, value: "2500+", label: "FMS in Acres" },
     { id: 1, value: "200+", label: "Product Orders" },
   ];
 

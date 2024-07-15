@@ -32,7 +32,7 @@ const content = [
       </>
     ),
     imageSrc:
-      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/farm-mech.png",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/drone-2.png",
   },
   {
     id: "soil-testing-service",
@@ -68,7 +68,7 @@ const content = [
       </>
     ),
     imageSrc:
-      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/soil-test.png",
+      "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/soil.png",
   },
 
   {

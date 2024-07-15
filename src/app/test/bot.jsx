@@ -115,7 +115,7 @@ export default function Component() {
         size="icon"
         className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-44 hover:bg-green-700  shadow-lg "
         onClick={() => setIsOpen(true)}
-      >Chat With Us
+      >AI Assistant
         {/* <MessageCircleIcon className="h-10 w-10 text-black hover:text-white" /> */}
         <img className="h-16 w-16" src="./bot.png"></img>
         <span className="sr-only">Open chatbot</span>
