@@ -109,7 +109,7 @@ const Footer = () => {
 
                             <ul className="mt-6 space-y-4">
                                 <li>
-                                    <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Blogs </a>
+                                    <a href="/blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Blogs </a>
                                 </li>
 
                                 <li>
