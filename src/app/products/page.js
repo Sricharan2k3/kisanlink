@@ -129,11 +129,11 @@ export default function Component() {
               </DropdownMenu>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 medium:grid-cols-2 lg:grid-cols-2 gap-8">
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative  rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
+                className="relative  rounded-lg group small:-mr-4 small:w-[340px] medium:w-[240px] lg:w-full"
               >
                 {/* <Link
                   href=""
@@ -145,12 +145,12 @@ export default function Component() {
                 <img
                   src={product.image}
                   alt={product.name}
-                  width={600}
-                  height={300}
-                  className="object-cover  small:pr-6 lg:h-64 lg:ml-24 small:w-[340px]"
+                  width={200}
+                  height={100}
+                  className="  small:pr-6 lg:h-80 medium:h-[100px] small:h-36 lg:ml-56 medium:-ml-36  medium:w-[300px] lg:w-[350px]"
                 />
                 <div className="p-4 bg-background">
-                  <h3 className="text-lg font-semibold md:text-xl lg:ml-12">
+                  <h3 className="text-lg font-semibold md:text-xl ml-16  lg:ml-16">
                     {product.name}
                   </h3>
                   {/* <p className="text-sm text-muted-foreground">
