@@ -11,10 +11,10 @@ const StatsCarousel1 = () => {
   const sliderRef = useRef(null);
 
   const stats1 = [
-    { id: 5, value: "2500+", label: "Acres of Farm Mechanization Services" },
+    { id: 5, value: "2500+ Acres", label: "Farm Mechanization " },
    
     { id: 1, value: "200+", label: "Product Orders" },
-    { id: 2, value: "50+", label: "Procurement In Tons" },
+    { id: 2, value: "50+ Tons", label: "Output Procurement" },
     { id: 4, value: "500+", label: "Soil Testing Reports" },
     // { id: 3, value: "5+", label: "Other Services" },
     
@@ -93,8 +93,8 @@ const StatsCarousel1 = () => {
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             
-              <p className="text-xs lg:text-lg  medium:mt-4 large:mt-2 text-green-700 small:text-xs small:-mt-4">{stat.value}</p>
-              <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-green-700 small:text-xs ">
+              <p className="text-xs lg:text-lg  medium:mt-4 large:mt-2 text-green-800 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-green-800 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

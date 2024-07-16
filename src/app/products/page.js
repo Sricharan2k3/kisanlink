@@ -22,26 +22,26 @@ export default function Component() {
     {
       id: 1,
       image:
-        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/brush-cutter.jpg",
-      name: "Brush Cutter",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Drone.jpg",
+      name: "Equipment",
     },
     {
       id: 2,
       image:
-        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ssm-1.jpg",
-      name: "Manual Seed Drill Machine",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/iot-1.jpg",
+      name: "IOT",
     },
     {
       id: 3,
       image:
-        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/tarpaulin-1.jpg",
-      name: "Tarpaulin",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/solar-1.jpg",
+      name: "Solar Products",
     },
     {
       id: 4,
       image:
-        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/trap-1.jpg",
-      name: "Solar Trap",
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ferti.jpg",
+      name: "Agri Inputs",
     },
   ];
   const [searchTerm, setSearchTerm] = useState("");
@@ -86,9 +86,9 @@ export default function Component() {
       <section className="small:py-32  md:py-24 lg:py-32">
         <div className=" items-center text-center justify-center align-middle container px-4 -mt-44 md:px-6">
           <div className="lg:flex lg:flex-col md:flex-row items-start md:items-center lg:gap-4 md:gap-8 mb-8">
-            <div className=" lg:ml-8  lg:items-center lg:text-center">
-              <Heading value={"Our Products"}></Heading>
-              <p className="text-muted-foreground small:w-[340px] ">
+            <div className=" lg:ml-4  lg:items-center lg:text-center">
+              <Heading value={"Our Product Categories"}></Heading>
+              <p className="text-muted-foreground lg:ml-10 small:w-[340px] ">
                 Browse our curated selection of products.
               </p>
             </div>
@@ -145,9 +145,9 @@ export default function Component() {
                 <img
                   src={product.image}
                   alt={product.name}
-                  width={400}
+                  width={600}
                   height={300}
-                  className="object-cover lg:w-full  small:pr-6 lg:h-60 small:w-[340px]"
+                  className="object-cover lg:w-[600px]  small:pr-6 lg:h-96 small:w-[340px]"
                 />
                 <div className="p-4 bg-background">
                   <h3 className="text-lg font-semibold md:text-xl">

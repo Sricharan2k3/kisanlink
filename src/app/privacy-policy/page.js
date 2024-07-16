@@ -15,64 +15,76 @@ export default function Component() {
         <div className="space-y-8">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold">Privacy Policy</h1>
-            <p className="mt-2 text-muted-foreground"></p>
-          </div>
-          <div className="space-y-4">
-            <h2 className="text-xl md:text-2xl font-semibold">
-              Data Collection
-            </h2>
-            <p className="text-muted-foreground">
-              We collect certain personal information from you when you use our
-              website or services, such as your name, email address, and any
-              other information you provide to us. We may also collect
-              information about your usage of our website, including your IP
-              address, browser type, and referring URLs.
-            </p>
-          </div>
-          <div className="space-y-4">
-            <h2 className="text-xl md:text-2xl font-semibold">Data Usage</h2>
-            <p className="text-muted-foreground">
-              We use the personal information we collect to provide and improve
-              our services, to communicate with you, and to comply with
-              applicable laws and regulations. We may also use your information
-              for marketing purposes, such as sending you newsletters or
-              promotional offers, but we will always give you the option to
-              opt-out of these communications.
+            <p className="mt-2 text-muted-foreground">
+              Kisanlink is dedicated to safeguarding your privacy. This policy
+              outlines how we use and protect any information you provide while
+              using our website. We may update this policy periodically, so
+              please revisit this page to stay informed. This is effective from
+              July 16, 2024.
             </p>
           </div>
           <div className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold">
-              User Rights and Data Retention
+              Information We Collect{" "}
             </h2>
             <p className="text-muted-foreground">
-              You have the right to access, correct, or delete your personal
-              information at any time. You can also request that we limit or
-              stop processing your data, or export your data in a
-              machine-readable format. We will retain your personal information
-              for as long as necessary to fulfill the purposes outlined in this
-              policy, or as required by law.
+              We may gather:
+              <ul className="list-disc list-inside ml-4">
+                <li>Name and date of birth</li>
+                <li> Contact details like email address</li>
+                <li>Demographic data and preferences</li>
+                <li> Other information for surveys or offer</li>
+              </ul>
             </p>
           </div>
           <div className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold">
-              Third-Party Services
+              How We Use Your Information
             </h2>
             <p className="text-muted-foreground">
-              Our website may contain links to third-party websites or services.
-              We are not responsible for the privacy practices or the content of
-              these third-party services. We encourage you to review the privacy
-              policies of any third-party services you use.
+              We utilize this data to:
+              <ul className="list-disc list-inside ml-4">
+                <li>Improve our services</li>
+                <li>Send promotional emails about new products or offers</li>
+                <li>Contact you for market research</li>
+                <li>Personalize your website experience</li>
+                <li>Security Measures</li>
+              </ul>
+              Your information's security is crucial. We've implemented suitable
+              measures to prevent unauthorized access or disclosure.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-xl md:text-2xl font-semibold">Cookie Usage</h2>
+            <p className="text-muted-foreground">
+              Cookies help tailor website operations to your preferences. We use
+              them for statistical analysis to enhance our site's functionality.
+              You can manage cookie settings in your browser preferences.
             </p>
           </div>
           <div className="space-y-4">
             <h2 className="text-xl md:text-2xl font-semibold">
-              Changes to this Policy
+              Links to Other Websites
             </h2>
             <p className="text-muted-foreground">
-              We may update this privacy policy from time to time. We will
-              notify you of any changes by posting the new policy on our
-              website. We encourage you to review this policy periodically for
-              any updates.
+              We may link to other sites; however, we are not responsible for
+              their privacy practices. Exercise caution and review their privacy
+              statements.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-xl md:text-2xl font-semibold">
+              Your Control Over Information{" "}
+            </h2>
+            <p className="text-muted-foreground">
+              You can:
+              <ul className="list-disc list-inside ml-4">
+                <li>Opt-out of direct marketing</li>
+                <li>Request information held about you</li>
+                <li>Correct any inaccuracies in your information</li>
+              </ul>
+              We don’t sell your information to third parties without consent
+              unless required by law.
             </p>
           </div>
           <div className="space-y-4">
@@ -81,7 +93,7 @@ export default function Component() {
               If you have any questions or concerns about our privacy policy,
               please contact us at{" "}
               <Link href="#" prefetch={false}>
-                privacy@example.com
+                info@kisanlink.in
               </Link>
               .
             </p>

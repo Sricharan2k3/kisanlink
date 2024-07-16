@@ -21,63 +21,83 @@ export default function Component() {
           </div>
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-foreground">
-              User Agreement
+              Terms of Use{" "}
             </h2>
             <p className="mt-2 text-muted-foreground">
-              By accessing or using our website, you agree to be bound by these
-              terms and conditions and our privacy policy. If you do not agree
-              with any part of these terms, please do not use our website.
+              Accessing and using kisanlink.in, are governed by these Terms of
+              Service. By using our website{" "}
+              <a href="www.kisanlink.in text-[#38bdf8]">(www.kisanlink.in)</a>,
+              you agree to these terms, including our Privacy Policy, which may
+              be updated periodically. Please check this page regularly for any
+              changes. We reserve the right to review, modify, or withdraw
+              services without notice.
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-foreground">
-              Intellectual Property Rights
+              Third-Party Websites and Content
             </h2>
             <p className="mt-2 text-muted-foreground">
-              The content, design, and all intellectual property on our website
-              are owned by [Company Name] and are protected by copyright,
-              trademark, and other intellectual property laws. You may not
-              modify, copy, distribute, transmit, display, reproduce, or create
-              derivative works from our website without our prior written
-              consent.
+              We offer links for content sharing on third-party sites like
+              Facebook and Instagram. We are not responsible for third-party
+              sites listed on our website or their content. We also disclaim
+              liability for content posted by users on our site or social media
+              platforms.
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-foreground">
-              Limitations of Liability
+              Messaging Consent{" "}
             </h2>
             <p className="mt-2 text-muted-foreground">
-              We will not be liable for any indirect, special, incidental, or
-              consequential damages arising out of or in connection with your
-              use of our website. Our total liability to you for all claims
-              shall not exceed $100. Some jurisdictions do not allow the
-              exclusion of certain warranties or the limitation or exclusion of
-              liability for incidental or consequential damages, so some of the
-              above limitations may not apply to you.
+              By using our services, customers agree to receive communications
+              via SMS or calls from Kisanlink.
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-foreground">
-              Governing Law
+              Product Accuracy{" "}
             </h2>
             <p className="mt-2 text-muted-foreground">
-              These terms and conditions shall be governed by and construed in
-              accordance with the laws of [Jurisdiction], without giving effect
-              to any principles of conflicts of law.
+              Images on the site are for illustration; colours may vary on
+              different screens. We strive for accuracy in descriptions.
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold tracking-tight text-foreground">
-              Contact Information
+              Law and Jurisdiction{" "}
             </h2>
             <p className="mt-2 text-muted-foreground">
-              If you have any questions or concerns about these terms and
-              conditions, please contact us at:
+              These terms are governed by Indian laws, and disputes will be
+              subject to the exclusive jurisdiction of Hyderabad courts.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight text-foreground">
+              Indemnification{" "}
+            </h2>
+            <p className="mt-2 text-muted-foreground">
+              You agree to indemnify us from any third-party claims arising from
+              your website use, breaching these terms, or infringing on
+              intellectual property rights.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight text-foreground">
+              Violation & Termination{" "}
+            </h2>
+            <p className="mt-2 text-muted-foreground">
+              We reserve the right to terminate your website access without
+              notice if we believe you have violated these terms. You remain
+              liable for ordered services up to termination.
             </p>
             <ul className="mt-2 space-y-1 text-muted-foreground">
-              <li>Email: support@[company].com</li>
-              <li>Phone: +1 (123) 456-7890</li>
-              <li>Address: 123 Main Street, Anytown USA 12345</li>
+              <li>Email: info@kisanlink.in</li>
+              <li>Phone: +91 73867 27007</li>
+              <li>
+                Address: Plot no 27, Nandi Hills, Road no 51, Jubliee Hills,
+                Hyderabad, 500033
+              </li>
             </ul>
           </div>
         </div>

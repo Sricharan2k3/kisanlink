@@ -29,7 +29,7 @@ const FarmMechanizationSection = () => {
         {/* SVG Shape Divider (Flipped) */}
         <div className="absolute top-0 w-full overflow-hidden leading-[0] transform rotate-180">
           <svg className="block w-full h-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-            <path className=" fill-[#F9FAFB] text-white" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+            <path className=" fill-[#e4e4e7] text-white" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
           </svg>
         </div>
 
