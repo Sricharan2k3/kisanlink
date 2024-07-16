@@ -81,7 +81,7 @@ console.log(isSheetOpen)
 
   
   return (
-    <div className="lg:bg-white large:ml-[300px] medium:ml-40 z-50  lg:rounded-full">
+    <div className="lg:bg-white large:ml-[290px] medium:ml-32 z-50  lg:rounded-full">
 
   
     <header className="  top-0 z-50 w-full lg:bg-background lg:rounded-full lg:border-2 lg:border-black small:rounded-3xl">
