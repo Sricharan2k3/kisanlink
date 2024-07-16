@@ -130,23 +130,23 @@ const Footer = () => {
 
                         <ul className="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Government policies and support for FPOs in India </a>
+                                <a href="./blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Government policies and support for FPOs in India </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Empowering Smallholder Farmers: The Transformative Role of Farmer Producer Organizations (FPOs) </a>
+                                <a href="./blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Empowering Smallholder Farmers: The Transformative Role of Farmer Producer Organizations (FPOs) </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Cultivating Sustainability: The Integral Role of Farmer Producer Organizations (FPOs) in Agriculture </a>
+                                <a href="/blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600"> Cultivating Sustainability: The Integral Role of Farmer Producer Organizations (FPOs) in Agriculture </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600">Harnessing Collective Strength: Exploring the Benefits of Farmer Producer Organizations (FPOs) </a>
+                                <a href="/blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600">Harnessing Collective Strength: Exploring the Benefits of Farmer Producer Organizations (FPOs) </a>
                             </li>
 
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600">The Role of Farmer Producer Organizations (FPOs) and Regulatory Framework </a>
+                                <a href="/blogs" title="" className="flex text-base text-black transition-all duration-200 hover:text-green-600 focus:text-green-600">The Role of Farmer Producer Organizations (FPOs) and Regulatory Framework </a>
                             </li>
                         </ul>
                     </div>
