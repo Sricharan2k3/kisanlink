@@ -133,7 +133,7 @@ export default function Component() {
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="relative overflow-hidden rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
+                className="relative  rounded-lg group small:-mr-4 small:w-[340px] lg:w-full"
               >
                 {/* <Link
                   href=""
@@ -147,10 +147,10 @@ export default function Component() {
                   alt={product.name}
                   width={600}
                   height={300}
-                  className="object-cover lg:w-[600px]  small:pr-6 lg:h-96 small:w-[340px]"
+                  className="object-cover  small:pr-6 lg:h-64 lg:ml-24 small:w-[340px]"
                 />
                 <div className="p-4 bg-background">
-                  <h3 className="text-lg font-semibold md:text-xl">
+                  <h3 className="text-lg font-semibold md:text-xl lg:ml-12">
                     {product.name}
                   </h3>
                   {/* <p className="text-sm text-muted-foreground">
