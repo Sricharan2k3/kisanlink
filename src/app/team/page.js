@@ -89,7 +89,7 @@ const App = () => {
       photo:
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/elementor/thumbs/IMG_6219-1-scaled-qox9f17ez4p4ha2ahbxux8abzr4mf9738ohgdc3qog.jpg",
       name: "Jyothirmayi Kimidi",
-      position: "Marketing Team",
+      position: "Social Media Executive",
       qualification: "Bsc Agriculture, CUTM Odisha",
       experience: [
         "1 year experience in social media management and content creation.",
