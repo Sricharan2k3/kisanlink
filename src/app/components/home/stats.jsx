@@ -86,10 +86,10 @@ const StatsCarousel1 = () => {
         </h1>
       </div> */}
       <Heading value={"Operational Numbers"}></Heading>
-      <div className="flex space-x-12 ml-10" {...settings} ref={sliderRef}>
+      <div className="flex medium:space-x--8 lg:space-x-10 lg:ml-8  " {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#ffd6af] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+       <div className="bg-[#ffd6af] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             

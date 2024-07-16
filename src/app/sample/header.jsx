@@ -19,7 +19,7 @@ const Header = () => {
           <LogoComponent />
           <NavBarComponent />
           <button
-            className=" small:hidden lg:block lg:ml-1 lg:-mr-4 lg:px-4 lg:py-2 lg:rounded-full text-sm bg-background text-black hover:bg-[#faca9a] focus:outline-none"
+            className=" small:hidden lg:block lg:ml-1 lg:-mr-4  medium:-mr-1 lg:px-4 lg:py-2 lg:rounded-full text-sm bg-background text-black hover:bg-[#faca9a] focus:outline-none"
             onClick={redirectToLogin}
           >
             FPO/Corporate Login
