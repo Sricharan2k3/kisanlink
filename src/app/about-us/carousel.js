@@ -9,7 +9,7 @@ const ImageCarousel = ({ images }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -40,7 +40,11 @@ const ImageCarousel = ({ images }) => {
     <Slider {...settings}>
       {images.map((image, index) => (
         <div key={index}>
-          <img src={image} alt={`Slide ${index}`} className="carousel-image small:w-24 small:h-24 small:ml-8" />
+          <img
+            src={image}
+            alt={`Slide ${index}`}
+            className="carousel-image lg:ml-4 small:w-24 small:h-24 small:ml-8"
+          />
         </div>
       ))}
     </Slider>
