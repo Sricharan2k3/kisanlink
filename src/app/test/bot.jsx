@@ -89,29 +89,29 @@ export default function Component() {
 
       console.log(chatData)
 
-      const ttsResponse = await fetch("/api/TextToSpeech", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text: chatData }),
-      });
+      // const ttsResponse = await fetch("/api/TextToSpeech", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({ text: chatData }),
+      // });
       
-      const ttsData = await ttsResponse.blob();
-      const audioURL = URL.createObjectURL(ttsData);
+      // const ttsData = await ttsResponse.blob();
+      // const audioURL = URL.createObjectURL(ttsData);
       
       setMessages((prevMessages) => [
         ...prevMessages.slice(0, -1), // Remove the loading indicator
         assistantMessage,
-        {
-          role: "assistant",
-          content: (
-            <audio controls>
-              <source src={audioURL} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          ),
-        },
+        // {
+        //   role: "assistant",
+        //   content: (
+        //     <audio controls>
+        //       <source src={audioURL} type="audio/mpeg" />
+        //       Your browser does not support the audio element.
+        //     </audio>
+        //   ),
+        // },
       ]);
     } catch (error) {
       console.error("Error fetching response:", error);
