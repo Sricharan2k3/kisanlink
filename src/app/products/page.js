@@ -129,7 +129,11 @@ export default function Component() {
               </DropdownMenu>
             </div>
           </div>
+<<<<<<< Updated upstream
           <div className="grid grid-cols-1 sm:grid-cols-2 medium:grid-cols-2 lg:grid-cols-2 gap-8">
+=======
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:space-x-4 lg:grid-cols-4 gap-8">
+>>>>>>> Stashed changes
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
