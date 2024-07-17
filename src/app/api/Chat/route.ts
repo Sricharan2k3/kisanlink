@@ -49,13 +49,20 @@ export async function POST(req: Request) {
     ]
 
 
+    console.log(messages)
+    const filteredMessages = messages.filter(message => 
+      !(message.role === 'assistant' && typeof message.content === 'object' && message.content.type === 'audio')
+    );
+
     const response = await openai.chat.completions.create(
       {
         model: llm ?? 'gpt-3.5-turbo',
         stream: true,
-        messages: [...ragPrompt, ...messages],
+        messages: [...ragPrompt, ...filteredMessages],
       }
     );
+
+   
     const stream = OpenAIStream(response);
     return new StreamingTextResponse(stream);
   } catch (e) {

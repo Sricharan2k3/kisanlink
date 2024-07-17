@@ -54,11 +54,9 @@ export default function Component() {
       content: input,
     };
 
-    // Add user message to the state
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     setInput("");
 
-    // Construct the payload for the backend API
     const payload = {
       messages: [...messages, userMessage],
       useRag: true,
@@ -68,14 +66,13 @@ export default function Component() {
 
     setIsLoading(true);
 
-    // Add a loading indicator
     setMessages((prevMessages) => [
       ...prevMessages,
       { role: "assistant", content: loadingDots },
     ]);
 
     try {
-      const response = await fetch("api/Chat", {
+      const chatResponse = await fetch("/api/Chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,15 +80,38 @@ export default function Component() {
         body: JSON.stringify(payload),
       });
 
-      const data = await response.text();
-      console.log(data);
+      const chatData = await chatResponse.text();
+     
       const assistantMessage = {
         role: "assistant",
-        content: data,
+        content: chatData,
       };
+
+      console.log(chatData)
+
+      const ttsResponse = await fetch("/api/TextToSpeech", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ text: chatData }),
+      });
+      
+      const ttsData = await ttsResponse.blob();
+      const audioURL = URL.createObjectURL(ttsData);
+      
       setMessages((prevMessages) => [
         ...prevMessages.slice(0, -1), // Remove the loading indicator
         assistantMessage,
+        {
+          role: "assistant",
+          content: (
+            <audio controls>
+              <source src={audioURL} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          ),
+        },
       ]);
     } catch (error) {
       console.error("Error fetching response:", error);
@@ -109,19 +129,19 @@ export default function Component() {
   };
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white">
       <Button
         variant="outline"
         size="icon"
-        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-44 hover:bg-green-700  shadow-lg "
+        className="rounded-full fixed bottom-4 right-4 bg-white h-16 w-44 hover:bg-green-700 shadow-lg"
         onClick={() => setIsOpen(true)}
-      >AI Assistant
-        {/* <MessageCircleIcon className="h-10 w-10 text-black hover:text-white" /> */}
-        <img className="h-16 w-16" src="./bot.png"></img>
+      >
+        AI Assistant
+        <img className="h-16 w-16" src="./bot.png" alt="Bot Icon" />
         <span className="sr-only">Open chatbot</span>
       </Button>
       <Dialog open={isOpen} onOpenChange={setIsOpen} className="bg-white">
-        <DialogContent className=" lg:w-[465px] small:w-[350px] rounded-lg shadow-2xl">
+        <DialogContent className="lg:w-[465px] small:w-[350px] rounded-lg shadow-2xl">
           <div className="flex flex-col h-[600px]">
             <DialogHeader className="border-b px-4 py-3 bg-gray-100">
               <div className="flex items-center gap-3">
@@ -132,12 +152,14 @@ export default function Component() {
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="font-medium text-gray-900">Digicrop - AI Crop Assistant</p>
+                  <p className="font-medium text-gray-900">
+                    Digicrop - AI Crop Assistant
+                  </p>
                   <p className="text-sm text-gray-600">Online</p>
                 </div>
               </div>
             </DialogHeader>
-            <ScrollArea className="flex-1 p-4 overflow-y-auto  bg-gray-50">
+            <ScrollArea className="flex-1 p-4 overflow-y-auto bg-gray-50">
               <div className="space-y-4">
                 {messages.map((message, index) => (
                   <div
@@ -148,7 +170,10 @@ export default function Component() {
                         : "bg-gray-200 text-gray-900"
                     }`}
                   >
-                    <p style={{ whiteSpace: "pre-wrap" }}>{message.content}</p>
+                    <p style={{ whiteSpace: "pre-wrap" }}>
+                      {typeof message.content === "string" ? message.content : ""}
+                    </p>
+                    {typeof message.content !== "string" && message.content}
                   </div>
                 ))}
               </div>
