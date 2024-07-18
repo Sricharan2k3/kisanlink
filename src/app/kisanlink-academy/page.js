@@ -177,7 +177,7 @@ const Academy = () => {
         <div className="-mt-12">
           <Heading value={"Advantages Of Certification"}></Heading>
         </div>
-        <div className="bg-white flex -mt-12">
+        <div className="bg-white flex -mt-8">
           {/* Left Section */}
 
           <div className="lg:flex-1 mt-10 mx-8">
@@ -411,21 +411,21 @@ const YouTubeLinks = [
   },
   {
     category: "Drone",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuZ1bcWlPwrx37erWB77Mn0",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPs1A9WLOUXRjfXorLw-pI-D",
     alt: "Agriculture Image 4",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/eng.jpg",
   },
   {
     category: "Drone",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPsUxuxzW79QM4SBYKqVlzLF",
     alt: "Agriculture Image 5",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/tel.jpg",
   },
   {
     category: "Drone",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPtVynCz0_8SIOaOyw9r3X0x",
     alt: "Agriculture Image 6",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/hin.jpg",
@@ -437,79 +437,79 @@ const YouTubeLinks = [
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/advisory-english-1.jpg",
   },
-  // {
-  //   category: "Advisory",
-  //   href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
-  //   alt: "Agriculture Image 8",
-  //   thumbnail:
-  //     "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-telugu-thumbnail.jpg",
-  // },
-  // {
-  //   category: "Advisory",
-  //   href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
-  //   alt: "Agriculture Image 9",
-  //   thumbnail:
-  //     "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/introductory-hindi-thumbnail.jpg",
-  // },
+  {
+    category: "Advisory",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPt1B6ZUSSMD3Yxbly6aKnSH",
+    alt: "Agriculture Image 8",
+    thumbnail:
+      "https://i.ytimg.com/vi/R1RgPaCU4js/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBwA_Ke8wxc6-tujGGRO_0ROPe9QA",
+  },
+  {
+    category: "Advisory",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPtTIAQ1nWgmgZt2BXJ_D1DI",
+    alt: "Agriculture Image 9",
+    thumbnail:
+      "https://i.ytimg.com/vi/AkHoxlfdHoM/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBDGJZQzGQ0NVuP2gPxlufLLh7CfA",
+  },
   {
     category: "Mustard",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPukPgix5IBTcMgBW5ZqxIYK",
     alt: "Agriculture Image 10",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-english-thumbnail.jpg",
   },
   {
     category: "Mustard",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuRIGSrUE8GIfYexEI-PmfA",
     alt: "Agriculture Image 11",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-telugu-1-thumbnail.jpg",
   },
   {
     category: "Mustard",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPui9DT79IRCyxqApq9jaj3w",
     alt: "Agriculture Image 12",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/mustard-telugu-thumbnail.jpg",
   },
   {
     category: "Safflower",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPv8rf9Zg5KrONUE0uzPdjGk",
     alt: "Agriculture Image 13",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/safflower-course-english.jpg",
   },
   {
     category: "Safflower",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/@kisanlink/playlists",
     alt: "Agriculture Image 14",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/safflower-course-hin.jpg",
   },
   {
     category: "Paddy",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPs8I6jD5qmJr4bEjrcEXbG1",
     alt: "Agriculture Image 14",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715-hindi.jpg",
   },
   {
     category: "Paddy",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuV9tvRingL_TlhQJdO6m_m",
     alt: "Agriculture Image 14",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715-telugu.jpg",
   },
   {
     category: "Paddy",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPv6WavadVLwb7664Jp49u-3",
     alt: "Agriculture Image 14",
     thumbnail:
       "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/9510715.jpg",
   },
   {
     category: "Heliot",
-    href: "https://www.youtube.com/playlist?list=PL3UDtQYVvuPuGG1VociCoELxx_zJWYWHS",
+    href: "https://www.youtube.com/@kisanlink/playlists",
     alt: "Agriculture Image 14",
     thumbnail: "./heliot.jpg",
   },

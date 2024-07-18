@@ -103,14 +103,14 @@ const DownloadButton = ({ platform, url }) => {
       href={url}
       
       rel="noopener noreferrer"
-      className="flex items-center justify-center bg-green-700 mt-4 text-white mr-64 px-4 py-2 rounded-full shadow-lg hover:bg-green-800 transition-all duration-300 ease-in-out"
+      className="flex items-center justify-center bg-[#ffe7d0] mt-4 text-green-800 mr-64 px-4 py-2 rounded-full shadow-lg hover:bg-[#fdba74] transition-all duration-300 ease-in-out"
     >
       {/* <img
         src={logos[platform]}
         alt={`${platform} Logo`}
         className="w-6 h-6 mr-2"
       /> */}
-      <svg width={22} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d={logos[platform]} /></svg>
+      <svg width={22} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#166534" d={logos[platform]} /></svg>
       
       <div className="pl-2">Download </div>
     </a>
