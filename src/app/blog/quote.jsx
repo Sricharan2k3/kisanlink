@@ -3,7 +3,7 @@ export default function QuoteComponent({ quote, author }) {
       <blockquote className="mt-12 border-l-4 border-primary pl-6 text-2xl font-medium italic">
         <p>{quote}</p>
         <cite className="mt-4 block text-base not-italic text-muted-foreground">
-          - {author}
+           {author}
         </cite>
       </blockquote>
     );
