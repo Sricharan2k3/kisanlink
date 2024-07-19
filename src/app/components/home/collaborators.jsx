@@ -9,12 +9,12 @@ import Heading from "./heading";
 
 export default function Collaborators() {
     return (
-        <div className="bg-[#E5E8E9] pt-8 -mt-10 ">
+        <div className="bg-[#E5E8E9] pt-2 -mt-10 ">
             <Heading value={"Collaborators"} />
-            <div className="w-full overflow-hidden ">
+            <div className="w-full ">
                 <Marquee
                     gradient={false}
-                    speed={80}
+                    speed={60}
                     pauseOnHover={true}
                     pauseOnClick={true}
                     delay={0}

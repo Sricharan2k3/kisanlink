@@ -72,7 +72,7 @@ const StatsCarousel1 = () => {
   return (
     
   
-    <div className=" -mt- overflow-hidden relative bg-[#E5E8E9]">
+    <div className="  overflow-hidden relative bg-[#E5E8E9]">
       {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
@@ -82,12 +82,12 @@ const StatsCarousel1 = () => {
       <Slider {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#ffe7d0] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+       <div className="bg-[#e5deb9] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             
-              <p className="text-xs lg:text-lg large:mt-3 medium:mt-4 text-green-800 small:text-xs small:-mt-4">{stat.value}</p>
-              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-800 small:text-xs ">
+              <p className="text-xs lg:text-lg large:mt-3 medium:mt-4 text-green-500 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-500 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
@@ -97,7 +97,7 @@ const StatsCarousel1 = () => {
           </div>
         ))}
       </Slider>
-      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
+      <div className="bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
           {dots1.map((dotIndex) => (
             <li
@@ -106,7 +106,7 @@ const StatsCarousel1 = () => {
               className={`w-2 h-2 rounded-full cursor-pointer ${
                 currentSlide >= dotIndex * (stats1.length / numDots1) &&
                 currentSlide < (dotIndex + 1) * (stats1.length / numDots1)
-                  ? "bg-blue-100"
+                  ? "bg-green-500"
                   : "bg-gray-300"
               }`}
             />

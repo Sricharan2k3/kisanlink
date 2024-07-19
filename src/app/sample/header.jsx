@@ -3,8 +3,16 @@ import React from 'react';
 import NavBarComponent from './navbar1';
 import LogoComponent from './logo';
 import VideoContainer from '../navbar/video';
+import { usePathname } from 'next/navigation';
+
+
+
 
 const Header = () => {
+  const pathname = usePathname();
+const isHomePage = pathname === '/';
+
+
 
   const redirectToLogin = () => {
     const loginUrl = 'https://admin.kisanlink.in/#/account/login';
@@ -12,10 +20,13 @@ const Header = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
+      
       {/* Header Container */}
-      <div className="fixed top-0 -mt-8 left-0 w-full z-50 bg-transparent flex justify-center items-center px-4 py-2">
-        <div className="flex justify-between items-center max-w-screen-2xl w-full">
+      <div className={`fixed top-0 left-0 w-full z-50 max-h-20 flex justify-center items-center px-4 ${isHomePage 
+? 'bg-transparent' 
+: 'bg-white shadow-md'}`}>
+      <div className="flex justify-between items-center  max-w-screen-2xl w-full">
           <LogoComponent />
           <NavBarComponent />
           <button

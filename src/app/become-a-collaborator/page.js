@@ -40,13 +40,14 @@ const CollaboratorsPage = () => {
           className="text-3xl font-bold  mb-4"
         />
 
-        <div className="text-center text-2xl font-semibold mb-8">
+        <div className="text-center text-2xl font-semibold ">
           Three simple steps to increase your sales.
         </div>
 
         <Card2 />
-
-        <Collaborators />
+        <div className="w-full">
+          <Collaborators />
+        </div>
         <div className="lg:max-width-full h-80 bg-green-600 lg:flex items-center justify-center">
           <div className="overlay-bg ">
             <div className="text-center lg:mt-80 lg:flex lg:flex-row">
