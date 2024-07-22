@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from "react-feather"
-import Component from '../../../app/sample/navbar1'
 const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 5000 }) => {
     const [curr, setCurr] = useState(0)
 

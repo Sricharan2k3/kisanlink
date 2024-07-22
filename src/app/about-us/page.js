@@ -5,10 +5,11 @@ import Heading from "../components/heading";
 import Background from "../../utils/background";
 import ImageCarousel from "./carousel";
 const images = [
-  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Innovation-150x150.png",
-  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Inclusion-150x150.png",
-  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/impact-150x150.png",
-  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Integrity-150x150.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Innovation-150x175-1.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Inclusion-150x175-1.png",
+
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/Integrity-150x175-1.png",
+  "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/impact-150x175-1.png",
 ];
 const about = () => {
   return (

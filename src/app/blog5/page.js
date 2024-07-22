@@ -8,25 +8,47 @@ import TagList from "./taglist";
 import Footer from "./footer";
 import Background from "../../utils/background";
 
+const References = () => {
+  const referencesList = [
+    "Dakshina Kannada Zilla Panchayat. (2022). Case Study: Success Story of Farmer Producer Organizations in Dakshina Kannada District, Karnataka, India.",
+    "Food and Agriculture Organization of the United Nations. (2019). Farmer Producer Organizations: Key to Rural Poverty Reduction and Market Development.",
+    "Ministry of Agriculture & Farmers Welfare, Government of India. (n.d.). Farmer Producer Organizations Promotion Scheme (FPOPS).",
+    "Ministry of Agriculture & Farmers Welfare, Government of India. (2020). Farmer Producer Organizations: A Primer.",
+    "World Bank Group. (2018). Agricultural Cooperatives: A Global Overview.",
+    "World Bank. (2019). Rural Poverty and Hunger: A Global Perspective.",
+  ];
+
+  return (
+    <div className="mt-4">
+      <h2 className="text-xl text-center font-bold mb-4">References</h2>
+      <ul className="space-y-2">
+        {referencesList.map((ref, index) => (
+          <li key={index} className="text-md">
+            {ref}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16">
+      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Harnessing Collective Strength: Exploring the Benefits of Farmer
           Producer Organizations (FPOs){" "}
         </h1>
         <p className="text-muted-foreground">MAY 8, 2024</p>
       </div>
-      <div className="flex flex-row ">
-        <div className=" -mt-28 flex flex-col -mb-32 w-2/3">
-          <div className="container mx-auto px-4 py-12 md:px-6 lg:py-16">
-            <article className="prose prose-gray mx-auto dark:prose-invert">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-2/3 lg:pr-8">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2 ">
               <SubheadingDescription
-                subheading=""
                 text="Within the sphere of agriculture, where individual farmers often face numerous challenges ranging from market uncertainties to limited access to resources, the emergence of Farmer Producer Organizations (FPOs) has brought a ray of hope. These collective entities represent a paradigm shift in the way farmers operate, offering a multitude of benefits that extend beyond individual farm boundaries.
-
 
 The benefits of the collective strength of farmers in the form of FPOs are several."
               />
@@ -37,8 +59,10 @@ The benefits of the collective strength of farmers in the form of FPOs are sever
 
               <SubheadingDescription
                 subheading="Enhancing Bargaining Power and Market Access"
-                text="One of the primary advantages of FPOs lies in their ability to amplify the bargaining power of smallholder farmers. By aggregating their produce and negotiating collectively, FPOs enable farmers to command better prices and terms from buyers, ensuring fair returns for their labour and investment. This enhanced bargaining power not only improves farmers’ incomes but also leads to greater market access, allowing them to reach larger and more lucrative markets that would otherwise be inaccessible to individual producers (Ministry of Agriculture & Farmers Welfare, Government of India, n.d.)."
+                text="One of the primary advantages of FPOs lies in their ability to amplify the bargaining power of smallholder farmers. By aggregating their produce and negotiating collectively, FPOs enable farmers to command better prices and terms from buyers, ensuring fair returns for their labour and investment. This enhanced bargaining power not only improves farmers' incomes but also leads to greater market access, allowing them to reach larger and more lucrative markets that would otherwise be inaccessible to individual producers (Ministry of Agriculture & Farmers Welfare, Government of India, n.d.)."
               />
+
+              {/* ... (rest of the content) ... */}
               {/* <ImageComponent src="/placeholder.svg" alt="Headless CMS" /> */}
 
               <SubheadingDescription
@@ -67,21 +91,25 @@ The benefits of the collective strength of farmers in the form of FPOs are sever
                 quote="The benefits of Farmer Producer Organizations extend far beyond individual farms, encompassing broader socio-economic impacts on rural communities."
                 // author="John Doe, CTO at Acme Inc."
               />
+
               <SubheadingDescription
                 subheading="Conclusion:"
                 text="In conclusion, Farmer Producer Organizations represent a transformative model for agricultural development, offering a plethora of benefits that extend beyond individual farms to entire communities and the agricultural sector at large. The benefits of Farmer Producer Organizations extend far beyond individual farms, encompassing broader socio-economic impacts on rural communities. By enhancing bargaining power, accessing markets, achieving economies of scale, mitigating risks, and building capacities, FPOs contribute to the overall development and prosperity of the agricultural sector. As we continue to explore innovative solutions for sustainable agriculture, the role of FPOs as catalysts for positive change cannot be overstated."
               />
+              <References></References>
             </article>
 
-            <div className="container mx-auto p-6">
+            <div className="p-6">
               <CommentForm />
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-1/3 space-y-6 p-6">
-          <CategoryList />
-          <TagList />
-          <Footer />
+        <div className="lg:w-1/3 mt-8 lg:mt-0">
+          <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
+            <CategoryList />
+            <TagList />
+            <Footer />
+          </div>
         </div>
       </div>
     </>
