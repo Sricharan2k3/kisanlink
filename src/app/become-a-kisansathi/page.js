@@ -34,14 +34,12 @@ import OfferComponent from "./offer";
 import DownloadAppBox from "./Download";
 import Background from "./background";
 
-
-
 const Kisansathi = () => {
   return (
     <div className="small:overflow-hidden">
       <Background title={"Become a Kisansathi"}></Background>
-      <CenteredVideo />
       <CenteredLayout />
+      <CenteredVideo />
 
       <Card
         h1={h1}

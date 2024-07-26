@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Heading from "../components/heading";
-
+import KeyMilestonesComponent from "./roadmap";
 import Background from "../../utils/background";
 import ImageCarousel from "./carousel";
 const images = [
@@ -61,6 +61,9 @@ const about = () => {
       </div>
       <div className=" items-center lg:w-4/5 lg:pl-96 lg:mb-2 small:m-8">
         <ImageCarousel images={images}></ImageCarousel>
+      </div>
+      <div>
+        <KeyMilestonesComponent></KeyMilestonesComponent>
       </div>
     </>
   );

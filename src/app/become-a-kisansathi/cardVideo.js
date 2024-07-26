@@ -6,7 +6,7 @@ const LeftContent = () => {
     <div className="lg:pt-10 lg:pr-10 lg:mr-5 items-center content-center text-lg small:ml-6">
       <Heading
         classname="items=center style={{ color: 'rgb(245, 245, 245)' }}"
-        value="Why Become a Kisansathi"
+        value="Why Become a Kisansathi?"
       />
       <p className="text-lg text-center style={{ color: 'rgb(245, 245, 245)' }}">
         Agriculture is ingrained in our history and culture. By working with us,

@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../components/heading";
 const Card = (props) => {
   return (
-    <div className="mt-12">
+    <div className="-mt-80">
       <Heading value={"Benefits of Becoming a Kisansathi"}></Heading>
 
       <div className="lg:flex justify-center gap-4 small:w-[980px] small:m-10 lg:w-full lg:ml-0">
