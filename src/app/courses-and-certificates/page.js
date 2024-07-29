@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Heading from "../components/heading";
 import Background from "../../utils/background";
+import "../../styles/global.css";
 
 const ast = () => {
   return (
@@ -11,7 +12,7 @@ const ast = () => {
         <Heading value={"Agriculture Skill Training"}></Heading>
       </div>
 
-      <div className="bg-customGray ">
+      <div className=" ">
         <p className="text-center text-black -mt-4 mb-20 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           We aim to empower farmers, rural entrepreneurs, university students,
           and Farmers Producer Organizations (FPOs) with the knowledge and
@@ -24,7 +25,7 @@ const ast = () => {
         ></Heading>
       </div>
 
-      <div className="bg-customGray">
+      <div className="">
         <p className="text-center text-black -mt-4 mb-12 small:pl-2 small:pr-2 lg:ml-40 lg:mr-40">
           Kisanlink is committed to nurturing the next generation of
           agricultural professionals. We offer specialized agri skill training

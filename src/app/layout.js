@@ -6,6 +6,7 @@ import { NavbarDemo } from "./components/navbar-main";
 import Header from "./sample/header";
 import Component from "../app/test/bot";
 import { Analytics } from "@vercel/analytics/react";
+import "../styles/global.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

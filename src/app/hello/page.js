@@ -218,7 +218,7 @@ const StickyScrollRevealDemo = () => {
       {/* Main Content */}
       <div className="sticky top-0 w-full z-50 bg-white">
         {isMobile ? (
-          <div className="relative">
+          <div className="relative bg-white">
             <button
               onClick={toggleDropdown}
               className="w-full px-4 py-2 text-left bg-[#e5deb9] text-brown-600 font-bold border border-gray-400 rounded"
@@ -267,7 +267,7 @@ const StickyScrollRevealDemo = () => {
           </ul>
         )}
       </div>
-      <div className="w-full mt-12 content-center justify-center">
+      <div className="w-full  bg-white mt-12 content-center justify-center">
         {content.map((item) => (
           <section
             key={item.id}

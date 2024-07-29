@@ -1,5 +1,5 @@
 "use client";
-
+import "../../styles/global.css";
 import Heading from "../components/heading";
 import Background from "./background";
 import { CardHoverEffectDemo } from "./cardhover";
@@ -35,7 +35,6 @@ const ExperienceCenter = () => {
         </p>
       </div>
 
-
       <CardHoverEffectDemo />
       <div className="lg:-mt-10">
         <Heading value={"Services and Support"} />
@@ -45,8 +44,6 @@ const ExperienceCenter = () => {
         <Heading value={"   Marketing and Financial Support"} />
       </div>
       <ThreeDCardDemo />
-
-
     </div>
   );
 };

@@ -1,11 +1,20 @@
 /* Prevent horizontal overflow */
-body, html {
-    overflow-x: hidden;
-  }
+  
   
   /* Box-sizing for all elements */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+
+  :root {
+    color-scheme: light only;
+  }
+  
+  body, html {
+    background-color: white !important;
+    color: black !important;
+    overflow-x: hidden;
+
   }

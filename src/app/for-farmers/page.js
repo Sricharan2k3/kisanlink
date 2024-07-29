@@ -7,6 +7,7 @@ import Component from "../products/page";
 import Background from "../../utils/background";
 import AgricultureComponent from "../benefits/page";
 import StickyScrollRevealDemo from "../hello/page";
+import "../../styles/global.css";
 
 const Farmersol = () => {
   return (

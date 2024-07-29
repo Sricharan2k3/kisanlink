@@ -4,8 +4,7 @@ import Background from "../../utils/background";
 // Card Component
 const Card = ({ dancer, image, title, description, isImageLeft }) => {
   return (
-    <div className="small:overflow-hidden">
-
+    <div className="bg-white small:overflow-hidden">
       <div className="lg:flex flex-row lg:w-9/12 lg:items-center lg:ml-48 con rounded-lg p-2 -mt-16 ">
         {isImageLeft && (
           <div className=" flex flex-row  w-72 h-72 rounded-lg overflow-hidden mr-4">
@@ -22,10 +21,12 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
           </p>
         </div>
         <div className="flex-1 text-left mt-4 md:mt-0 md:ml-4">
-          <h2 className="text-2xl font-semibold mb-2 text-brown-700">{title}</h2>
+          <h2 className="text-2xl font-semibold mb-2 text-brown-700">
+            {title}
+          </h2>
           <ul className="list-disc list-inside text-gray-500">
             {description.map((desc, index) => (
-              <li key={index} >{desc}</li>
+              <li key={index}>{desc}</li>
             ))}
           </ul>
         </div>
@@ -39,7 +40,6 @@ const Card = ({ dancer, image, title, description, isImageLeft }) => {
           </div>
         )}
       </div>
-
     </div>
   );
 };

@@ -33,9 +33,10 @@ export default function Component() {
       <Background title={"Blogs"} />
       <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
-          Evolution of Indian Agritech
+          Decoding Indian Agritech 3.0: Is It Time To Focus On GM Instead Of
+          GMV?{" "}
         </h1>
-        <p className="text-muted-foreground">July 22, 2022</p>
+        <p className="text-muted-foreground">July 18, 2022</p>
       </div>
       <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="lg:w-2/3 lg:pr-8">
