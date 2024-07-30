@@ -32,6 +32,14 @@ import { Badge } from "../../components/ui/badge";
 
 const articles = [
   {
+    title:
+      "Analysis of the Union Budget 2024: Implications for Agriculture Startups",
+    date: "July 31, 2024",
+    description:
+      "The Union Budget 2024, presented by Finance Minister Nirmala Sitharaman, has sparked considerable debate, particularly regarding its implications for the agriculture sector. With a substantial allocation of ₹1.52 lakh crore, the budget aims to revitalize agriculture and create a conducive environment for innovation, especially for startups.",
+    url: "./blog18",
+  },
+  {
     title: "National Mission on Edible Oils – Oil Palm",
     date: "January 5, 2024",
     description:
