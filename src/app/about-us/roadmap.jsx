@@ -5,7 +5,7 @@ import Heading from '../components/heading';
 const Milestone = ({ date, description }) => (
   <div className="flex items-center mb-8">
     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brown-700 flex items-center justify-center">
-      <CalendarIcon className="text-white" size={24} />
+      <img src='https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/achievement.png' className="text-white h-9 w-9" size={8} />
     </div>
     <div className="ml-4 flex-grow">
       <h3 className="text-lg font-semibold text-brown-700">{date}</h3>
@@ -38,7 +38,7 @@ const KeyMilestonesComponent = () => {
         </CardHeader>
         <CardContent>
           <div className="relative">
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-brown-700"></div>
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 "></div>
             {milestones.map((milestone, index) => (
               <Milestone key={index} date={milestone.date} description={milestone.description} />
             ))}
@@ -49,8 +49,8 @@ const KeyMilestonesComponent = () => {
       <Card>
         
         <CardContent>
-          <div className="bg-gray-200 h-64 w-full flex items-center justify-center rounded-lg">
-            <img src='https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/roadmap.png'></img>
+          <div className="bg-gray-200  w-full flex items-center justify-center rounded-lg">
+            <img src='https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/timeline.png'></img>
           </div>
         </CardContent>
       </Card>
