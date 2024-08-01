@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from './heading';
 
+
 const VideoContainer = () => {
     return (
         <div className='bg-[#E5E6E7] -mt-12 pt-8'>

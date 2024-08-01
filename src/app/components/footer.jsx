@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import React, { useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
 const Footer = () => {
-    const emailAddress = 'info@kisanlink.in';
+    const emailAddress = "info@kisanlink.in";
     return (
         <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">

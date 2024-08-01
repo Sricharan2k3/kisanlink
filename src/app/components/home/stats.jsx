@@ -19,7 +19,7 @@ const StatsCarousel1 = () => {
     // { id: 3, value: "5+", label: "Other Services" },
     
     
-  ];
+
 
 
   const settings = {
@@ -113,9 +113,10 @@ const StatsCarousel1 = () => {
               className={`w-2 h-2 rounded-full cursor-pointer ${
                 currentSlide >= dotIndex * (stats1.length / numDots1) &&
                 currentSlide < (dotIndex + 1) * (stats1.length / numDots1)
+
                   ? "bg-blue-100"
                   : "bg-gray-300"
-              }`}
+                }`}
             />
           ))}
         </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from './heading';
 
+
 const FourCards = () => {
     return (
         <div className='bg-[#E5E8E9] lg:-mt-24'>
@@ -14,6 +15,7 @@ const FourCards = () => {
                         <img src="./product.png" alt="Card 1" className="w-40 h-40 p-4" />
                         
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
+
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Products</h2>
                             <br />
                             <p className="text-white font-poppins medium:mt-8 large:mt-0">
@@ -40,6 +42,7 @@ const FourCards = () => {
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./farm.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
+
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Farm Mechanization Service</h2>
                             <br />
                             <p className="text-white  font-poppins">
@@ -63,6 +66,7 @@ const FourCards = () => {
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./output.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
+
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Output Purchase Service</h2>
                             <br />
                             <p className="text-white font-poppins">We assist farmers in realizing better value through
@@ -84,6 +88,7 @@ const FourCards = () => {
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
                         <img src="./other.png" alt="Card 1" className="w-40 h-40 p-4" />
                         <div className="p-4 relative" style={{ backgroundColor: '#24A033' }}>
+
                             <h2 className="text-white text-2xl font-bold mb-2 font-poppins">Other Agri Related Services</h2>
                             <br />
                             <p className="text-white font-poppins">We also facilitate soil testing, advisory and government-
