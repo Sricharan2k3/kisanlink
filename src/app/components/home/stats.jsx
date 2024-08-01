@@ -89,7 +89,7 @@ const StatsCarousel1 = () => {
       <div className="flex medium:space-x-8 lg:space-x-10 lg:ml-8  " {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#e5deb9] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
+       <div className="bg-[#FECA98] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             

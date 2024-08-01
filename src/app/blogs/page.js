@@ -242,15 +242,12 @@ export default function Component() {
           </div>
         </header>
         <main className="container my-12 flex justify-center">
-          <div className="grid w-full ml-36 grid-cols-1 gap-8 px-4 md:grid-cols-3 lg:gap-12">
+          <div className="grid w-full ml-8 grid-cols-1 gap-8 px-4 md:grid-cols-3 lg:gap-12">
             <div className="col-span-2 space-y-8">
               {articles
                 .slice((currentPage - 1) * 5, currentPage * 5)
                 .map((article, index) => (
-                  <article
-                    key={index}
-                    className="grid grid-cols-1 gap-4 sm:grid-cols-3"
-                  >
+                  <article key={index} className=" gap-4 sm:grid-cols-3">
                     {/* <div className="aspect-video overflow-hidden rounded-lg sm:col-span-1">
                     <img
                       src={article.imageSrc}
@@ -260,8 +257,14 @@ export default function Component() {
                       className="h-full w-full object-cover"
                     />
                   </div> */}
-                    <div className="sm:col-span-2">
-                      <h2 className="text-xl font-bold">{article.title}</h2>
+                    <div className="sm:col-span-2 w-full">
+                      <Link
+                        href={article.url}
+                        className="text-sm font-medium hover:underline"
+                        prefetch={false}
+                      >
+                        <h2 className="text-xl font-bold">{article.title}</h2>
+                      </Link>
                       <p className="mt-2 text-muted-foreground">
                         {article.description}
                       </p>

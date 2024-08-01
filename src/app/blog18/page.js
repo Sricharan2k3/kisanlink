@@ -33,7 +33,7 @@ export default function Component() {
     <>
       <Background title={"Blogs"} />
       <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
+        <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight mb-2 lg:text-5xl">
           Analysis of the Union Budget 2024: Implications for Agriculture
           Startups
         </h1>
@@ -72,7 +72,7 @@ export default function Component() {
                 src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/union-bu-1-scaled.jpg"
                 alt="Farmer Producer Organizations"
               />
-              <ul className="list-disc space-y-4 list-inside">
+              <ul className="list-disc space-y-4 mt-4 list-inside">
                 <li>
                   Natural Farming Initiatives: The government plans to introduce
                   1 crore farmers to natural farming over the next two years.
@@ -123,7 +123,7 @@ export default function Component() {
                 src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ub-2.png"
                 alt="Farmer Producer Organizations"
               />
-              <ul className="list-disc space-y-4 list-inside">
+              <ul className="list-disc mt-4 space-y-4 list-inside">
                 <li>
                   Abolition of Angel Tax: The removal of the Angel Tax is a
                   significant relief for startups, particularly in agriculture,
