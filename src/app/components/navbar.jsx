@@ -9,11 +9,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="relative bg-white shadow dark:bg-gray-800">
+        <nav className="relative overflow-x-hidden bg-white shadow dark:bg-gray-800">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <a href="#">
-                        <img className="w-auto h-14" src="https://www.kisanlink.in/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg" alt="" />
+                        <img className="w-auto h-14" src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/2023/03/cropped-cropped-cropped-Picsart_23-03-01_17-20-48-356-scaled-2.jpg" alt="" />
                     </a>
 
                     {/* Mobile menu button */}
@@ -101,10 +101,10 @@ const Navbar = () => {
                         </a>
                     </div>
 
-                    <div className="flex justify-center md:block">
-                        <button type="button" class="flex items-center justify-center w-48 text-white bg-green-500 rounded-3xl h-14">
+                    <div className=" my-2 flex justify-center md:block">
+                        <button type="button" class=" flex items-center justify-center w-48 text-white bg-green-500 rounded-3xl h-10">
                             <div class="mr-3">
-                                <svg viewBox="30 336.7 120.9 129.2" width="30">
+                                <svg viewBox="30 336.7 120.9 129.2" width="20">
                                     <path fill="#FFD400"
                                         d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z">
                                     </path>
@@ -119,11 +119,9 @@ const Navbar = () => {
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-xs">
-                                    GET IT ON
-                                </div>
-                                <div class="-mt-1 font-sans text-xl font-semibold">
-                                    Google Play
+                                
+                                <div class="-mt-1 font-poppins text-md font-semibold">
+                                    Download App
                                 </div>
                             </div>
                         </button>

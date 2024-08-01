@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  color-scheme: light only;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +32,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .filter-blur-none {
+    filter: none;
+
+}
+}
+
+.section.active .image {
+  @apply opacity-100 filter-blur-none;
+}
+
+/* Apply to the container you want to hide the scrollbar */
+.sticky-scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.sticky-scroll-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

@@ -1,107 +1,119 @@
+
 "use client";
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from "./heading";
 
-const StatsCarousel = () => {
+const StatsCarousel1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
-  const stats = [
-    { id: 1, value: "100+", label: "Villages" },
-    { id: 2, value: "150+", label: "Kisansathi (Village Level-Entrepreneurs)" },
-    { id: 3, value: "7000+", label: "Farmers" },
-    { id: 4, value: "50+", label: "Local Partners (FPOs and Retailers)" },
-    { id: 5, value: "30+", label: "Collaborators" },
-    { id: 6, value: "50+", label: "Brands" },
-    { id: 7, value: "800+", label: "Products" },
-    { id: 8, value: "1200+", label: "Farm Mechanization Services In Acres" },
-    { id: 9, value: "100+", label: "Product Orders" },
-    { id: 10, value: "40+", label: "Procurement In Tons" },
-    { id: 11, value: "10+", label: "Other Services" },
-    { id: 12, value: "2", label: "States" },
-  ];
+  const stats1 = [
+    { id: 5, value: "2500+ Acres", label: "Farm Mechanization " },
+   
+    { id: 1, value: "200+", label: "Product Orders" },
+    { id: 2, value: "50+ Tons", label: "Output Procurement" },
+    { id: 4, value: "500+", label: "Soil Testing Reports" },
+    // { id: 3, value: "5+", label: "Other Services" },
+    
+    
+
+
 
   const settings = {
     dots: false, // Disable default dots
     infinite: true,
-    speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 0,
     centerMode: true,
-    centerPadding: "21%",
-    autoplay: true, // Enable auto-scrolling
-    autoplaySpeed: 3000, // Auto-scroll interval in milliseconds (3 seconds)
+    centerPadding: "26%",
+    autoplay: false, // Enable auto-scrolling
+    autoplaySpeed: 0, // Auto-scroll interval in milliseconds (3 seconds)
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
     arrows: false, // Disable the navigation arrows
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           centerPadding: "15%",
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 700,
         settings: {
           slidesToShow: 2,
-          centerPadding: "10%",
+          centerPadding: "15%",
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 450,
         settings: {
-          slidesToShow: 1,
-          centerPadding: "5%",
+          slidesToShow: 2,
+          centerPadding: "3%",
+        },
+      },
+      {
+        breakpoint: 200,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "1%",
         },
       },
     ],
   };
 
-  // Adjust the number of dots
-  const numDots = 12;
-  const dots = Array.from({ length: numDots }, (_, i) => i);
+
+
+  const numDots1 = 5;
+  const dots1 = Array.from({ length: numDots1 }, (_, i) => i);
 
   // Dot click handler
-  const goToSlide = (index) => {
-    const slideToGo = Math.floor((index / numDots) * stats.length);
-    sliderRef.current.slickGoTo(slideToGo);
+  const goToSlide1 = (index) => {
+    const slideToGo1 = Math.floor((index / numDots1) * stats1.length);
+    sliderRef.current.slickGoTo(slideToGo1);
   };
 
   return (
-    <div className="relative py-8 bg-gray-lightest">
-      <div className="text-center mb-12">
+    
+  
+    <div className=" -mt-8 overflow-hidden relative  bg-[#E5E8E9]">
+      {/* <div className="text-center mb-12">
         <h1 className="text-lg lg:text-4xl font-bold text-brown-700">
           Our Success In Numbers
         </h1>
-      </div>
-      <Slider {...settings} ref={sliderRef}>
-        {stats.map((stat) => (
-          <div key={stat.id} className="px-4">
-            <div className="bg-white shadow-lg rounded-lg p-6 text-center card">
-              <br></br>
-              <br></br>
-              <p className="text-xs lg:text-3xl text-green-700">{stat.value}</p>
-              <p className="text-xs lg:text-3xl pb-10 text-green-700">
+      </div> */}
+      <Heading value={"Operational Numbers"}></Heading>
+      <div className="flex medium:space-x-8 lg:space-x-10 lg:ml-8  " {...settings} ref={sliderRef}>
+        {stats1.map((stat) => (
+           <div key={stat.id} className="px-4">
+       <div className="bg-[#FECA98] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
+        small:h-20 small:p-8 lg:w-[290px] lg:h-36">
+
+                            
+              <p className="text-xs lg:text-lg  medium:mt-4 large:mt-3 text-green-500 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-green-500 small:text-xs ">
                 {stat.label}{" "}
               </p>
-              {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
-                <div className="mb-9"></div>
-              )}
+              {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (
+                <div className="mb-7"></div>
+              )} */}
             </div>
           </div>
         ))}
-      </Slider>
-      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-4">
+      </div>
+      <div className="absolute bottom-25 left-0 w-full flex justify-center mt-6">
         <ul className="flex space-x-6">
-          {dots.map((dotIndex) => (
+          {dots1.map((dotIndex) => (
             <li
               key={dotIndex}
-              onClick={() => goToSlide(dotIndex)}
-              className={`w-2 h-2 rounded-full cursor-pointer ${currentSlide >= dotIndex * (stats.length / numDots) &&
-                  currentSlide < (dotIndex + 1) * (stats.length / numDots)
+              onClick={() => goToSlide1(dotIndex)}
+              className={`w-2 h-2 rounded-full cursor-pointer ${
+                currentSlide >= dotIndex * (stats1.length / numDots1) &&
+                currentSlide < (dotIndex + 1) * (stats1.length / numDots1)
+
                   ? "bg-blue-100"
                   : "bg-gray-300"
                 }`}
@@ -113,10 +125,4 @@ const StatsCarousel = () => {
   );
 };
 
-export default StatsCarousel;
-
-
-
-
-
-
+export default StatsCarousel1;
