@@ -17,6 +17,7 @@ const StatsCarousel1 = () => {
     { id: 2, value: "50+ Tons", label: "Output Procurement" },
     { id: 4, value: "500+", label: "Soil Testing Reports" },
     // { id: 3, value: "5+", label: "Other Services" },
+  ]
     
     
 
