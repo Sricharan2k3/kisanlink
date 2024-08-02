@@ -16,6 +16,9 @@ const about = () => {
     <>
       <Background title={"About Us"}></Background>
       <div>
+        <KeyMilestonesComponent></KeyMilestonesComponent>
+      </div>
+      <div>
         <Heading value={"What we do ?"}></Heading>
       </div>
 
@@ -61,9 +64,6 @@ const about = () => {
       </div>
       <div className=" items-center lg:w-4/5 lg:pl-96 lg:mb-2 small:m-8">
         <ImageCarousel images={images}></ImageCarousel>
-      </div>
-      <div>
-        <KeyMilestonesComponent></KeyMilestonesComponent>
       </div>
     </>
   );
