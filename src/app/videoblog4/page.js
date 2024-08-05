@@ -37,14 +37,14 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Regenerative Agriculture: A Sustainable Way to Feed the World
         </h1>
         <p className="text-muted-foreground">JULY 16, 2022</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="Regenerative agriculture is a progressive form of farming that minimizes the utilization of resources like water and other inputs, while also preventing the deterioration of land and deforestation. It aims to safeguard and enhance soil quality, biodiversity, climate resilience, and water resources while simultaneously enhancing the productivity and profitability of farming." />
@@ -178,13 +178,13 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0">
           <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
             <CategoryList />
             <TagList />
             <Footer />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

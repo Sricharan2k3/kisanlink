@@ -38,15 +38,15 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Cultivating Sustainability: The Integral Role of Farmer Producer
           Organizations (FPOs) in Agriculture
         </h1>
         <p className="text-muted-foreground">MAY 13, 2024</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="In an era marked by growing environmental concerns and the imperative for sustainable development, the agricultural sector faces mounting pressure to adopt practices that promote ecological balance, social equity, and economic viability. Amidst this backdrop, Farmer Producer Organizations (FPOs) emerge as pivotal actors, embodying the principles of sustainability through their collective endeavours." />
@@ -97,13 +97,10 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
-          <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
-            <QuoteComponent
-              text="Agriculture is the most healthful, most useful, and most noble employment of man."
-              author="George Washington"
-            />
-            <CategoryList
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0"> */}
+        {/* <div className="bg-white shadow-lg rounded-lg p-6 space-y-6"> */}
+        {/* <QuoteComponent text="Agriculture is the most healthful, most useful, and most noble employment of man." /> */}
+        {/* <CategoryList
               categories={["Agriculture", "Sustainability", "FPOs"]}
             />
             <TagList
@@ -114,10 +111,9 @@ export default function Component() {
                 "climate resilience",
               ]}
             />
-            <Footer />
-          </div>
-        </div>
+            <Footer /> */}
       </div>
+      {/* </div> */}
     </>
   );
 }

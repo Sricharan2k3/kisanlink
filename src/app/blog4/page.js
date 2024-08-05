@@ -41,14 +41,14 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Government policies and support for FPOs in India
         </h1>
         <p className="text-muted-foreground">JUNE 6, 2024</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="The Indian government has been actively promoting and supporting Farmer Producer Organizations (FPOs) to enhance the livelihoods of small and marginal farmers. The government’s initiatives aim to improve the bargaining power of farmers, reduce production costs, and increase their incomes through the aggregation of agricultural produce." />
@@ -96,13 +96,13 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0">
           <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
             <CategoryList />
             <TagList />
             <Footer />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

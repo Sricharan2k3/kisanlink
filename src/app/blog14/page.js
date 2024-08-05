@@ -31,14 +31,14 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Market Access Initiative (MAI) Scheme
         </h1>
         <p className="text-muted-foreground">NOVEMBER 14, 2023</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="The primary goal of the Market Access Initiative Scheme is to promote India’s exports by providing financial assistance to exporters and industry associations. By facilitating market access and addressing barriers, the scheme aims to enhance the global competitiveness of Indian products and services. Export promotion Scheme is envisaged to act as a catalyst to promote India’s exports on a sustained basis. Assistance would be provided to export Promotion Organizations/Trade Promotion Organizations/ Exporters etc., for enhancement of exports through accessing new markets or through increasing the share in the existing markets." />
@@ -250,13 +250,13 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0">
           <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
             <CategoryList />
             <TagList />
             <Footer />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
