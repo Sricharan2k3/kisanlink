@@ -42,8 +42,8 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
-          {/* <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0"> */}
+        {/* <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
             <CategoryList />
             <TagList />
             <Footer />
