@@ -313,7 +313,7 @@ const Academy = () => {
           />
         </div>
 
-        <div className="bg-shape bg-green-600 w-full h-96">
+        <div className=" bg-green-600 w-full h-96">
           <img
             src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/plugins/saaspik-addons/elementor/widgets/images/left-shape.png"
             alt="shape"
@@ -340,7 +340,7 @@ const Academy = () => {
             data-parallax='{"x": 130}'
           /> */}
         </div>
-        <div className="-mt-64 mb-8 text-white text-center">
+        <div className="-mt-64 mb-8  text-white text-center">
           <h2 className="lg:text-4xl small:text-2xl font-bold leading-tight font-serif">
             Download our Kisanlink academy app
             <br />
@@ -348,7 +348,7 @@ const Academy = () => {
           </h2>
         </div>
         <div className="mt-6 text-center">
-          <div className="bg-white py-3 px-6 border border-green-500 rounded-full shadow-md inline-block">
+          <div className="bg-white py-3 px-6 border  border-green-500 rounded-full shadow-md inline-block">
             <a href="https://play.google.com/store/apps/details?id=com.meherprasadverdeneni.learners&pcampaignid=web_share">
               {" "}
               <span className="text-green-500 font-bold">Kisanlink</span>

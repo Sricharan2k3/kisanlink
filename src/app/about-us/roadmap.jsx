@@ -31,12 +31,12 @@ const KeyMilestonesComponent = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="w-full mx-auto p-6">
       <Card>
         
         <CardContent>
           <div className="bg-gray-200  w-full flex items-center justify-center rounded-lg">
-            <img src='https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/timeline.png'></img>
+            <img src='https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/timeline-1.png'></img>
           </div>
         </CardContent>
       </Card>

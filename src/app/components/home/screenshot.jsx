@@ -103,7 +103,7 @@ const DownloadButton = ({ platform, url }) => {
       href={url}
       
       rel="noopener noreferrer"
-      className="flex items-center justify-center bg-[#FECA98] mt-4 text-green-500 mr-64 px-4 py-2 rounded-full shadow-lg hover:bg-[#fdba74] transition-all duration-300 ease-in-out"
+      className="flex items-center justify-center bg-[#F9F1E1] mt-4 text-green-500 mr-64 px-4 py-2 rounded-full shadow-lg hover:bg-[#fdba74] transition-all duration-300 ease-in-out"
     >
       {/* <img
         src={logos[platform]}

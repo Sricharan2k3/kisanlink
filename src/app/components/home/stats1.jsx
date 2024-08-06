@@ -82,7 +82,7 @@ const StatsCarousel1 = () => {
       <Slider {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#FECA98] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
+       <div className="bg-[#F9F1E1] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
         small:h-20 small:p-8 lg:w-[290px] lg:h-36">
 
                             

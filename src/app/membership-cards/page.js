@@ -44,14 +44,14 @@ const SmartCard = () => {
           <div className="flex-1 max-w-sm mx-auto md:max-w-md lg:max-w-lg">
             <img
               className="w-full h-auto object-cover rounded-lg shadow-lg"
-              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/17A-scaled.jpg"
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/35a.jpg"
               alt="Farmer with Smart Card"
             />
           </div>
           <div className="flex-1 max-w-sm mx-auto md:max-w-md lg:max-w-lg">
             <img
               className="w-full h-auto object-cover rounded-lg shadow-lg"
-              src="./front.jpg"
+              src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/nfc-membershsip-card-MOCKUP.jpg"
               alt="Smart Card Front"
             />
           </div>
