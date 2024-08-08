@@ -20,7 +20,7 @@ const NavItem = ({ href, label, subItems, isOpen, onClick, onLinkClick }) => {
   return (
     <div className="relative">
       <div
-        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer"
+        className="flex items-center gap-2 rounded-md px-2 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer"
         onClick={onClick}
       >
         {label}
@@ -81,11 +81,11 @@ console.log(isSheetOpen)
 
   
   return (
-    <div className="lg:bg-white large:ml-[290px] medium:ml-32 z-50  lg:rounded-full">
+    <div className="lg:bg-white large:ml-[290px] medium:ml-24 z-50  lg:rounded-full">
 
   
     <header className="  top-0 z-50 w-full lg:bg-background lg:rounded-full lg:border-2 lg:border-black small:rounded-3xl">
-    <div className="container flex h-16 items-center justify-end px-4 md:px-6">
+    <div className="container flex h-16 items-center justify-end px-3 md:px-6">
     
       <nav className="hidden items-center z-50 bg-white gap-6 text-sm font-medium md:flex">
           <NavigationMenu>
@@ -131,7 +131,7 @@ console.log(isSheetOpen)
               <NavigationMenuItem>
               <Link
                         href="/experience-center1"
-                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        className="group grid h-auto w-full items-center justify-start  rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                         prefetch={false}
                       >
                         <div className="text-sm font-medium leading-none group-hover:underline">Experience Center</div>
