@@ -21,7 +21,7 @@ const TabComponent = () => {
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/market.svg",
     },
     {
-      name: "Marketing",
+      name: "Digitization",
       content: marketingContent,
       image: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
     },
