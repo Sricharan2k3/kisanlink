@@ -96,7 +96,7 @@ const StatsCarousel1 = () => {
   
 
                             
-              <p className="text-xs lg:text-lg  medium:mt-4 large:mt-3 text-green-800 small:text-xs small:-mt-4">{stat.value}</p>
+              <p className="text-xs lg:text-lg    medium:mt-4 large:mt-3 text-green-800 small:text-xs small:-mt-4"><strong>{stat.value}</strong></p>
               <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-black-400 small:text-xs ">
                 {stat.label}{" "}
               </p>
