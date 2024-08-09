@@ -164,16 +164,7 @@ const marketingContent = [
     content:
       "A complete tech platform that seamlessly integrates Enterprise Resource Planning (ERP) and e-commerce functionalities. This unified approach allows FPOs to manage their operations more effectively, from tracking inventory and sales to facilitating online transactions. ",
   },
-  {
-    title: "Market Information Dissemination",
-    content:
-      "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
-  },
-  {
-    title: "Promotional Material Design",
-    content:
-      "Create eye-catching promotional materials to amplify brand visibility.",
-  },
+
   {
     title: "Accounting solutions",
     content:
@@ -183,6 +174,16 @@ const marketingContent = [
     title: "Smart membership Cards",
     content:
       "Smart Membership Cards. Each card is embedded with a unique QR code, allowing for seamless tracking of member profiles, transaction histories, and credit records. ",
+  },
+  {
+    title: "Market Information Dissemination",
+    content:
+      "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
+  },
+  {
+    title: "Promotional Material Design",
+    content:
+      "Create eye-catching promotional materials to amplify brand visibility.",
   },
 ];
 
