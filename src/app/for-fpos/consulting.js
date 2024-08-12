@@ -46,6 +46,22 @@ const ConsultancyServicesPage = () => {
       imageUrl:
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/financial-assistance-web.png",
     },
+    {
+      id: 5,
+      title: "Market Information Dissemination",
+      description:
+        "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
+      imageUrl:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
+    },
+    {
+      id: 6,
+      title: "Promotional Material Design",
+      description:
+        "Create eye-catching promotional materials to amplify brand visibility.",
+      imageUrl:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
+    },
   ];
 
   const leftImageUrl = "https://via.placeholder.com/150";
@@ -71,15 +87,17 @@ const ConsultancyServicesPage = () => {
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent lg:w-100 small:w-80 hover:border-green-600 transition-all ${selectedCard === card.id ? "border-green-600" : ""
-                }`}
+              className={`cursor-pointer p-2 rounded-lg  border-2 border-transparent lg:w-100 small:w-80 hover:border-green-600 transition-all ${
+                selectedCard === card.id ? "border-green-600" : ""
+              }`}
               onClick={() => handleCardClick(card.id)}
             >
               <div className="flex text-brown-700 justify-between items-center font-bold text-lg">
                 {card.title}
                 <span
-                  className={`transform transition-transform ${selectedCard === card.id ? "rotate-180" : ""
-                    }`}
+                  className={`transform transition-transform ${
+                    selectedCard === card.id ? "rotate-180" : ""
+                  }`}
                 >
                   ▼
                 </span>

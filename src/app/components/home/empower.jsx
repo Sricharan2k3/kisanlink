@@ -30,7 +30,7 @@ const Empower = () => {
           <p className="text-gray-700 text-sm lg:text-base leading-relaxed mb-10">
             Discover the power of collaboration and progress with Kisanlink, your strategic partner in fostering growth for Farmer Producer Organisations (FPOs). We understand the vitality of FPOs in amplifying farmers influence in the market and offer comprehensive support to strengthen their capabilities.
           </p>
-          <a href="/for-fpos"><button className="px-10 py-2 bg-[#F9F1E1] font-semibold text-green-500 shadow-md hover:bg-[#fdba74] focus:bg-[#fdba74] focus:outline-none">
+          <a href="/for-fpos"><button className="px-10 py-2 bg-[#F9F1E1] font-semibold text-green-800 shadow-md hover:bg-[#fdba74] focus:bg-[#fdba74] focus:outline-none">
             Explore More ....
           </button></a>
         </div>

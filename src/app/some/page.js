@@ -23,7 +23,8 @@ const TabComponent = () => {
     {
       name: "Digitization",
       content: marketingContent,
-      image: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/digim1.png",
     },
   ];
 
@@ -174,16 +175,6 @@ const marketingContent = [
     title: "Smart membership Cards",
     content:
       "Smart Membership Cards. Each card is embedded with a unique QR code, allowing for seamless tracking of member profiles, transaction histories, and credit records. ",
-  },
-  {
-    title: "Market Information Dissemination",
-    content:
-      "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
-  },
-  {
-    title: "Promotional Material Design",
-    content:
-      "Create eye-catching promotional materials to amplify brand visibility.",
   },
 ];
 
