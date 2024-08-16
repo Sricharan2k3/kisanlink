@@ -26,9 +26,9 @@ export default function Home() {
       <StatsCarousel></StatsCarousel>
 
       <StatsCarousel1></StatsCarousel1>
-      <Screenshot></Screenshot>
 
       <FourCards />
+      <Screenshot></Screenshot>
       <Collaborators />
       <VideoContainer />
     </div>

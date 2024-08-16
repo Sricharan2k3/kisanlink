@@ -4,10 +4,21 @@ import Heading from './heading';
 
 const FourCards = () => {
     return (
-        <div className='bg-[#E5E8E9] lg:-mt-24'>
+        <div className='bg-[#E5E8E9] lg:-mt-24 pt-24'>
             <Heading value={"Our Solutions To Farmers"} />
+            <div className="flex justify-center mt-8">
+              <iframe
+           
+                src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/0814.mp4"
+                title={`Product Video `}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="shadow-lg rounded-lg w-full h-screen"
+              ></iframe>
+            </div>
 
-            <div className="large:flex medium:flex justify-between mt-8 small:grid-cols-4">
+            {/* <div className="large:flex medium:flex justify-between mt-8 small:grid-cols-4">
                 <div className="relative large: h-1/3 medium:w-1/4 large:w-1/4 mx-2" style={{ backgroundColor: '#24A033' }}>
                     <div className=" overflow-hidden"style={{ backgroundColor: '#24A033' }} >
                         <div className="h-20 bg-cover bg-center" style={{ backgroundImage: 'url(https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/agrisetu.com_.png)' }}></div>
@@ -99,15 +110,15 @@ const FourCards = () => {
                     
 
                             
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div>
                     <a href="/page1" className="absolute bottom-4 right-4 bg-white text-green-500 rounded-full p-2 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M9.293 4.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L13.586 11H4a1 1 0 1 1 0-2h9.586L9.293 5.707a1 1 0 0 1 0-1.414z" />
                                 </svg>
                             </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
