@@ -9,7 +9,7 @@ export default function Component() {
   const contentScrolledRef = useRef(false);
   const textTransitionedRef = useRef(false);
 
-  const images = ["https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/home.jpg", "./img2.jpg"];
+  const images = ["https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/home-3.jpg", "./img2.jpg"];
 
   useEffect(() => {
     const container = containerRef.current;

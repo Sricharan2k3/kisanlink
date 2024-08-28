@@ -34,15 +34,15 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Pradhan Mantri Formalisation of Micro Food Processing Enterprises
           Scheme
         </h1>
         <p className="text-muted-foreground">NOVEMBER 28, 2023</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="The Pradhan Mantri Formalisation of Micro Food Processing Enterprises (PMFME) Scheme is a significant initiative by the Indian government to empower and support small-scale food processing units across the country. It aims to enhance the competitiveness of these enterprises, foster their formalization, and provide support for technology upgradation, capacity expansion, and better access to markets." />
@@ -360,12 +360,12 @@ export default function Component() {
             </article>
           </div>
         </div>
-        <div className="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0">
+        {/* <div className="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0">
           <CategoryList />
           <TagList />
-        </div>
+        </div> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

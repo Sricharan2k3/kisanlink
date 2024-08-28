@@ -13,9 +13,10 @@ const SolutionsForFPOs = () => {
       <div>
         <Background title={"For FPOs"} />
         <ContentComponent />
-        <Techsuppourt />
-        <ConsultancyServicesPage />
+        {/* <Techsuppourt /> */}
         <TabComponent></TabComponent>
+        <ConsultancyServicesPage />
+
         <BenfitsComponent />
       </div>
     </div>

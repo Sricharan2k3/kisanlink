@@ -31,14 +31,14 @@ export default function Component() {
   return (
     <>
       <Background title={"Blogs"} />
-      <div className="container mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mt-16 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-brown-700 tracking-tight lg:text-5xl">
           Credit Guarantee Fund Scheme for Farmers' Producer Organizations
         </h1>
         <p className="text-muted-foreground">DECEMBER 5, 2024</p>
       </div>
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <div className="lg:w-2/3 lg:pr-8">
+      <div className="flex flex-col lg:flex-row w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="lg:w-full lg:pr-8">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <article className="prose prose-gray max-w-none pl-6 pr-6 pt-2">
               <SubheadingDescription text="The Credit Guarantee Fund Scheme for Farmers’ Producer Organizations (CGSFPO) is a crucial initiative by the Indian government aimed at enhancing the financial capabilities and empowerment of Farmers’ Producer Organizations (FPOs). FPOs play a significant role in aggregating the produce of small and marginal farmers, ensuring better access to markets, technology, and inputs. The CGSFPO is designed to provide financial support to these FPOs and strengthen their creditworthiness." />
@@ -207,13 +207,13 @@ export default function Component() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-8 lg:mt-0">
+        {/* <div className="lg:w-1/3 mt-8 lg:mt-0">
           <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
             <CategoryList />
             <TagList />
             <Footer />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

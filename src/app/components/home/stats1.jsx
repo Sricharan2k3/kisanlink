@@ -82,12 +82,12 @@ const StatsCarousel1 = () => {
       <Slider {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#FECA98] shadow-lg rounded-lg lg:p-6 text-center  small:w-36
-        small:h-20 small:p-8 lg:w-[290px] lg:h-36">
+       <div className="bg-[#F9F1E1] shadow-3xl rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
+        small:h-20 small:p-8 lg:w-[290px] border border-transparent dark:bg-slate-800/[0.8] block group-hover:border-slate-700 lg:h-36">
 
                             
-              <p className="text-xs lg:text-lg large:mt-3 medium:mt-4 text-green-500 small:text-xs small:-mt-4">{stat.value}</p>
-              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-green-500 small:text-xs ">
+              <p className="text-xs lg:text-lg large:mt-3 medium:mt-4 text-green-800 small:text-xs small:-mt-4"><strong>{stat.value}</strong></p>
+              <p className="text-xs lg:text-lg lg:pt-2 pb-2 text-black-400 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

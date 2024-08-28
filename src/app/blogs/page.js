@@ -1,7 +1,7 @@
 "use client";
+import React, { useState, useCallback } from "react";
 import Heading from "../components/heading";
 import Background from "../../utils/background";
-import { useState } from "react";
 import Link from "next/link";
 import { Input } from "../../components/ui/input";
 import { Button } from "../../components/ui/button";
@@ -200,7 +200,23 @@ const articles = [
 
 export default function Component() {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(articles.length / 5); // Assuming 5 articles per page
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredArticles, setFilteredArticles] = useState(articles);
+
+  const articlesPerPage = 5;
+
+  const handleSearch = useCallback((query) => {
+    const lowercasedQuery = query.toLowerCase();
+    const filtered = articles.filter(
+      (article) =>
+        article.title.toLowerCase().includes(lowercasedQuery) ||
+        article.description.toLowerCase().includes(lowercasedQuery)
+    );
+    setFilteredArticles(filtered);
+    setCurrentPage(1);
+  }, []);
+
+  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
@@ -221,9 +237,9 @@ export default function Component() {
       <div className="flex min-h-screen flex-col bg-background">
         <header className="sticky top-0 z-40 w-full border-b bg-background">
           <div className="container flex h-16 mt-6 items-center justify-between px-4 md:px-6">
-            <Link href="#" className="flex items-center gap-2" prefetch={false}>
+            {/* <Link href="#" className="flex items-center gap-2" prefetch={false}>
               <MountainIcon className="h-6 w-6" />
-            </Link>
+            </Link> */}
             <div className="ml-auto flex items-center gap-4">
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -233,6 +249,11 @@ export default function Component() {
                   type="search"
                   placeholder="Search..."
                   className="h-9 w-full rounded-md bg-muted pl-10 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                  value={searchQuery}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    handleSearch(e.target.value);
+                  }}
                 />
               </div>
               <Button variant="outline" size="sm">
@@ -244,19 +265,13 @@ export default function Component() {
         <main className="container my-12 flex justify-center">
           <div className="grid w-full ml-8 grid-cols-1 gap-8 px-4 md:grid-cols-3 lg:gap-12">
             <div className="col-span-2 space-y-8">
-              {articles
-                .slice((currentPage - 1) * 5, currentPage * 5)
+              {filteredArticles
+                .slice(
+                  (currentPage - 1) * articlesPerPage,
+                  currentPage * articlesPerPage
+                )
                 .map((article, index) => (
-                  <article key={index} className=" gap-4 sm:grid-cols-3">
-                    {/* <div className="aspect-video overflow-hidden rounded-lg sm:col-span-1">
-                    <img
-                      src={article.imageSrc}
-                      alt={article.title}
-                      width={400}
-                      height={300}
-                      className="h-full w-full object-cover"
-                    />
-                  </div> */}
+                  <article key={index} className="gap-4 sm:grid-cols-3">
                     <div className="sm:col-span-2 w-full">
                       <Link
                         href={article.url}
@@ -305,9 +320,11 @@ export default function Component() {
                         </PaginationLink>
                       </PaginationItem>
                     ))}
-                    <PaginationItem>
-                      <PaginationEllipsis />
-                    </PaginationItem>
+                    {totalPages > 5 && (
+                      <PaginationItem>
+                        <PaginationEllipsis />
+                      </PaginationItem>
+                    )}
                     <PaginationItem>
                       <PaginationNext
                         href="#"

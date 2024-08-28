@@ -17,6 +17,7 @@ const StatsCarousel1 = () => {
     { id: 2, value: "50+ Tons", label: "Output Procurement" },
     { id: 4, value: "500+", label: "Soil Testing Reports" },
     // { id: 3, value: "5+", label: "Other Services" },
+  ]
     
     
 
@@ -89,12 +90,14 @@ const StatsCarousel1 = () => {
       <div className="flex medium:space-x-8 lg:space-x-10 lg:ml-8  " {...settings} ref={sliderRef}>
         {stats1.map((stat) => (
            <div key={stat.id} className="px-4">
-       <div className="bg-[#FECA98] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
-        small:h-20 small:p-8 lg:w-[290px] lg:h-36">
+       <div className="bg-[#F9F1E1] shadow-lg rounded-lg lg:p-6 text-center medium:w-[290px] medium:-ml-6 large:ml-0  small:w-36
+        small:h-20 small:p-8 lg:w-[290px] border border-transparent dark:bg-slate-800/[0.8] block group-hover:border-slate-700 lg:h-36">
+
+  
 
                             
-              <p className="text-xs lg:text-lg  medium:mt-4 large:mt-3 text-green-500 small:text-xs small:-mt-4">{stat.value}</p>
-              <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-green-500 small:text-xs ">
+              <p className="text-xs lg:text-lg    medium:mt-4 large:mt-3 text-green-800 small:text-xs small:-mt-4"><strong>{stat.value}</strong></p>
+              <p className="text-xs lg:text-lg  lg:pt-2 pb-2 text-black-400 small:text-xs ">
                 {stat.label}{" "}
               </p>
               {/* {stat.id !== 2 && stat.id !== 4 && stat.id !== 8 && (

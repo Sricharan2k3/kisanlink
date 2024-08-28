@@ -26,8 +26,20 @@ const SHGMicroEnterprisesPage = () => {
           to save money and provide loans to one another. SHGs are crucial in
           empowering rural communities, particularly women, by promoting
           financial inclusion, enhancing livelihoods, and fostering
-          entrepreneurship.{" "}
+          entrepreneurship.
         </p>
+        <div className="flex justify-center space-x-4 mt-6 mb-6">
+          <img
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/women-shg-1.jpg"
+            alt="SHG Meeting"
+            className="w-1/2 max-w-md h-auto"
+          />
+          <img
+            src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/women-shg-2.jpg"
+            alt="SHG Activities"
+            className="w-1/2 max-w-md h-auto"
+          />
+        </div>
       </div>
 
       <main className=" pl-12 pr-12 mx-auto">
@@ -84,6 +96,11 @@ const SHGMicroEnterprisesPage = () => {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Income Generation</AccordionTrigger>
                   <AccordionContent>
+                    <img
+                      src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/income.png"
+                      alt="Income Generation"
+                      className="mb-4 w-36 h-36"
+                    />
                     SHGs involved in agriculture and food processing can utilize
                     solar dryers to efficiently dry fruits, vegetables, and
                     other agricultural produce. This not only enhances their
@@ -96,6 +113,11 @@ const SHGMicroEnterprisesPage = () => {
                     Reduction in Post-Harvest Losses
                   </AccordionTrigger>
                   <AccordionContent>
+                    <img
+                      src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/post-harvest.png"
+                      alt="Post-Harvest Losses Reduction"
+                      className="mb-4 w-36 h-36"
+                    />
                     Solar dryers help in preserving perishable food items,
                     significantly reducing post-harvest losses. This ensures a
                     more stable income for SHGs by minimizing wastage and
@@ -105,6 +127,11 @@ const SHGMicroEnterprisesPage = () => {
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Environmental Benefits</AccordionTrigger>
                   <AccordionContent>
+                    <img
+                      src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/environmental-benefits.png"
+                      alt="Environmental Benefits"
+                      className="mb-4 w-36 h-36"
+                    />
                     Solar dryers utilize renewable energy, reducing reliance on
                     fossil fuels and minimizing carbon emissions. This aligns
                     with sustainable development goals and contributes to
@@ -114,6 +141,11 @@ const SHGMicroEnterprisesPage = () => {
                 <AccordionItem value="item-4">
                   <AccordionTrigger>Skill Enhancement</AccordionTrigger>
                   <AccordionContent>
+                    <img
+                      src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/skill.png"
+                      alt="Skill Enhancement"
+                      className="mb-4 w-36 h-36"
+                    />
                     Operating solar dryers requires technical knowledge, which
                     can be imparted to SHG members through training programs.
                     This skill acquisition can open up further employment

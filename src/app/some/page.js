@@ -21,9 +21,10 @@ const TabComponent = () => {
         "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/market.svg",
     },
     {
-      name: "Marketing",
+      name: "Digitization",
       content: marketingContent,
-      image: "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/ing.svg",
+      image:
+        "https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/digim1.png",
     },
   ];
 
@@ -160,14 +161,20 @@ const marketLinkageContent = [
 
 const marketingContent = [
   {
-    title: "Promotional Material Design",
+    title: "Integrated Tech Platform",
     content:
-      "Create eye-catching promotional materials to amplify brand visibility.",
+      "A complete tech platform that seamlessly integrates Enterprise Resource Planning (ERP) and e-commerce functionalities. This unified approach allows FPOs to manage their operations more effectively, from tracking inventory and sales to facilitating online transactions. ",
+  },
+
+  {
+    title: "Accounting solutions",
+    content:
+      "Features such as invoicing, accounts receivable, accounts payable, and financial reporting help in maintaining accurate financial records, ensure timely payments, and make informed decisions.",
   },
   {
-    title: "Market Information Dissemination",
+    title: "Smart membership Cards",
     content:
-      "Utilize modern social media platforms and communication channels to share updated market information with farmers.",
+      "Smart Membership Cards. Each card is embedded with a unique QR code, allowing for seamless tracking of member profiles, transaction histories, and credit records. ",
   },
 ];
 
