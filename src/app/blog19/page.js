@@ -50,6 +50,7 @@ export default function Component() {
                 subheading="AgriSURE Fund: A Catalyst for Innovation"
                 text="The AgriSURE Fund, officially launched on September 3, 2024, is a ₹750 crore (approximately $90 million) initiative designed to support technology-driven startups and rural enterprises. This fund is structured as a Category-II Alternative Investment Fund (AIF) registered with the Securities and Exchange Board of India (SEBI). It aims to provide equity and debt funding to approximately 85 startups, with individual investments capped at ₹25 crore each."
               />
+              <br></br>
               <ul className="list-disc space-y-4 list-inside">
                 <li>
                   Financial Contributions: The fund comprises ₹250 crore from
@@ -72,11 +73,18 @@ export default function Component() {
                   ecosystem.
                 </li>
               </ul>
-
+              <br></br>
+              <img
+                src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/AGRISURE-ILLUSTRATION.png"
+                alt="Farmer Producer Organizations"
+                className="ml-[500px] w-[400px] h-[400px]"
+              />
+              <br></br>
               <SubheadingDescription
                 subheading="Eligibility Criteria for AgriSURE Fund"
                 text=""
               />
+              <br />
               <ul className="list-disc space-y-4 list-inside">
                 <li>
                   Sector Focus: Startups must operate within the agriculture or
