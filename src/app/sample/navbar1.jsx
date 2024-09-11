@@ -238,7 +238,7 @@ console.log(isSheetOpen)
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Our Brands</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid  bg-white w-[180px] p-2 ml-[560px] mt-2">
+                  <div className="grid  bg-white w-[190px] p-2 ml-[560px] mt-2">
                   <NavigationMenuLink asChild>
                       {/* <Link
                         href="https://digicrop.vercel.app/"
@@ -276,7 +276,27 @@ console.log(isSheetOpen)
                         
                       </Link>
                     </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      {/* <Link
+                        href="https://amrti.com/"
+                        className="group grid items-center justify-start gap-1 rounded-md bg-background text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      > */}
+                        <Link
+                        href="https://agriskillacademy.com/"
+                        className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                        prefetch={false}
+                      ><div className="text-sm font-medium leading-none group-hover:underline">
+                      Agriskill Academy<sup className="inline-flex items-center justify-center w-2 h-2 ml-1 text-[0.3rem] align-top border border-current rounded-full">TM</sup>
+                    </div>
                     
+                    
+                        
+     
+                        {/* <div className="-mt-12"><img height={10} src="./amt.png"></img></div> */}
+                        
+                      </Link>
+                    </NavigationMenuLink>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
