@@ -33,6 +33,14 @@ import { Badge } from "../../components/ui/badge";
 const articles = [
   {
     title:
+      "Transforming Agriculture: The Launch of the AgriSURE Fund and Krishi Nivesh Portal",
+    date: "September 04, 2024",
+    description:
+      "The Indian agricultural landscape is poised for a significant transformation with the recent launch of the AgriSURE Fund and the Krishi Nivesh Portal by Union Minister Shivraj Singh Chouhan. ",
+    url: "./blog19",
+  },
+  {
+    title:
       "Analysis of the Union Budget 2024: Implications for Agriculture Startups",
     date: "July 31, 2024",
     description:

@@ -21,9 +21,15 @@ const Screenshot = () => {
   return (
     <div>
       <Heading value={"Technology"}></Heading>
-      <div className="-mt-12">
-      <img src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/KISANLINK-WEB-NEW-ILLUSTRATION.png" className="h-full w-full"></img>
+      <div className="flex items-center justify-center min-h-screen ">
+      <div className="w-full sm:w-2/3 aspect-video -mt-24">
+        <img
+          src="https://d33hqsk72xx8w2.cloudfront.net/wp-content/uploads/kisanlink-web-motion-gif-1.gif"
+          alt="Centered GIF"
+          className="w-full h-full object-cover rounded-lg shadow-lg"
+        />
       </div>
+    </div>
     </div>
 //     <div className="overflow-hidden min-h-screen py-8 -mt-8  px-4 md:px-2 bg-[#E5E8E9] ">
 //       <Head>

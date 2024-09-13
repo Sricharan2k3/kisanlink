@@ -68,20 +68,17 @@ const ast = () => {
           practical learning.
         </p>
       </div>
-      <div>
-        <div className="-mt-10">
+
+      {/* <div className="-mt-10">
           <Heading value={"Certification"}></Heading>
         </div>
         <p className="text-center -mt-4 lg:-mb-16  lg:ml-40 lg:mr-40">
           Candidates will be certified after clearing the training assessment.
         </p>
         <div className="lg:flex items-center lg:-mb-12 small:mt-4 small:mb-4  justify-center lg:h-screen">
-          <img
-            className="w-[720px] lg:h-[540px] small:h-[300px]"
-            src="./certi.png"
-          ></img>
+        
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
